@@ -10,9 +10,9 @@ To maintain a clean and organized workflow, please follow the guidelines below w
 When contributing, **always create a new branch** using the following format: PSO-V<version_num>/<changes_done>
 
 ### Example
-PSO-V1.2/added-voting-mechanism
-PSO-V1.3/fixed-threading-issue
-PSO-V1.4/updated-ui-components
+- PSO-V1.2/added-voting-mechanism
+- PSO-V1.3/fixed-threading-issue
+- PSO-V1.4/updated-ui-components
 
 
 ### Notes
@@ -42,8 +42,7 @@ Follow this structure: <type>: <short summary>
 | chore | Minor maintenance tasks |
 
 ### Example
-
-feat: added fitness-based voting system for PSO
-fix: resolved thread synchronization issue
-docs: updated README with installation steps
+- feat: added fitness-based voting system for PSO
+- fix: resolved thread synchronization issue
+- docs: updated README with installation steps
 
