@@ -96,9 +96,9 @@ with open(log_filename, "w") as log:
 
         # create a population of empty particles
         for i in range(nPop):
-            pop = np.append(pop, copy.copy(empty_particle))
+            pop = np.append(pop, copy.deepcopy(empty_particle))
 
-        global_best_particle = copy.copy(empty_particle) # create global best particle variable templated from the class particle
+        global_best_particle = copy.deepcopy(empty_particle) # create global best particle variable templated from the class particle
         global_best_particle.cost = math.inf             # set the global best particles cost to infinity so that any real particle encountered later will have a lower cost and replace it.
 
         # initialize the particles
