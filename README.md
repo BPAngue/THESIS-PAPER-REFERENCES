@@ -27,7 +27,7 @@ When contributing, **always create a new branch** using the following format: PS
 
 Use **clear and descriptive commit messages** that explain what your change does.  
 Follow this structure: 
-- <type>: <short summary>
+- `<type>`: `<short summary>`
 
 
 ### Common Types
