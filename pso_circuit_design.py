@@ -80,8 +80,8 @@ empty_particle.best_cost = None
 empty_particle.num_equal_tt = None     # assign empty (sets the number of equal outputs from the reference truth table)
 empty_particle.num_gates = None        # assign empty (sets the number of gates used)
 empty_particle.num_no_gates = None     # assign empty (sets the number of wires in solution)
-empty_particle.prev_cost = None        # assign empty (sets the previous cost)
-empty_particle.d_cost = None           # assign empty (sets the fractional derivative term)
+empty_particle.prev_cost = None        # assign empty (sets the previous cost) (for dynamic fitness)
+empty_particle.d_cost = None           # assign empty (sets the fractional derivative term) (for dynamic fitness)
 
 pop = []    # list containing the population of particles
 
