@@ -5,6 +5,7 @@ import sys
 import os
 import copy
 from datetime import datetime
+import time
 
 # --------------------------------------
 # Logging Setup
@@ -33,6 +34,9 @@ class Logger:
 sys.stdout = Logger(log_filename)
 print(f"[LOGGING ENABLED] Output is being saved to {log_filename}\n")
 print("[PSO ALGORITHM] Algorithm is currently running")
+
+# Start timers for the whole process
+_perf_start = time.perf_counter()
 
 # --------------------------------------
 # Problem and PSO Parameters
@@ -167,3 +171,8 @@ print(f"Gates used: {global_best_particle.num_gates}")
 print(f"Wires/Simplified: {global_best_particle.num_no_gates}")
 
 print("[PSO ALGORITHM] Algorithm finished!")
+
+# End timers and report elapsed time for the whole process
+_perf_end = time.perf_counter()
+elapsed_seconds = _perf_end - _perf_start
+print(f"[TIMER] Elapsed seconds: {elapsed_seconds:.6f}")
