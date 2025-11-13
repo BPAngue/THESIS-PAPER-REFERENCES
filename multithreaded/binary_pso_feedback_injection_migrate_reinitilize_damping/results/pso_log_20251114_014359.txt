@@ -1,0 +1,236 @@
+[LOGGING ENABLED] Output is being saved to results\pso_log_20251114_014359.txt
+
+[Multi-Threaded B-PSO] System is running...
+Pipeline Config: 4 Threads, 200 Iter/Round, 40 Max Rounds
+Detected 84 bits (dimensions) per particle.
+PSO Params: Inertia Weight Damping (w: 0.9 -> 0.4, c1: 2, c2: 2)
+
+--- Voting Round 1 / 40 ---
+Starting 4 threads for 200 iterations each...
+All threads finished.
+New Best-Ever solution found! Fitness: 38006.00 (Correct: 38/48)
+Migrating best particles between swarms...
+  Injecting Thread 3's gbest into Thread 0's worst 10.0%
+  [Injector] Replacing worst 7 particles with new solution.
+  Injecting Thread 0's gbest into Thread 1's worst 10.0%
+  [Injector] Replacing worst 7 particles with new solution.
+  Injecting Thread 1's gbest into Thread 2's worst 10.0%
+  [Injector] Replacing worst 7 particles with new solution.
+  Injecting Thread 2's gbest into Thread 3's worst 10.0%
+  [Injector] Replacing worst 7 particles with new solution.
+
+--- Voting Round 2 / 40 ---
+Starting 4 threads for 200 iterations each...
+All threads finished.
+No new Best-Ever solution. (Stagnation: 1/10)
+Migrating best particles between swarms...
+  Injecting Thread 3's gbest into Thread 0's worst 10.0%
+  [Injector] Replacing worst 7 particles with new solution.
+  Injecting Thread 0's gbest into Thread 1's worst 10.0%
+  [Injector] Replacing worst 7 particles with new solution.
+  Injecting Thread 1's gbest into Thread 2's worst 10.0%
+  [Injector] Replacing worst 7 particles with new solution.
+  Injecting Thread 2's gbest into Thread 3's worst 10.0%
+  [Injector] Replacing worst 7 particles with new solution.
+
+--- Voting Round 3 / 40 ---
+Starting 4 threads for 200 iterations each...
+All threads finished.
+New Best-Ever solution found! Fitness: 40005.00 (Correct: 40/48)
+Migrating best particles between swarms...
+  Injecting Thread 3's gbest into Thread 0's worst 10.0%
+  [Injector] Replacing worst 7 particles with new solution.
+  Injecting Thread 0's gbest into Thread 1's worst 10.0%
+  [Injector] Replacing worst 7 particles with new solution.
+  Injecting Thread 1's gbest into Thread 2's worst 10.0%
+  [Injector] Replacing worst 7 particles with new solution.
+  Injecting Thread 2's gbest into Thread 3's worst 10.0%
+  [Injector] Replacing worst 7 particles with new solution.
+
+--- Voting Round 4 / 40 ---
+Starting 4 threads for 200 iterations each...
+All threads finished.
+New Best-Ever solution found! Fitness: 40006.00 (Correct: 40/48)
+Migrating best particles between swarms...
+  Injecting Thread 3's gbest into Thread 0's worst 10.0%
+  [Injector] Replacing worst 7 particles with new solution.
+  Injecting Thread 0's gbest into Thread 1's worst 10.0%
+  [Injector] Replacing worst 7 particles with new solution.
+  Injecting Thread 1's gbest into Thread 2's worst 10.0%
+  [Injector] Replacing worst 7 particles with new solution.
+  Injecting Thread 2's gbest into Thread 3's worst 10.0%
+  [Injector] Replacing worst 7 particles with new solution.
+
+--- Voting Round 5 / 40 ---
+Starting 4 threads for 200 iterations each...
+All threads finished.
+No new Best-Ever solution. (Stagnation: 1/10)
+Migrating best particles between swarms...
+  Injecting Thread 3's gbest into Thread 0's worst 10.0%
+  [Injector] Replacing worst 7 particles with new solution.
+  Injecting Thread 0's gbest into Thread 1's worst 10.0%
+  [Injector] Replacing worst 7 particles with new solution.
+  Injecting Thread 1's gbest into Thread 2's worst 10.0%
+  [Injector] Replacing worst 7 particles with new solution.
+  Injecting Thread 2's gbest into Thread 3's worst 10.0%
+  [Injector] Replacing worst 7 particles with new solution.
+
+--- Voting Round 6 / 40 ---
+Starting 4 threads for 200 iterations each...
+All threads finished.
+No new Best-Ever solution. (Stagnation: 2/10)
+Migrating best particles between swarms...
+  Injecting Thread 3's gbest into Thread 0's worst 10.0%
+  [Injector] Replacing worst 7 particles with new solution.
+  Injecting Thread 0's gbest into Thread 1's worst 10.0%
+  [Injector] Replacing worst 7 particles with new solution.
+  Injecting Thread 1's gbest into Thread 2's worst 10.0%
+  [Injector] Replacing worst 7 particles with new solution.
+  Injecting Thread 2's gbest into Thread 3's worst 10.0%
+  [Injector] Replacing worst 7 particles with new solution.
+
+--- Voting Round 7 / 40 ---
+Starting 4 threads for 200 iterations each...
+All threads finished.
+No new Best-Ever solution. (Stagnation: 3/10)
+Migrating best particles between swarms...
+  Injecting Thread 3's gbest into Thread 0's worst 10.0%
+  [Injector] Replacing worst 7 particles with new solution.
+  Injecting Thread 0's gbest into Thread 1's worst 10.0%
+  [Injector] Replacing worst 7 particles with new solution.
+  Injecting Thread 1's gbest into Thread 2's worst 10.0%
+  [Injector] Replacing worst 7 particles with new solution.
+  Injecting Thread 2's gbest into Thread 3's worst 10.0%
+  [Injector] Replacing worst 7 particles with new solution.
+
+--- Voting Round 8 / 40 ---
+Starting 4 threads for 200 iterations each...
+All threads finished.
+No new Best-Ever solution. (Stagnation: 4/10)
+Migrating best particles between swarms...
+  Injecting Thread 3's gbest into Thread 0's worst 10.0%
+  [Injector] Replacing worst 7 particles with new solution.
+  Injecting Thread 0's gbest into Thread 1's worst 10.0%
+  [Injector] Replacing worst 7 particles with new solution.
+  Injecting Thread 1's gbest into Thread 2's worst 10.0%
+  [Injector] Replacing worst 7 particles with new solution.
+  Injecting Thread 2's gbest into Thread 3's worst 10.0%
+  [Injector] Replacing worst 7 particles with new solution.
+
+--- Voting Round 9 / 40 ---
+Starting 4 threads for 200 iterations each...
+All threads finished.
+No new Best-Ever solution. (Stagnation: 5/10)
+Migrating best particles between swarms...
+  Injecting Thread 3's gbest into Thread 0's worst 10.0%
+  [Injector] Replacing worst 7 particles with new solution.
+  Injecting Thread 0's gbest into Thread 1's worst 10.0%
+  [Injector] Replacing worst 7 particles with new solution.
+  Injecting Thread 1's gbest into Thread 2's worst 10.0%
+  [Injector] Replacing worst 7 particles with new solution.
+  Injecting Thread 2's gbest into Thread 3's worst 10.0%
+  [Injector] Replacing worst 7 particles with new solution.
+
+--- Voting Round 10 / 40 ---
+Starting 4 threads for 200 iterations each...
+All threads finished.
+No new Best-Ever solution. (Stagnation: 6/10)
+Migrating best particles between swarms...
+  Injecting Thread 3's gbest into Thread 0's worst 10.0%
+  [Injector] Replacing worst 7 particles with new solution.
+  Injecting Thread 0's gbest into Thread 1's worst 10.0%
+  [Injector] Replacing worst 7 particles with new solution.
+  Injecting Thread 1's gbest into Thread 2's worst 10.0%
+  [Injector] Replacing worst 7 particles with new solution.
+  Injecting Thread 2's gbest into Thread 3's worst 10.0%
+  [Injector] Replacing worst 7 particles with new solution.
+
+--- Voting Round 11 / 40 ---
+Starting 4 threads for 200 iterations each...
+All threads finished.
+No new Best-Ever solution. (Stagnation: 7/10)
+Migrating best particles between swarms...
+  Injecting Thread 3's gbest into Thread 0's worst 10.0%
+  [Injector] Replacing worst 7 particles with new solution.
+  Injecting Thread 0's gbest into Thread 1's worst 10.0%
+  [Injector] Replacing worst 7 particles with new solution.
+  Injecting Thread 1's gbest into Thread 2's worst 10.0%
+  [Injector] Replacing worst 7 particles with new solution.
+  Injecting Thread 2's gbest into Thread 3's worst 10.0%
+  [Injector] Replacing worst 7 particles with new solution.
+
+--- Voting Round 12 / 40 ---
+Starting 4 threads for 200 iterations each...
+All threads finished.
+No new Best-Ever solution. (Stagnation: 8/10)
+Migrating best particles between swarms...
+  Injecting Thread 3's gbest into Thread 0's worst 10.0%
+  [Injector] Replacing worst 7 particles with new solution.
+  Injecting Thread 0's gbest into Thread 1's worst 10.0%
+  [Injector] Replacing worst 7 particles with new solution.
+  Injecting Thread 1's gbest into Thread 2's worst 10.0%
+  [Injector] Replacing worst 7 particles with new solution.
+  Injecting Thread 2's gbest into Thread 3's worst 10.0%
+  [Injector] Replacing worst 7 particles with new solution.
+
+--- Voting Round 13 / 40 ---
+Starting 4 threads for 200 iterations each...
+All threads finished.
+No new Best-Ever solution. (Stagnation: 9/10)
+Migrating best particles between swarms...
+  Injecting Thread 3's gbest into Thread 0's worst 10.0%
+  [Injector] Replacing worst 7 particles with new solution.
+  Injecting Thread 0's gbest into Thread 1's worst 10.0%
+  [Injector] Replacing worst 7 particles with new solution.
+  Injecting Thread 1's gbest into Thread 2's worst 10.0%
+  [Injector] Replacing worst 7 particles with new solution.
+  Injecting Thread 2's gbest into Thread 3's worst 10.0%
+  [Injector] Replacing worst 7 particles with new solution.
+
+--- Voting Round 14 / 40 ---
+Starting 4 threads for 200 iterations each...
+All threads finished.
+No new Best-Ever solution. (Stagnation: 10/10)
+Stopping conditions met: Best-Ever solution has stagnated.
+
+... Pipeline finished ...
+
+--- FINAL VOTED BEST PARTICLE ---
+
+--- CIRCUIT FORMULA DERIVATION ---
+Internal Gates:
+  Gate 5: (I3 XOR I1)
+  Gate 6: (I1 XOR I1)
+  Gate 7: (I1 OR (I3 XOR I1))
+  Gate 8: (I4 XOR I2)
+  Gate 9: ((I4 XOR I2) OR (I3 XOR I1))
+  Gate 10: (I4 OR I4)
+  Gate 11: (I3 AND ((I4 XOR I2) OR (I3 XOR I1)))
+  Gate 12: (((I4 XOR I2) OR (I3 XOR I1)) XOR I2)
+
+--- FINAL OUTPUT FORMULA ---
+  Output 1: I1
+  Output 2: (I3 XOR I1)
+  Output 3: (I4 XOR I2)
+
+Circuit Matrix ([In1, Gate, In2]):
+[[3 3 1]
+ [1 3 1]
+ [1 1 5]
+ [4 3 2]
+ [8 1 5]
+ [4 1 4]
+ [3 0 9]
+ [9 3 2]]
+
+Output Array (Pointers):
+[1 5 8]
+
+--- FINAL STATS ---
+Cost (Fitness): 40006.0000
+Correct outputs: 40/48
+Active Gates Used: 2
+Unused Gates (Simplicity): 6
+
+[Multi-Threaded PSO] System finished!
+[TIMER] Elapsed seconds: 896.935725
