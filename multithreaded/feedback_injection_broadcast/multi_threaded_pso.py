@@ -1,4 +1,4 @@
-import problem3
+import problem4
 import pso_solver
 import numpy as np
 import math
@@ -50,9 +50,9 @@ print(f"Pipeline Config: {NUM_THREADS} Threads, {VOTING_INTERVAL} Iter/Round, {M
 # --------------------------------------
 # PSO Base Solver Parameters
 # --------------------------------------
-num_inputs = problem3.truth_table.num_inputs
-num_outputs = problem3.truth_table.num_outputs
-num_rows = problem3.num_rows
+num_inputs = problem4.truth_table.num_inputs
+num_outputs = problem4.truth_table.num_outputs
+num_rows = problem4.num_rows
 nVar = (num_rows * 3) + num_outputs
 varSize = nVar
 varMin = 0
@@ -136,7 +136,7 @@ for round_num in range(MAX_VOTING_ROUNDS):
     # 4. Check Stopping Conditions
     
     # Condition 1: Check for perfect solution
-    perfect_score = problem3.truth_table.total_outputs
+    perfect_score = problem4.truth_table.total_outputs
     if round_best.num_equal_tt == perfect_score:
         print(f"\n!!! PERFECT FUNCTIONAL SOLUTION FOUND (Fitness: {round_best.fitness:.2f}) !!!")
         
@@ -174,8 +174,8 @@ print("\n... Pipeline finished ...\n")
 print("--- FINAL VOTED BEST PARTICLE ---")
 
 # Get formulas and decoded matrices for the final report
-final_formulas = problem3.get_circuit_formula(Voted_GBest.position)
-circuit_matrix, output_array = problem3.decode_particle(Voted_GBest.position)
+final_formulas = problem4.get_circuit_formula(Voted_GBest.position)
+circuit_matrix, output_array = problem4.decode_particle(Voted_GBest.position)
 
 print("\nCircuit Matrix ([In1, Gate, In2]):")
 print(circuit_matrix)
@@ -183,7 +183,7 @@ print("\nOutput Array (Pointers):")
 print(output_array)
 print("\n--- FINAL STATS ---")
 print(f"Cost (Fitness): {Voted_GBest.fitness:.4f}")
-print(f"Correct outputs: {Voted_GBest.num_equal_tt}/{problem3.truth_table.total_outputs}")
+print(f"Correct outputs: {Voted_GBest.num_equal_tt}/{problem4.truth_table.total_outputs}")
 print(f"Active Gates Used: {Voted_GBest.num_gates}")
 print(f"Unused Gates (Simplicity): {Voted_GBest.num_no_gates}")
 
