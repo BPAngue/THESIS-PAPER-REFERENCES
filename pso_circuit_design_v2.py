@@ -55,8 +55,8 @@ varMin = 0
 varMax = num_inputs + num_rows
 # --- END NEW PARTICLE DEFINITION ---
 
-maxIt = 100
-nPop = 50
+maxIt = 2000
+nPop = 300
 constriction_coefficient = True
 
 if not constriction_coefficient:

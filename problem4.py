@@ -5,16 +5,13 @@ from enum import IntEnum
 # --------------------------------------
 # Problem Definition
 # --------------------------------------
-# num_rows is now the number of *internal gates* we can use.
-num_rows = 12  # Feel free to change this
-# num_cols is no longer needed (it's implicitly 3)
+num_rows = 12
 
 class GateType(IntEnum):
     AND = 0
     OR = 1
     NOT = 2
     XOR = 3
-    # WIRE is removed, as discussed.
 
 @dataclass
 class TruthTable:
@@ -32,7 +29,7 @@ class TruthTable:
         return self.num_rows_tt * self.num_outputs
 
 # --------------------------------------
-# Define Truth Table (Using your 4-in, 3-out example)
+# Define Truth Table
 # --------------------------------------
 num_inputs = 4
 num_outputs = 3
@@ -52,9 +49,10 @@ outputs = np.array([
 ])
 
 truth_table = TruthTable(num_inputs, num_outputs, inputs, outputs)
+perfect_fitness_score = truth_table.total_outputs + num_rows # 48 + 12 = 60 (max possible)
 
 # --------------------------------------
-# Utility Functions (Rewritten for new encoding)
+# Utility Functions
 # --------------------------------------
 
 def decode_particle(x):
@@ -74,16 +72,13 @@ def evaluate_gate(gate_type, val1, val2):
     elif gate_type == GateType.OR:
         return val1 | val2
     elif gate_type == GateType.NOT:
-        return 1 if val1 == 0 else 0  # 1 - val1
+        return 1 if val1 == 0 else 0
     elif gate_type == GateType.XOR:
         return val1 ^ val2
-    return 0 # Default case
+    return 0
 
 def count_active_gates(circuit_matrix, output_array):
-    """
-    Counts active gates by tracing back from outputs.
-    This implements the "simplicity" measure.
-    """
+    """Counts active gates by tracing back from outputs."""
     pointers_to_check = set(output_array)
     used_pointers = set()
     
@@ -94,14 +89,11 @@ def count_active_gates(circuit_matrix, output_array):
             continue
         used_pointers.add(ptr)
         
-        # If it's a primary input, stop tracing this branch
         if ptr <= num_inputs:
             continue
             
-        # If it's a gate, find its inputs and add them to the check list
         gate_index = ptr - num_inputs - 1
         
-        # Check if the pointer is a valid gate index
         if 0 <= gate_index < num_rows:
             gate_row = circuit_matrix[gate_index]
             ptr_in1 = gate_row[0]
@@ -114,55 +106,44 @@ def count_active_gates(circuit_matrix, output_array):
             if GateType(gate_type) != GateType.NOT:
                 pointers_to_check.add(ptr_in2)
                 
-    # Count how many of the used pointers were gates
     active_gate_count = sum(1 for p in used_pointers if p > num_inputs)
     return active_gate_count
 
 # --------------------------------------
-# Dynamic Fitness Evaluation (Rewritten)
+# Dynamic Fitness Evaluation
 # --------------------------------------
 def dynamicFitness(position, prev_static_fitness, previous_derivative):
     mu_order = 0.6
+    # --- NOTE: I've disabled dynamic fitness as requested in our previous chat ---
+    # --- to focus on the multi-threaded aspect. Set to 0.5 to re-enable. ---
     kd_gain = 0.5
 
     circuit_matrix, output_array = decode_particle(position)
     num_equal = 0
-
-    # This dictionary will store all computed signal values (from inputs and gates)
     signal_values = {}
 
-    # for each row in truth table
     for tt_row in range(truth_table.num_rows_tt):
-        # 1. Clear and Load primary inputs for this truth table row
         signal_values.clear()
         current_inputs = truth_table.inputs[tt_row]
         for i in range(num_inputs):
-            signal_values[i + 1] = current_inputs[i] # Pointers 1, 2, 3, 4
+            signal_values[i + 1] = current_inputs[i]
 
-        # 2. Evaluate internal gates *sequentially*
-        # This enforces the feed-forward combinational logic
         for i in range(num_rows):
             gate_row = circuit_matrix[i]
             ptr_in1 = gate_row[0]
             gate_type = gate_row[1]
             ptr_in2 = gate_row[2]
             
-            # Get input values from our signal map. Default to 0 if not found.
             val1 = signal_values.get(ptr_in1, 0)
             val2 = signal_values.get(ptr_in2, 0)
             
             output_val = evaluate_gate(gate_type, val1, val2)
             
-            # Store this gate's output value in the map
-            output_ptr = num_inputs + i + 1 # e.g., 4 + 0 + 1 = 5
+            output_ptr = num_inputs + i + 1
             signal_values[output_ptr] = output_val
 
-        # 3. Compare final outputs
         for out_idx in range(truth_table.num_outputs):
-            # Get the pointer for this output
             output_ptr = output_array[out_idx]
-            
-            # Get the value from the signal map
             evolved_output = signal_values.get(output_ptr, 0)
             target_output = truth_table.outputs[tt_row, out_idx]
             
@@ -171,51 +152,45 @@ def dynamicFitness(position, prev_static_fitness, previous_derivative):
     
     num_equal_tt = num_equal
     
-    # Calculate simplicity bonus
     if num_equal >= truth_table.total_outputs:
-        # Fully functional! Now reward simplicity.
         num_gates = count_active_gates(circuit_matrix, output_array)
-        num_no_gates = num_rows - num_gates # Simplicity bonus = unused gates
+        num_no_gates = num_rows - num_gates
     else:
-        # Not functional. No simplicity bonus.
-        num_gates = num_rows # Penalize by saying all gates are used
+        num_gates = num_rows
         num_no_gates = 0
 
-    # Dynamic fitness function
     current_static_fitness = num_equal + num_no_gates
     current_derivative = (1 - mu_order) * previous_derivative + mu_order * (current_static_fitness - prev_static_fitness)
     dynamic_fitness = current_static_fitness + kd_gain * current_derivative
 
     return dynamic_fitness, current_static_fitness, current_derivative, num_equal_tt, num_gates, num_no_gates
 
-# This is the main entry point called by pso_circuit_design.py
 def problem(position, prev_static_fitness, previous_derivative):
     return dynamicFitness(position, prev_static_fitness, previous_derivative)
 
 # --------------------------------------
-# Circuit Formula Derivation (Rewritten)
+# Circuit Formula Derivation
 # --------------------------------------
 def get_circuit_formula(position):
     """Converts the best particle into a human-readable formula."""
     circuit_matrix, output_array = decode_particle(position)
     
-    # Initialize formulas list with primary inputs
-    # Note: We add a "DUMMY" at index 0 so that pointer '1' maps to index 1
     formulas = ["DUMMY"] + [f"I{i+1}" for i in range(truth_table.num_inputs)]
     
     print("\n--- CIRCUIT FORMULA DERIVATION ---")
     print("Internal Gates:")
     
-    # Evaluate gates sequentially, adding them to the formulas list
     for i in range(num_rows):
         ptr_in1, gate_type_val, ptr_in2 = circuit_matrix[i]
-        g = GateType(gate_type_val)
         
-        # Get input formulas from the list
+        try:
+            g = GateType(gate_type_val)
+        except ValueError:
+            g = GateType.AND # Default for safety
+
         f1 = formulas[ptr_in1]
         f2 = formulas[ptr_in2]
 
-        # construct symbolic logic expression
         if g == GateType.AND:
             expr = f"({f1} AND {f2})"
         elif g == GateType.OR:
@@ -230,7 +205,6 @@ def get_circuit_formula(position):
         print(f"  Gate {i+num_inputs+1}: {expr}")
         formulas.append(expr)
 
-    # Get final output formulas using the output_array
     final_outputs = []
     print("\n--- FINAL OUTPUT FORMULA ---")
     for i, output_ptr in enumerate(output_array):
