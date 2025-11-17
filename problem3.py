@@ -34,29 +34,55 @@ class TruthTable:
 # --------------------------------------
 # Define Truth Table (Using your 4-in, 3-out example)
 # --------------------------------------
-num_inputs = 4
-num_outputs = 3
+num_inputs = 3
+num_outputs = 1
 
+# # example 3 in coello (4 inputs, 3 outputs)
+# inputs = np.array([
+#     [0, 0, 0, 0], [0, 0, 0, 1], [0, 0, 1, 0], [0, 0, 1, 1], 
+#     [0, 1, 0, 0], [0, 1, 0, 1], [0, 1, 1, 0], [0, 1, 1, 1],
+#     [1, 0, 0, 0], [1, 0, 0, 1], [1, 0, 1, 0], [1, 0, 1, 1], 
+#     [1, 1, 0, 0], [1, 1, 0, 1], [1, 1, 1, 0], [1, 1, 1, 1]
+# ])
+
+# outputs = np.array([
+#     [0, 0, 0], [0, 0, 1], [0, 1, 0], [0, 1, 1], 
+#     [0, 0, 1], [0, 1, 0], [0, 1, 1], [1, 0, 0],
+#     [0, 1, 0], [0, 1, 1], [1, 0, 0], [1, 0, 1], 
+#     [0, 1, 1], [1, 0, 0], [1, 0, 1], [1, 1, 0],
+# ])
+
+# example 1 in coello (3 inputs, 1 output)
 inputs = np.array([
-    [0, 0, 0, 0], [0, 0, 0, 1], [0, 0, 1, 0], [0, 0, 1, 1], 
-    [0, 1, 0, 0], [0, 1, 0, 1], [0, 1, 1, 0], [0, 1, 1, 1],
-    [1, 0, 0, 0], [1, 0, 0, 1], [1, 0, 1, 0], [1, 0, 1, 1], 
-    [1, 1, 0, 0], [1, 1, 0, 1], [1, 1, 1, 0], [1, 1, 1, 1]
+    [0, 0, 0], [0, 0, 1], [0, 1, 0], [0, 1, 1], 
+    [1, 0, 0], [1, 0, 1], [1, 1, 0], [1, 1, 1],
 ])
 
 outputs = np.array([
-    [0, 0, 0], [0, 0, 1], [0, 1, 0], [0, 1, 1], 
-    [0, 0, 1], [0, 1, 0], [0, 1, 1], [1, 0, 0],
-    [0, 1, 0], [0, 1, 1], [1, 0, 0], [1, 0, 1], 
-    [0, 1, 1], [1, 0, 0], [1, 0, 1], [1, 1, 0],
+    [0], [0], [0], [1], 
+    [0], [1], [1], [0],
 ])
+
+# # example 2 in coello (4 inputs, 1 output)
+# inputs = np.array([
+#     [0, 0, 0, 0], [0, 0, 0, 1], [0, 0, 1, 0], [0, 0, 1, 1], 
+#     [0, 1, 0, 0], [0, 1, 0, 1], [0, 1, 1, 0], [0, 1, 1, 1],
+#     [1, 0, 0, 0], [1, 0, 0, 1], [1, 0, 1, 0], [1, 0, 1, 1], 
+#     [1, 1, 0, 0], [1, 1, 0, 1], [1, 1, 1, 0], [1, 1, 1, 1]
+# ])
+
+# outputs = np.array([
+#     [1], [1], [0], [1], 
+#     [0], [0], [1], [1],
+#     [1], [0], [1], [0], 
+#     [0], [1], [0], [0],
+# ])
 
 truth_table = TruthTable(num_inputs, num_outputs, inputs, outputs)
 
 # --------------------------------------
 # Utility Functions (Rewritten for new encoding)
 # --------------------------------------
-
 def decode_particle(x):
     """Decode a 1D position array into a circuit_matrix and output_array."""
     circuit_genes_flat = x[0 : num_rows * 3]
@@ -123,7 +149,7 @@ def count_active_gates(circuit_matrix, output_array):
 # --------------------------------------
 def dynamicFitness(position, prev_static_fitness, previous_derivative):
     mu_order = 0.6
-    kd_gain = 0.5
+    kd_gain = 0.0
 
     circuit_matrix, output_array = decode_particle(position)
     num_equal = 0

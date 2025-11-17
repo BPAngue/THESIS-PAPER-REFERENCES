@@ -55,8 +55,8 @@ varMin = 0
 varMax = num_inputs + num_rows
 # --- END NEW PARTICLE DEFINITION ---
 
-maxIt = 2000
-nPop = 300
+maxIt = 100
+nPop = 200
 constriction_coefficient = True
 
 if not constriction_coefficient:
@@ -236,12 +236,14 @@ for itr in range(maxIt):
             particle.best_fitness = particle.fitness
             particle.best_position = particle.position.copy()
 
-    # update global best
-    if particle.fitness > global_best_particle.fitness:
-        global_best_particle = copy.deepcopy(particle)
+        # update global best
+        if particle.fitness > global_best_particle.fitness:
+            global_best_particle = copy.deepcopy(particle)
     
     if (itr + 1) % 10 == 0:
         print(f"Iteration {itr + 1}/{maxIt}, Best Fitness: {global_best_particle.best_fitness:.2f}")
+
+    w = w * w_damp
 
 # --------------------------------------
 # Print PSO Results (Updated)

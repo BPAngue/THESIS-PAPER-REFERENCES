@@ -1,0 +1,61 @@
+[LOGGING ENABLED] Output is being saved to results\pso_log_20251117_235456.txt
+
+[PSO ALGORITHM] Algorithm is currently running
+Starting PSO loop for 100 iterations...
+Iteration 10/100, Best Fitness: 9.10
+Iteration 20/100, Best Fitness: 9.10
+Iteration 30/100, Best Fitness: 9.10
+Iteration 40/100, Best Fitness: 9.10
+Iteration 50/100, Best Fitness: 9.10
+Iteration 60/100, Best Fitness: 9.10
+Iteration 70/100, Best Fitness: 9.10
+Iteration 80/100, Best Fitness: 9.10
+Iteration 90/100, Best Fitness: 9.10
+Iteration 100/100, Best Fitness: 9.10
+
+... PSO loop finished ...
+
+
+--- CIRCUIT FORMULA DERIVATION ---
+Internal Gates:
+  Gate 4: (NOT I2)
+  Gate 5: (I3 XOR I1)
+  Gate 6: (I1 XOR I3)
+  Gate 7: ((I1 XOR I3) OR I2)
+  Gate 8: (I2 AND (I1 XOR I3))
+  Gate 9: ((NOT I2) OR ((I1 XOR I3) OR I2))
+  Gate 10: (I1 XOR (I3 XOR I1))
+  Gate 11: (NOT I1)
+  Gate 12: (((NOT I2) OR ((I1 XOR I3) OR I2)) OR (I1 XOR (I3 XOR I1)))
+  Gate 13: (NOT (I1 XOR (I3 XOR I1)))
+  Gate 14: (I2 OR I3)
+  Gate 15: (I3 XOR (I3 XOR I1))
+
+--- FINAL OUTPUT FORMULA ---
+  Output 1: (I2 AND (I1 XOR I3))
+--- FINAL BEST PARTICLE ---
+Circuit Matrix ([In1, Gate, In2]):
+[[ 2  2  3]
+ [ 3  3  1]
+ [ 1  3  3]
+ [ 6  1  2]
+ [ 2  0  6]
+ [ 4  1  7]
+ [ 1  3  5]
+ [ 1  2  1]
+ [ 9  1 10]
+ [10  2  9]
+ [ 2  1  3]
+ [ 3  3  5]]
+
+Output Array (Pointers):
+[8]
+
+--- STATS ---
+Cost (Fitness): 9.1000
+Correct outputs: 7/8
+Active Gates Used: 12
+Unused Gates (Simplicity): 0
+
+[PSO ALGORITHM] Algorithm finished!
+[TIMER] Elapsed seconds: 22.031214
