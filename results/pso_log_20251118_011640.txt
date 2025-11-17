@@ -1,0 +1,71 @@
+[LOGGING ENABLED] Output is being saved to results\pso_log_20251118_011640.txt
+
+[PSO ALGORITHM] Algorithm is currently running
+Starting PSO loop for 200 iterations...
+Iteration 10/200, Best Fitness: 7.00
+Iteration 20/200, Best Fitness: 7.00
+Iteration 30/200, Best Fitness: 7.00
+Iteration 40/200, Best Fitness: 7.00
+Iteration 50/200, Best Fitness: 7.00
+Iteration 60/200, Best Fitness: 7.00
+Iteration 70/200, Best Fitness: 7.00
+Iteration 80/200, Best Fitness: 7.00
+Iteration 90/200, Best Fitness: 7.00
+Iteration 100/200, Best Fitness: 7.00
+Iteration 110/200, Best Fitness: 7.00
+Iteration 120/200, Best Fitness: 7.00
+Iteration 130/200, Best Fitness: 7.00
+Iteration 140/200, Best Fitness: 16.00
+Iteration 150/200, Best Fitness: 16.00
+Iteration 160/200, Best Fitness: 16.00
+Iteration 170/200, Best Fitness: 16.00
+Iteration 180/200, Best Fitness: 16.00
+Iteration 190/200, Best Fitness: 16.00
+Iteration 200/200, Best Fitness: 16.00
+
+... PSO loop finished ...
+
+
+--- CIRCUIT FORMULA DERIVATION ---
+Internal Gates:
+  Gate 4: (I1 AND I3)
+  Gate 5: (I3 AND I2)
+  Gate 6: (I1 XOR (I3 AND I2))
+  Gate 7: (I2 OR I3)
+  Gate 8: (I2 OR (I1 AND I3))
+  Gate 9: ((I1 XOR (I3 AND I2)) AND (I2 OR I3))
+  Gate 10: ((I1 AND I3) XOR (I1 XOR (I3 AND I2)))
+  Gate 11: ((I2 OR I3) OR (I1 AND I3))
+  Gate 12: (((I1 AND I3) XOR (I1 XOR (I3 AND I2))) XOR (I1 XOR (I3 AND I2)))
+  Gate 13: ((I2 OR I3) AND (I3 AND I2))
+  Gate 14: (I1 OR I3)
+  Gate 15: (((I1 XOR (I3 AND I2)) AND (I2 OR I3)) OR ((I1 XOR (I3 AND I2)) AND (I2 OR I3)))
+
+--- FINAL OUTPUT FORMULA ---
+  Output 1: ((I1 XOR (I3 AND I2)) AND (I2 OR I3))
+--- FINAL BEST PARTICLE ---
+Circuit Matrix ([In1, Gate, In2]):
+[[ 1  0  3]
+ [ 3  0  2]
+ [ 1  3  5]
+ [ 2  1  3]
+ [ 2  1  4]
+ [ 6  0  7]
+ [ 4  3  6]
+ [ 7  1  4]
+ [10  3  6]
+ [ 7  0  5]
+ [ 1  1  3]
+ [ 9  1  9]]
+
+Output Array (Pointers):
+[9]
+
+--- STATS ---
+Cost (Fitness): 16.0000
+Correct outputs: 8/8
+Active Gates Used: 4
+Unused Gates (Simplicity): 8
+
+[PSO ALGORITHM] Algorithm finished!
+[TIMER] Elapsed seconds: 19.473094
