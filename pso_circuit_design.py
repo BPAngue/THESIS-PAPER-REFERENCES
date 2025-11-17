@@ -153,6 +153,8 @@ for itr in range(maxIt):
         # update global best
         if particle.cost > global_best_particle.cost:
             global_best_particle = copy.copy(particle)
+    
+        w = w * w_damp
 
 final_formulas = problem2.get_circuit_formula(global_best_particle.position)
 print(f"Cost: {global_best_particle.cost}")
