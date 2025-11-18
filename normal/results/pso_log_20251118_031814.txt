@@ -1,0 +1,113 @@
+[LOGGING ENABLED] Output is being saved to results\pso_log_20251118_031814.txt
+
+[Multi-Process PSO] System is running...
+Pipeline Config: 5 Processes, 150 Iter/Round, 20 Max Rounds
+
+--- Voting Round 1 / 20 ---
+Starting 5 processes for 150 iterations each...
+All processes finished.
+New Overall Champion found! Fitness: 12.00 (Correct: 12/16)
+Performing Von Neumann (1D Ring) communication...
+  Solver 0's new target is (Fitness: 12.00) from Solver 0
+  Solver 1's new target is (Fitness: 12.00) from Solver 1
+  Solver 2's new target is (Fitness: 12.00) from Solver 2
+  Solver 3's new target is (Fitness: 12.00) from Solver 3
+  Solver 4's new target is (Fitness: 12.00) from Solver 4
+
+--- Voting Round 2 / 20 ---
+Starting 5 processes for 150 iterations each...
+All processes finished.
+Overall Champion did not improve. (Stagnation: 1/5)
+Performing Von Neumann (1D Ring) communication...
+  Solver 0's new target is (Fitness: 12.00) from Solver 0
+  Solver 1's new target is (Fitness: 12.00) from Solver 1
+  Solver 2's new target is (Fitness: 12.00) from Solver 2
+  Solver 3's new target is (Fitness: 12.00) from Solver 3
+  Solver 4's new target is (Fitness: 12.00) from Solver 4
+
+--- Voting Round 3 / 20 ---
+Starting 5 processes for 150 iterations each...
+All processes finished.
+Overall Champion did not improve. (Stagnation: 2/5)
+Performing Von Neumann (1D Ring) communication...
+  Solver 0's new target is (Fitness: 12.00) from Solver 0
+  Solver 1's new target is (Fitness: 12.00) from Solver 1
+  Solver 2's new target is (Fitness: 12.00) from Solver 2
+  Solver 3's new target is (Fitness: 12.00) from Solver 3
+  Solver 4's new target is (Fitness: 12.00) from Solver 4
+
+--- Voting Round 4 / 20 ---
+Starting 5 processes for 150 iterations each...
+All processes finished.
+Overall Champion did not improve. (Stagnation: 3/5)
+Performing Von Neumann (1D Ring) communication...
+  Solver 0's new target is (Fitness: 12.00) from Solver 0
+  Solver 1's new target is (Fitness: 12.00) from Solver 1
+  Solver 2's new target is (Fitness: 12.00) from Solver 2
+  Solver 3's new target is (Fitness: 12.00) from Solver 3
+  Solver 4's new target is (Fitness: 12.00) from Solver 4
+
+--- Voting Round 5 / 20 ---
+Starting 5 processes for 150 iterations each...
+All processes finished.
+Overall Champion did not improve. (Stagnation: 4/5)
+Performing Von Neumann (1D Ring) communication...
+  Solver 0's new target is (Fitness: 12.00) from Solver 0
+  Solver 1's new target is (Fitness: 12.00) from Solver 1
+  Solver 2's new target is (Fitness: 12.00) from Solver 2
+  Solver 3's new target is (Fitness: 12.00) from Solver 3
+  Solver 4's new target is (Fitness: 12.00) from Solver 4
+
+--- Voting Round 6 / 20 ---
+Starting 5 processes for 150 iterations each...
+All processes finished.
+Overall Champion did not improve. (Stagnation: 5/5)
+Stopping conditions met: Overall Champion has stagnated.
+
+... Pipeline finished ...
+
+--- FINAL CHAMPION PARTICLE ---
+
+--- CIRCUIT FORMULA DERIVATION ---
+Internal Gates:
+  Gate 5: (I4 XOR I1)
+  Gate 6: (I1 AND I1)
+  Gate 7: (I4 OR I1)
+  Gate 8: ((I1 AND I1) XOR I4)
+  Gate 9: ((I4 XOR I1) XOR I2)
+  Gate 10: ((I1 AND I1) XOR ((I4 XOR I1) XOR I2))
+  Gate 11: (((I4 XOR I1) XOR I2) AND ((I1 AND I1) XOR I4))
+  Gate 12: (I1 OR I1)
+  Gate 13: ((I1 AND I1) XOR ((I1 AND I1) XOR ((I4 XOR I1) XOR I2)))
+  Gate 14: (((I1 AND I1) XOR I4) AND (I4 OR I1))
+  Gate 15: (NOT (I4 XOR I1))
+  Gate 16: ((I4 XOR I1) XOR ((I1 AND I1) XOR ((I1 AND I1) XOR ((I4 XOR I1) XOR I2))))
+
+--- FINAL OUTPUT FORMULA ---
+  Output 1: ((I4 XOR I1) XOR I2)
+
+Circuit Matrix ([In1, Gate, In2]):
+[[ 4  3  1]
+ [ 1  0  1]
+ [ 4  1  1]
+ [ 6  3  4]
+ [ 5  3  2]
+ [ 6  3  9]
+ [ 9  0  8]
+ [ 1  1  1]
+ [ 6  3 10]
+ [ 8  0  7]
+ [ 5  2 14]
+ [ 5  3 13]]
+
+Output Array (Pointers):
+[9]
+
+--- FINAL STATS ---
+Cost (Fitness): 12.0000
+Correct outputs: 12/16
+Active Gates Used: 2
+Unused Gates (Simplicity): 0
+
+[Multi-Threaded PSO] System finished!
+[TIMER] Elapsed seconds: 326.009947

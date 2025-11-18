@@ -1,0 +1,90 @@
+[LOGGING ENABLED] Output is being saved to results\pso_log_20251118_020756.txt
+
+[Multi-Threaded PSO] System is running...
+[WARNING] Using 'threading' module. Code will NOT run in parallel on multiple CPU cores due to Python's GIL.
+Pipeline Config: 4 Threads, 50 Iter/Round, 40 Max Rounds
+
+--- Voting Round 1 / 40 ---
+Starting 4 threads for 50 iterations each...
+All threads finished.
+New Overall Champion found! Fitness: 7.00 (Correct: 7/8)
+Performing Ring Topology communication (Influence model)...
+  Solver 3's gbest will 'influence' Solver 0
+  Solver 0's gbest will 'influence' Solver 1
+  Solver 1's gbest will 'influence' Solver 2
+  Solver 2's gbest will 'influence' Solver 3
+
+--- Voting Round 2 / 40 ---
+Starting 4 threads for 50 iterations each...
+All threads finished.
+Overall Champion did not improve. (Stagnation: 1/5)
+Performing Ring Topology communication (Influence model)...
+  Solver 3's gbest will 'influence' Solver 0
+  Solver 0's gbest will 'influence' Solver 1
+  Solver 1's gbest will 'influence' Solver 2
+  Solver 2's gbest will 'influence' Solver 3
+
+--- Voting Round 3 / 40 ---
+Starting 4 threads for 50 iterations each...
+All threads finished.
+Overall Champion did not improve. (Stagnation: 2/5)
+Performing Ring Topology communication (Influence model)...
+  Solver 3's gbest will 'influence' Solver 0
+  Solver 0's gbest will 'influence' Solver 1
+  Solver 1's gbest will 'influence' Solver 2
+  Solver 2's gbest will 'influence' Solver 3
+
+--- Voting Round 4 / 40 ---
+Starting 4 threads for 50 iterations each...
+All threads finished.
+
+!!! PERFECT FUNCTIONAL SOLUTION FOUND (Fitness: 15.00) !!!
+New solution is also the simplest found so far. Updating Voted_GBest.
+
+... Pipeline finished ...
+
+--- FINAL CHAMPION PARTICLE ---
+
+--- CIRCUIT FORMULA DERIVATION ---
+Internal Gates:
+  Gate 4: (NOT I1)
+  Gate 5: (I2 AND I3)
+  Gate 6: (I2 OR (NOT I1))
+  Gate 7: (I1 AND I2)
+  Gate 8: ((NOT I1) XOR (I2 AND I3))
+  Gate 9: ((NOT I1) XOR (I2 OR (NOT I1)))
+  Gate 10: ((I2 AND I3) OR I1)
+  Gate 11: (I3 XOR (I1 AND I2))
+  Gate 12: (((I2 AND I3) OR I1) AND (I3 XOR (I1 AND I2)))
+  Gate 13: (NOT I1)
+  Gate 14: ((I2 AND I3) XOR ((I2 AND I3) OR I1))
+  Gate 15: (((NOT I1) XOR (I2 AND I3)) XOR ((I2 AND I3) OR I1))
+
+--- FINAL OUTPUT FORMULA ---
+  Output 1: (((I2 AND I3) OR I1) AND (I3 XOR (I1 AND I2)))
+
+Circuit Matrix ([In1, Gate, In2]):
+[[ 1  2  1]
+ [ 2  0  3]
+ [ 2  1  4]
+ [ 1  0  2]
+ [ 4  3  5]
+ [ 4  3  6]
+ [ 5  1  1]
+ [ 3  3  7]
+ [10  0 11]
+ [ 1  2  3]
+ [ 5  3 10]
+ [ 8  3 10]]
+
+Output Array (Pointers):
+[12]
+
+--- FINAL STATS ---
+Cost (Fitness): 15.0000
+Correct outputs: 8/8
+Active Gates Used: 5
+Unused Gates (Simplicity): 7
+
+[Multi-Threaded PSO] System finished!
+[TIMER] Elapsed seconds: 34.787716

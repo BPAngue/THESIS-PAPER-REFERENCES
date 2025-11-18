@@ -1,0 +1,305 @@
+[LOGGING ENABLED] Output is being saved to results\pso_log_20251118_025304.txt
+
+[Multi-Threaded PSO] System is running...
+[WARNING] Using 'threading' module. Code will NOT run in parallel on multiple CPU cores due to Python's GIL.
+Pipeline Config: 5 Threads, 25 Iter/Round, 40 Max Rounds
+
+--- Voting Round 1 / 40 ---
+Starting 5 threads for 25 iterations each...
+All threads finished.
+New Overall Champion found! Fitness: 14.00 (Correct: 14/16)
+Performing Von Neumann (1D Ring) communication...
+  Solver 0's new target is (Fitness: 14.00)
+  Solver 1's new target is (Fitness: 14.00)
+  Solver 2's new target is (Fitness: 14.00)
+  Solver 3's new target is (Fitness: 14.00)
+  Solver 4's new target is (Fitness: 14.00)
+
+--- Voting Round 2 / 40 ---
+Starting 5 threads for 25 iterations each...
+All threads finished.
+Overall Champion did not improve. (Stagnation: 1/40)
+Performing Von Neumann (1D Ring) communication...
+  Solver 0's new target is (Fitness: 14.00)
+  Solver 1's new target is (Fitness: 14.00)
+  Solver 2's new target is (Fitness: 14.00)
+  Solver 3's new target is (Fitness: 14.00)
+  Solver 4's new target is (Fitness: 14.00)
+
+--- Voting Round 3 / 40 ---
+Starting 5 threads for 25 iterations each...
+All threads finished.
+Overall Champion did not improve. (Stagnation: 2/40)
+Performing Von Neumann (1D Ring) communication...
+  Solver 0's new target is (Fitness: 14.00)
+  Solver 1's new target is (Fitness: 14.00)
+  Solver 2's new target is (Fitness: 14.00)
+  Solver 3's new target is (Fitness: 14.00)
+  Solver 4's new target is (Fitness: 14.00)
+
+--- Voting Round 4 / 40 ---
+Starting 5 threads for 25 iterations each...
+All threads finished.
+Overall Champion did not improve. (Stagnation: 3/40)
+Performing Von Neumann (1D Ring) communication...
+  Solver 0's new target is (Fitness: 14.00)
+  Solver 1's new target is (Fitness: 14.00)
+  Solver 2's new target is (Fitness: 14.00)
+  Solver 3's new target is (Fitness: 14.00)
+  Solver 4's new target is (Fitness: 14.00)
+
+--- Voting Round 5 / 40 ---
+Starting 5 threads for 25 iterations each...
+All threads finished.
+Overall Champion did not improve. (Stagnation: 4/40)
+Performing Von Neumann (1D Ring) communication...
+  Solver 0's new target is (Fitness: 14.00)
+  Solver 1's new target is (Fitness: 14.00)
+  Solver 2's new target is (Fitness: 14.00)
+  Solver 3's new target is (Fitness: 14.00)
+  Solver 4's new target is (Fitness: 14.00)
+
+--- Voting Round 6 / 40 ---
+Starting 5 threads for 25 iterations each...
+All threads finished.
+Overall Champion did not improve. (Stagnation: 5/40)
+Performing Von Neumann (1D Ring) communication...
+  Solver 0's new target is (Fitness: 14.00)
+  Solver 1's new target is (Fitness: 14.00)
+  Solver 2's new target is (Fitness: 14.00)
+  Solver 3's new target is (Fitness: 14.00)
+  Solver 4's new target is (Fitness: 14.00)
+
+--- Voting Round 7 / 40 ---
+Starting 5 threads for 25 iterations each...
+All threads finished.
+Overall Champion did not improve. (Stagnation: 6/40)
+Performing Von Neumann (1D Ring) communication...
+  Solver 0's new target is (Fitness: 14.00)
+  Solver 1's new target is (Fitness: 14.00)
+  Solver 2's new target is (Fitness: 14.00)
+  Solver 3's new target is (Fitness: 14.00)
+  Solver 4's new target is (Fitness: 14.00)
+
+--- Voting Round 8 / 40 ---
+Starting 5 threads for 25 iterations each...
+All threads finished.
+Overall Champion did not improve. (Stagnation: 7/40)
+Performing Von Neumann (1D Ring) communication...
+  Solver 0's new target is (Fitness: 14.00)
+  Solver 1's new target is (Fitness: 14.00)
+  Solver 2's new target is (Fitness: 14.00)
+  Solver 3's new target is (Fitness: 14.00)
+  Solver 4's new target is (Fitness: 14.00)
+
+--- Voting Round 9 / 40 ---
+Starting 5 threads for 25 iterations each...
+All threads finished.
+Overall Champion did not improve. (Stagnation: 8/40)
+Performing Von Neumann (1D Ring) communication...
+  Solver 0's new target is (Fitness: 14.00)
+  Solver 1's new target is (Fitness: 14.00)
+  Solver 2's new target is (Fitness: 14.00)
+  Solver 3's new target is (Fitness: 14.00)
+  Solver 4's new target is (Fitness: 14.00)
+
+--- Voting Round 10 / 40 ---
+Starting 5 threads for 25 iterations each...
+All threads finished.
+Overall Champion did not improve. (Stagnation: 9/40)
+Performing Von Neumann (1D Ring) communication...
+  Solver 0's new target is (Fitness: 14.00)
+  Solver 1's new target is (Fitness: 14.00)
+  Solver 2's new target is (Fitness: 14.00)
+  Solver 3's new target is (Fitness: 14.00)
+  Solver 4's new target is (Fitness: 14.00)
+
+--- Voting Round 11 / 40 ---
+Starting 5 threads for 25 iterations each...
+All threads finished.
+Overall Champion did not improve. (Stagnation: 10/40)
+Performing Von Neumann (1D Ring) communication...
+  Solver 0's new target is (Fitness: 14.00)
+  Solver 1's new target is (Fitness: 14.00)
+  Solver 2's new target is (Fitness: 14.00)
+  Solver 3's new target is (Fitness: 14.00)
+  Solver 4's new target is (Fitness: 14.00)
+
+--- Voting Round 12 / 40 ---
+Starting 5 threads for 25 iterations each...
+All threads finished.
+Overall Champion did not improve. (Stagnation: 11/40)
+Performing Von Neumann (1D Ring) communication...
+  Solver 0's new target is (Fitness: 14.00)
+  Solver 1's new target is (Fitness: 14.00)
+  Solver 2's new target is (Fitness: 14.00)
+  Solver 3's new target is (Fitness: 14.00)
+  Solver 4's new target is (Fitness: 14.00)
+
+--- Voting Round 13 / 40 ---
+Starting 5 threads for 25 iterations each...
+All threads finished.
+Overall Champion did not improve. (Stagnation: 12/40)
+Performing Von Neumann (1D Ring) communication...
+  Solver 0's new target is (Fitness: 14.00)
+  Solver 1's new target is (Fitness: 14.00)
+  Solver 2's new target is (Fitness: 14.00)
+  Solver 3's new target is (Fitness: 14.00)
+  Solver 4's new target is (Fitness: 14.00)
+
+--- Voting Round 14 / 40 ---
+Starting 5 threads for 25 iterations each...
+All threads finished.
+Overall Champion did not improve. (Stagnation: 13/40)
+Performing Von Neumann (1D Ring) communication...
+  Solver 0's new target is (Fitness: 14.00)
+  Solver 1's new target is (Fitness: 14.00)
+  Solver 2's new target is (Fitness: 14.00)
+  Solver 3's new target is (Fitness: 14.00)
+  Solver 4's new target is (Fitness: 14.00)
+
+--- Voting Round 15 / 40 ---
+Starting 5 threads for 25 iterations each...
+All threads finished.
+Overall Champion did not improve. (Stagnation: 14/40)
+Performing Von Neumann (1D Ring) communication...
+  Solver 0's new target is (Fitness: 14.00)
+  Solver 1's new target is (Fitness: 14.00)
+  Solver 2's new target is (Fitness: 14.00)
+  Solver 3's new target is (Fitness: 14.00)
+  Solver 4's new target is (Fitness: 14.00)
+
+--- Voting Round 16 / 40 ---
+Starting 5 threads for 25 iterations each...
+All threads finished.
+Overall Champion did not improve. (Stagnation: 15/40)
+Performing Von Neumann (1D Ring) communication...
+  Solver 0's new target is (Fitness: 14.00)
+  Solver 1's new target is (Fitness: 14.00)
+  Solver 2's new target is (Fitness: 14.00)
+  Solver 3's new target is (Fitness: 14.00)
+  Solver 4's new target is (Fitness: 14.00)
+
+--- Voting Round 17 / 40 ---
+Starting 5 threads for 25 iterations each...
+All threads finished.
+Overall Champion did not improve. (Stagnation: 16/40)
+Performing Von Neumann (1D Ring) communication...
+  Solver 0's new target is (Fitness: 14.00)
+  Solver 1's new target is (Fitness: 14.00)
+  Solver 2's new target is (Fitness: 14.00)
+  Solver 3's new target is (Fitness: 14.00)
+  Solver 4's new target is (Fitness: 14.00)
+
+--- Voting Round 18 / 40 ---
+Starting 5 threads for 25 iterations each...
+All threads finished.
+Overall Champion did not improve. (Stagnation: 17/40)
+Performing Von Neumann (1D Ring) communication...
+  Solver 0's new target is (Fitness: 14.00)
+  Solver 1's new target is (Fitness: 14.00)
+  Solver 2's new target is (Fitness: 14.00)
+  Solver 3's new target is (Fitness: 14.00)
+  Solver 4's new target is (Fitness: 14.00)
+
+--- Voting Round 19 / 40 ---
+Starting 5 threads for 25 iterations each...
+All threads finished.
+Overall Champion did not improve. (Stagnation: 18/40)
+Performing Von Neumann (1D Ring) communication...
+  Solver 0's new target is (Fitness: 14.00)
+  Solver 1's new target is (Fitness: 14.00)
+  Solver 2's new target is (Fitness: 14.00)
+  Solver 3's new target is (Fitness: 14.00)
+  Solver 4's new target is (Fitness: 14.00)
+
+--- Voting Round 20 / 40 ---
+Starting 5 threads for 25 iterations each...
+All threads finished.
+Overall Champion did not improve. (Stagnation: 19/40)
+Performing Von Neumann (1D Ring) communication...
+  Solver 0's new target is (Fitness: 14.00)
+  Solver 1's new target is (Fitness: 14.00)
+  Solver 2's new target is (Fitness: 14.00)
+  Solver 3's new target is (Fitness: 14.00)
+  Solver 4's new target is (Fitness: 14.00)
+
+--- Voting Round 21 / 40 ---
+Starting 5 threads for 25 iterations each...
+All threads finished.
+Overall Champion did not improve. (Stagnation: 20/40)
+Performing Von Neumann (1D Ring) communication...
+  Solver 0's new target is (Fitness: 14.00)
+  Solver 1's new target is (Fitness: 14.00)
+  Solver 2's new target is (Fitness: 14.00)
+  Solver 3's new target is (Fitness: 14.00)
+  Solver 4's new target is (Fitness: 14.00)
+
+--- Voting Round 22 / 40 ---
+Starting 5 threads for 25 iterations each...
+All threads finished.
+Overall Champion did not improve. (Stagnation: 21/40)
+Performing Von Neumann (1D Ring) communication...
+  Solver 0's new target is (Fitness: 14.00)
+  Solver 1's new target is (Fitness: 14.00)
+  Solver 2's new target is (Fitness: 14.00)
+  Solver 3's new target is (Fitness: 14.00)
+  Solver 4's new target is (Fitness: 14.00)
+
+--- Voting Round 23 / 40 ---
+Starting 5 threads for 25 iterations each...
+All threads finished.
+Overall Champion did not improve. (Stagnation: 22/40)
+Performing Von Neumann (1D Ring) communication...
+  Solver 0's new target is (Fitness: 14.00)
+  Solver 1's new target is (Fitness: 14.00)
+  Solver 2's new target is (Fitness: 14.00)
+  Solver 3's new target is (Fitness: 14.00)
+  Solver 4's new target is (Fitness: 14.00)
+
+--- Voting Round 24 / 40 ---
+Starting 5 threads for 25 iterations each...
+All threads finished.
+Overall Champion did not improve. (Stagnation: 23/40)
+Performing Von Neumann (1D Ring) communication...
+  Solver 0's new target is (Fitness: 14.00)
+  Solver 1's new target is (Fitness: 14.00)
+  Solver 2's new target is (Fitness: 14.00)
+  Solver 3's new target is (Fitness: 14.00)
+  Solver 4's new target is (Fitness: 14.00)
+
+--- Voting Round 25 / 40 ---
+Starting 5 threads for 25 iterations each...
+All threads finished.
+Overall Champion did not improve. (Stagnation: 24/40)
+Performing Von Neumann (1D Ring) communication...
+  Solver 0's new target is (Fitness: 14.00)
+  Solver 1's new target is (Fitness: 14.00)
+  Solver 2's new target is (Fitness: 14.00)
+  Solver 3's new target is (Fitness: 14.00)
+  Solver 4's new target is (Fitness: 14.00)
+
+--- Voting Round 26 / 40 ---
+Starting 5 threads for 25 iterations each...
+All threads finished.
+Overall Champion did not improve. (Stagnation: 25/40)
+Performing Von Neumann (1D Ring) communication...
+  Solver 0's new target is (Fitness: 14.00)
+  Solver 1's new target is (Fitness: 14.00)
+  Solver 2's new target is (Fitness: 14.00)
+  Solver 3's new target is (Fitness: 14.00)
+  Solver 4's new target is (Fitness: 14.00)
+
+--- Voting Round 27 / 40 ---
+Starting 5 threads for 25 iterations each...
+All threads finished.
+Overall Champion did not improve. (Stagnation: 26/40)
+Performing Von Neumann (1D Ring) communication...
+  Solver 0's new target is (Fitness: 14.00)
+  Solver 1's new target is (Fitness: 14.00)
+  Solver 2's new target is (Fitness: 14.00)
+  Solver 3's new target is (Fitness: 14.00)
+  Solver 4's new target is (Fitness: 14.00)
+
+--- Voting Round 28 / 40 ---
+Starting 5 threads for 25 iterations each...
