@@ -34,6 +34,7 @@ class Logger:
 sys.stdout = Logger(log_filename)
 print(f"[LOGGING ENABLED] Output is being saved to {log_filename}\n")
 print("[Multi-Threaded PSO] System is running...")
+print("[TYPE OF TRUTH TABLE] Coello Example 1: 3 inputs 1 output")
 
 _perf_start = time.perf_counter()
 
@@ -58,7 +59,7 @@ varSize = nVar
 varMin = 0
 varMax = num_inputs + num_rows
 
-nPop_per_thread = 200
+nPop_per_thread = 100
 constriction_coefficient = True
 
 if not constriction_coefficient:
@@ -77,9 +78,6 @@ pso_params = {'w': w, 'c1': c1, 'c2': c2, 'velMax': velMax, 'velMin': velMin, 'w
 # --------------------------------------
 # Thread Execution Function
 # --------------------------------------
-# <<< --- FIX A (Function definition) --- >>>
-# The signature now matches what is being passed to it.
-# It now correctly writes to the 'results_dict' with an 'thread_index'.
 def run_solver_thread(solver, thread_index, interval_iterations, results_dict, lock):
     """
     Function to be executed by each thread.
@@ -118,7 +116,6 @@ for round_num in range(MAX_VOTING_ROUNDS):
     for i in range(NUM_THREADS):
         thread = threading.Thread(
             target=run_solver_thread,
-            # The args list now correctly matches the new function definition
             args=(solvers[i], i, VOTING_INTERVAL, gbest_candidates_dict, thread_lock)
         )
         threads.append(thread)
@@ -143,11 +140,10 @@ for round_num in range(MAX_VOTING_ROUNDS):
         print(f"\n!!! PERFECT FUNCTIONAL SOLUTION FOUND (Fitness: {round_best.fitness:.2f}) !!!")
         
         # <<< --- FIX B (Logic bug) --- >>>
-        # We must update Voted_GBest if this perfect solution is the best
         if round_best.fitness > Voted_GBest.fitness:
              print("New solution is also the simplest found so far. Updating Voted_GBest.")
         
-        pass# Stop the main loop
+        pass
     
     # Condition 2: Check for Voted_GBest improvement
     if round_best.fitness > Voted_GBest.fitness:
@@ -163,7 +159,7 @@ for round_num in range(MAX_VOTING_ROUNDS):
         print("Stopping conditions met: Overall Champion has stagnated.")
         break
         
-    # 5. Feedback Phase (--- NEW INFLUENCE MODEL ---)
+    # 5. Feedback Phase 
     print("Performing Ring Topology communication (Influence model)...")
     for i in range(NUM_THREADS):
         neighbor_index = (i - 1) % NUM_THREADS 
@@ -190,7 +186,6 @@ print(output_array)
 print("\n--- FINAL STATS ---")
 print(f"Cost (Fitness): {Voted_GBest.fitness:.4f}")
 
-# <<< --- FIX C (Typo) --- >>>
 print(f"Correct outputs: {Voted_GBest.num_equal_tt}/{problem4.truth_table.total_outputs}")
 print(f"Active Gates Used: {Voted_GBest.num_gates}")
 print(f"Unused Gates (Simplicity): {Voted_GBest.num_no_gates}")
