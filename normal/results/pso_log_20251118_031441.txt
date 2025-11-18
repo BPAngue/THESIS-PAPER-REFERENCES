@@ -1,7 +1,0 @@
-[LOGGING ENABLED] Output is being saved to results\pso_log_20251118_031441.txt
-
-Pipeline Config: 5 Processes, 150 Iter/Round, 20 Max Rounds
-[Multi-Process PSO] System is running...
-
---- Voting Round 1 / 20 ---
-Starting 5 processes for 150 iterations each...

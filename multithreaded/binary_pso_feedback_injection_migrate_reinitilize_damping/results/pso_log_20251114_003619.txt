@@ -1,5 +1,0 @@
-[LOGGING ENABLED] Output is being saved to results\pso_log_20251114_003619.txt
-
-[Multi-Threaded PSO] System is running...
-Pipeline Config: 4 Threads, 50 Iter/Round, 40 Max Rounds
-PSO Params: phi1=2.5 (personal), phi2=1.5 (social)
