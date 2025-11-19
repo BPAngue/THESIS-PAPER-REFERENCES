@@ -1,0 +1,259 @@
+[LOGGING ENABLED] Output is being saved to results\pso_log_20251118_145149.txt
+
+[Multi-Threaded PSO] System is running...
+Pipeline Config: 4 Threads, 20 Iter/Round, 40 Max Rounds
+
+--- Voting Round 1 / 40 ---
+Starting 4 threads for 20 iterations each...
+All threads finished.
+New Overall Champion found! Fitness: 15.00 (Correct: 15/16)
+Performing Ring Topology communication (Influence model)...
+  Solver 3's gbest will 'influence' Solver 0
+  Solver 0's gbest will 'influence' Solver 1
+  Solver 1's gbest will 'influence' Solver 2
+  Solver 2's gbest will 'influence' Solver 3
+
+--- Voting Round 2 / 40 ---
+Starting 4 threads for 20 iterations each...
+All threads finished.
+Overall Champion did not improve. (Stagnation: 1/20)
+Performing Ring Topology communication (Influence model)...
+  Solver 3's gbest will 'influence' Solver 0
+  Solver 0's gbest will 'influence' Solver 1
+  Solver 1's gbest will 'influence' Solver 2
+  Solver 2's gbest will 'influence' Solver 3
+
+--- Voting Round 3 / 40 ---
+Starting 4 threads for 20 iterations each...
+All threads finished.
+Overall Champion did not improve. (Stagnation: 2/20)
+Performing Ring Topology communication (Influence model)...
+  Solver 3's gbest will 'influence' Solver 0
+  Solver 0's gbest will 'influence' Solver 1
+  Solver 1's gbest will 'influence' Solver 2
+  Solver 2's gbest will 'influence' Solver 3
+
+--- Voting Round 4 / 40 ---
+Starting 4 threads for 20 iterations each...
+All threads finished.
+Overall Champion did not improve. (Stagnation: 3/20)
+Performing Ring Topology communication (Influence model)...
+  Solver 3's gbest will 'influence' Solver 0
+  Solver 0's gbest will 'influence' Solver 1
+  Solver 1's gbest will 'influence' Solver 2
+  Solver 2's gbest will 'influence' Solver 3
+
+--- Voting Round 5 / 40 ---
+Starting 4 threads for 20 iterations each...
+All threads finished.
+Overall Champion did not improve. (Stagnation: 4/20)
+Performing Ring Topology communication (Influence model)...
+  Solver 3's gbest will 'influence' Solver 0
+  Solver 0's gbest will 'influence' Solver 1
+  Solver 1's gbest will 'influence' Solver 2
+  Solver 2's gbest will 'influence' Solver 3
+
+--- Voting Round 6 / 40 ---
+Starting 4 threads for 20 iterations each...
+All threads finished.
+Overall Champion did not improve. (Stagnation: 5/20)
+Performing Ring Topology communication (Influence model)...
+  Solver 3's gbest will 'influence' Solver 0
+  Solver 0's gbest will 'influence' Solver 1
+  Solver 1's gbest will 'influence' Solver 2
+  Solver 2's gbest will 'influence' Solver 3
+
+--- Voting Round 7 / 40 ---
+Starting 4 threads for 20 iterations each...
+All threads finished.
+Overall Champion did not improve. (Stagnation: 6/20)
+Performing Ring Topology communication (Influence model)...
+  Solver 3's gbest will 'influence' Solver 0
+  Solver 0's gbest will 'influence' Solver 1
+  Solver 1's gbest will 'influence' Solver 2
+  Solver 2's gbest will 'influence' Solver 3
+
+--- Voting Round 8 / 40 ---
+Starting 4 threads for 20 iterations each...
+All threads finished.
+Overall Champion did not improve. (Stagnation: 7/20)
+Performing Ring Topology communication (Influence model)...
+  Solver 3's gbest will 'influence' Solver 0
+  Solver 0's gbest will 'influence' Solver 1
+  Solver 1's gbest will 'influence' Solver 2
+  Solver 2's gbest will 'influence' Solver 3
+
+--- Voting Round 9 / 40 ---
+Starting 4 threads for 20 iterations each...
+All threads finished.
+Overall Champion did not improve. (Stagnation: 8/20)
+Performing Ring Topology communication (Influence model)...
+  Solver 3's gbest will 'influence' Solver 0
+  Solver 0's gbest will 'influence' Solver 1
+  Solver 1's gbest will 'influence' Solver 2
+  Solver 2's gbest will 'influence' Solver 3
+
+--- Voting Round 10 / 40 ---
+Starting 4 threads for 20 iterations each...
+All threads finished.
+Overall Champion did not improve. (Stagnation: 9/20)
+Performing Ring Topology communication (Influence model)...
+  Solver 3's gbest will 'influence' Solver 0
+  Solver 0's gbest will 'influence' Solver 1
+  Solver 1's gbest will 'influence' Solver 2
+  Solver 2's gbest will 'influence' Solver 3
+
+--- Voting Round 11 / 40 ---
+Starting 4 threads for 20 iterations each...
+All threads finished.
+Overall Champion did not improve. (Stagnation: 10/20)
+Performing Ring Topology communication (Influence model)...
+  Solver 3's gbest will 'influence' Solver 0
+  Solver 0's gbest will 'influence' Solver 1
+  Solver 1's gbest will 'influence' Solver 2
+  Solver 2's gbest will 'influence' Solver 3
+
+--- Voting Round 12 / 40 ---
+Starting 4 threads for 20 iterations each...
+All threads finished.
+Overall Champion did not improve. (Stagnation: 11/20)
+Performing Ring Topology communication (Influence model)...
+  Solver 3's gbest will 'influence' Solver 0
+  Solver 0's gbest will 'influence' Solver 1
+  Solver 1's gbest will 'influence' Solver 2
+  Solver 2's gbest will 'influence' Solver 3
+
+--- Voting Round 13 / 40 ---
+Starting 4 threads for 20 iterations each...
+All threads finished.
+Overall Champion did not improve. (Stagnation: 12/20)
+Performing Ring Topology communication (Influence model)...
+  Solver 3's gbest will 'influence' Solver 0
+  Solver 0's gbest will 'influence' Solver 1
+  Solver 1's gbest will 'influence' Solver 2
+  Solver 2's gbest will 'influence' Solver 3
+
+--- Voting Round 14 / 40 ---
+Starting 4 threads for 20 iterations each...
+All threads finished.
+Overall Champion did not improve. (Stagnation: 13/20)
+Performing Ring Topology communication (Influence model)...
+  Solver 3's gbest will 'influence' Solver 0
+  Solver 0's gbest will 'influence' Solver 1
+  Solver 1's gbest will 'influence' Solver 2
+  Solver 2's gbest will 'influence' Solver 3
+
+--- Voting Round 15 / 40 ---
+Starting 4 threads for 20 iterations each...
+All threads finished.
+Overall Champion did not improve. (Stagnation: 14/20)
+Performing Ring Topology communication (Influence model)...
+  Solver 3's gbest will 'influence' Solver 0
+  Solver 0's gbest will 'influence' Solver 1
+  Solver 1's gbest will 'influence' Solver 2
+  Solver 2's gbest will 'influence' Solver 3
+
+--- Voting Round 16 / 40 ---
+Starting 4 threads for 20 iterations each...
+All threads finished.
+Overall Champion did not improve. (Stagnation: 15/20)
+Performing Ring Topology communication (Influence model)...
+  Solver 3's gbest will 'influence' Solver 0
+  Solver 0's gbest will 'influence' Solver 1
+  Solver 1's gbest will 'influence' Solver 2
+  Solver 2's gbest will 'influence' Solver 3
+
+--- Voting Round 17 / 40 ---
+Starting 4 threads for 20 iterations each...
+All threads finished.
+Overall Champion did not improve. (Stagnation: 16/20)
+Performing Ring Topology communication (Influence model)...
+  Solver 3's gbest will 'influence' Solver 0
+  Solver 0's gbest will 'influence' Solver 1
+  Solver 1's gbest will 'influence' Solver 2
+  Solver 2's gbest will 'influence' Solver 3
+
+--- Voting Round 18 / 40 ---
+Starting 4 threads for 20 iterations each...
+All threads finished.
+Overall Champion did not improve. (Stagnation: 17/20)
+Performing Ring Topology communication (Influence model)...
+  Solver 3's gbest will 'influence' Solver 0
+  Solver 0's gbest will 'influence' Solver 1
+  Solver 1's gbest will 'influence' Solver 2
+  Solver 2's gbest will 'influence' Solver 3
+
+--- Voting Round 19 / 40 ---
+Starting 4 threads for 20 iterations each...
+All threads finished.
+Overall Champion did not improve. (Stagnation: 18/20)
+Performing Ring Topology communication (Influence model)...
+  Solver 3's gbest will 'influence' Solver 0
+  Solver 0's gbest will 'influence' Solver 1
+  Solver 1's gbest will 'influence' Solver 2
+  Solver 2's gbest will 'influence' Solver 3
+
+--- Voting Round 20 / 40 ---
+Starting 4 threads for 20 iterations each...
+All threads finished.
+Overall Champion did not improve. (Stagnation: 19/20)
+Performing Ring Topology communication (Influence model)...
+  Solver 3's gbest will 'influence' Solver 0
+  Solver 0's gbest will 'influence' Solver 1
+  Solver 1's gbest will 'influence' Solver 2
+  Solver 2's gbest will 'influence' Solver 3
+
+--- Voting Round 21 / 40 ---
+Starting 4 threads for 20 iterations each...
+All threads finished.
+Overall Champion did not improve. (Stagnation: 20/20)
+Stopping conditions met: Overall Champion has stagnated.
+
+... Pipeline finished ...
+
+--- FINAL CHAMPION PARTICLE ---
+
+--- CIRCUIT FORMULA DERIVATION ---
+Internal Gates:
+  Gate 4: (I2 OR I2)
+  Gate 5: (I1 XOR I3)
+  Gate 6: (I3 AND I1)
+  Gate 7: ((I2 OR I2) OR (I2 OR I2))
+  Gate 8: (NOT (I2 OR I2))
+  Gate 9: ((I2 OR I2) XOR (I2 OR I2))
+  Gate 10: ((I3 AND I1) AND ((I2 OR I2) OR (I2 OR I2)))
+  Gate 11: (((I2 OR I2) OR (I2 OR I2)) XOR (NOT (I2 OR I2)))
+  Gate 12: (((I2 OR I2) OR (I2 OR I2)) OR (I3 AND I1))
+  Gate 13: (I2 XOR (I1 XOR I3))
+  Gate 14: ((((I2 OR I2) OR (I2 OR I2)) XOR (NOT (I2 OR I2))) XOR (NOT (I2 OR I2)))
+  Gate 15: (((I2 OR I2) OR (I2 OR I2)) XOR (I3 AND I1))
+
+--- FINAL OUTPUT FORMULA ---
+  Output 1: (I2 XOR (I1 XOR I3))
+  Output 2: (((I2 OR I2) OR (I2 OR I2)) OR (I3 AND I1))
+
+Circuit Matrix ([In1, Gate, In2]):
+[[ 2  1  2]
+ [ 1  3  3]
+ [ 3  0  1]
+ [ 4  1  4]
+ [ 4  2  2]
+ [ 4  3  4]
+ [ 6  0  7]
+ [ 7  3  8]
+ [ 7  1  6]
+ [ 2  3  5]
+ [11  3  8]
+ [ 7  3  6]]
+
+Output Array (Pointers):
+[13 12]
+
+--- FINAL STATS ---
+Cost (Fitness): 15.0000
+Correct outputs: 15/16
+Active Gates Used: 6
+Unused Gates (Simplicity): 0
+
+[Multi-Threaded PSO] System finished!
+[TIMER] Elapsed seconds: 206.333936

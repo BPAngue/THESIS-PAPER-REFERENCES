@@ -179,12 +179,9 @@ class BasePSOSolver:
         """Returns this solver's best-found particle."""
         return copy.deepcopy(self.gbest)
     
-    def set_new_gbest(self, potential_new_gbest):
+    def force_gbest_replacement(self, new_gbest):
         """
-        Compares the solver's current gbest with a potential new one.
-        If the new one is better, it becomes this swarm's gbest,
-        "influencing" its search direction for the next round.
+        Forces the solver to accept a new global best, even if it is worse.
+        This is for the specific Ring Topology requested.
         """
-        if potential_new_gbest.fitness > self.gbest.fitness:
-            # print(f"  [Influence] GBest (Fit: {self.gbest.fitness:.2f}) updated to (Fit: {potential_new_gbest.fitness:.2f})")
-            self.gbest = copy.deepcopy(potential_new_gbest)
+        self.gbest = copy.deepcopy(new_gbest)

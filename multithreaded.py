@@ -9,7 +9,6 @@ from datetime import datetime
 import time
 import threading
 
-
 # --------------------------------------
 # Logging Setup
 # --------------------------------------
@@ -34,7 +33,6 @@ class Logger:
 sys.stdout = Logger(log_filename)
 print(f"[LOGGING ENABLED] Output is being saved to {log_filename}\n")
 print("[Multi-Threaded PSO] System is running...")
-print("[TYPE OF TRUTH TABLE] Coello Example 1: 3 inputs 1 output")
 
 _perf_start = time.perf_counter()
 
@@ -42,9 +40,9 @@ _perf_start = time.perf_counter()
 # System Pipeline Parameters
 # --------------------------------------
 NUM_THREADS = 4            # Number of PSO threads to run in parallel
-VOTING_INTERVAL = 50       # Run 40 iterations, then vote
-MAX_VOTING_ROUNDS = 40     # Total iterations = 50 * 40 = 2000
-STAGNATION_LIMIT = 20       # Stop if Voted_GBest doesn't improve for 20 rounds
+VOTING_INTERVAL = 1       # Run 40 iterations, then vote
+MAX_VOTING_ROUNDS = 1000     # Total iterations = 50 * 40 = 2000
+STAGNATION_LIMIT = 100       # Stop if Voted_GBest doesn't improve for 20 rounds
 
 print(f"Pipeline Config: {NUM_THREADS} Threads, {VOTING_INTERVAL} Iter/Round, {MAX_VOTING_ROUNDS} Max Rounds")
 
@@ -59,7 +57,7 @@ varSize = nVar
 varMin = 0
 varMax = num_inputs + num_rows
 
-nPop_per_thread = 100
+nPop_per_thread = 500
 constriction_coefficient = True
 
 if not constriction_coefficient:
@@ -161,14 +159,15 @@ for round_num in range(MAX_VOTING_ROUNDS):
         
     # 5. Feedback Phase 
     print("Performing Ring Topology communication (Influence model)...")
+    # get all global bests
+    current_gbests = [solver.get_gbest() for solver in solvers]
+
+    # Apply Circular Logic: Thread i gets Thread (i-1)'s GBest
     for i in range(NUM_THREADS):
-        neighbor_index = (i - 1) % NUM_THREADS 
-        neighbor_gbest = gbest_candidates_dict[neighbor_index]
+        previous_thread_idx = (i - 1) % NUM_THREADS
         
-        print(f"  Solver {neighbor_index}'s gbest will 'influence' Solver {i}")
-        
-        # This calls the set_new_gbest function you added
-        solvers[i].set_new_gbest(neighbor_gbest)
+        # FORCE replacement (no if check)
+        solvers[i].force_gbest_replacement(current_gbests[previous_thread_idx])
 
 # --------------------------------------
 # 7. Output Phase

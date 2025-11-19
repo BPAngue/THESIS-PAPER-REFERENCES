@@ -1,0 +1,7 @@
+[LOGGING ENABLED] Output is being saved to results\pso_log_20251118_145958.txt
+
+[Multi-Threaded PSO] System is running...
+Pipeline Config: 4 Threads, 20 Iter/Round, 40 Max Rounds
+
+--- Voting Round 1 / 40 ---
+Starting 4 threads for 20 iterations each...
