@@ -96,7 +96,7 @@ class TruthTable:
 #     [1], [0], [0], [1],
 # ])
 
-# # example 4.2 in reis (4-bit even and odd parity checker) --> working
+# example 4.2 in reis (4-bit even and odd parity checker) --> working
 # num_inputs = 4
 # num_outputs = 2
 # inputs = np.array([
