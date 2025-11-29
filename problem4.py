@@ -32,18 +32,18 @@ class TruthTable:
 # Define Truth Table
 # --------------------------------------
 
-# # example 1 in coello (3 inputs, 1 output) --> working
-# num_inputs = 3
-# num_outputs = 1
-# inputs = np.array([
-#     [0, 0, 0], [0, 0, 1], [0, 1, 0], [0, 1, 1], 
-#     [1, 0, 0], [1, 0, 1], [1, 1, 0], [1, 1, 1],
-# ])
+# example 1 in coello (3 inputs, 1 output) --> working
+num_inputs = 3
+num_outputs = 1
+inputs = np.array([
+    [0, 0, 0], [0, 0, 1], [0, 1, 0], [0, 1, 1], 
+    [1, 0, 0], [1, 0, 1], [1, 1, 0], [1, 1, 1],
+])
 
-# outputs = np.array([
-#     [0], [0], [0], [1], 
-#     [0], [1], [1], [0],
-# ])
+outputs = np.array([
+    [0], [0], [0], [1], 
+    [0], [1], [1], [0],
+])
 
 # # example 2 in coello (4 inputs, 1 output)
 # num_inputs = 4
@@ -96,7 +96,7 @@ class TruthTable:
 #     [1], [0], [0], [1],
 # ])
 
-# example 4.2 in reis (4-bit even and odd parity checker) --> working
+# # example 4.2 in reis (4-bit even and odd parity checker) --> working
 # num_inputs = 4
 # num_outputs = 2
 # inputs = np.array([
@@ -113,18 +113,18 @@ class TruthTable:
 #     [1, 0], [0, 1], [0, 1], [1, 0],
 # ])
 
-# example 5 in reis (1-bit full adder with Cin) --> working
-num_inputs = 3
-num_outputs = 2
-inputs = np.array([
-    [0, 0, 0], [0, 0, 1], [0, 1, 0], [0, 1, 1], 
-    [1, 0, 0], [1, 0, 1], [1, 1, 0], [1, 1, 1],
-])
+# # example 5 in reis (1-bit full adder with Cin) --> working
+# num_inputs = 3
+# num_outputs = 2
+# inputs = np.array([
+#     [0, 0, 0], [0, 0, 1], [0, 1, 0], [0, 1, 1], 
+#     [1, 0, 0], [1, 0, 1], [1, 1, 0], [1, 1, 1],
+# ])
 
-outputs = np.array([
-    [0, 0], [1, 0], [1, 0], [0, 1], 
-    [1, 0], [0, 1], [0, 1], [1, 1],
-])
+# outputs = np.array([
+#     [0, 0], [1, 0], [1, 0], [0, 1], 
+#     [1, 0], [0, 1], [0, 1], [1, 1],
+# ])
 
 # # example 6 in reis (2-bit multiplier)
 # num_inputs = 4

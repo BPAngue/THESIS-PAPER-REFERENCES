@@ -51,7 +51,7 @@ def get_pso_params():
     nVar = (num_rows * 3) + problem4.truth_table.num_outputs
     varSize = nVar
     
-    phi1, phi2 = 2.05, 1.05
+    phi1, phi2 = 2.05, 2.05
     phi = phi1 + phi2
     chi = 2 / (phi - 2 + np.sqrt((phi**2) - (4 * phi1)))
     
@@ -61,7 +61,7 @@ def get_pso_params():
         'c2': chi * phi2,
         'velMax': 0.2 * (problem4.num_rows + problem4.truth_table.num_inputs),
         'velMin': -0.2 * (problem4.num_rows + problem4.truth_table.num_inputs),
-        'w_damp': 1.0
+        'w_damp': 1
     }
     return varSize, params
 
@@ -125,10 +125,10 @@ def execute_single_run(run_id, csv_writer):
         run_history.append([run_id, round_num, Voted_GBest.fitness, Voted_GBest.num_equal_tt, Voted_GBest.num_gates])
 
         # 4. Communication (Ring)
-        current_gbests = [solver.get_gbest() for solver in solvers]
-        for i in range(NUM_THREADS):
-            prev = (i - 1) % NUM_THREADS
-            solvers[i].force_gbest_replacement(current_gbests[prev])
+        # current_gbests = [solver.get_gbest() for solver in solvers]
+        # for i in range(NUM_THREADS):
+        #     prev = (i - 1) % NUM_THREADS
+        #     solvers[i].force_gbest_replacement(current_gbests[prev])
 
         # 5. Stop Checks
         if stagnation_counter >= STAGNATION_LIMIT:
@@ -144,9 +144,6 @@ def execute_single_run(run_id, csv_writer):
         
     # --- EXTRACTION OF FORMULA ---
     print(f"\n[Run {run_id} Result]")
-    # We use your problem4 function to get the string representation
-    # Note: This function usually prints to stdout, so we might see it twice,
-    # but this ensures you see exactly what the particle represents.
     formula_list = problem4.get_circuit_formula(Voted_GBest.position)
     
     return {
@@ -155,14 +152,14 @@ def execute_single_run(run_id, csv_writer):
         "fitness": Voted_GBest.fitness,
         "gates": Voted_GBest.num_gates,
         "time": duration,
-        "formulas": formula_list # Store formulas for final summary if needed
+        "formulas": formula_list
     }
 
 # --------------------------------------
 # Main Entry Point
 # --------------------------------------
 if __name__ == "__main__":
-    print(f"System: Multi-Run PSO ({NUM_RUNS} Runs)")
+    print(f"System: Multi-Run PSO without Ring ({NUM_RUNS} Runs)")
     print(f"Number of threads: {NUM_THREADS}")
     print("Number of population per thread: 500")
     print(f"Number of iterations: {MAX_VOTING_ROUNDS}")
