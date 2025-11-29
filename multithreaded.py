@@ -40,9 +40,9 @@ _perf_start = time.perf_counter()
 # System Pipeline Parameters
 # --------------------------------------
 NUM_THREADS = 4            # Number of PSO threads to run in parallel
-VOTING_INTERVAL = 1       # Run 40 iterations, then vote
-MAX_VOTING_ROUNDS = 1000     # Total iterations = 50 * 40 = 2000
-STAGNATION_LIMIT = 100       # Stop if Voted_GBest doesn't improve for 20 rounds
+VOTING_INTERVAL = 1        # Run 1 iterations, then vote
+MAX_VOTING_ROUNDS = 100     # Total iterations = 100
+STAGNATION_LIMIT = 100       # Stop if Voted_GBest doesn't improve
 
 print(f"Pipeline Config: {NUM_THREADS} Threads, {VOTING_INTERVAL} Iter/Round, {MAX_VOTING_ROUNDS} Max Rounds")
 
@@ -103,7 +103,7 @@ Voted_GBest.fitness = -math.inf
 stagnation_counter = 0
 
 for round_num in range(MAX_VOTING_ROUNDS):
-    print(f"\n--- Voting Round {round_num + 1} / {MAX_VOTING_ROUNDS} ---")
+    print(f"\n--- Iteration {round_num + 1} / {MAX_VOTING_ROUNDS} ---")
 
     threads = []
     gbest_candidates_dict = {} 
@@ -150,7 +150,7 @@ for round_num in range(MAX_VOTING_ROUNDS):
         stagnation_counter = 0 
     else:
         stagnation_counter += 1
-        print(f"Overall Champion did not improve. (Stagnation: {stagnation_counter}/{STAGNATION_LIMIT})")
+        print(f"Overall Champion did not improve.")
 
     # Condition 3: Check for stagnation
     if stagnation_counter >= STAGNATION_LIMIT:
