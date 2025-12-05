@@ -143,18 +143,33 @@ class BasePSOSolver:
 
     def run_iterations(self, num_iterations):
         """Run the standard GBest PSO for a number of iterations."""
+        k = 2 # neighbor radius (looks at 2 left, 2 right)
+
         for _ in range(num_iterations):
-            for particle in self.pop:
-                # Update velocity (standard gbest PSO)
+            for i, particle in enumerate(self.pop):
+                # --- 1. Find local best (Lbest) ---
+                local_best_pos = particle.best_position # default to self
+                local_best_fit = particle.best_fitness
+
+                # Loop through neighbors in a ring
+                for neighbor_offset in range(-k, k + 1):
+                    idx = (i + neighbor_offset) % self.nPop
+                    neighbor = self.pop[idx]
+                    if neighbor.best_fitness > local_best_fit:
+                        local_best_fit = neighbor.best_fitness
+                        local_best_pos = neighbor.best_position
+
+                # --- 2. Update velocity using local best ---
                 r1 = np.random.random(size=self.varSize)
                 r2 = np.random.random(size=self.varSize)
+
                 particle.velocity = (self.w * particle.velocity) + \
                                     (self.c1 * r1 * (particle.best_position - particle.position)) + \
-                                    (self.c2 * r2 * (self.gbest.position - particle.position))
-
-                particle.velocity = np.clip(particle.velocity, self.velMin, self.velMax)
+                                    (self.c2 * r2 * (local_best_pos - particle.position))
                 
-                # Update position
+                particle.velocity = np.clip(particle.velocity, self.velMin, self.velMax)
+
+                 # Update position
                 particle.position = particle.position + particle.velocity
                 particle.position = clamp_particle_position(particle.position)
                 
@@ -181,7 +196,27 @@ class BasePSOSolver:
     
     def force_gbest_replacement(self, new_gbest):
         """
-        Forces the solver to accept a new global best, even if it is worse.
-        This is for the specific Ring Topology requested.
+        Accepts a champion from another thread.
+        1. Updates the passive self.gbest tracker.
+        2. INJECTS the champion into the population so neighbors can see it.
         """
-        self.gbest = copy.deepcopy(new_gbest)
+        # 1. Update the tracker (so we know our best score)
+        if new_gbest.fitness > self.gbest.fitness:
+            self.gbest = copy.deepcopy(new_gbest)
+
+        # 2. Inject into Population ("Infection")
+        # Replace the WORST particle in the current population with this foreign champion
+        # This ensures the new genetic material enters the local topology graph.
+        
+        # Find index of worst particle
+        worst_idx = -1
+        min_fitness = math.inf
+        
+        for i, p in enumerate(self.pop):
+            if p.best_fitness < min_fitness:
+                min_fitness = p.best_fitness
+                worst_idx = i
+                
+        if worst_idx != -1:
+            # Overwrite the worst particle with the foreign champion
+            self.pop[worst_idx] = copy.deepcopy(new_gbest)

@@ -57,13 +57,13 @@ varSize = nVar
 varMin = 0
 varMax = num_inputs + num_rows
 
-nPop_per_thread = 1000
+nPop_per_thread = 500
 constriction_coefficient = True
 
 if not constriction_coefficient:
     w, w_damp, c1, c2 = 1, 0.99, 2, 2
 else:
-    phi1, phi2 = 1.05, 2.05
+    phi1, phi2 = 2.05, 2.05
     phi = phi1 + phi2
     chi = 2 / (phi - 2 + np.sqrt((phi**2) - (4 * phi1)))
     w, w_damp, c1, c2 = chi, 1, chi * phi1, chi * phi2

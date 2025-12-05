@@ -5,7 +5,7 @@ from enum import IntEnum
 # --------------------------------------
 # Problem Definition
 # --------------------------------------
-num_rows = 5  # the number of *internal gates* we can use
+num_rows = 12  # the number of *internal gates* we can use
 
 class GateType(IntEnum):
     AND = 0
@@ -115,9 +115,9 @@ class TruthTable:
 #     [1, 0], [0, 1], [0, 1], [1, 0],
 # ])
 
-# # example 5 in reis (1-bit full adder with Cin) --> working
+# example 5 in reis (1-bit full adder with Cin) --> working
 # num_inputs = 3
-# num_outputs = 2
+# num_outputs = 1
 # inputs = np.array([
 #     [0, 0, 0], [0, 0, 1], [0, 1, 0], [0, 1, 1], 
 #     [1, 0, 0], [1, 0, 1], [1, 1, 0], [1, 1, 1],
@@ -126,6 +126,16 @@ class TruthTable:
 # outputs = np.array([
 #     [0, 0], [1, 0], [1, 0], [0, 1], 
 #     [1, 0], [0, 1], [0, 1], [1, 1],
+# ])
+
+# outputs = np.array([
+#     [0], [1], [1], [0], 
+#     [1], [0], [0], [1],
+# ])
+
+# outputs = np.array([
+#     [0], [0], [0], [1], 
+#     [0], [1], [1], [1],
 # ])
 
 # # example 6 in reis (2-bit multiplier)
@@ -145,7 +155,7 @@ class TruthTable:
 #     [0, 0, 0, 0], [0, 0, 1, 1], [0, 1, 1, 0], [1, 0, 0, 1]
 # ])
 
-# # chatgpt example
+# chatgpt example
 num_inputs = 5
 num_outputs = 4
 inputs = np.array([
