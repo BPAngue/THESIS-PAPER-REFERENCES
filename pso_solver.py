@@ -71,28 +71,32 @@ def clamp_particle_position(position_float):
     num_inputs = problem4.truth_table.num_inputs
     num_rows = problem4.num_rows
     num_outputs = problem4.truth_table.num_outputs
-    gate_type_high = len(problem4.GateType) - 1 # Inclusive
+    gate_type_high = len(problem4.GateType) # Inclusive
 
     # 1. Clamp Circuit Matrix genes
     for i in range(num_rows):
         input_high_inclusive = num_inputs + i
 
         # Clamp Input 1 (Col 0)
-        x[idx] = max(1, min(x[idx], input_high_inclusive))
+        # x[idx] = max(1, min(x[idx], input_high_inclusive))
+        x[idx] = (x[idx] - 1) % input_high_inclusive + 1
         idx += 1
         
         # Clamp Gate Type (Col 1)
-        x[idx] = max(0, min(x[idx], gate_type_high))
+        # x[idx] = max(0, min(x[idx], gate_type_high))
+        x[idx] = x[idx] % gate_type_high
         idx += 1
         
         # Clamp Input 2 (Col 2)
-        x[idx] = max(1, min(x[idx], input_high_inclusive))
+        # x[idx] = max(1, min(x[idx], input_high_inclusive))
+        x[idx] = (x[idx] - 1) % input_high_inclusive + 1
         idx += 1
 
     # 2. Clamp Output Array genes
     output_high_inclusive = num_inputs + num_rows
     for _ in range(num_outputs):
-        x[idx] = max(1, min(x[idx], output_high_inclusive))
+        # x[idx] = max(1, min(x[idx], output_high_inclusive))
+        x[idx] = (x[idx] - 1) % output_high_inclusive + 1
         idx += 1
         
     return x

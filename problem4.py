@@ -8,12 +8,14 @@ from enum import IntEnum
 num_rows = 5  # the number of *internal gates* we can use
 
 class GateType(IntEnum):
-    AND = 0
-    OR = 1
-    NOT = 2
-    XOR = 3
-    NAND = 4
-    NOR = 5
+    NOT1 = 0
+    NOT2 = 1
+    AND = 2
+    OR = 3
+    XOR = 4
+    NAND = 5
+    NOR = 6
+    XNOR = 7
 
 @dataclass
 class TruthTable:
@@ -116,16 +118,26 @@ class TruthTable:
 # ])
 
 # # example 5 in reis (1-bit full adder with Cin) --> working
-# num_inputs = 3
-# num_outputs = 2
-# inputs = np.array([
-#     [0, 0, 0], [0, 0, 1], [0, 1, 0], [0, 1, 1], 
-#     [1, 0, 0], [1, 0, 1], [1, 1, 0], [1, 1, 1],
+num_inputs = 3
+num_outputs = 2
+inputs = np.array([
+    [0, 0, 0], [0, 0, 1], [0, 1, 0], [0, 1, 1], 
+    [1, 0, 0], [1, 0, 1], [1, 1, 0], [1, 1, 1],
+])
+
+outputs = np.array([
+    [0, 0], [1, 0], [1, 0], [0, 1], 
+    [1, 0], [0, 1], [0, 1], [1, 1],
+])
+
+# outputs = np.array([
+#     [0], [1], [1], [0],
+#     [1], [0], [0], [1],
 # ])
 
 # outputs = np.array([
-#     [0, 0], [1, 0], [1, 0], [0, 1], 
-#     [1, 0], [0, 1], [0, 1], [1, 1],
+#     [0], [0], [0], [1],
+#     [0], [1], [1], [1],
 # ])
 
 # # example 6 in reis (2-bit multiplier)
@@ -146,77 +158,77 @@ class TruthTable:
 # ])
 
 # # chatgpt example
-num_inputs = 5
-num_outputs = 4
-inputs = np.array([
-    [0,0,0,0,0],
-    [0,0,0,0,1],
-    [0,0,0,1,0],
-    [0,0,0,1,1],
-    [0,0,1,0,0],
-    [0,0,1,0,1],
-    [0,0,1,1,0],
-    [0,0,1,1,1],
-    [0,1,0,0,0],
-    [0,1,0,0,1],
-    [0,1,0,1,0],
-    [0,1,0,1,1],
-    [0,1,1,0,0],
-    [0,1,1,0,1],
-    [0,1,1,1,0],
-    [0,1,1,1,1],
-    [1,0,0,0,0],
-    [1,0,0,0,1],
-    [1,0,0,1,0],
-    [1,0,0,1,1],
-    [1,0,1,0,0],
-    [1,0,1,0,1],
-    [1,0,1,1,0],
-    [1,0,1,1,1],
-    [1,1,0,0,0],
-    [1,1,0,0,1],
-    [1,1,0,1,0],
-    [1,1,0,1,1],
-    [1,1,1,0,0],
-    [1,1,1,0,1],
-    [1,1,1,1,0],
-    [1,1,1,1,1],
-])
+# num_inputs = 5
+# num_outputs = 4
+# inputs = np.array([
+#     [0,0,0,0,0],
+#     [0,0,0,0,1],
+#     [0,0,0,1,0],
+#     [0,0,0,1,1],
+#     [0,0,1,0,0],
+#     [0,0,1,0,1],
+#     [0,0,1,1,0],
+#     [0,0,1,1,1],
+#     [0,1,0,0,0],
+#     [0,1,0,0,1],
+#     [0,1,0,1,0],
+#     [0,1,0,1,1],
+#     [0,1,1,0,0],
+#     [0,1,1,0,1],
+#     [0,1,1,1,0],
+#     [0,1,1,1,1],
+#     [1,0,0,0,0],
+#     [1,0,0,0,1],
+#     [1,0,0,1,0],
+#     [1,0,0,1,1],
+#     [1,0,1,0,0],
+#     [1,0,1,0,1],
+#     [1,0,1,1,0],
+#     [1,0,1,1,1],
+#     [1,1,0,0,0],
+#     [1,1,0,0,1],
+#     [1,1,0,1,0],
+#     [1,1,0,1,1],
+#     [1,1,1,0,0],
+#     [1,1,1,0,1],
+#     [1,1,1,1,0],
+#     [1,1,1,1,1],
+# ])
 
-outputs = np.array([
-    [0,0,0,0],
-    [0,0,1,1],
-    [0,0,1,1],
-    [0,1,0,0],
-    [0,0,1,1],
-    [0,1,0,0],
-    [0,1,0,0],
-    [0,1,1,1],
-    [0,0,1,1],
-    [0,1,0,0],
-    [0,1,0,0],
-    [0,1,1,1],
-    [0,1,0,0],
-    [0,1,1,1],
-    [0,1,1,1],
-    [1,0,0,0],
-    [0,0,1,1],
-    [0,1,0,0],
-    [0,1,0,0],
-    [0,1,1,1],
-    [0,1,0,0],
-    [0,1,1,1],
-    [0,1,1,1],
-    [1,0,0,0],
-    [0,1,0,0],
-    [0,1,1,1],
-    [0,1,1,1],
-    [1,0,0,0],
-    [0,1,1,1],
-    [1,0,0,0],
-    [1,0,0,0],
-    [1,0,1,1],
-])
+# outputs = np.array([
+#     [0,0,0,0],
+#     [0,0,1,1],
+#     [0,0,1,1],
+#     [0,1,0,0],
+#     [0,0,1,1],
+#     [0,1,0,0],
+#     [0,1,0,0],
+#     [0,1,1,1],
+#     [0,0,1,1],
+#     [0,1,0,0],
+#     [0,1,0,0],
+#     [0,1,1,1],
+#     [0,1,0,0],
+#     [0,1,1,1],
+#     [0,1,1,1],
+#     [1,0,0,0],
+#     [0,0,1,1],
+#     [0,1,0,0],
+#     [0,1,0,0],
+#     [0,1,1,1],
+#     [0,1,0,0],
+#     [0,1,1,1],
+#     [0,1,1,1],
+#     [1,0,0,0],
+#     [0,1,0,0],
+#     [0,1,1,1],
+#     [0,1,1,1],
+#     [1,0,0,0],
+#     [0,1,1,1],
+#     [1,0,0,0],
+#     [1,0,0,0],
+#     [1,0,1,1],
+# ])
 
 truth_table = TruthTable(num_inputs, num_outputs, inputs, outputs)
 
@@ -235,14 +247,22 @@ def decode_particle(x):
 
 def evaluate_gate(gate_type, val1, val2):
     """Evaluate the output of a gate for given input values."""
+    if gate_type == GateType.NOT1:
+        return 1 if val1 == 0 else 0
+    elif gate_type == GateType.NOT2:
+        return 1 if val2 == 0 else 0
     if gate_type == GateType.AND:
         return val1 & val2
     elif gate_type == GateType.OR:
         return val1 | val2
-    elif gate_type == GateType.NOT:
-        return 1 if val1 == 0 else 0  # 1 - val1
     elif gate_type == GateType.XOR:
         return val1 ^ val2
+    elif gate_type == GateType.NAND:
+        return 1 - (val1 & val2)
+    elif gate_type == GateType.NOR:
+        return 1 - (val1 | val2)
+    elif gate_type == GateType.XNOR:
+        return 1 - (val1 ^ val2)
     return 0 
 
 def count_active_gates(circuit_matrix, output_array):
@@ -277,7 +297,7 @@ def count_active_gates(circuit_matrix, output_array):
             pointers_to_check.add(ptr_in1)
 
             # NOT gate only uses one input
-            if GateType(gate_type) != GateType.NOT:
+            if GateType(gate_type) not in (GateType.NOT1, GateType.NOT2):
                 pointers_to_check.add(ptr_in2)
 
     # Count how many of the used pointers were gates
@@ -374,14 +394,22 @@ def get_circuit_formula(position):
         f2 = formulas[ptr_in2]
 
         # construct symbolic logic expression
-        if g == GateType.AND:
+        if g == GateType.NOT1:
+            expr = f"(NOT {f1})"
+        elif g == GateType.NOT2:
+            expr = f"(NOT {f2})"
+        elif g == GateType.AND:
             expr = f"({f1} AND {f2})"
         elif g == GateType.OR:
             expr = f"({f1} OR {f2})"
-        elif g == GateType.NOT:
-            expr = f"(NOT {f1})"
         elif g == GateType.XOR:
             expr = f"({f1} XOR {f2})"
+        elif g == GateType.NAND:
+            expr = f"({f1} NAND {f2})"
+        elif g == GateType.NOR:
+            expr = f"({f1} NOR {f2})"
+        elif g == GateType.XNOR:
+            expr = f"({f1} XNOR {f2})"
         else:
             expr = "UNKNOWN"
             
