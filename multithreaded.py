@@ -43,6 +43,8 @@ NUM_THREADS = 5            # Number of PSO threads to run in parallel
 VOTING_INTERVAL = 1        # Run 1 iterations, then vote
 MAX_VOTING_ROUNDS = 100     # Total iterations = 100
 STAGNATION_LIMIT = 100       # Stop if Voted_GBest doesn't improve
+MIGRATION_INTERVAL = 15      # Migrate every 15 rounds
+MIGRATION_COUNT = 50         # number of particles to swap
 
 print(f"Pipeline Config: {NUM_THREADS} Threads, {VOTING_INTERVAL} Iter/Round, {MAX_VOTING_ROUNDS} Max Rounds")
 
@@ -157,17 +159,49 @@ for round_num in range(MAX_VOTING_ROUNDS):
         print("Stopping conditions met: Overall Champion has stagnated.")
         break
         
-    # 5. Feedback Phase 
-    print("Performing Ring Topology communication (Influence model)...")
-    # get all global bests
-    current_gbests = [solver.get_gbest() for solver in solvers]
+    # 5. Feedback Phase : Island Model Migration
+    if round_num > 0 and round_num % MIGRATION_INTERVAL == 0:
+        print(f"\n [ISLAND MODEL] Migration Epoch: Swapping top {MIGRATION_COUNT} particles...")
 
-    # Apply Circular Logic: Thread i gets Thread (i-1)'s GBest
-    for i in range(NUM_THREADS):
-        previous_thread_idx = (i - 1) % NUM_THREADS
+        # 1. Collect migrants (the elite from each island)
+        all_migrants = []
+        for i in range(NUM_THREADS):
+            # Sort current population by fitness
+            sorted_pop = sorted(solvers[i].pop, key=lambda p: p.fitness, reverse=True)
+            elites = [copy.deepcopy(p) for p in sorted_pop[:MIGRATION_COUNT]]
+            all_migrants.append(elites)
+
+        # 2. Shuffle and redestribute using a Random Topology
+        # Thread 'i' receives migrants from a random 'source_idx'
+        for i in range(NUM_THREADS):
+            source_idx = (i + np.random.randint(1, NUM_THREADS)) % NUM_THREADS
+            incoming_passengers = all_migrants[source_idx]
+
+            # Replace the WORST particles in the target island
+            # Sorting ascending puts the worst at the front
+            solvers[i].pop.sort(key=lambda p: p.fitness)
+
+            for j in range(MIGRATION_COUNT):
+                solvers[i].pop[j] = incoming_passengers[j]
+
+            # Re-evaluate gbest for the island after receiving new genetic material
+            solvers[i].evaluate_population()
+
+        print(f"✓ Migration complete. Islands have been cross-pollinated.")
+    else:
+        # Standard GBest PSO continues within islands without outside interference
+        print(f"Islands evolving in isolation (Round {round_num % MIGRATION_INTERVAL}/{MIGRATION_COUNT})")
+
+    # print("Performing Ring Topology communication (Influence model)...")
+    # # get all global bests
+    # current_gbests = [solver.get_gbest() for solver in solvers]
+
+    # # Apply Circular Logic: Thread i gets Thread (i-1)'s GBest
+    # for i in range(NUM_THREADS):
+    #     previous_thread_idx = (i - 1) % NUM_THREADS
         
-        # FORCE replacement (no if check)
-        solvers[i].force_gbest_replacement(current_gbests[previous_thread_idx])
+    #     # FORCE replacement (no if check)
+    #     solvers[i].force_gbest_replacement(current_gbests[previous_thread_idx])
 
 # --------------------------------------
 # 7. Output Phase
