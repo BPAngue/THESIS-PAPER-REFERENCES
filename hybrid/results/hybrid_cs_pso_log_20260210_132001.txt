@@ -1,0 +1,2137 @@
+[LOGGING ENABLED] Output is being saved to results\hybrid_cs_pso_log_20260210_132001.txt
+
+================================================================================
+HYBRID CS-PSO WITH LOCAL HILL CLIMBING
+================================================================================
+
+Combining global exploration (CS-PSO) with local exploitation (Hill Climbing)
+
+Key Features:
+  🌍 Global Search: Chaotic PSO for exploration
+  🎯 Local Search: Hill climbing when close to solution (≥14/16)
+  ⚡ Adaptive: Chaos intensity adapts to search progress
+  🔄 Hybrid: Best of both worlds!
+
+Pipeline Config:
+  Threads: 5
+  Iterations per round: 5
+  Max rounds: 200
+  Stagnation limit: 50
+
+Hybrid CS-PSO Parameters:
+  Population per thread: 100
+  PSO inertia (w): 0.5838
+  Cognitive (c1): 0.6130
+  Social (c2): 1.1968
+
+Hill Climbing Parameters:
+  Activation threshold: ≥14/16 correct outputs
+  Max iterations per climb: 50 (gbest), 20 (others)
+  Frequency: Every 5 PSO iterations
+  Strategies: Output-focused, Gate-focused, Comprehensive
+
+Initializing Hybrid CS-PSO solvers...
+All solvers initialized with hybrid search capability.
+
+
+================================================================================
+Round 1 / 200
+================================================================================
+Running 5 Hybrid CS-PSO threads (5 iter each)... Done (11.94s)
+⬆ Champion improved!
+   Fitness: 14.00 (+inf)
+   Correct: 14/16
+   Gates: 9
+
+📊 Metrics:
+   Diversity: 27.11
+   Chaos: 0.450 🌱 Low chaos (exploiting)
+   Global stagnation: 3.6
+
+🎯 Hill Climbing Stats:
+   Total climbs: 3
+   Successful: 0 (0.0%)
+   This round: 3 climbs
+
+================================================================================
+Round 2 / 200
+================================================================================
+Running 5 Hybrid CS-PSO threads (5 iter each)... Done (20.86s)
+→ No improvement (Stagnation: 1/50)
+
+📊 Metrics:
+   Diversity: 36.07
+   Chaos: 0.400 🌱 Low chaos (exploiting)
+   Global stagnation: 3.4
+
+🎯 Hill Climbing Stats:
+   Total climbs: 15
+   Successful: 0 (0.0%)
+   This round: 15 climbs
+
+================================================================================
+Round 3 / 200
+================================================================================
+Running 5 Hybrid CS-PSO threads (5 iter each)... Done (31.64s)
+→ No improvement (Stagnation: 2/50)
+
+📊 Metrics:
+   Diversity: 37.09
+   Chaos: 0.420 🌱 Low chaos (exploiting)
+   Global stagnation: 5.2
+
+🎯 Hill Climbing Stats:
+   Total climbs: 36
+   Successful: 0 (0.0%)
+   This round: 36 climbs
+
+================================================================================
+Round 4 / 200
+================================================================================
+Running 5 Hybrid CS-PSO threads (5 iter each)... Done (31.85s)
+→ No improvement (Stagnation: 3/50)
+
+📊 Metrics:
+   Diversity: 36.52
+   Chaos: 0.472 🌱 Low chaos (exploiting)
+   Global stagnation: 8.0
+
+🎯 Hill Climbing Stats:
+   Total climbs: 58
+   Successful: 0 (0.0%)
+   This round: 58 climbs
+
+================================================================================
+Round 5 / 200
+================================================================================
+Running 5 Hybrid CS-PSO threads (5 iter each)... Done (35.55s)
+→ No improvement (Stagnation: 4/50)
+
+📊 Metrics:
+   Diversity: 36.26
+   Chaos: 0.572 ⚡ Moderate chaos
+   Global stagnation: 13.0
+
+🎯 Hill Climbing Stats:
+   Total climbs: 83
+   Successful: 0 (0.0%)
+   This round: 83 climbs
+
+================================================================================
+Round 6 / 200
+================================================================================
+Running 5 Hybrid CS-PSO threads (5 iter each)... Done (35.77s)
+→ No improvement (Stagnation: 5/50)
+
+📊 Metrics:
+   Diversity: 35.52
+   Chaos: 0.726 🔥 HIGH CHAOS MODE!
+   Global stagnation: 18.0
+
+🎯 Hill Climbing Stats:
+   Total climbs: 108
+   Successful: 0 (0.0%)
+   This round: 108 climbs
+
+================================================================================
+Round 7 / 200
+================================================================================
+Running 5 Hybrid CS-PSO threads (5 iter each)... Done (33.11s)
+→ No improvement (Stagnation: 6/50)
+
+📊 Metrics:
+   Diversity: 35.19
+   Chaos: 0.874 🔥 HIGH CHAOS MODE!
+   Global stagnation: 23.0
+
+🎯 Hill Climbing Stats:
+   Total climbs: 133
+   Successful: 0 (0.0%)
+   This round: 133 climbs
+
+================================================================================
+Round 8 / 200
+================================================================================
+Running 5 Hybrid CS-PSO threads (5 iter each)... Done (32.52s)
+→ No improvement (Stagnation: 7/50)
+
+📊 Metrics:
+   Diversity: 34.91
+   Chaos: 0.960 🔥 HIGH CHAOS MODE!
+   Global stagnation: 28.0
+
+🎯 Hill Climbing Stats:
+   Total climbs: 158
+   Successful: 0 (0.0%)
+   This round: 158 climbs
+
+================================================================================
+Round 9 / 200
+================================================================================
+Running 5 Hybrid CS-PSO threads (5 iter each)... Done (38.51s)
+✅ PERFECT FUNCTIONAL SOLUTION!
+   Fitness: 17.00
+   Gates: 6
+   Unused gates: 10
+   🎯 New champion (simpler circuit)
+
+📊 Metrics:
+   Diversity: 35.09
+   Chaos: 0.992 🔥 HIGH CHAOS MODE!
+   Global stagnation: 26.8
+
+🎯 Hill Climbing Stats:
+   Total climbs: 185
+   Successful: 1 (0.5%)
+   This round: 185 climbs
+
+================================================================================
+Round 10 / 200
+================================================================================
+Running 5 Hybrid CS-PSO threads (5 iter each)... Done (35.51s)
+✅ PERFECT FUNCTIONAL SOLUTION!
+   Fitness: 17.00
+   Gates: 6
+   Unused gates: 10
+
+📊 Metrics:
+   Diversity: 36.87
+   Chaos: 0.926 🔥 HIGH CHAOS MODE!
+   Global stagnation: 23.6
+
+🎯 Hill Climbing Stats:
+   Total climbs: 207
+   Successful: 1 (0.5%)
+   This round: 207 climbs
+
+📈 Progress Summary:
+   Best fitness: 17.00
+   Correct outputs: 16/16
+   Active gates: 6
+
+================================================================================
+Round 11 / 200
+================================================================================
+Running 5 Hybrid CS-PSO threads (5 iter each)... Done (24.77s)
+✅ PERFECT FUNCTIONAL SOLUTION!
+   Fitness: 17.00
+   Gates: 6
+   Unused gates: 10
+
+📊 Metrics:
+   Diversity: 38.16
+   Chaos: 0.896 🔥 HIGH CHAOS MODE!
+   Global stagnation: 19.2
+
+🎯 Hill Climbing Stats:
+   Total climbs: 222
+   Successful: 1 (0.5%)
+   This round: 222 climbs
+
+================================================================================
+Round 12 / 200
+================================================================================
+Running 5 Hybrid CS-PSO threads (5 iter each)... Done (24.02s)
+✅ PERFECT FUNCTIONAL SOLUTION!
+   Fitness: 17.00
+   Gates: 6
+   Unused gates: 10
+
+📊 Metrics:
+   Diversity: 38.02
+   Chaos: 0.856 🔥 HIGH CHAOS MODE!
+   Global stagnation: 12.4
+
+🎯 Hill Climbing Stats:
+   Total climbs: 236
+   Successful: 1 (0.4%)
+   This round: 236 climbs
+
+================================================================================
+Round 13 / 200
+================================================================================
+Running 5 Hybrid CS-PSO threads (5 iter each)... Done (25.35s)
+✅ PERFECT FUNCTIONAL SOLUTION!
+   Fitness: 17.00
+   Gates: 6
+   Unused gates: 10
+
+📊 Metrics:
+   Diversity: 38.43
+   Chaos: 0.766 🔥 HIGH CHAOS MODE!
+   Global stagnation: 4.2
+
+🎯 Hill Climbing Stats:
+   Total climbs: 251
+   Successful: 1 (0.4%)
+   This round: 251 climbs
+
+================================================================================
+Round 14 / 200
+================================================================================
+Running 5 Hybrid CS-PSO threads (5 iter each)... Done (33.60s)
+✅ PERFECT FUNCTIONAL SOLUTION!
+   Fitness: 17.00
+   Gates: 6
+   Unused gates: 10
+
+📊 Metrics:
+   Diversity: 35.82
+   Chaos: 0.684 ⚡ Moderate chaos
+   Global stagnation: 6.8
+
+🎯 Hill Climbing Stats:
+   Total climbs: 272
+   Successful: 1 (0.4%)
+   This round: 272 climbs
+
+================================================================================
+Round 15 / 200
+================================================================================
+Running 5 Hybrid CS-PSO threads (5 iter each)... Done (34.71s)
+✅ PERFECT FUNCTIONAL SOLUTION!
+   Fitness: 17.00
+   Gates: 6
+   Unused gates: 10
+
+📊 Metrics:
+   Diversity: 37.28
+   Chaos: 0.718 🔥 HIGH CHAOS MODE!
+   Global stagnation: 9.4
+
+🎯 Hill Climbing Stats:
+   Total climbs: 293
+   Successful: 1 (0.3%)
+   This round: 293 climbs
+
+================================================================================
+Round 16 / 200
+================================================================================
+Running 5 Hybrid CS-PSO threads (5 iter each)... Done (33.52s)
+✅ PERFECT FUNCTIONAL SOLUTION!
+   Fitness: 17.00
+   Gates: 6
+   Unused gates: 10
+
+📊 Metrics:
+   Diversity: 37.10
+   Chaos: 0.728 🔥 HIGH CHAOS MODE!
+   Global stagnation: 10.6
+
+🎯 Hill Climbing Stats:
+   Total climbs: 313
+   Successful: 1 (0.3%)
+   This round: 313 climbs
+
+================================================================================
+Round 17 / 200
+================================================================================
+Running 5 Hybrid CS-PSO threads (5 iter each)... Done (28.90s)
+✅ PERFECT FUNCTIONAL SOLUTION!
+   Fitness: 17.00
+   Gates: 6
+   Unused gates: 10
+
+📊 Metrics:
+   Diversity: 38.29
+   Chaos: 0.732 🔥 HIGH CHAOS MODE!
+   Global stagnation: 9.0
+
+🎯 Hill Climbing Stats:
+   Total climbs: 328
+   Successful: 1 (0.3%)
+   This round: 328 climbs
+
+================================================================================
+Round 18 / 200
+================================================================================
+Running 5 Hybrid CS-PSO threads (5 iter each)... Done (27.94s)
+✅ PERFECT FUNCTIONAL SOLUTION!
+   Fitness: 17.00
+   Gates: 6
+   Unused gates: 10
+
+📊 Metrics:
+   Diversity: 36.95
+   Chaos: 0.662 ⚡ Moderate chaos
+   Global stagnation: 3.8
+
+🎯 Hill Climbing Stats:
+   Total climbs: 343
+   Successful: 1 (0.3%)
+   This round: 343 climbs
+
+================================================================================
+Round 19 / 200
+================================================================================
+Running 5 Hybrid CS-PSO threads (5 iter each)... Done (37.60s)
+✅ PERFECT FUNCTIONAL SOLUTION!
+   Fitness: 17.00
+   Gates: 6
+   Unused gates: 10
+
+📊 Metrics:
+   Diversity: 35.12
+   Chaos: 0.616 ⚡ Moderate chaos
+   Global stagnation: 7.6
+
+🎯 Hill Climbing Stats:
+   Total climbs: 367
+   Successful: 1 (0.3%)
+   This round: 367 climbs
+
+================================================================================
+Round 20 / 200
+================================================================================
+Running 5 Hybrid CS-PSO threads (5 iter each)... Done (33.75s)
+✅ PERFECT FUNCTIONAL SOLUTION!
+   Fitness: 17.00
+   Gates: 6
+   Unused gates: 10
+
+📊 Metrics:
+   Diversity: 37.26
+   Chaos: 0.674 ⚡ Moderate chaos
+   Global stagnation: 12.2
+
+🎯 Hill Climbing Stats:
+   Total climbs: 389
+   Successful: 2 (0.5%)
+   This round: 389 climbs
+
+📈 Progress Summary:
+   Best fitness: 17.00
+   Correct outputs: 16/16
+   Active gates: 6
+
+================================================================================
+Round 21 / 200
+================================================================================
+Running 5 Hybrid CS-PSO threads (5 iter each)... Done (27.99s)
+✅ PERFECT FUNCTIONAL SOLUTION!
+   Fitness: 17.00
+   Gates: 6
+   Unused gates: 10
+
+📊 Metrics:
+   Diversity: 38.24
+   Chaos: 0.680 ⚡ Moderate chaos
+   Global stagnation: 10.0
+
+🎯 Hill Climbing Stats:
+   Total climbs: 405
+   Successful: 3 (0.7%)
+   This round: 405 climbs
+
+================================================================================
+Round 22 / 200
+================================================================================
+Running 5 Hybrid CS-PSO threads (5 iter each)... Done (26.15s)
+✅ PERFECT FUNCTIONAL SOLUTION!
+   Fitness: 17.00
+   Gates: 6
+   Unused gates: 10
+
+📊 Metrics:
+   Diversity: 38.88
+   Chaos: 0.676 ⚡ Moderate chaos
+   Global stagnation: 7.2
+
+🎯 Hill Climbing Stats:
+   Total climbs: 420
+   Successful: 3 (0.7%)
+   This round: 420 climbs
+
+================================================================================
+Round 23 / 200
+================================================================================
+Running 5 Hybrid CS-PSO threads (5 iter each)... Done (21.88s)
+✅ PERFECT FUNCTIONAL SOLUTION!
+   Fitness: 17.00
+   Gates: 6
+   Unused gates: 10
+
+📊 Metrics:
+   Diversity: 40.06
+   Chaos: 0.650 ⚡ Moderate chaos
+   Global stagnation: 4.2
+
+🎯 Hill Climbing Stats:
+   Total climbs: 430
+   Successful: 3 (0.7%)
+   This round: 430 climbs
+
+================================================================================
+Round 24 / 200
+================================================================================
+Running 5 Hybrid CS-PSO threads (5 iter each)... Done (25.95s)
+✅ PERFECT FUNCTIONAL SOLUTION!
+   Fitness: 17.00
+   Gates: 6
+   Unused gates: 10
+
+📊 Metrics:
+   Diversity: 38.74
+   Chaos: 0.622 ⚡ Moderate chaos
+   Global stagnation: 2.8
+
+🎯 Hill Climbing Stats:
+   Total climbs: 443
+   Successful: 3 (0.7%)
+   This round: 443 climbs
+
+================================================================================
+Round 25 / 200
+================================================================================
+Running 5 Hybrid CS-PSO threads (5 iter each)... Done (32.86s)
+✅ PERFECT FUNCTIONAL SOLUTION!
+   Fitness: 17.00
+   Gates: 6
+   Unused gates: 10
+
+📊 Metrics:
+   Diversity: 37.16
+   Chaos: 0.596 ⚡ Moderate chaos
+   Global stagnation: 4.0
+
+🎯 Hill Climbing Stats:
+   Total climbs: 465
+   Successful: 3 (0.6%)
+   This round: 465 climbs
+
+================================================================================
+Round 26 / 200
+================================================================================
+Running 5 Hybrid CS-PSO threads (5 iter each)... Done (32.90s)
+✅ PERFECT FUNCTIONAL SOLUTION!
+   Fitness: 17.00
+   Gates: 6
+   Unused gates: 10
+
+📊 Metrics:
+   Diversity: 36.94
+   Chaos: 0.532 ⚡ Moderate chaos
+   Global stagnation: 6.4
+
+🎯 Hill Climbing Stats:
+   Total climbs: 486
+   Successful: 4 (0.8%)
+   This round: 486 climbs
+
+================================================================================
+Round 27 / 200
+================================================================================
+Running 5 Hybrid CS-PSO threads (5 iter each)... Done (35.20s)
+✅ PERFECT FUNCTIONAL SOLUTION!
+   Fitness: 17.00
+   Gates: 6
+   Unused gates: 10
+
+📊 Metrics:
+   Diversity: 37.22
+   Chaos: 0.536 ⚡ Moderate chaos
+   Global stagnation: 6.2
+
+🎯 Hill Climbing Stats:
+   Total climbs: 508
+   Successful: 4 (0.8%)
+   This round: 508 climbs
+
+================================================================================
+Round 28 / 200
+================================================================================
+Running 5 Hybrid CS-PSO threads (5 iter each)... Done (29.52s)
+✅ PERFECT FUNCTIONAL SOLUTION!
+   Fitness: 17.00
+   Gates: 6
+   Unused gates: 10
+
+📊 Metrics:
+   Diversity: 38.37
+   Chaos: 0.534 ⚡ Moderate chaos
+   Global stagnation: 4.2
+
+🎯 Hill Climbing Stats:
+   Total climbs: 523
+   Successful: 4 (0.8%)
+   This round: 523 climbs
+
+================================================================================
+Round 29 / 200
+================================================================================
+Running 5 Hybrid CS-PSO threads (5 iter each)... Done (33.18s)
+✅ PERFECT FUNCTIONAL SOLUTION!
+   Fitness: 17.00
+   Gates: 6
+   Unused gates: 10
+
+📊 Metrics:
+   Diversity: 37.42
+   Chaos: 0.510 ⚡ Moderate chaos
+   Global stagnation: 5.2
+
+🎯 Hill Climbing Stats:
+   Total climbs: 541
+   Successful: 4 (0.7%)
+   This round: 541 climbs
+
+================================================================================
+Round 30 / 200
+================================================================================
+Running 5 Hybrid CS-PSO threads (5 iter each)... Done (27.33s)
+✅ PERFECT FUNCTIONAL SOLUTION!
+   Fitness: 17.00
+   Gates: 6
+   Unused gates: 10
+
+📊 Metrics:
+   Diversity: 38.77
+   Chaos: 0.520 ⚡ Moderate chaos
+   Global stagnation: 4.6
+
+🎯 Hill Climbing Stats:
+   Total climbs: 556
+   Successful: 4 (0.7%)
+   This round: 556 climbs
+
+📈 Progress Summary:
+   Best fitness: 17.00
+   Correct outputs: 16/16
+   Active gates: 6
+
+================================================================================
+Round 31 / 200
+================================================================================
+Running 5 Hybrid CS-PSO threads (5 iter each)... Done (27.59s)
+✅ PERFECT FUNCTIONAL SOLUTION!
+   Fitness: 17.00
+   Gates: 6
+   Unused gates: 10
+
+📊 Metrics:
+   Diversity: 38.37
+   Chaos: 0.520 ⚡ Moderate chaos
+   Global stagnation: 4.4
+
+🎯 Hill Climbing Stats:
+   Total climbs: 572
+   Successful: 4 (0.7%)
+   This round: 572 climbs
+
+================================================================================
+Round 32 / 200
+================================================================================
+Running 5 Hybrid CS-PSO threads (5 iter each)... Done (27.14s)
+✅ PERFECT FUNCTIONAL SOLUTION!
+   Fitness: 17.00
+   Gates: 6
+   Unused gates: 10
+
+📊 Metrics:
+   Diversity: 38.85
+   Chaos: 0.506 ⚡ Moderate chaos
+   Global stagnation: 2.6
+
+🎯 Hill Climbing Stats:
+   Total climbs: 586
+   Successful: 4 (0.7%)
+   This round: 586 climbs
+
+================================================================================
+Round 33 / 200
+================================================================================
+Running 5 Hybrid CS-PSO threads (5 iter each)... Done (30.37s)
+✅ PERFECT FUNCTIONAL SOLUTION!
+   Fitness: 17.00
+   Gates: 6
+   Unused gates: 10
+
+📊 Metrics:
+   Diversity: 38.82
+   Chaos: 0.502 ⚡ Moderate chaos
+   Global stagnation: 4.2
+
+🎯 Hill Climbing Stats:
+   Total climbs: 602
+   Successful: 4 (0.7%)
+   This round: 602 climbs
+
+================================================================================
+Round 34 / 200
+================================================================================
+Running 5 Hybrid CS-PSO threads (5 iter each)... Done (28.39s)
+✅ PERFECT FUNCTIONAL SOLUTION!
+   Fitness: 17.00
+   Gates: 6
+   Unused gates: 10
+
+📊 Metrics:
+   Diversity: 38.74
+   Chaos: 0.516 ⚡ Moderate chaos
+   Global stagnation: 4.4
+
+🎯 Hill Climbing Stats:
+   Total climbs: 617
+   Successful: 4 (0.6%)
+   This round: 617 climbs
+
+================================================================================
+Round 35 / 200
+================================================================================
+Running 5 Hybrid CS-PSO threads (5 iter each)... Done (24.78s)
+✅ PERFECT FUNCTIONAL SOLUTION!
+   Fitness: 17.00
+   Gates: 6
+   Unused gates: 10
+
+📊 Metrics:
+   Diversity: 39.43
+   Chaos: 0.508 ⚡ Moderate chaos
+   Global stagnation: 2.4
+
+🎯 Hill Climbing Stats:
+   Total climbs: 629
+   Successful: 4 (0.6%)
+   This round: 629 climbs
+
+================================================================================
+Round 36 / 200
+================================================================================
+Running 5 Hybrid CS-PSO threads (5 iter each)... Done (27.70s)
+✅ PERFECT FUNCTIONAL SOLUTION!
+   Fitness: 17.00
+   Gates: 6
+   Unused gates: 10
+
+📊 Metrics:
+   Diversity: 38.60
+   Chaos: 0.508 ⚡ Moderate chaos
+   Global stagnation: 4.4
+
+🎯 Hill Climbing Stats:
+   Total climbs: 645
+   Successful: 4 (0.6%)
+   This round: 645 climbs
+
+================================================================================
+Round 37 / 200
+================================================================================
+Running 5 Hybrid CS-PSO threads (5 iter each)... Done (28.63s)
+✅ PERFECT FUNCTIONAL SOLUTION!
+   Fitness: 17.00
+   Gates: 6
+   Unused gates: 10
+
+📊 Metrics:
+   Diversity: 38.48
+   Chaos: 0.522 ⚡ Moderate chaos
+   Global stagnation: 6.0
+
+🎯 Hill Climbing Stats:
+   Total climbs: 661
+   Successful: 4 (0.6%)
+   This round: 661 climbs
+
+================================================================================
+Round 38 / 200
+================================================================================
+Running 5 Hybrid CS-PSO threads (5 iter each)... Done (27.64s)
+✅ PERFECT FUNCTIONAL SOLUTION!
+   Fitness: 17.00
+   Gates: 6
+   Unused gates: 10
+
+📊 Metrics:
+   Diversity: 38.23
+   Chaos: 0.526 ⚡ Moderate chaos
+   Global stagnation: 4.6
+
+🎯 Hill Climbing Stats:
+   Total climbs: 676
+   Successful: 4 (0.6%)
+   This round: 676 climbs
+
+================================================================================
+Round 39 / 200
+================================================================================
+Running 5 Hybrid CS-PSO threads (5 iter each)... Done (27.22s)
+✅ PERFECT FUNCTIONAL SOLUTION!
+   Fitness: 17.00
+   Gates: 6
+   Unused gates: 10
+
+📊 Metrics:
+   Diversity: 38.38
+   Chaos: 0.502 ⚡ Moderate chaos
+   Global stagnation: 4.4
+
+🎯 Hill Climbing Stats:
+   Total climbs: 691
+   Successful: 4 (0.6%)
+   This round: 691 climbs
+
+================================================================================
+Round 40 / 200
+================================================================================
+Running 5 Hybrid CS-PSO threads (5 iter each)... Done (25.73s)
+✅ PERFECT FUNCTIONAL SOLUTION!
+   Fitness: 17.00
+   Gates: 6
+   Unused gates: 10
+
+📊 Metrics:
+   Diversity: 38.93
+   Chaos: 0.498 🌱 Low chaos (exploiting)
+   Global stagnation: 2.4
+
+🎯 Hill Climbing Stats:
+   Total climbs: 704
+   Successful: 4 (0.6%)
+   This round: 704 climbs
+
+📈 Progress Summary:
+   Best fitness: 17.00
+   Correct outputs: 16/16
+   Active gates: 6
+
+================================================================================
+Round 41 / 200
+================================================================================
+Running 5 Hybrid CS-PSO threads (5 iter each)... Done (29.10s)
+✅ PERFECT FUNCTIONAL SOLUTION!
+   Fitness: 17.00
+   Gates: 6
+   Unused gates: 10
+
+📊 Metrics:
+   Diversity: 38.48
+   Chaos: 0.468 🌱 Low chaos (exploiting)
+   Global stagnation: 3.4
+
+🎯 Hill Climbing Stats:
+   Total climbs: 720
+   Successful: 4 (0.6%)
+   This round: 720 climbs
+
+================================================================================
+Round 42 / 200
+================================================================================
+Running 5 Hybrid CS-PSO threads (5 iter each)... Done (28.33s)
+✅ PERFECT FUNCTIONAL SOLUTION!
+   Fitness: 17.00
+   Gates: 6
+   Unused gates: 10
+
+📊 Metrics:
+   Diversity: 38.85
+   Chaos: 0.458 🌱 Low chaos (exploiting)
+   Global stagnation: 3.8
+
+🎯 Hill Climbing Stats:
+   Total climbs: 736
+   Successful: 4 (0.5%)
+   This round: 736 climbs
+
+================================================================================
+Round 43 / 200
+================================================================================
+Running 5 Hybrid CS-PSO threads (5 iter each)... Done (24.13s)
+✅ PERFECT FUNCTIONAL SOLUTION!
+   Fitness: 17.00
+   Gates: 6
+   Unused gates: 10
+
+📊 Metrics:
+   Diversity: 38.67
+   Chaos: 0.440 🌱 Low chaos (exploiting)
+   Global stagnation: 2.4
+
+🎯 Hill Climbing Stats:
+   Total climbs: 749
+   Successful: 4 (0.5%)
+   This round: 749 climbs
+
+================================================================================
+Round 44 / 200
+================================================================================
+Running 5 Hybrid CS-PSO threads (5 iter each)... Done (30.40s)
+✅ PERFECT FUNCTIONAL SOLUTION!
+   Fitness: 17.00
+   Gates: 6
+   Unused gates: 10
+
+📊 Metrics:
+   Diversity: 37.79
+   Chaos: 0.444 🌱 Low chaos (exploiting)
+   Global stagnation: 4.6
+
+🎯 Hill Climbing Stats:
+   Total climbs: 768
+   Successful: 5 (0.7%)
+   This round: 768 climbs
+
+================================================================================
+Round 45 / 200
+================================================================================
+Running 5 Hybrid CS-PSO threads (5 iter each)... Done (29.10s)
+✅ PERFECT FUNCTIONAL SOLUTION!
+   Fitness: 17.00
+   Gates: 6
+   Unused gates: 10
+
+📊 Metrics:
+   Diversity: 39.00
+   Chaos: 0.448 🌱 Low chaos (exploiting)
+   Global stagnation: 4.4
+
+🎯 Hill Climbing Stats:
+   Total climbs: 783
+   Successful: 5 (0.6%)
+   This round: 783 climbs
+
+================================================================================
+Round 46 / 200
+================================================================================
+Running 5 Hybrid CS-PSO threads (5 iter each)... Done (28.10s)
+✅ PERFECT FUNCTIONAL SOLUTION!
+   Fitness: 17.00
+   Gates: 6
+   Unused gates: 10
+
+📊 Metrics:
+   Diversity: 38.58
+   Chaos: 0.440 🌱 Low chaos (exploiting)
+   Global stagnation: 4.0
+
+🎯 Hill Climbing Stats:
+   Total climbs: 799
+   Successful: 6 (0.8%)
+   This round: 799 climbs
+
+================================================================================
+Round 47 / 200
+================================================================================
+Running 5 Hybrid CS-PSO threads (5 iter each)... Done (37.53s)
+✅ PERFECT FUNCTIONAL SOLUTION!
+   Fitness: 17.00
+   Gates: 6
+   Unused gates: 10
+
+📊 Metrics:
+   Diversity: 38.78
+   Chaos: 0.456 🌱 Low chaos (exploiting)
+   Global stagnation: 4.2
+
+🎯 Hill Climbing Stats:
+   Total climbs: 814
+   Successful: 6 (0.7%)
+   This round: 814 climbs
+
+================================================================================
+Round 48 / 200
+================================================================================
+Running 5 Hybrid CS-PSO threads (5 iter each)... Done (38.35s)
+✅ PERFECT FUNCTIONAL SOLUTION!
+   Fitness: 17.00
+   Gates: 6
+   Unused gates: 10
+
+📊 Metrics:
+   Diversity: 38.87
+   Chaos: 0.462 🌱 Low chaos (exploiting)
+   Global stagnation: 4.8
+
+🎯 Hill Climbing Stats:
+   Total climbs: 829
+   Successful: 6 (0.7%)
+   This round: 829 climbs
+
+================================================================================
+Round 49 / 200
+================================================================================
+Running 5 Hybrid CS-PSO threads (5 iter each)... Done (45.23s)
+✅ PERFECT FUNCTIONAL SOLUTION!
+   Fitness: 17.00
+   Gates: 6
+   Unused gates: 10
+
+📊 Metrics:
+   Diversity: 37.12
+   Chaos: 0.454 🌱 Low chaos (exploiting)
+   Global stagnation: 4.8
+
+🎯 Hill Climbing Stats:
+   Total climbs: 851
+   Successful: 6 (0.7%)
+   This round: 851 climbs
+
+================================================================================
+Round 50 / 200
+================================================================================
+Running 5 Hybrid CS-PSO threads (5 iter each)... Done (32.98s)
+✅ PERFECT FUNCTIONAL SOLUTION!
+   Fitness: 17.00
+   Gates: 6
+   Unused gates: 10
+
+📊 Metrics:
+   Diversity: 38.63
+   Chaos: 0.478 🌱 Low chaos (exploiting)
+   Global stagnation: 4.0
+
+🎯 Hill Climbing Stats:
+   Total climbs: 866
+   Successful: 6 (0.7%)
+   This round: 866 climbs
+
+📈 Progress Summary:
+   Best fitness: 17.00
+   Correct outputs: 16/16
+   Active gates: 6
+
+================================================================================
+Round 51 / 200
+================================================================================
+Running 5 Hybrid CS-PSO threads (5 iter each)... Done (43.87s)
+✅ PERFECT FUNCTIONAL SOLUTION!
+   Fitness: 17.00
+   Gates: 6
+   Unused gates: 10
+
+📊 Metrics:
+   Diversity: 37.01
+   Chaos: 0.468 🌱 Low chaos (exploiting)
+   Global stagnation: 5.0
+
+🎯 Hill Climbing Stats:
+   Total climbs: 891
+   Successful: 6 (0.7%)
+   This round: 891 climbs
+
+================================================================================
+Round 52 / 200
+================================================================================
+Running 5 Hybrid CS-PSO threads (5 iter each)... Done (16.95s)
+✅ PERFECT FUNCTIONAL SOLUTION!
+   Fitness: 17.00
+   Gates: 6
+   Unused gates: 10
+
+📊 Metrics:
+   Diversity: 39.09
+   Chaos: 0.476 🌱 Low chaos (exploiting)
+   Global stagnation: 4.4
+
+🎯 Hill Climbing Stats:
+   Total climbs: 907
+   Successful: 6 (0.7%)
+   This round: 907 climbs
+
+================================================================================
+Round 53 / 200
+================================================================================
+Running 5 Hybrid CS-PSO threads (5 iter each)... Done (13.82s)
+✅ PERFECT FUNCTIONAL SOLUTION!
+   Fitness: 17.00
+   Gates: 6
+   Unused gates: 10
+
+📊 Metrics:
+   Diversity: 38.47
+   Chaos: 0.458 🌱 Low chaos (exploiting)
+   Global stagnation: 4.0
+
+🎯 Hill Climbing Stats:
+   Total climbs: 923
+   Successful: 6 (0.7%)
+   This round: 923 climbs
+
+================================================================================
+Round 54 / 200
+================================================================================
+Running 5 Hybrid CS-PSO threads (5 iter each)... Done (25.17s)
+✅ PERFECT FUNCTIONAL SOLUTION!
+   Fitness: 17.10
+   Gates: 5
+   Unused gates: 11
+   🎯 New champion (simpler circuit)
+
+📊 Metrics:
+   Diversity: 37.41
+   Chaos: 0.472 🌱 Low chaos (exploiting)
+   Global stagnation: 5.8
+
+🎯 Hill Climbing Stats:
+   Total climbs: 944
+   Successful: 7 (0.7%)
+   This round: 944 climbs
+
+================================================================================
+Round 55 / 200
+================================================================================
+Running 5 Hybrid CS-PSO threads (5 iter each)... Done (23.05s)
+✅ PERFECT FUNCTIONAL SOLUTION!
+   Fitness: 17.10
+   Gates: 5
+   Unused gates: 11
+
+📊 Metrics:
+   Diversity: 38.64
+   Chaos: 0.474 🌱 Low chaos (exploiting)
+   Global stagnation: 4.8
+
+🎯 Hill Climbing Stats:
+   Total climbs: 959
+   Successful: 7 (0.7%)
+   This round: 959 climbs
+
+================================================================================
+Round 56 / 200
+================================================================================
+Running 5 Hybrid CS-PSO threads (5 iter each)... Done (17.28s)
+✅ PERFECT FUNCTIONAL SOLUTION!
+   Fitness: 17.10
+   Gates: 5
+   Unused gates: 11
+
+📊 Metrics:
+   Diversity: 38.68
+   Chaos: 0.470 🌱 Low chaos (exploiting)
+   Global stagnation: 4.2
+
+🎯 Hill Climbing Stats:
+   Total climbs: 973
+   Successful: 8 (0.8%)
+   This round: 973 climbs
+
+================================================================================
+Round 57 / 200
+================================================================================
+Running 5 Hybrid CS-PSO threads (5 iter each)... Done (7.94s)
+✅ PERFECT FUNCTIONAL SOLUTION!
+   Fitness: 17.10
+   Gates: 5
+   Unused gates: 11
+
+📊 Metrics:
+   Diversity: 41.57
+   Chaos: 0.450 🌱 Low chaos (exploiting)
+   Global stagnation: 2.4
+
+🎯 Hill Climbing Stats:
+   Total climbs: 978
+   Successful: 8 (0.8%)
+   This round: 978 climbs
+
+================================================================================
+Round 58 / 200
+================================================================================
+Running 5 Hybrid CS-PSO threads (5 iter each)... Done (8.43s)
+✅ PERFECT FUNCTIONAL SOLUTION!
+   Fitness: 17.10
+   Gates: 5
+   Unused gates: 11
+
+📊 Metrics:
+   Diversity: 41.47
+   Chaos: 0.420 🌱 Low chaos (exploiting)
+   Global stagnation: 1.6
+
+🎯 Hill Climbing Stats:
+   Total climbs: 983
+   Successful: 8 (0.8%)
+   This round: 983 climbs
+
+================================================================================
+Round 59 / 200
+================================================================================
+Running 5 Hybrid CS-PSO threads (5 iter each)... Done (9.71s)
+✅ PERFECT FUNCTIONAL SOLUTION!
+   Fitness: 17.10
+   Gates: 5
+   Unused gates: 11
+
+📊 Metrics:
+   Diversity: 41.79
+   Chaos: 0.400 🌱 Low chaos (exploiting)
+   Global stagnation: 2.0
+
+🎯 Hill Climbing Stats:
+   Total climbs: 991
+   Successful: 8 (0.8%)
+   This round: 991 climbs
+
+================================================================================
+Round 60 / 200
+================================================================================
+Running 5 Hybrid CS-PSO threads (5 iter each)... Done (8.96s)
+✅ PERFECT FUNCTIONAL SOLUTION!
+   Fitness: 17.10
+   Gates: 5
+   Unused gates: 11
+
+📊 Metrics:
+   Diversity: 41.68
+   Chaos: 0.400 🌱 Low chaos (exploiting)
+   Global stagnation: 1.6
+
+🎯 Hill Climbing Stats:
+   Total climbs: 998
+   Successful: 8 (0.8%)
+   This round: 998 climbs
+
+📈 Progress Summary:
+   Best fitness: 17.10
+   Correct outputs: 16/16
+   Active gates: 5
+
+================================================================================
+Round 61 / 200
+================================================================================
+Running 5 Hybrid CS-PSO threads (5 iter each)... Done (16.47s)
+✅ PERFECT FUNCTIONAL SOLUTION!
+   Fitness: 17.10
+   Gates: 5
+   Unused gates: 11
+
+📊 Metrics:
+   Diversity: 40.30
+   Chaos: 0.404 🌱 Low chaos (exploiting)
+   Global stagnation: 1.6
+
+🎯 Hill Climbing Stats:
+   Total climbs: 1008
+   Successful: 8 (0.8%)
+   This round: 1008 climbs
+
+================================================================================
+Round 62 / 200
+================================================================================
+Running 5 Hybrid CS-PSO threads (5 iter each)... Done (20.34s)
+✅ PERFECT FUNCTIONAL SOLUTION!
+   Fitness: 17.10
+   Gates: 5
+   Unused gates: 11
+
+📊 Metrics:
+   Diversity: 40.47
+   Chaos: 0.400 🌱 Low chaos (exploiting)
+   Global stagnation: 1.4
+
+🎯 Hill Climbing Stats:
+   Total climbs: 1019
+   Successful: 9 (0.9%)
+   This round: 1019 climbs
+
+================================================================================
+Round 63 / 200
+================================================================================
+Running 5 Hybrid CS-PSO threads (5 iter each)... Done (17.56s)
+✅ PERFECT FUNCTIONAL SOLUTION!
+   Fitness: 17.10
+   Gates: 5
+   Unused gates: 11
+
+📊 Metrics:
+   Diversity: 41.42
+   Chaos: 0.400 🌱 Low chaos (exploiting)
+   Global stagnation: 2.0
+
+🎯 Hill Climbing Stats:
+   Total climbs: 1027
+   Successful: 9 (0.9%)
+   This round: 1027 climbs
+
+================================================================================
+Round 64 / 200
+================================================================================
+Running 5 Hybrid CS-PSO threads (5 iter each)... Done (13.99s)
+✅ PERFECT FUNCTIONAL SOLUTION!
+   Fitness: 17.10
+   Gates: 5
+   Unused gates: 11
+
+📊 Metrics:
+   Diversity: 41.73
+   Chaos: 0.400 🌱 Low chaos (exploiting)
+   Global stagnation: 2.4
+
+🎯 Hill Climbing Stats:
+   Total climbs: 1032
+   Successful: 9 (0.9%)
+   This round: 1032 climbs
+
+================================================================================
+Round 65 / 200
+================================================================================
+Running 5 Hybrid CS-PSO threads (5 iter each)... Done (14.16s)
+✅ PERFECT FUNCTIONAL SOLUTION!
+   Fitness: 17.10
+   Gates: 5
+   Unused gates: 11
+
+📊 Metrics:
+   Diversity: 41.21
+   Chaos: 0.404 🌱 Low chaos (exploiting)
+   Global stagnation: 1.8
+
+🎯 Hill Climbing Stats:
+   Total climbs: 1038
+   Successful: 9 (0.9%)
+   This round: 1038 climbs
+
+================================================================================
+Round 66 / 200
+================================================================================
+Running 5 Hybrid CS-PSO threads (5 iter each)... Done (17.47s)
+✅ PERFECT FUNCTIONAL SOLUTION!
+   Fitness: 17.10
+   Gates: 5
+   Unused gates: 11
+
+📊 Metrics:
+   Diversity: 40.45
+   Chaos: 0.400 🌱 Low chaos (exploiting)
+   Global stagnation: 1.8
+
+🎯 Hill Climbing Stats:
+   Total climbs: 1046
+   Successful: 9 (0.9%)
+   This round: 1046 climbs
+
+================================================================================
+Round 67 / 200
+================================================================================
+Running 5 Hybrid CS-PSO threads (5 iter each)... Done (14.85s)
+✅ PERFECT FUNCTIONAL SOLUTION!
+   Fitness: 17.10
+   Gates: 5
+   Unused gates: 11
+
+📊 Metrics:
+   Diversity: 41.79
+   Chaos: 0.400 🌱 Low chaos (exploiting)
+   Global stagnation: 1.4
+
+🎯 Hill Climbing Stats:
+   Total climbs: 1051
+   Successful: 9 (0.9%)
+   This round: 1051 climbs
+
+================================================================================
+Round 68 / 200
+================================================================================
+Running 5 Hybrid CS-PSO threads (5 iter each)... Done (16.04s)
+✅ PERFECT FUNCTIONAL SOLUTION!
+   Fitness: 17.10
+   Gates: 5
+   Unused gates: 11
+
+📊 Metrics:
+   Diversity: 41.75
+   Chaos: 0.400 🌱 Low chaos (exploiting)
+   Global stagnation: 3.4
+
+🎯 Hill Climbing Stats:
+   Total climbs: 1057
+   Successful: 9 (0.9%)
+   This round: 1057 climbs
+
+================================================================================
+Round 69 / 200
+================================================================================
+Running 5 Hybrid CS-PSO threads (5 iter each)... Done (20.11s)
+✅ PERFECT FUNCTIONAL SOLUTION!
+   Fitness: 17.10
+   Gates: 5
+   Unused gates: 11
+
+📊 Metrics:
+   Diversity: 40.38
+   Chaos: 0.406 🌱 Low chaos (exploiting)
+   Global stagnation: 2.2
+
+🎯 Hill Climbing Stats:
+   Total climbs: 1068
+   Successful: 9 (0.8%)
+   This round: 1068 climbs
+
+================================================================================
+Round 70 / 200
+================================================================================
+Running 5 Hybrid CS-PSO threads (5 iter each)... Done (14.89s)
+✅ PERFECT FUNCTIONAL SOLUTION!
+   Fitness: 17.10
+   Gates: 5
+   Unused gates: 11
+
+📊 Metrics:
+   Diversity: 41.95
+   Chaos: 0.410 🌱 Low chaos (exploiting)
+   Global stagnation: 2.0
+
+🎯 Hill Climbing Stats:
+   Total climbs: 1074
+   Successful: 10 (0.9%)
+   This round: 1074 climbs
+
+📈 Progress Summary:
+   Best fitness: 17.10
+   Correct outputs: 16/16
+   Active gates: 5
+
+================================================================================
+Round 71 / 200
+================================================================================
+Running 5 Hybrid CS-PSO threads (5 iter each)... Done (13.60s)
+✅ PERFECT FUNCTIONAL SOLUTION!
+   Fitness: 17.10
+   Gates: 5
+   Unused gates: 11
+
+📊 Metrics:
+   Diversity: 41.49
+   Chaos: 0.400 🌱 Low chaos (exploiting)
+   Global stagnation: 1.8
+
+🎯 Hill Climbing Stats:
+   Total climbs: 1079
+   Successful: 10 (0.9%)
+   This round: 1079 climbs
+
+================================================================================
+Round 72 / 200
+================================================================================
+Running 5 Hybrid CS-PSO threads (5 iter each)... Done (13.52s)
+✅ PERFECT FUNCTIONAL SOLUTION!
+   Fitness: 17.10
+   Gates: 5
+   Unused gates: 11
+
+📊 Metrics:
+   Diversity: 41.72
+   Chaos: 0.420 🌱 Low chaos (exploiting)
+   Global stagnation: 4.6
+
+🎯 Hill Climbing Stats:
+   Total climbs: 1084
+   Successful: 10 (0.9%)
+   This round: 1084 climbs
+
+================================================================================
+Round 73 / 200
+================================================================================
+Running 5 Hybrid CS-PSO threads (5 iter each)... Done (14.74s)
+✅ PERFECT FUNCTIONAL SOLUTION!
+   Fitness: 17.10
+   Gates: 5
+   Unused gates: 11
+
+📊 Metrics:
+   Diversity: 41.01
+   Chaos: 0.416 🌱 Low chaos (exploiting)
+   Global stagnation: 1.6
+
+🎯 Hill Climbing Stats:
+   Total climbs: 1090
+   Successful: 10 (0.9%)
+   This round: 1090 climbs
+
+================================================================================
+Round 74 / 200
+================================================================================
+Running 5 Hybrid CS-PSO threads (5 iter each)... Done (15.45s)
+✅ PERFECT FUNCTIONAL SOLUTION!
+   Fitness: 17.10
+   Gates: 5
+   Unused gates: 11
+
+📊 Metrics:
+   Diversity: 40.64
+   Chaos: 0.402 🌱 Low chaos (exploiting)
+   Global stagnation: 2.0
+
+🎯 Hill Climbing Stats:
+   Total climbs: 1097
+   Successful: 10 (0.9%)
+   This round: 1097 climbs
+
+================================================================================
+Round 75 / 200
+================================================================================
+Running 5 Hybrid CS-PSO threads (5 iter each)... Done (14.31s)
+✅ PERFECT FUNCTIONAL SOLUTION!
+   Fitness: 17.10
+   Gates: 5
+   Unused gates: 11
+
+📊 Metrics:
+   Diversity: 41.63
+   Chaos: 0.416 🌱 Low chaos (exploiting)
+   Global stagnation: 1.8
+
+🎯 Hill Climbing Stats:
+   Total climbs: 1103
+   Successful: 10 (0.9%)
+   This round: 1103 climbs
+
+================================================================================
+Round 76 / 200
+================================================================================
+Running 5 Hybrid CS-PSO threads (5 iter each)... Done (17.13s)
+✅ PERFECT FUNCTIONAL SOLUTION!
+   Fitness: 17.10
+   Gates: 5
+   Unused gates: 11
+
+📊 Metrics:
+   Diversity: 40.76
+   Chaos: 0.416 🌱 Low chaos (exploiting)
+   Global stagnation: 1.8
+
+🎯 Hill Climbing Stats:
+   Total climbs: 1111
+   Successful: 10 (0.9%)
+   This round: 1111 climbs
+
+================================================================================
+Round 77 / 200
+================================================================================
+Running 5 Hybrid CS-PSO threads (5 iter each)... Done (13.70s)
+✅ PERFECT FUNCTIONAL SOLUTION!
+   Fitness: 17.10
+   Gates: 5
+   Unused gates: 11
+
+📊 Metrics:
+   Diversity: 41.79
+   Chaos: 0.400 🌱 Low chaos (exploiting)
+   Global stagnation: 2.0
+
+🎯 Hill Climbing Stats:
+   Total climbs: 1116
+   Successful: 10 (0.9%)
+   This round: 1116 climbs
+
+================================================================================
+Round 78 / 200
+================================================================================
+Running 5 Hybrid CS-PSO threads (5 iter each)... Done (13.56s)
+✅ PERFECT FUNCTIONAL SOLUTION!
+   Fitness: 17.10
+   Gates: 5
+   Unused gates: 11
+
+📊 Metrics:
+   Diversity: 41.85
+   Chaos: 0.404 🌱 Low chaos (exploiting)
+   Global stagnation: 2.0
+
+🎯 Hill Climbing Stats:
+   Total climbs: 1122
+   Successful: 10 (0.9%)
+   This round: 1122 climbs
+
+================================================================================
+Round 79 / 200
+================================================================================
+Running 5 Hybrid CS-PSO threads (5 iter each)... Done (20.85s)
+✅ PERFECT FUNCTIONAL SOLUTION!
+   Fitness: 17.10
+   Gates: 5
+   Unused gates: 11
+
+📊 Metrics:
+   Diversity: 38.75
+   Chaos: 0.400 🌱 Low chaos (exploiting)
+   Global stagnation: 2.6
+
+🎯 Hill Climbing Stats:
+   Total climbs: 1137
+   Successful: 10 (0.9%)
+   This round: 1137 climbs
+
+================================================================================
+Round 80 / 200
+================================================================================
+Running 5 Hybrid CS-PSO threads (5 iter each)... Done (12.08s)
+✅ PERFECT FUNCTIONAL SOLUTION!
+   Fitness: 17.10
+   Gates: 5
+   Unused gates: 11
+
+📊 Metrics:
+   Diversity: 41.50
+   Chaos: 0.416 🌱 Low chaos (exploiting)
+   Global stagnation: 2.0
+
+🎯 Hill Climbing Stats:
+   Total climbs: 1142
+   Successful: 10 (0.9%)
+   This round: 1142 climbs
+
+📈 Progress Summary:
+   Best fitness: 17.10
+   Correct outputs: 16/16
+   Active gates: 5
+
+================================================================================
+Round 81 / 200
+================================================================================
+Running 5 Hybrid CS-PSO threads (5 iter each)... Done (9.48s)
+✅ PERFECT FUNCTIONAL SOLUTION!
+   Fitness: 17.10
+   Gates: 5
+   Unused gates: 11
+
+📊 Metrics:
+   Diversity: 40.55
+   Chaos: 0.406 🌱 Low chaos (exploiting)
+   Global stagnation: 2.0
+
+🎯 Hill Climbing Stats:
+   Total climbs: 1150
+   Successful: 10 (0.9%)
+   This round: 1150 climbs
+
+================================================================================
+Round 82 / 200
+================================================================================
+Running 5 Hybrid CS-PSO threads (5 iter each)... Done (9.23s)
+✅ PERFECT FUNCTIONAL SOLUTION!
+   Fitness: 17.10
+   Gates: 5
+   Unused gates: 11
+
+📊 Metrics:
+   Diversity: 41.14
+   Chaos: 0.416 🌱 Low chaos (exploiting)
+   Global stagnation: 1.4
+
+🎯 Hill Climbing Stats:
+   Total climbs: 1157
+   Successful: 10 (0.9%)
+   This round: 1157 climbs
+
+================================================================================
+Round 83 / 200
+================================================================================
+Running 5 Hybrid CS-PSO threads (5 iter each)... Done (7.50s)
+✅ PERFECT FUNCTIONAL SOLUTION!
+   Fitness: 17.10
+   Gates: 5
+   Unused gates: 11
+
+📊 Metrics:
+   Diversity: 41.68
+   Chaos: 0.410 🌱 Low chaos (exploiting)
+   Global stagnation: 1.4
+
+🎯 Hill Climbing Stats:
+   Total climbs: 1162
+   Successful: 10 (0.9%)
+   This round: 1162 climbs
+
+================================================================================
+Round 84 / 200
+================================================================================
+Running 5 Hybrid CS-PSO threads (5 iter each)... Done (11.25s)
+✅ PERFECT FUNCTIONAL SOLUTION!
+   Fitness: 17.10
+   Gates: 5
+   Unused gates: 11
+
+📊 Metrics:
+   Diversity: 39.13
+   Chaos: 0.400 🌱 Low chaos (exploiting)
+   Global stagnation: 2.2
+
+🎯 Hill Climbing Stats:
+   Total climbs: 1174
+   Successful: 10 (0.9%)
+   This round: 1174 climbs
+
+================================================================================
+Round 85 / 200
+================================================================================
+Running 5 Hybrid CS-PSO threads (5 iter each)... Done (8.46s)
+✅ PERFECT FUNCTIONAL SOLUTION!
+   Fitness: 17.10
+   Gates: 5
+   Unused gates: 11
+
+📊 Metrics:
+   Diversity: 41.62
+   Chaos: 0.420 🌱 Low chaos (exploiting)
+   Global stagnation: 1.2
+
+🎯 Hill Climbing Stats:
+   Total climbs: 1179
+   Successful: 10 (0.8%)
+   This round: 1179 climbs
+
+================================================================================
+Round 86 / 200
+================================================================================
+Running 5 Hybrid CS-PSO threads (5 iter each)... Done (9.68s)
+✅ PERFECT FUNCTIONAL SOLUTION!
+   Fitness: 17.10
+   Gates: 5
+   Unused gates: 11
+
+📊 Metrics:
+   Diversity: 40.21
+   Chaos: 0.406 🌱 Low chaos (exploiting)
+   Global stagnation: 2.0
+
+🎯 Hill Climbing Stats:
+   Total climbs: 1187
+   Successful: 10 (0.8%)
+   This round: 1187 climbs
+
+================================================================================
+Round 87 / 200
+================================================================================
+Running 5 Hybrid CS-PSO threads (5 iter each)... Done (10.09s)
+✅ PERFECT FUNCTIONAL SOLUTION!
+   Fitness: 17.10
+   Gates: 5
+   Unused gates: 11
+
+📊 Metrics:
+   Diversity: 40.42
+   Chaos: 0.404 🌱 Low chaos (exploiting)
+   Global stagnation: 3.6
+
+🎯 Hill Climbing Stats:
+   Total climbs: 1196
+   Successful: 11 (0.9%)
+   This round: 1196 climbs
+
+================================================================================
+Round 88 / 200
+================================================================================
+Running 5 Hybrid CS-PSO threads (5 iter each)... Done (10.46s)
+✅ PERFECT FUNCTIONAL SOLUTION!
+   Fitness: 17.10
+   Gates: 5
+   Unused gates: 11
+
+📊 Metrics:
+   Diversity: 40.37
+   Chaos: 0.400 🌱 Low chaos (exploiting)
+   Global stagnation: 2.0
+
+🎯 Hill Climbing Stats:
+   Total climbs: 1205
+   Successful: 12 (1.0%)
+   This round: 1205 climbs
+
+================================================================================
+Round 89 / 200
+================================================================================
+Running 5 Hybrid CS-PSO threads (5 iter each)... Done (8.11s)
+✅ PERFECT FUNCTIONAL SOLUTION!
+   Fitness: 17.10
+   Gates: 5
+   Unused gates: 11
+
+📊 Metrics:
+   Diversity: 41.62
+   Chaos: 0.404 🌱 Low chaos (exploiting)
+   Global stagnation: 1.6
+
+🎯 Hill Climbing Stats:
+   Total climbs: 1210
+   Successful: 12 (1.0%)
+   This round: 1210 climbs
+
+================================================================================
+Round 90 / 200
+================================================================================
+Running 5 Hybrid CS-PSO threads (5 iter each)... Done (9.89s)
+✅ PERFECT FUNCTIONAL SOLUTION!
+   Fitness: 17.10
+   Gates: 5
+   Unused gates: 11
+
+📊 Metrics:
+   Diversity: 40.89
+   Chaos: 0.400 🌱 Low chaos (exploiting)
+   Global stagnation: 2.0
+
+🎯 Hill Climbing Stats:
+   Total climbs: 1218
+   Successful: 13 (1.1%)
+   This round: 1218 climbs
+
+📈 Progress Summary:
+   Best fitness: 17.10
+   Correct outputs: 16/16
+   Active gates: 5
+
+================================================================================
+Round 91 / 200
+================================================================================
+Running 5 Hybrid CS-PSO threads (5 iter each)... Done (10.00s)
+✅ PERFECT FUNCTIONAL SOLUTION!
+   Fitness: 17.10
+   Gates: 5
+   Unused gates: 11
+
+📊 Metrics:
+   Diversity: 40.63
+   Chaos: 0.400 🌱 Low chaos (exploiting)
+   Global stagnation: 1.6
+
+🎯 Hill Climbing Stats:
+   Total climbs: 1227
+   Successful: 13 (1.1%)
+   This round: 1227 climbs
+
+================================================================================
+Round 92 / 200
+================================================================================
+Running 5 Hybrid CS-PSO threads (5 iter each)... Done (9.19s)
+✅ PERFECT FUNCTIONAL SOLUTION!
+   Fitness: 17.10
+   Gates: 5
+   Unused gates: 11
+
+📊 Metrics:
+   Diversity: 40.70
+   Chaos: 0.410 🌱 Low chaos (exploiting)
+   Global stagnation: 1.6
+
+🎯 Hill Climbing Stats:
+   Total climbs: 1234
+   Successful: 13 (1.1%)
+   This round: 1234 climbs
+
+================================================================================
+Round 93 / 200
+================================================================================
+Running 5 Hybrid CS-PSO threads (5 iter each)... Done (8.80s)
+✅ PERFECT FUNCTIONAL SOLUTION!
+   Fitness: 17.10
+   Gates: 5
+   Unused gates: 11
+
+📊 Metrics:
+   Diversity: 41.66
+   Chaos: 0.400 🌱 Low chaos (exploiting)
+   Global stagnation: 1.8
+
+🎯 Hill Climbing Stats:
+   Total climbs: 1240
+   Successful: 13 (1.0%)
+   This round: 1240 climbs
+
+================================================================================
+Round 94 / 200
+================================================================================
+Running 5 Hybrid CS-PSO threads (5 iter each)... Done (11.26s)
+✅ PERFECT FUNCTIONAL SOLUTION!
+   Fitness: 17.10
+   Gates: 5
+   Unused gates: 11
+
+📊 Metrics:
+   Diversity: 38.95
+   Chaos: 0.400 🌱 Low chaos (exploiting)
+   Global stagnation: 2.2
+
+🎯 Hill Climbing Stats:
+   Total climbs: 1252
+   Successful: 13 (1.0%)
+   This round: 1252 climbs
+
+================================================================================
+Round 95 / 200
+================================================================================
+Running 5 Hybrid CS-PSO threads (5 iter each)... Done (8.46s)
+✅ PERFECT FUNCTIONAL SOLUTION!
+   Fitness: 17.10
+   Gates: 5
+   Unused gates: 11
+
+📊 Metrics:
+   Diversity: 40.94
+   Chaos: 0.404 🌱 Low chaos (exploiting)
+   Global stagnation: 1.8
+
+🎯 Hill Climbing Stats:
+   Total climbs: 1258
+   Successful: 13 (1.0%)
+   This round: 1258 climbs
+
+================================================================================
+Round 96 / 200
+================================================================================
+Running 5 Hybrid CS-PSO threads (5 iter each)... Done (8.81s)
+✅ PERFECT FUNCTIONAL SOLUTION!
+   Fitness: 17.10
+   Gates: 5
+   Unused gates: 11
+
+📊 Metrics:
+   Diversity: 40.85
+   Chaos: 0.400 🌱 Low chaos (exploiting)
+   Global stagnation: 1.6
+
+🎯 Hill Climbing Stats:
+   Total climbs: 1265
+   Successful: 13 (1.0%)
+   This round: 1265 climbs
+
+================================================================================
+Round 97 / 200
+================================================================================
+Running 5 Hybrid CS-PSO threads (5 iter each)... Done (11.54s)
+✅ PERFECT FUNCTIONAL SOLUTION!
+   Fitness: 17.10
+   Gates: 5
+   Unused gates: 11
+
+📊 Metrics:
+   Diversity: 39.27
+   Chaos: 0.416 🌱 Low chaos (exploiting)
+   Global stagnation: 2.8
+
+🎯 Hill Climbing Stats:
+   Total climbs: 1276
+   Successful: 14 (1.1%)
+   This round: 1276 climbs
+
+================================================================================
+Round 98 / 200
+================================================================================
+Running 5 Hybrid CS-PSO threads (5 iter each)... Done (8.47s)
+✅ PERFECT FUNCTIONAL SOLUTION!
+   Fitness: 17.10
+   Gates: 5
+   Unused gates: 11
+
+📊 Metrics:
+   Diversity: 41.64
+   Chaos: 0.406 🌱 Low chaos (exploiting)
+   Global stagnation: 2.0
+
+🎯 Hill Climbing Stats:
+   Total climbs: 1281
+   Successful: 14 (1.1%)
+   This round: 1281 climbs
+
+================================================================================
+Round 99 / 200
+================================================================================
+Running 5 Hybrid CS-PSO threads (5 iter each)... Done (11.39s)
+✅ PERFECT FUNCTIONAL SOLUTION!
+   Fitness: 17.10
+   Gates: 5
+   Unused gates: 11
+
+📊 Metrics:
+   Diversity: 40.31
+   Chaos: 0.400 🌱 Low chaos (exploiting)
+   Global stagnation: 2.6
+
+🎯 Hill Climbing Stats:
+   Total climbs: 1292
+   Successful: 14 (1.1%)
+   This round: 1292 climbs
+
+================================================================================
+Round 100 / 200
+================================================================================
+Running 5 Hybrid CS-PSO threads (5 iter each)... Done (11.49s)
+✅ PERFECT FUNCTIONAL SOLUTION!
+   Fitness: 17.10
+   Gates: 5
+   Unused gates: 11
+
+📊 Metrics:
+   Diversity: 40.45
+   Chaos: 0.410 🌱 Low chaos (exploiting)
+   Global stagnation: 2.4
+
+🎯 Hill Climbing Stats:
+   Total climbs: 1304
+   Successful: 14 (1.1%)
+   This round: 1304 climbs
+
+📈 Progress Summary:
+   Best fitness: 17.10
+   Correct outputs: 16/16
+   Active gates: 5
+
+================================================================================
+Round 101 / 200
+================================================================================
+Running 5 Hybrid CS-PSO threads (5 iter each)... Done (8.77s)
+✅ PERFECT FUNCTIONAL SOLUTION!
+   Fitness: 17.10
+   Gates: 5
+   Unused gates: 11
+
+📊 Metrics:
+   Diversity: 41.57
+   Chaos: 0.406 🌱 Low chaos (exploiting)
+   Global stagnation: 1.2
+
+🎯 Hill Climbing Stats:
+   Total climbs: 1310
+   Successful: 14 (1.1%)
+   This round: 1310 climbs
+
+================================================================================
+Round 102 / 200
+================================================================================
+Running 5 Hybrid CS-PSO threads (5 iter each)... Done (9.43s)
+✅ PERFECT FUNCTIONAL SOLUTION!
+   Fitness: 17.10
+   Gates: 5
+   Unused gates: 11
+
+📊 Metrics:
+   Diversity: 41.68
+   Chaos: 0.400 🌱 Low chaos (exploiting)
+   Global stagnation: 2.0
+
+🎯 Hill Climbing Stats:
+   Total climbs: 1317
+   Successful: 16 (1.2%)
+   This round: 1317 climbs
+
+================================================================================
+Round 103 / 200
+================================================================================
+Running 5 Hybrid CS-PSO threads (5 iter each)... Done (8.23s)
+✅ PERFECT FUNCTIONAL SOLUTION!
+   Fitness: 17.10
+   Gates: 5
+   Unused gates: 11
+
+📊 Metrics:
+   Diversity: 41.64
+   Chaos: 0.400 🌱 Low chaos (exploiting)
+   Global stagnation: 1.2
+
+🎯 Hill Climbing Stats:
+   Total climbs: 1322
+   Successful: 16 (1.2%)
+   This round: 1322 climbs
+
+================================================================================
+Round 104 / 200
+================================================================================
+Running 5 Hybrid CS-PSO threads (5 iter each)... Done (8.23s)
+✅ PERFECT FUNCTIONAL SOLUTION!
+   Fitness: 17.10
+   Gates: 5
+   Unused gates: 11
+
+📊 Metrics:
+   Diversity: 41.70
+   Chaos: 0.400 🌱 Low chaos (exploiting)
+   Global stagnation: 2.0
+
+🎯 Hill Climbing Stats:
+   Total climbs: 1327
+   Successful: 16 (1.2%)
+   This round: 1327 climbs
+
+⚠ Stopping: Champion stagnated for 50 rounds
+
+================================================================================
+PIPELINE FINISHED
+================================================================================
+
+Total rounds completed: 104/200
+Stop reason: Stagnation limit reached (50 rounds)
+
+================================================================================
+FINAL CHAMPION PARTICLE (Hybrid CS-PSO)
+================================================================================
+
+--- CIRCUIT FORMULA DERIVATION ---
+Internal Gates:
+  Gate 4: (I3 OR I1)
+  Gate 5: (I1 XOR I2)
+  Gate 6: ((I1 XOR I2) AND I2)
+  Gate 7: (I3 NOR ((I1 XOR I2) AND I2))
+  Gate 8: (I1 XNOR (I1 XOR I2))
+  Gate 9: ((I1 XOR I2) NOR I1)
+  Gate 10: (I3 XNOR (I1 XOR I2))
+  Gate 11: (((I1 XOR I2) NOR I1) XNOR ((I1 XOR I2) AND I2))
+  Gate 12: (((I1 XOR I2) AND I2) XOR ((I1 XOR I2) NOR I1))
+  Gate 13: (NOT (I3 XNOR (I1 XOR I2)))
+  Gate 14: (NOT I2)
+  Gate 15: ((NOT (I3 XNOR (I1 XOR I2))) NAND (I1 XOR I2))
+  Gate 16: (((NOT (I3 XNOR (I1 XOR I2))) NAND (I1 XOR I2)) XOR ((I1 XOR I2) NOR I1))
+  Gate 17: (((I1 XOR I2) NOR I1) NOR (((I1 XOR I2) NOR I1) XNOR ((I1 XOR I2) AND I2)))
+  Gate 18: ((I1 XOR I2) OR ((I1 XOR I2) AND I2))
+  Gate 19: (((I1 XOR I2) NOR I1) NOR (((I1 XOR I2) NOR I1) XNOR ((I1 XOR I2) AND I2)))
+
+--- FINAL OUTPUT FORMULA ---
+  Output 1: (NOT (I3 XNOR (I1 XOR I2)))
+  Output 2: (((NOT (I3 XNOR (I1 XOR I2))) NAND (I1 XOR I2)) XOR ((I1 XOR I2) NOR I1))
+
+Circuit Matrix ([In1, Gate, In2]):
+[[ 3  3  1]
+ [ 1  4  2]
+ [ 5  2  2]
+ [ 3  6  6]
+ [ 1  7  5]
+ [ 5  6  1]
+ [ 3  7  5]
+ [ 9  7  6]
+ [ 6  4  9]
+ [ 9  1 10]
+ [ 6  1  2]
+ [13  5  5]
+ [15  4  9]
+ [ 9  6 11]
+ [ 5  3  6]
+ [ 9  6 11]]
+
+Output Array (Pointers):
+[13 16]
+
+================================================================================
+FINAL STATS
+================================================================================
+Cost (Fitness): 17.1000
+Correct outputs: 16/16
+Active Gates Used: 5
+Unused Gates (Simplicity): 11
+
+✅ PERFECT SOLUTION ACHIEVED!
+✓ Optimized for simplicity (11 unused gates)
+
+================================================================================
+CONVERGENCE ANALYSIS
+================================================================================
+Initial fitness: 14.00
+Final fitness: 17.10
+Total improvement: 3.10
+
+✓ First perfect solution: Round 9
+✓ Total perfect rounds: 96
+
+================================================================================
+HILL CLIMBING ANALYSIS
+================================================================================
+Total hill climbs: 1327
+Successful climbs: 16
+Success rate: 1.2%
+
+✗ Hill climbing struggled (solution may be in basin of attraction)
+
+================================================================================
+[Hybrid CS-PSO] System finished!
+================================================================================
+
+[TIMER] Total elapsed: 2230.94s (37.2 min)
+[TIMER] Time per round: 21.45s
+[TIMER] Effective iterations: 2600

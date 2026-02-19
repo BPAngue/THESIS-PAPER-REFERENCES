@@ -5,7 +5,7 @@ from enum import IntEnum
 # --------------------------------------
 # Problem Definition
 # --------------------------------------
-num_rows = 5  # the number of *internal gates* we can use
+num_rows = 10  # the number of *internal gates* we can use
 
 class GateType(IntEnum):
     NOT1 = 0
@@ -13,9 +13,6 @@ class GateType(IntEnum):
     AND = 2
     OR = 3
     XOR = 4
-    NAND = 5
-    NOR = 6
-    XNOR = 7
 
 @dataclass
 class TruthTable:
@@ -257,12 +254,6 @@ def evaluate_gate(gate_type, val1, val2):
         return val1 | val2
     elif gate_type == GateType.XOR:
         return val1 ^ val2
-    elif gate_type == GateType.NAND:
-        return 1 - (val1 & val2)
-    elif gate_type == GateType.NOR:
-        return 1 - (val1 | val2)
-    elif gate_type == GateType.XNOR:
-        return 1 - (val1 ^ val2)
     return 0 
 
 def count_active_gates(circuit_matrix, output_array):
@@ -404,12 +395,6 @@ def get_circuit_formula(position):
             expr = f"({f1} OR {f2})"
         elif g == GateType.XOR:
             expr = f"({f1} XOR {f2})"
-        elif g == GateType.NAND:
-            expr = f"({f1} NAND {f2})"
-        elif g == GateType.NOR:
-            expr = f"({f1} NOR {f2})"
-        elif g == GateType.XNOR:
-            expr = f"({f1} XNOR {f2})"
         else:
             expr = "UNKNOWN"
             
