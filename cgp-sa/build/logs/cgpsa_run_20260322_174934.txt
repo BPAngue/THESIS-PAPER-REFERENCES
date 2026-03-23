@@ -1,0 +1,31 @@
+Log file         : logs/cgpsa_run_20260322_174934.txt
+Loaded Benchmark : ../../src/plu_files/benchmarks/add4.plu
+Inputs / Outputs : 9 / 5
+
+--- Starting 1+lambda Evolution via CGP-SA Hybrid ---
+Function set     : Reduced  {BUFa, NOTa, AND, OR} (4 gates)
+max_generations  : 10
+max_nodes (n_c)  : 5000
+levels_back      : 5000
+total_dimensions : 15005
+(1 + lambda)     : 1 + 5
+mutation_rate    : 0.02
+Temp max         : 5
+Temp min         : 0.1
+Cooling rate     : 0.95
+
+Max bits: 2560
+
+=========================================
+Optimization Complete!
+Best Hamming Distance: 1320
+Best Circuit Fitness: 124000
+Active Transistor Count: 972
+
+--- Final Circuit Formulas ---
+Output[0] = (((((~(In[6] & In[8]) | ~~In[7]) | (In[8] & ~In[7])) & ~In[8]) | (~In[7] & ~In[7])) & (((In[1] & In[7]) & ((((In[6] | (In[5] & In[7])) | (In[5] & In[7])) & ((In[6] & In[8]) | In[8])) & ~~In[7])) | (~~((~(~(In[6] & In[8]) | ~~In[7]) & (~~(~In[6] & In[3]) | (~In[7] | In[7]))) | ~(In[8] | In[1])) | In[8])))
+Output[1] = ~~~In[6]
+Output[2] = ((((~~In[7] | ~In[6]) | In[1]) | (~In[8] & ~(((In[6] & In[8]) | ~In[6]) & (((In[6] & In[8]) | ~In[6]) & In[0])))) | In[7])
+Output[3] = (~(((~In[6] & ~(In[6] & In[8])) | ~((In[6] & In[8]) & (~~~In[6] & (In[8] | ((~(In[6] & In[8]) | In[7]) | ~(In[6] & In[8])))))) | ((((~(In[6] & In[8]) & In[5]) & (((~(~((In[8] & ~In[7]) | (~In[7] | ~In[6])) | ~(In[2] | In[6])) | (~(In[6] & In[8]) | In[1])) | (~(~In[7] | In[7]) & ~((In[8] & ~In[7]) | (~In[7] | ~In[6])))) & (((In[5] & In[8]) | ((In[7] | In[3]) | In[5])) | ~In[7]))) | (~(In[2] | In[6]) & ~((In[6] & In[8]) & (~~~In[6] & (In[8] | ((~(In[6] & In[8]) | In[7]) | ~(In[6] & In[8]))))))) & ~~~~((In[7] | In[3]) | In[5]))) | ((~~~In[6] | ~~In[8]) & ~(~(In[6] & In[8]) | (((In[6] & In[8]) | ~In[6]) & (((In[6] & In[8]) | ~In[6]) & In[0])))))
+Output[4] = (((In[6] & In[8]) & ((~(~In[6] & In[3]) & (((In[6] | (In[5] & In[7])) | (In[5] & In[7])) & ((In[6] & In[8]) | In[8]))) & ~((In[8] & ~In[7]) | (~In[7] | ~In[6])))) & (((~~(In[6] & In[8]) | (~~~In[6] & (In[8] | ((~(In[6] & In[8]) | In[7]) | ~(In[6] & In[8]))))) & ((In[8] | In[0]) | ((((In[6] & In[8]) | ~In[6]) | ~In[7]) & ((In[6] & In[8]) | In[8])))) & ((In[5] & ~(~In[7] & ~In[7])) | (~~(~In[6] & In[3]) | (~In[7] | In[7])))))
+------------------------------

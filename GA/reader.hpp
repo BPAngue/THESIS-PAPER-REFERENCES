@@ -52,7 +52,7 @@ namespace LogiSwarm {
                 throw std::runtime_error("File path is an empty string!");
             }
 
-            std::string extension = std::filesystem::path(file_path).extension();
+            std::string extension = std::filesystem::path(file_path).extension().string();
             if (extension != ".plu" && extension != ".dat") {
                 throw std::runtime_error("Method only accepts PLU or DAT files!");
             }
@@ -107,4 +107,4 @@ namespace LogiSwarm {
         }
     };
 
-} // namespace LogiSwarm
+} // namespace LogiSwarmcws
