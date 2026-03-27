@@ -15,6 +15,7 @@ namespace LogicCircuitSynthesis {
     struct Individual {
         Genotype genotype;
         int fitness;
+        int hamming_distance;
     };
     
     class CGPSAAlgorithm {
@@ -50,10 +51,16 @@ namespace LogicCircuitSynthesis {
             
             set_indices = get_function_set(function_set, set_size);
             max_bits = num_outputs * (1u << num_inputs);
-            std::cout << "Max bits: " << max_bits << "\n"; 
+            std::cout << "Total_dimensions: " << total_dimensions << "\n"; 
             
             std::random_device rd;
             rng.seed(rd());
+        }
+
+        // random double
+        double get_random_double() {
+            std::uniform_real_distribution<double> dist(0.0, 1.0);
+            return dist(rng);
         }
 
         // returns transistor count
@@ -104,14 +111,53 @@ namespace LogicCircuitSynthesis {
             }
         }
 
+        // point mutation
+        Genotype mutate(Genotype& parent, Generator& generator) {
+            Genotype offspring = parent;
+
+            for (int g = 0; g < max_nodes; g++) {
+                // mutate function gene
+                if (get_random_double() < mutation_rate) {
+                    offspring.logic_nodes[g].function_idx = generator.get_random_int(0, num_gate_types - 1);
+                }
+
+                // Determine valid connection range for this node
+                int min_conn = (g >= levels_back) ? (num_inputs + g - levels_back) : 0;
+                int max_conn = num_inputs + g - 1;
+
+                // mutate input 1
+                if (get_random_double() < mutation_rate) {
+                    offspring.logic_nodes[g].input_1_idx = generator.get_random_int(min_conn, max_conn);
+                }
+
+                // mutate input 2
+                if (get_random_double() < mutation_rate) {
+                    offspring.logic_nodes[g].input_2_idx = generator.get_random_int(min_conn, max_conn);
+                }
+            }
+
+            // mutate output genes
+            int max_total_idx = num_inputs + max_nodes - 1;
+            for (int o = 0; o < num_outputs; o++) {
+                if (get_random_double() < mutation_rate) {
+                    offspring.output_genes[o] = generator.get_random_int(0, max_total_idx);
+                }
+            }
+
+            return offspring;
+        }
+
         // The core algorithm execution
         Genotype optimize(Generator& generator, Evaluator& evaluator, const PluReader& benchmark) {
 
             Individual S; // best individual ever found (elitist save)
             Individual R; // the current working parent
+            Individual N; // best child 
 
-            S.fitness = 99999999;
-            R.fitness = 99999999;
+            S.fitness = -99999999;
+            R.fitness = -99999999;
+            S.hamming_distance = 99999999;
+            R.hamming_distance = 99999999;
 
             // 1. Initialize population
             std::vector<Individual> population(1 + lambda);
@@ -124,25 +170,82 @@ namespace LogicCircuitSynthesis {
 
             // 3. Initialize cooling rate (passed in as a parameter value)
             // 4. Compute fitness for all individuals and 5. the best becomes parent R and saved S;
+            int best_idx = 0;
             for (int i = 0; i < 1 + lambda; i++) {
-                int hamming = evaluator.calculate_fitness(population[i].genotype, benchmark);
+                population[i].hamming_distance = evaluator.calculate_fitness(population[i].genotype, benchmark);
                 int transistors = count_active_transistors(population[i].genotype);
-                population[i].fitness = calculate_paper_fitness(hamming, transistors);
+                population[i].fitness = calculate_paper_fitness(population[i].hamming_distance, transistors);
 
-                if (population[i].fitness < S.fitness) {
+                if (population[i].fitness > S.fitness) {
+                    best_idx = i;
                     R.genotype = population[i].genotype;
                     R.fitness = population[i].fitness;
+                    R.hamming_distance = population[i].hamming_distance;
 
                     S.genotype = population[i].genotype;
                     S.fitness = population[i].fitness;
+                    S.hamming_distance = population[i].hamming_distance;
                 }
             }
 
-            // int generation = 0;
-            // while (generation != max_generations) {
-            //     // 7. find best child N
-            //     generation++;
-            // }
+            // pull R out, shrink to lambda children
+            population.erase(population.begin() + best_idx);
+            population.resize(lambda);
+
+            int generation = 0;
+            while (generation != max_generations) {
+                N.fitness = -99999999;
+                N.hamming_distance = 99999999;
+
+                // 7. find best child N
+                for (int i = 0; i < lambda; i++) {
+                    if (population[i].fitness > N.fitness) {
+                        N.genotype = population[i].genotype;
+                        N.fitness = population[i].fitness;
+                        N.hamming_distance = population[i].hamming_distance;
+                    }
+                }
+
+                // 8. Fitness difference = fitness(N) - fitness(R)
+                int delta_f = N.fitness - R.fitness;
+
+                // 9. u random number
+                double u = get_random_double();
+
+                if (N.fitness > S.fitness) {
+                    S.genotype = N.genotype;
+                    S.fitness = N.fitness;
+                    S.hamming_distance = N.hamming_distance;
+                }
+
+                if (delta_f > 0 || std::exp((double)delta_f / T) >= u) {
+                    R.genotype = N.genotype;
+                    R.fitness = N.fitness;
+                    R.hamming_distance = N.hamming_distance;
+                }
+
+                // 14. create lambda children by mutating the parent R and 15. new population consists of parent R and lambda children
+                for (int i = 0; i < lambda; i++) {
+                    population[i].genotype = mutate(R.genotype, generator);
+
+                    // calculate fitness of each children
+                    population[i].hamming_distance = evaluator.calculate_fitness(population[i].genotype, benchmark);
+                    int transistors = count_active_transistors(population[i].genotype);
+                    population[i].fitness = calculate_paper_fitness(population[i].hamming_distance, transistors);
+                }
+
+                // 15. lower temperature
+                T = cooling_rate * T;
+
+                if (T < temperature_min) {
+                    T = temperature_max;
+                }
+
+                // print results
+                std::cout << "Generation " << (generation + 1) << " | Best fitness: " << S.fitness << " | Best Hamming Distance: " << S.hamming_distance << "\n";
+
+                generation++;
+            }
 
             return S.genotype;
         }

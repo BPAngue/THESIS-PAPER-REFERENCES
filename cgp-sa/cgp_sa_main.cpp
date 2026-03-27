@@ -145,7 +145,7 @@ int main(int argc, char* argv[]) {
         // CGP parameters
         int lambda = 5;
         double mutation_rate = 0.02;
-        int max_generations = 10;
+        int max_generations = 100000;
 
         // SA parameters
         double T_max = 5;
