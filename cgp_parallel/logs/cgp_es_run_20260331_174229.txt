@@ -1,0 +1,34 @@
+Log file         : logs/cgp_es_run_20260331_174229.txt
+Loaded Benchmark : plu_files/add1c.plu
+Inputs           : 3 | Outputs: 2
+
+--- Starting CGP Logic Synthesis via Parallel (1+λ) ES ---
+Algorithm        : Parallel Streams CGP-ES  (PSO-PSO structure, ES engine)
+Function set     : Reduced  {BUFa, NOTa, AND, OR} (4 gates)
+max_nodes        : 5000
+levels_back      : 5000
+num_streams (K)  : 6
+lambda (λ)       : 8
+multi_phase_gens : 2000
+single_phase_gens: 500
+mutation_rate    : 0.01
+stagnation_thresh: 15 cycles
+offspring/cycle  : 120000
+hardware threads : 12
+
+Initialising 6 stream(s), lambda=8 (total offspring/gen: 48)...
+  Stream 1 ready.
+  Stream 2 ready.
+  Stream 3 ready.
+  Stream 4 ready.
+  Stream 5 ready.
+  Stream 6 ready.
+
+=========================================
+Optimisation Complete!
+Best Circuit Hamming Distance: 0
+
+--- Final Circuit Formulas ---
+Output[0] = ~(~((In[2] | ~(((In[1] & In[2]) | ~In[0]) & ~In[0])) & (In[1] | (In[2] & ~((In[1] & In[2]) | ~In[0])))) & ~((~(((In[1] & In[2]) | ~In[0]) & ~In[0]) & (~In[0] & ~In[0])) & ((In[1] & In[2]) | ~In[0])))
+Output[1] = (((In[2] | ~(((In[1] & In[2]) | ~In[0]) & ~In[0])) | ((((In[1] | (In[2] & ~((In[1] & In[2]) | ~In[0]))) | ((~In[0] & ~In[0]) | ~((In[1] & In[2]) | ~In[0]))) & In[1]) | (~((((In[1] & In[2]) & ((((In[1] & In[2]) | ~In[0]) & ~In[0]) | (In[1] & In[2]))) | ((~In[0] & ~In[0]) | ~((In[1] & In[2]) | ~In[0]))) | (~In[0] & ~In[0])) & ((~In[0] | (In[1] & In[2])) & ~((In[1] & In[2]) | ~In[0]))))) & (~((~In[0] & ~In[0]) | ~((In[1] & In[2]) | ~In[0])) | ~((In[2] | ~(((In[1] & In[2]) | ~In[0]) & ~In[0])) & (In[1] | (In[2] & ~((In[1] & In[2]) | ~In[0]))))))
+------------------------------

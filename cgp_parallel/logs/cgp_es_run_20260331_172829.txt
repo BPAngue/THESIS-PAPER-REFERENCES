@@ -1,0 +1,53 @@
+Log file         : logs/cgp_es_run_20260331_172829.txt
+Loaded Benchmark : plu_files/benchmarks/add4.plu
+Inputs           : 9 | Outputs: 5
+
+--- Starting CGP Logic Synthesis via Parallel (1+λ) ES ---
+Algorithm        : Parallel Streams CGP-ES  (PSO-PSO structure, ES engine)
+Function set     : Reduced  {BUFa, NOTa, AND, OR} (4 gates)
+max_nodes        : 5000
+levels_back      : 5000
+num_streams (K)  : 6
+lambda (λ)       : 8
+multi_phase_gens : 2000
+single_phase_gens: 500
+mutation_rate    : 0.01
+stagnation_thresh: 15 cycles
+offspring/cycle  : 120000
+hardware threads : 12
+
+Initialising 6 stream(s), lambda=8 (total offspring/gen: 48)...
+  Stream 1 ready.
+  Stream 2 ready.
+  Stream 3 ready.
+  Stream 4 ready.
+  Stream 5 ready.
+  Stream 6 ready.
+[Cycle 1] Single phase | gbest: 543
+[Cycle 1] Finished | Total gens: 2500 | Global Best Error: 488
+[Cycle 2] Single phase | gbest: 376
+[Cycle 2] Finished | Total gens: 5000 | Global Best Error: 282
+[Cycle 3] Single phase | gbest: 152
+[Cycle 3] Finished | Total gens: 7500 | Global Best Error: 128
+[Cycle 4] Single phase | gbest: 96
+[Cycle 4] Finished | Total gens: 10000 | Global Best Error: 96
+[Cycle 5] Single phase | gbest: 32
+[Cycle 5] Finished | Total gens: 12500 | Global Best Error: 32
+[Cycle 6] Single phase | gbest: 28
+[Cycle 6] Finished | Total gens: 15000 | Global Best Error: 20
+[Cycle 7] Single phase | gbest: 20
+[Cycle 7] Finished | Total gens: 17500 | Global Best Error: 20
+[Cycle 8] Single phase | gbest: 8
+[Cycle 8] Finished | Total gens: 20000 | Global Best Error: 8
+
+=========================================
+Optimisation Complete!
+Best Circuit Hamming Distance: 0
+
+--- Final Circuit Formulas ---
+Output[0] = ~(~((~~(In[3] | In[7]) | ((~((In[2] & In[3]) & ~In[3]) | (In[1] | (((In[6] | In[2]) | (In[2] & In[3])) & (((In[3] | In[7]) & In[8]) | ((In[3] & In[7]) | (In[6] & In[2])))))) | ~((((In[2] | (In[6] | In[2])) & ((In[3] & In[7]) | ((((In[3] | In[7]) & In[8]) | ((In[3] & In[7]) | (In[6] & In[2]))) & ((In[3] | In[7]) & In[8])))) | ((In[2] & In[3]) & ~In[3])) | ~((((((In[2] & In[3]) & ~In[3]) | ((((In[6] | In[2]) | (In[2] & In[3])) & (((In[3] | In[7]) & In[8]) | ((In[3] & In[7]) | (In[6] & In[2])))) | (In[1] & In[5]))) | (((In[2] | (In[6] | In[2])) & ((In[3] & In[7]) | ((((In[3] | In[7]) & In[8]) | ((In[3] & In[7]) | (In[6] & In[2]))) & ((In[3] | In[7]) & In[8])))) | ((In[2] & In[3]) & ~In[3]))) | (In[6] & In[2])) | (In[5] | In[1]))))) | ((~((In[8] & ~((In[3] | In[7]) & In[8])) & ~((In[5] | In[1]) | (In[2] & In[3]))) | ~~(~~In[3] | (In[8] & ~((In[3] | In[7]) & In[8])))) | (~In[1] | (~((In[3] & In[7]) | ((((In[3] | In[7]) & In[8]) | ((In[3] & In[7]) | (In[6] & In[2]))) & ((In[3] | In[7]) & In[8]))) & ~(In[1] | (((In[6] | In[2]) | (In[2] & In[3])) & (((In[3] | In[7]) & In[8]) | ((In[3] & In[7]) | (In[6] & In[2]))))))))) | (~(In[0] & In[4]) & (~(In[4] | In[0]) | ~((((((In[2] & In[3]) & ~In[3]) | ((((In[6] | In[2]) | (In[2] & In[3])) & (((In[3] | In[7]) & In[8]) | ((In[3] & In[7]) | (In[6] & In[2])))) | (In[1] & In[5]))) | (((In[2] | (In[6] | In[2])) & ((In[3] & In[7]) | ((((In[3] | In[7]) & In[8]) | ((In[3] & In[7]) | (In[6] & In[2]))) & ((In[3] | In[7]) & In[8])))) | ((In[2] & In[3]) & ~In[3]))) & (((In[6] | In[2]) | (In[1] & In[5])) & (In[5] | In[1]))) & ((In[5] | In[1]) | (In[2] & In[3]))))))
+Output[1] = (((~((((((In[6] | In[2]) | (In[2] & In[3])) & (((In[3] | In[7]) & In[8]) | ((In[3] & In[7]) | (In[6] & In[2])))) | (In[1] & In[5])) & ((In[1] & In[5]) & (((In[3] | In[7]) & In[8]) | ((In[3] & In[7]) | (In[6] & In[2]))))) & (In[6] | In[2])) & ((((((In[3] | In[7]) & In[8]) | ((In[3] & In[7]) | (In[6] & In[2]))) & ((In[2] & In[3]) & ~In[3])) & ((In[2] | (In[6] | In[2])) & ((In[3] & In[7]) | ((((In[3] | In[7]) & In[8]) | ((In[3] & In[7]) | (In[6] & In[2]))) & ((In[3] | In[7]) & In[8]))))) | (((((In[2] & In[3]) & ~In[3]) | ((((In[6] | In[2]) | (In[2] & In[3])) & (((In[3] | In[7]) & In[8]) | ((In[3] & In[7]) | (In[6] & In[2])))) | (In[1] & In[5]))) | (((In[2] | (In[6] | In[2])) & ((In[3] & In[7]) | ((((In[3] | In[7]) & In[8]) | ((In[3] & In[7]) | (In[6] & In[2]))) & ((In[3] | In[7]) & In[8])))) | ((In[2] & In[3]) & ~In[3]))) & (((In[6] | In[2]) | (In[1] & In[5])) & (In[5] | In[1]))))) | ((~~(((In[4] | In[0]) & ~(In[0] & In[4])) | (((~~In[3] | (In[8] & ~((In[3] | In[7]) & In[8]))) & ~In[3]) & ((In[3] | In[7]) & ~~In[3]))) | ((In[4] | In[0]) & (In[1] & In[5]))) | ((In[1] & In[5]) & (((In[3] | In[7]) & In[8]) | ((In[3] & In[7]) | (In[6] & In[2])))))) & ((~(((((In[2] & In[3]) & ~In[3]) | ((((In[6] | In[2]) | (In[2] & In[3])) & (((In[3] | In[7]) & In[8]) | ((In[3] & In[7]) | (In[6] & In[2])))) | (In[1] & In[5]))) | (((In[2] | (In[6] | In[2])) & ((In[3] & In[7]) | ((((In[3] | In[7]) & In[8]) | ((In[3] & In[7]) | (In[6] & In[2]))) & ((In[3] | In[7]) & In[8])))) | ((In[2] & In[3]) & ~In[3]))) & (((In[6] | In[2]) | (In[1] & In[5])) & (In[5] | In[1]))) | ~~(In[0] & In[4])) | ~((In[4] | In[0]) | (((In[2] & In[3]) & ~In[3]) & (In[1] & In[5])))))
+Output[2] = ~(~((((((In[2] & In[3]) & ~In[3]) | ((((In[6] | In[2]) | (In[2] & In[3])) & (((In[3] | In[7]) & In[8]) | ((In[3] & In[7]) | (In[6] & In[2])))) | (In[1] & In[5]))) | (((In[2] | (In[6] | In[2])) & ((In[3] & In[7]) | ((((In[3] | In[7]) & In[8]) | ((In[3] & In[7]) | (In[6] & In[2]))) & ((In[3] | In[7]) & In[8])))) | ((In[2] & In[3]) & ~In[3]))) | (In[6] & In[2])) | (In[5] | In[1])) | (~((((((In[6] | In[2]) | (In[2] & In[3])) & (((In[3] | In[7]) & In[8]) | ((In[3] & In[7]) | (In[6] & In[2])))) | (In[1] & In[5])) & ((In[1] & In[5]) & (((In[3] | In[7]) & In[8]) | ((In[3] & In[7]) | (In[6] & In[2]))))) & (In[6] | In[2])) & ((((((In[3] | In[7]) & In[8]) | ((In[3] & In[7]) | (In[6] & In[2]))) & ((In[2] & In[3]) & ~In[3])) & ((In[2] | (In[6] | In[2])) & ((In[3] & In[7]) | ((((In[3] | In[7]) & In[8]) | ((In[3] & In[7]) | (In[6] & In[2]))) & ((In[3] | In[7]) & In[8]))))) | (((((In[2] & In[3]) & ~In[3]) | ((((In[6] | In[2]) | (In[2] & In[3])) & (((In[3] | In[7]) & In[8]) | ((In[3] & In[7]) | (In[6] & In[2])))) | (In[1] & In[5]))) | (((In[2] | (In[6] | In[2])) & ((In[3] & In[7]) | ((((In[3] | In[7]) & In[8]) | ((In[3] & In[7]) | (In[6] & In[2]))) & ((In[3] | In[7]) & In[8])))) | ((In[2] & In[3]) & ~In[3]))) & (((In[6] | In[2]) | (In[1] & In[5])) & (In[5] | In[1]))))))
+Output[3] = ~((~((In[3] & In[7]) | ((((In[3] | In[7]) & In[8]) | ((In[3] & In[7]) | (In[6] & In[2]))) & ((In[3] | In[7]) & In[8]))) & ((In[6] & In[2]) | ~(In[2] | (In[6] | In[2])))) | ~(~(((In[2] | (In[6] | In[2])) & ((In[3] & In[7]) | ((((In[3] | In[7]) & In[8]) | ((In[3] & In[7]) | (In[6] & In[2]))) & ((In[3] | In[7]) & In[8])))) | ((In[2] & In[3]) & ~In[3])) | (In[6] & In[2])))
+Output[4] = ((~(((In[3] & In[7]) | ((((In[3] | In[7]) & In[8]) | ((In[3] & In[7]) | (In[6] & In[2]))) & ((In[3] | In[7]) & In[8]))) | ~(In[3] | In[7])) | (~(((~((((In[2] & In[3]) & ~In[3]) | ((((In[6] | In[2]) | (In[2] & In[3])) & (((In[3] | In[7]) & In[8]) | ((In[3] & In[7]) | (In[6] & In[2])))) | (In[1] & In[5]))) | (((In[2] | (In[6] | In[2])) & ((In[3] & In[7]) | ((((In[3] | In[7]) & In[8]) | ((In[3] & In[7]) | (In[6] & In[2]))) & ((In[3] | In[7]) & In[8])))) | ((In[2] & In[3]) & ~In[3]))) & (~(((In[2] | (In[6] | In[2])) & ((In[3] & In[7]) | ((((In[3] | In[7]) & In[8]) | ((In[3] & In[7]) | (In[6] & In[2]))) & ((In[3] | In[7]) & In[8])))) | ((In[2] & In[3]) & ~In[3])) | ~((((((In[2] & In[3]) & ~In[3]) | ((((In[6] | In[2]) | (In[2] & In[3])) & (((In[3] | In[7]) & In[8]) | ((In[3] & In[7]) | (In[6] & In[2])))) | (In[1] & In[5]))) | (((In[2] | (In[6] | In[2])) & ((In[3] & In[7]) | ((((In[3] | In[7]) & In[8]) | ((In[3] & In[7]) | (In[6] & In[2]))) & ((In[3] | In[7]) & In[8])))) | ((In[2] & In[3]) & ~In[3]))) & (((In[6] | In[2]) | (In[1] & In[5])) & (In[5] | In[1]))) & ((In[5] | In[1]) | (In[2] & In[3]))))) | ~((In[3] & ((In[3] & In[7]) | ((((In[3] | In[7]) & In[8]) | ((In[3] & In[7]) | (In[6] & In[2]))) & ((In[3] | In[7]) & In[8])))) & (((In[1] | (((In[6] | In[2]) | (In[2] & In[3])) & (((In[3] | In[7]) & In[8]) | ((In[3] & In[7]) | (In[6] & In[2]))))) & (((In[5] | In[1]) | (In[2] & In[3])) & ((In[6] | In[2]) | (In[2] & In[3])))) | (In[0] & ~In[3])))) | ~(((((In[2] & In[3]) & ~In[3]) | ((((In[6] | In[2]) | (In[2] & In[3])) & (((In[3] | In[7]) & In[8]) | ((In[3] & In[7]) | (In[6] & In[2])))) | (In[1] & In[5]))) | (((In[2] | (In[6] | In[2])) & ((In[3] & In[7]) | ((((In[3] | In[7]) & In[8]) | ((In[3] & In[7]) | (In[6] & In[2]))) & ((In[3] | In[7]) & In[8])))) | ((In[2] & In[3]) & ~In[3]))) & (((In[6] | In[2]) | (In[1] & In[5])) & (In[5] | In[1])))) & ~((In[1] | (((In[6] | In[2]) | (In[2] & In[3])) & (((In[3] | In[7]) & In[8]) | ((In[3] & In[7]) | (In[6] & In[2]))))) | ~((In[3] | In[7]) & In[8])))) | ((((~(In[8] & ~((In[3] | In[7]) & In[8])) & (In[3] & In[7])) | ((In[2] & In[3]) & ~In[3])) & ~~((((In[3] | In[7]) & In[8]) | ((In[3] & In[7]) | (In[6] & In[2]))) & ((In[3] | In[7]) & In[8]))) | ~(((((In[2] & In[3]) & ~In[3]) & (In[1] & In[5])) & ~In[0]) | ~(In[8] & ~((In[3] | In[7]) & In[8])))))
+------------------------------

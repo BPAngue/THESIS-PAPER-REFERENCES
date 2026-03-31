@@ -1,0 +1,63 @@
+Log file         : logs/cgp_es_run_20260331_172551.txt
+Loaded Benchmark : plu_files/benchmarks/add4.plu
+Inputs           : 9 | Outputs: 5
+
+--- Starting CGP Logic Synthesis via Parallel (1+λ) ES ---
+Algorithm        : Parallel Streams CGP-ES  (PSO-PSO structure, ES engine)
+Function set     : Reduced  {BUFa, NOTa, AND, OR} (4 gates)
+max_nodes        : 5000
+levels_back      : 5000
+num_streams (K)  : 6
+lambda (λ)       : 8
+multi_phase_gens : 2000
+single_phase_gens: 500
+mutation_rate    : 0.01
+stagnation_thresh: 15 cycles
+offspring/cycle  : 120000
+hardware threads : 12
+
+Initialising 6 stream(s), lambda=8 (total offspring/gen: 48)...
+  Stream 1 ready.
+  Stream 2 ready.
+  Stream 3 ready.
+  Stream 4 ready.
+  Stream 5 ready.
+  Stream 6 ready.
+[Cycle 1] Single phase | gbest: 502
+[Cycle 1] Finished | Total gens: 2500 | Global Best Error: 426
+[Cycle 2] Single phase | gbest: 376
+[Cycle 2] Finished | Total gens: 5000 | Global Best Error: 331
+[Cycle 3] Single phase | gbest: 265
+[Cycle 3] Finished | Total gens: 7500 | Global Best Error: 265
+[Cycle 4] Single phase | gbest: 225
+[Cycle 4] Finished | Total gens: 10000 | Global Best Error: 218
+[Cycle 5] Single phase | gbest: 198
+[Cycle 5] Finished | Total gens: 12500 | Global Best Error: 198
+[Cycle 6] Single phase | gbest: 186
+[Cycle 6] Finished | Total gens: 15000 | Global Best Error: 170
+[Cycle 7] Single phase | gbest: 152
+[Cycle 7] Finished | Total gens: 17500 | Global Best Error: 144
+[Cycle 8] Single phase | gbest: 80
+[Cycle 8] Finished | Total gens: 20000 | Global Best Error: 52
+[Cycle 9] Single phase | gbest: 50
+[Cycle 9] Finished | Total gens: 22500 | Global Best Error: 50
+[Cycle 10] Single phase | gbest: 46
+[Cycle 10] Finished | Total gens: 25000 | Global Best Error: 46
+[Cycle 11] Single phase | gbest: 32
+[Cycle 11] Finished | Total gens: 27500 | Global Best Error: 32
+[Cycle 12] Single phase | gbest: 28
+[Cycle 12] Finished | Total gens: 30000 | Global Best Error: 4
+[Cycle 13] Single phase | gbest: 4
+[Cycle 13] Finished | Total gens: 32500 | Global Best Error: 0
+
+=========================================
+Optimisation Complete!
+Best Circuit Hamming Distance: 0
+
+--- Final Circuit Formulas ---
+Output[0] = (((~~(In[0] | In[4]) | (~(((~(~In[8] & (~In[3] | ~In[3])) & (In[3] & (~In[3] | In[8]))) & (In[7] | (~In[8] & ~(In[1] | In[5])))) | (~In[3] | (In[3] & (((In[7] | In[2]) | ~(In[4] | (In[5] & In[1]))) & ~(((In[2] & ((In[3] & In[7]) | In[8])) | In[6]) & (((In[3] & (~In[3] | In[8])) | (In[7] | In[2])) & (In[7] | (In[6] | In[3])))))))) & ((((In[2] & ((In[3] & In[7]) | In[8])) | In[6]) & (((In[3] & (~In[3] | In[8])) | (In[7] | In[2])) & (In[7] | (In[6] | In[3])))) | ~(~In[8] & ~(In[1] | In[5]))))) & (((In[4] | (In[5] & In[1])) | (~(((~In[2] & In[6]) | ~In[2]) & (~In[8] & (~In[3] | ~In[3]))) & (((In[1] | In[5]) & ((In[4] | (In[5] & In[1])) & (In[5] & In[1]))) | ((In[1] | In[5]) & ((((In[2] & ((In[3] & In[7]) | In[8])) | In[6]) & (((In[3] & (~In[3] | In[8])) | (In[7] | In[2])) & (In[7] | (In[6] | In[3])))) & ~(((~In[2] & In[6]) | ~In[2]) & (~In[8] & (~In[3] | ~In[3])))))))) | ((~In[8] & ~(In[1] | In[5])) & ~((In[0] | In[4]) & (~In[4] | ~In[0]))))) & ((In[4] & (((In[5] | In[1]) | ((~In[2] & In[6]) | ~In[2])) & (((In[1] | In[5]) & ((In[4] | (In[5] & In[1])) & (In[5] & In[1]))) | ((In[1] | In[5]) & ((((In[2] & ((In[3] & In[7]) | In[8])) | In[6]) & (((In[3] & (~In[3] | In[8])) | (In[7] | In[2])) & (In[7] | (In[6] | In[3])))) & ~(((~In[2] & In[6]) | ~In[2]) & (~In[8] & (~In[3] | ~In[3])))))))) | In[0]))
+Output[1] = ((~(((In[0] | In[4]) & (~In[4] | ~In[0])) | ~(~In[8] & ~(In[1] | In[5]))) | (((~In[4] | ~In[0]) & ~(((In[1] | In[5]) & ((In[4] | (In[5] & In[1])) & (In[5] & In[1]))) | ((In[1] | In[5]) & ((((In[2] & ((In[3] & In[7]) | In[8])) | In[6]) & (((In[3] & (~In[3] | In[8])) | (In[7] | In[2])) & (In[7] | (In[6] | In[3])))) & ~(((~In[2] & In[6]) | ~In[2]) & (~In[8] & (~In[3] | ~In[3]))))))) | ~((In[0] | In[4]) & (~In[4] | ~In[0])))) & ((((In[4] | (In[5] & In[1])) & (In[5] & In[1])) | (((~In[8] & (~In[3] | ~In[3])) & (In[3] & (~In[3] | In[8]))) | ((In[0] | In[4]) & (~In[4] | ~In[0])))) | (((In[5] | In[1]) | ((~In[2] & In[6]) | ~In[2])) & (((In[1] | In[5]) & ((In[4] | (In[5] & In[1])) & (In[5] & In[1]))) | ((In[1] | In[5]) & ((((In[2] & ((In[3] & In[7]) | In[8])) | In[6]) & (((In[3] & (~In[3] | In[8])) | (In[7] | In[2])) & (In[7] | (In[6] | In[3])))) & ~(((~In[2] & In[6]) | ~In[2]) & (~In[8] & (~In[3] | ~In[3])))))))))
+Output[2] = ((((In[5] & In[1]) & (((((In[2] & ((In[3] & In[7]) | In[8])) | In[6]) & (((In[3] & (~In[3] | In[8])) | (In[7] | In[2])) & (In[7] | (In[6] | In[3])))) & ~(((~In[2] & In[6]) | ~In[2]) & (~In[8] & (~In[3] | ~In[3])))) & In[1])) | ~(((In[5] | In[1]) | ((~In[2] & In[6]) | ~In[2])) & (((In[1] | In[5]) & ((In[4] | (In[5] & In[1])) & (In[5] & In[1]))) | ((In[1] | In[5]) & ((((In[2] & ((In[3] & In[7]) | In[8])) | In[6]) & (((In[3] & (~In[3] | In[8])) | (In[7] | In[2])) & (In[7] | (In[6] | In[3])))) & ~(((~In[2] & In[6]) | ~In[2]) & (~In[8] & (~In[3] | ~In[3])))))))) & (((((In[2] & ((In[3] & In[7]) | In[8])) | In[6]) & (((In[3] & (~In[3] | In[8])) | (In[7] | In[2])) & (In[7] | (In[6] | In[3])))) & ~(((~In[2] & In[6]) | ~In[2]) & (~In[8] & (~In[3] | ~In[3])))) | ((~In[8] & (~(((~In[2] & In[6]) | ~In[2]) & (~In[8] & (~In[3] | ~In[3]))) & (In[2] & ((In[3] & In[7]) | In[8])))) | (In[5] | In[1]))))
+Output[3] = ((((((In[6] | ~((In[3] & In[7]) | In[8])) | ~~(((~In[2] & In[6]) | ~In[2]) & (~In[8] & (~In[3] | ~In[3])))) & ~(~In[2] & In[6])) | (~((In[3] & In[7]) | In[8]) | ((~((In[7] | In[2]) | ~In[2]) & (((~In[8] & (~In[3] | ~In[3])) & (In[3] & (~In[3] | In[8]))) | ((In[0] | In[4]) & (~In[4] | ~In[0])))) & (~In[8] & (~In[3] | ~In[3]))))) & (((~In[2] & In[6]) | (In[2] & ((In[3] & In[7]) | In[8]))) & (In[7] | ~~~~In[3]))) | (~(((((In[2] & ((In[3] & In[7]) | In[8])) | In[6]) & (((In[3] & (~In[3] | In[8])) | (In[7] | In[2])) & (In[7] | (In[6] | In[3])))) | ~~In[7]) & ((((~In[2] & In[6]) | ~In[2]) & (~In[8] & (~In[3] | ~In[3]))) | ((In[2] & ((In[3] & In[7]) | In[8])) | In[6]))) & (((In[3] & (~In[3] | In[8])) | (In[7] | In[2])) | In[6])))
+Output[4] = ((~(~(~In[8] & (~In[3] | ~In[3])) & (In[3] & (~In[3] | In[8]))) & (~In[7] & ~(((~In[8] & (~In[3] | ~In[3])) | (((~In[2] & In[6]) | ~In[2]) & (~In[8] & (~In[3] | ~In[3])))) | ((~(~In[8] & (~In[3] | ~In[3])) & (In[3] & (~In[3] | In[8]))) & (In[7] | (~In[8] & ~(In[1] | In[5]))))))) | ~((~In[3] & ((In[3] & In[7]) | In[8])) | (~In[7] | ~(~In[3] | In[8]))))
+------------------------------
