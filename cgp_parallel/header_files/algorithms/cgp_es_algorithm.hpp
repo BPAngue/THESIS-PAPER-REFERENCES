@@ -184,6 +184,8 @@ private:
         // Update stream's personal best
         if (stream.parent_fit < stream.sbest_fit) {
             stream.sbest_fit = stream.parent_fit;
+
+            
             stream.sbest     = stream.parent;
         }
 

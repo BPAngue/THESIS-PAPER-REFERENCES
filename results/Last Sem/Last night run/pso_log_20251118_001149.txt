@@ -1,0 +1,83 @@
+[LOGGING ENABLED] Output is being saved to results\pso_log_20251118_001149.txt
+
+[PSO ALGORITHM] Algorithm is currently running
+Starting PSO loop for 300 iterations...
+Iteration 10/300, Best Fitness: 40.00
+Iteration 20/300, Best Fitness: 40.00
+Iteration 30/300, Best Fitness: 40.00
+Iteration 40/300, Best Fitness: 40.00
+Iteration 50/300, Best Fitness: 40.00
+Iteration 60/300, Best Fitness: 40.00
+Iteration 70/300, Best Fitness: 40.00
+Iteration 80/300, Best Fitness: 40.00
+Iteration 90/300, Best Fitness: 40.00
+Iteration 100/300, Best Fitness: 40.00
+Iteration 110/300, Best Fitness: 40.00
+Iteration 120/300, Best Fitness: 40.00
+Iteration 130/300, Best Fitness: 40.00
+Iteration 140/300, Best Fitness: 40.00
+Iteration 150/300, Best Fitness: 40.00
+Iteration 160/300, Best Fitness: 40.00
+Iteration 170/300, Best Fitness: 40.00
+Iteration 180/300, Best Fitness: 40.00
+Iteration 190/300, Best Fitness: 40.00
+Iteration 200/300, Best Fitness: 40.00
+Iteration 210/300, Best Fitness: 40.00
+Iteration 220/300, Best Fitness: 40.00
+Iteration 230/300, Best Fitness: 40.00
+Iteration 240/300, Best Fitness: 40.00
+Iteration 250/300, Best Fitness: 40.00
+Iteration 260/300, Best Fitness: 40.00
+Iteration 270/300, Best Fitness: 40.00
+Iteration 280/300, Best Fitness: 40.00
+Iteration 290/300, Best Fitness: 40.00
+Iteration 300/300, Best Fitness: 40.00
+
+... PSO loop finished ...
+
+
+--- CIRCUIT FORMULA DERIVATION ---
+Internal Gates:
+  Gate 5: (I4 AND I3)
+  Gate 6: (I1 XOR I3)
+  Gate 7: (I3 OR (I1 XOR I3))
+  Gate 8: ((I1 XOR I3) AND I3)
+  Gate 9: ((I4 AND I3) OR I4)
+  Gate 10: ((I3 OR (I1 XOR I3)) AND I4)
+  Gate 11: (((I4 AND I3) OR I4) OR (I1 XOR I3))
+  Gate 12: ((I4 AND I3) AND I2)
+  Gate 13: (I2 XOR I4)
+  Gate 14: ((I3 OR (I1 XOR I3)) XOR (I3 OR (I1 XOR I3)))
+  Gate 15: (((I4 AND I3) OR I4) XOR I4)
+  Gate 16: ((I3 OR (I1 XOR I3)) AND ((I3 OR (I1 XOR I3)) AND I4))
+
+--- FINAL OUTPUT FORMULA ---
+  Output 1: I3
+  Output 2: (I1 XOR I3)
+  Output 3: (I2 XOR I4)
+--- FINAL BEST PARTICLE ---
+Circuit Matrix ([In1, Gate, In2]):
+[[ 4  0  3]
+ [ 1  3  3]
+ [ 3  1  6]
+ [ 6  0  3]
+ [ 5  1  4]
+ [ 7  0  4]
+ [ 9  1  6]
+ [ 5  0  2]
+ [ 2  3  4]
+ [ 7  3  7]
+ [ 9  3  4]
+ [ 7  0 10]]
+
+Output Array (Pointers):
+[ 3  6 13]
+
+--- STATS ---
+Cost (Fitness): 40.0000
+Correct outputs: 40/48
+Active Gates Used: 12
+Unused Gates (Simplicity): 0
+
+[PSO ALGORITHM] Algorithm finished!
+[TIMER] Elapsed seconds: 47.594265

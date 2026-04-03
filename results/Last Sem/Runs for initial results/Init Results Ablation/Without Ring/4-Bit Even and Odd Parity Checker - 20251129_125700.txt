@@ -1,0 +1,385 @@
+System: Multi-Run PSO without Ring (10 Runs)
+Number of threads: 5
+Number of population per thread: 500
+Number of iterations: 100
+Phi1 and Phi2: 2.05
+
+>>> STARTING RUN 1 <<<
+  [Run 1] Iter 1: Fitness 24.00 (Correct: 24/32, Gates: 4)
+  [Run 1] Iter 10: Fitness 24.00 (Correct: 24/32, Gates: 4)
+  [Run 1] Iter 19: Fitness 28.00 (Correct: 28/32, Gates: 4)
+  [Run 1] Iter 20: Fitness 28.00 (Correct: 28/32, Gates: 4)
+  [Run 1] Iter 30: Fitness 28.00 (Correct: 28/32, Gates: 4)
+  [Run 1] Iter 40: Fitness 28.00 (Correct: 28/32, Gates: 4)
+  [Run 1] Iter 50: Fitness 28.00 (Correct: 28/32, Gates: 4)
+  [Run 1] Iter 60: Fitness 28.00 (Correct: 28/32, Gates: 4)
+  [Run 1] Iter 70: Fitness 28.00 (Correct: 28/32, Gates: 4)
+  [Run 1] Iter 73: Fitness 39.00 (Correct: 32/32, Gates: 5)
+  [Run 1] Iter 80: Fitness 39.00 (Correct: 32/32, Gates: 5)
+  [Run 1] Iter 90: Fitness 39.00 (Correct: 32/32, Gates: 5)
+  [Run 1] Iter 100: Fitness 39.00 (Correct: 32/32, Gates: 5)
+
+[Run 1 Result]
+
+--- CIRCUIT FORMULA DERIVATION ---
+Internal Gates:
+  Gate 5: (I2 XOR I4)
+  Gate 6: (I1 XOR I3)
+  Gate 7: (I4 OR I4)
+  Gate 8: (NOT (I2 XOR I4))
+  Gate 9: (NOT (I4 OR I4))
+  Gate 10: ((I1 XOR I3) XOR (I2 XOR I4))
+  Gate 11: ((NOT (I2 XOR I4)) XOR (I1 XOR I3))
+  Gate 12: ((I4 OR I4) OR (I1 XOR I3))
+  Gate 13: (NOT (I4 OR I4))
+  Gate 14: ((NOT (I2 XOR I4)) OR (I1 XOR I3))
+  Gate 15: (I4 AND (I1 XOR I3))
+  Gate 16: (NOT (NOT (I4 OR I4)))
+
+--- FINAL OUTPUT FORMULA ---
+  Output 1: ((NOT (I2 XOR I4)) XOR (I1 XOR I3))
+  Output 2: ((I1 XOR I3) XOR (I2 XOR I4))
+  -> Run 1 Formula: ['((NOT (I2 XOR I4)) XOR (I1 XOR I3))', '((I1 XOR I3) XOR (I2 XOR I4))']
+
+>>> STARTING RUN 2 <<<
+  [Run 2] Iter 1: Fitness 24.00 (Correct: 24/32, Gates: 4)
+  [Run 2] Iter 10: Fitness 24.00 (Correct: 24/32, Gates: 4)
+  [Run 2] Iter 20: Fitness 24.00 (Correct: 24/32, Gates: 4)
+  [Run 2] Iter 30: Fitness 24.00 (Correct: 24/32, Gates: 4)
+  [Run 2] Iter 38: Fitness 26.00 (Correct: 26/32, Gates: 7)
+  [Run 2] Iter 40: Fitness 26.00 (Correct: 26/32, Gates: 7)
+  [Run 2] Iter 46: Fitness 28.00 (Correct: 28/32, Gates: 4)
+  [Run 2] Iter 50: Fitness 28.00 (Correct: 28/32, Gates: 4)
+  [Run 2] Iter 60: Fitness 28.00 (Correct: 28/32, Gates: 4)
+  [Run 2] Iter 70: Fitness 28.00 (Correct: 28/32, Gates: 4)
+  [Run 2] Iter 80: Fitness 28.00 (Correct: 28/32, Gates: 4)
+  [Run 2] Iter 90: Fitness 28.00 (Correct: 28/32, Gates: 4)
+  [Run 2] Iter 100: Fitness 28.00 (Correct: 28/32, Gates: 4)
+
+[Run 2 Result]
+
+--- CIRCUIT FORMULA DERIVATION ---
+Internal Gates:
+  Gate 5: (I1 XOR I4)
+  Gate 6: ((I1 XOR I4) OR I1)
+  Gate 7: (I2 XOR I3)
+  Gate 8: ((I1 XOR I4) AND (I2 XOR I3))
+  Gate 9: (NOT (I1 XOR I4))
+  Gate 10: (NOT (NOT (I1 XOR I4)))
+  Gate 11: (I4 OR I4)
+  Gate 12: ((NOT (NOT (I1 XOR I4))) XOR ((I1 XOR I4) OR I1))
+  Gate 13: ((I1 XOR I4) XOR (I2 XOR I3))
+  Gate 14: (((NOT (NOT (I1 XOR I4))) XOR ((I1 XOR I4) OR I1)) OR (I2 XOR I3))
+  Gate 15: (NOT (NOT (I1 XOR I4)))
+  Gate 16: (NOT ((NOT (NOT (I1 XOR I4))) XOR ((I1 XOR I4) OR I1)))
+
+--- FINAL OUTPUT FORMULA ---
+  Output 1: ((I1 XOR I4) AND (I2 XOR I3))
+  Output 2: ((I1 XOR I4) XOR (I2 XOR I3))
+  -> Run 2 Formula: ['((I1 XOR I4) AND (I2 XOR I3))', '((I1 XOR I4) XOR (I2 XOR I3))']
+
+>>> STARTING RUN 3 <<<
+  [Run 3] Iter 1: Fitness 20.00 (Correct: 20/32, Gates: 6)
+  [Run 3] Iter 2: Fitness 24.00 (Correct: 24/32, Gates: 5)
+  [Run 3] Iter 10: Fitness 24.00 (Correct: 24/32, Gates: 5)
+  [Run 3] Iter 20: Fitness 24.00 (Correct: 24/32, Gates: 5)
+  [Run 3] Iter 30: Fitness 24.00 (Correct: 24/32, Gates: 5)
+  [Run 3] Iter 40: Fitness 24.00 (Correct: 24/32, Gates: 5)
+  [Run 3] Iter 50: Fitness 24.00 (Correct: 24/32, Gates: 5)
+  [Run 3] Iter 56: Fitness 40.00 (Correct: 32/32, Gates: 4)
+  [Run 3] Iter 60: Fitness 40.00 (Correct: 32/32, Gates: 4)
+  [Run 3] Iter 70: Fitness 40.00 (Correct: 32/32, Gates: 4)
+  [Run 3] Iter 80: Fitness 40.00 (Correct: 32/32, Gates: 4)
+  [Run 3] Iter 90: Fitness 40.00 (Correct: 32/32, Gates: 4)
+  [Run 3] Iter 100: Fitness 40.00 (Correct: 32/32, Gates: 4)
+
+[Run 3 Result]
+
+--- CIRCUIT FORMULA DERIVATION ---
+Internal Gates:
+  Gate 5: (I3 XOR I4)
+  Gate 6: ((I3 XOR I4) XOR I2)
+  Gate 7: (NOT (I3 XOR I4))
+  Gate 8: (I2 OR I2)
+  Gate 9: (I3 AND (NOT (I3 XOR I4)))
+  Gate 10: (((I3 XOR I4) XOR I2) XOR I1)
+  Gate 11: (I4 OR (NOT (I3 XOR I4)))
+  Gate 12: ((NOT (I3 XOR I4)) OR I4)
+  Gate 13: ((NOT (I3 XOR I4)) OR (I2 OR I2))
+  Gate 14: (NOT (((I3 XOR I4) XOR I2) XOR I1))
+  Gate 15: (I3 OR (I3 AND (NOT (I3 XOR I4))))
+  Gate 16: (((NOT (I3 XOR I4)) OR (I2 OR I2)) OR (NOT (I3 XOR I4)))
+
+--- FINAL OUTPUT FORMULA ---
+  Output 1: (NOT (((I3 XOR I4) XOR I2) XOR I1))
+  Output 2: (((I3 XOR I4) XOR I2) XOR I1)
+  -> Run 3 Formula: ['(NOT (((I3 XOR I4) XOR I2) XOR I1))', '(((I3 XOR I4) XOR I2) XOR I1)']
+
+>>> STARTING RUN 4 <<<
+  [Run 4] Iter 1: Fitness 24.00 (Correct: 24/32, Gates: 6)
+  [Run 4] Iter 10: Fitness 24.00 (Correct: 24/32, Gates: 6)
+  [Run 4] Iter 20: Fitness 24.00 (Correct: 24/32, Gates: 6)
+  [Run 4] Iter 30: Fitness 24.00 (Correct: 24/32, Gates: 6)
+  [Run 4] Iter 32: Fitness 40.00 (Correct: 32/32, Gates: 4)
+  [Run 4] Iter 40: Fitness 40.00 (Correct: 32/32, Gates: 4)
+  [Run 4] Iter 50: Fitness 40.00 (Correct: 32/32, Gates: 4)
+  [Run 4] Iter 60: Fitness 40.00 (Correct: 32/32, Gates: 4)
+  [Run 4] Iter 70: Fitness 40.00 (Correct: 32/32, Gates: 4)
+  [Run 4] Iter 80: Fitness 40.00 (Correct: 32/32, Gates: 4)
+  [Run 4] Iter 90: Fitness 40.00 (Correct: 32/32, Gates: 4)
+  [Run 4] Iter 100: Fitness 40.00 (Correct: 32/32, Gates: 4)
+
+[Run 4 Result]
+
+--- CIRCUIT FORMULA DERIVATION ---
+Internal Gates:
+  Gate 5: (NOT I3)
+  Gate 6: (I2 XOR I1)
+  Gate 7: ((NOT I3) XOR I2)
+  Gate 8: ((I2 XOR I1) XOR I3)
+  Gate 9: (I4 XOR ((I2 XOR I1) XOR I3))
+  Gate 10: (((NOT I3) XOR I2) XOR I3)
+  Gate 11: (I4 XOR ((I2 XOR I1) XOR I3))
+  Gate 12: (NOT (I4 XOR ((I2 XOR I1) XOR I3)))
+  Gate 13: (NOT ((I2 XOR I1) XOR I3))
+  Gate 14: ((I2 XOR I1) XOR I4)
+  Gate 15: (I1 XOR (I4 XOR ((I2 XOR I1) XOR I3)))
+  Gate 16: ((NOT I3) OR I4)
+
+--- FINAL OUTPUT FORMULA ---
+  Output 1: (NOT (I4 XOR ((I2 XOR I1) XOR I3)))
+  Output 2: (I4 XOR ((I2 XOR I1) XOR I3))
+  -> Run 4 Formula: ['(NOT (I4 XOR ((I2 XOR I1) XOR I3)))', '(I4 XOR ((I2 XOR I1) XOR I3))']
+
+>>> STARTING RUN 5 <<<
+  [Run 5] Iter 1: Fitness 20.00 (Correct: 20/32, Gates: 5)
+  [Run 5] Iter 2: Fitness 24.00 (Correct: 24/32, Gates: 5)
+  [Run 5] Iter 8: Fitness 40.00 (Correct: 32/32, Gates: 4)
+  [Run 5] Iter 10: Fitness 40.00 (Correct: 32/32, Gates: 4)
+  [Run 5] Iter 20: Fitness 40.00 (Correct: 32/32, Gates: 4)
+  [Run 5] Iter 30: Fitness 40.00 (Correct: 32/32, Gates: 4)
+  [Run 5] Iter 40: Fitness 40.00 (Correct: 32/32, Gates: 4)
+  [Run 5] Iter 50: Fitness 40.00 (Correct: 32/32, Gates: 4)
+  [Run 5] Iter 60: Fitness 40.00 (Correct: 32/32, Gates: 4)
+  [Run 5] Iter 70: Fitness 40.00 (Correct: 32/32, Gates: 4)
+  [Run 5] Iter 80: Fitness 40.00 (Correct: 32/32, Gates: 4)
+  [Run 5] Iter 90: Fitness 40.00 (Correct: 32/32, Gates: 4)
+  [Run 5] Iter 100: Fitness 40.00 (Correct: 32/32, Gates: 4)
+
+[Run 5 Result]
+
+--- CIRCUIT FORMULA DERIVATION ---
+Internal Gates:
+  Gate 5: (I1 XOR I3)
+  Gate 6: (I2 XOR I4)
+  Gate 7: (I4 XOR (I1 XOR I3))
+  Gate 8: (NOT (I4 XOR (I1 XOR I3)))
+  Gate 9: ((I2 XOR I4) XOR (I1 XOR I3))
+  Gate 10: (I3 OR (I1 XOR I3))
+  Gate 11: (NOT ((I2 XOR I4) XOR (I1 XOR I3)))
+  Gate 12: (((I2 XOR I4) XOR (I1 XOR I3)) OR I4)
+  Gate 13: ((I2 XOR I4) XOR (I3 OR (I1 XOR I3)))
+  Gate 14: (NOT (I2 XOR I4))
+  Gate 15: ((I4 XOR (I1 XOR I3)) AND (I2 XOR I4))
+  Gate 16: ((((I2 XOR I4) XOR (I1 XOR I3)) OR I4) OR (NOT (I2 XOR I4)))
+
+--- FINAL OUTPUT FORMULA ---
+  Output 1: (NOT ((I2 XOR I4) XOR (I1 XOR I3)))
+  Output 2: ((I2 XOR I4) XOR (I1 XOR I3))
+  -> Run 5 Formula: ['(NOT ((I2 XOR I4) XOR (I1 XOR I3)))', '((I2 XOR I4) XOR (I1 XOR I3))']
+
+>>> STARTING RUN 6 <<<
+  [Run 6] Iter 1: Fitness 24.00 (Correct: 24/32, Gates: 4)
+  [Run 6] Iter 3: Fitness 39.00 (Correct: 32/32, Gates: 5)
+  [Run 6] Iter 10: Fitness 39.00 (Correct: 32/32, Gates: 5)
+  [Run 6] Iter 20: Fitness 39.00 (Correct: 32/32, Gates: 5)
+  [Run 6] Iter 30: Fitness 39.00 (Correct: 32/32, Gates: 5)
+  [Run 6] Iter 40: Fitness 39.00 (Correct: 32/32, Gates: 5)
+  [Run 6] Iter 48: Fitness 40.00 (Correct: 32/32, Gates: 4)
+  [Run 6] Iter 50: Fitness 40.00 (Correct: 32/32, Gates: 4)
+  [Run 6] Iter 60: Fitness 40.00 (Correct: 32/32, Gates: 4)
+  [Run 6] Iter 70: Fitness 40.00 (Correct: 32/32, Gates: 4)
+  [Run 6] Iter 80: Fitness 40.00 (Correct: 32/32, Gates: 4)
+  [Run 6] Iter 90: Fitness 40.00 (Correct: 32/32, Gates: 4)
+  [Run 6] Iter 100: Fitness 40.00 (Correct: 32/32, Gates: 4)
+
+[Run 6 Result]
+
+--- CIRCUIT FORMULA DERIVATION ---
+Internal Gates:
+  Gate 5: (I1 XOR I3)
+  Gate 6: (I4 XOR I2)
+  Gate 7: (NOT I3)
+  Gate 8: (I2 OR (I4 XOR I2))
+  Gate 9: (I4 XOR (I4 XOR I2))
+  Gate 10: (I4 OR I3)
+  Gate 11: ((I1 XOR I3) XOR (I4 XOR I2))
+  Gate 12: (NOT (NOT I3))
+  Gate 13: ((NOT I3) OR (I1 XOR I3))
+  Gate 14: (NOT ((I1 XOR I3) XOR (I4 XOR I2)))
+  Gate 15: (NOT (I1 XOR I3))
+  Gate 16: ((NOT I3) XOR (I1 XOR I3))
+
+--- FINAL OUTPUT FORMULA ---
+  Output 1: (NOT ((I1 XOR I3) XOR (I4 XOR I2)))
+  Output 2: ((I1 XOR I3) XOR (I4 XOR I2))
+  -> Run 6 Formula: ['(NOT ((I1 XOR I3) XOR (I4 XOR I2)))', '((I1 XOR I3) XOR (I4 XOR I2))']
+
+>>> STARTING RUN 7 <<<
+  [Run 7] Iter 1: Fitness 24.00 (Correct: 24/32, Gates: 5)
+  [Run 7] Iter 10: Fitness 24.00 (Correct: 24/32, Gates: 5)
+  [Run 7] Iter 20: Fitness 24.00 (Correct: 24/32, Gates: 5)
+  [Run 7] Iter 30: Fitness 24.00 (Correct: 24/32, Gates: 5)
+  [Run 7] Iter 40: Fitness 24.00 (Correct: 24/32, Gates: 5)
+  [Run 7] Iter 50: Fitness 24.00 (Correct: 24/32, Gates: 5)
+  [Run 7] Iter 60: Fitness 24.00 (Correct: 24/32, Gates: 5)
+  [Run 7] Iter 70: Fitness 24.00 (Correct: 24/32, Gates: 5)
+  [Run 7] Iter 79: Fitness 26.00 (Correct: 26/32, Gates: 8)
+  [Run 7] Iter 80: Fitness 26.00 (Correct: 26/32, Gates: 8)
+  [Run 7] Iter 81: Fitness 40.00 (Correct: 32/32, Gates: 4)
+  [Run 7] Iter 90: Fitness 40.00 (Correct: 32/32, Gates: 4)
+  [Run 7] Iter 100: Fitness 40.00 (Correct: 32/32, Gates: 4)
+
+[Run 7 Result]
+
+--- CIRCUIT FORMULA DERIVATION ---
+Internal Gates:
+  Gate 5: (I1 XOR I2)
+  Gate 6: (I4 AND I4)
+  Gate 7: (I2 AND I1)
+  Gate 8: (NOT (I1 XOR I2))
+  Gate 9: ((I1 XOR I2) OR (NOT (I1 XOR I2)))
+  Gate 10: (I4 XOR I3)
+  Gate 11: ((NOT (I1 XOR I2)) OR (NOT (I1 XOR I2)))
+  Gate 12: (I2 AND ((I1 XOR I2) OR (NOT (I1 XOR I2))))
+  Gate 13: ((I1 XOR I2) XOR (I4 XOR I3))
+  Gate 14: (I3 AND (I1 XOR I2))
+  Gate 15: (I3 OR I3)
+  Gate 16: (NOT ((I1 XOR I2) XOR (I4 XOR I3)))
+
+--- FINAL OUTPUT FORMULA ---
+  Output 1: (NOT ((I1 XOR I2) XOR (I4 XOR I3)))
+  Output 2: ((I1 XOR I2) XOR (I4 XOR I3))
+  -> Run 7 Formula: ['(NOT ((I1 XOR I2) XOR (I4 XOR I3)))', '((I1 XOR I2) XOR (I4 XOR I3))']
+
+>>> STARTING RUN 8 <<<
+  [Run 8] Iter 1: Fitness 24.00 (Correct: 24/32, Gates: 4)
+  [Run 8] Iter 10: Fitness 24.00 (Correct: 24/32, Gates: 4)
+  [Run 8] Iter 12: Fitness 28.00 (Correct: 28/32, Gates: 5)
+  [Run 8] Iter 13: Fitness 40.00 (Correct: 32/32, Gates: 4)
+  [Run 8] Iter 20: Fitness 40.00 (Correct: 32/32, Gates: 4)
+  [Run 8] Iter 30: Fitness 40.00 (Correct: 32/32, Gates: 4)
+  [Run 8] Iter 40: Fitness 40.00 (Correct: 32/32, Gates: 4)
+  [Run 8] Iter 50: Fitness 40.00 (Correct: 32/32, Gates: 4)
+  [Run 8] Iter 60: Fitness 40.00 (Correct: 32/32, Gates: 4)
+  [Run 8] Iter 70: Fitness 40.00 (Correct: 32/32, Gates: 4)
+  [Run 8] Iter 80: Fitness 40.00 (Correct: 32/32, Gates: 4)
+  [Run 8] Iter 90: Fitness 40.00 (Correct: 32/32, Gates: 4)
+  [Run 8] Iter 100: Fitness 40.00 (Correct: 32/32, Gates: 4)
+
+[Run 8 Result]
+
+--- CIRCUIT FORMULA DERIVATION ---
+Internal Gates:
+  Gate 5: (I2 XOR I1)
+  Gate 6: (I3 XOR I4)
+  Gate 7: (I1 OR (I2 XOR I1))
+  Gate 8: (I2 OR I2)
+  Gate 9: ((I3 XOR I4) XOR (I2 XOR I1))
+  Gate 10: (I4 AND (I1 OR (I2 XOR I1)))
+  Gate 11: (I4 AND (I2 OR I2))
+  Gate 12: (((I3 XOR I4) XOR (I2 XOR I1)) OR (I2 OR I2))
+  Gate 13: (NOT ((I3 XOR I4) XOR (I2 XOR I1)))
+  Gate 14: (((I3 XOR I4) XOR (I2 XOR I1)) AND (I4 AND (I1 OR (I2 XOR I1))))
+  Gate 15: ((I2 OR I2) OR (((I3 XOR I4) XOR (I2 XOR I1)) OR (I2 OR I2)))
+  Gate 16: (((I3 XOR I4) XOR (I2 XOR I1)) XOR (I2 XOR I1))
+
+--- FINAL OUTPUT FORMULA ---
+  Output 1: (NOT ((I3 XOR I4) XOR (I2 XOR I1)))
+  Output 2: ((I3 XOR I4) XOR (I2 XOR I1))
+  -> Run 8 Formula: ['(NOT ((I3 XOR I4) XOR (I2 XOR I1)))', '((I3 XOR I4) XOR (I2 XOR I1))']
+
+>>> STARTING RUN 9 <<<
+  [Run 9] Iter 1: Fitness 24.00 (Correct: 24/32, Gates: 4)
+  [Run 9] Iter 10: Fitness 24.00 (Correct: 24/32, Gates: 4)
+  [Run 9] Iter 20: Fitness 24.00 (Correct: 24/32, Gates: 4)
+  [Run 9] Iter 30: Fitness 24.00 (Correct: 24/32, Gates: 4)
+  [Run 9] Iter 40: Fitness 24.00 (Correct: 24/32, Gates: 4)
+  [Run 9] Iter 50: Fitness 24.00 (Correct: 24/32, Gates: 4)
+  [Run 9] Iter 60: Fitness 24.00 (Correct: 24/32, Gates: 4)
+  [Run 9] Iter 70: Fitness 24.00 (Correct: 24/32, Gates: 4)
+  [Run 9] Iter 80: Fitness 24.00 (Correct: 24/32, Gates: 4)
+  [Run 9] Iter 90: Fitness 24.00 (Correct: 24/32, Gates: 4)
+  [Run 9] Iter 100: Fitness 24.00 (Correct: 24/32, Gates: 4)
+
+[Run 9 Result]
+
+--- CIRCUIT FORMULA DERIVATION ---
+Internal Gates:
+  Gate 5: (I3 XOR I4)
+  Gate 6: ((I3 XOR I4) AND (I3 XOR I4))
+  Gate 7: (NOT I4)
+  Gate 8: (NOT I1)
+  Gate 9: ((I3 XOR I4) XOR I2)
+  Gate 10: ((NOT I1) OR (I3 XOR I4))
+  Gate 11: (I1 XOR I2)
+  Gate 12: (I2 XOR I1)
+  Gate 13: (NOT I4)
+  Gate 14: (((I3 XOR I4) AND (I3 XOR I4)) XOR (I1 XOR I2))
+  Gate 15: ((((I3 XOR I4) AND (I3 XOR I4)) XOR (I1 XOR I2)) AND I1)
+  Gate 16: (NOT (I3 XOR I4))
+
+--- FINAL OUTPUT FORMULA ---
+  Output 1: I4
+  Output 2: (((I3 XOR I4) AND (I3 XOR I4)) XOR (I1 XOR I2))
+  -> Run 9 Formula: ['I4', '(((I3 XOR I4) AND (I3 XOR I4)) XOR (I1 XOR I2))']
+
+>>> STARTING RUN 10 <<<
+  [Run 10] Iter 1: Fitness 22.00 (Correct: 22/32, Gates: 5)
+  [Run 10] Iter 8: Fitness 24.00 (Correct: 24/32, Gates: 3)
+  [Run 10] Iter 10: Fitness 24.00 (Correct: 24/32, Gates: 3)
+  [Run 10] Iter 20: Fitness 24.00 (Correct: 24/32, Gates: 3)
+  [Run 10] Iter 30: Fitness 24.00 (Correct: 24/32, Gates: 3)
+  [Run 10] Iter 32: Fitness 40.00 (Correct: 32/32, Gates: 4)
+  [Run 10] Iter 40: Fitness 40.00 (Correct: 32/32, Gates: 4)
+  [Run 10] Iter 50: Fitness 40.00 (Correct: 32/32, Gates: 4)
+  [Run 10] Iter 60: Fitness 40.00 (Correct: 32/32, Gates: 4)
+  [Run 10] Iter 70: Fitness 40.00 (Correct: 32/32, Gates: 4)
+  [Run 10] Iter 80: Fitness 40.00 (Correct: 32/32, Gates: 4)
+  [Run 10] Iter 90: Fitness 40.00 (Correct: 32/32, Gates: 4)
+  [Run 10] Iter 100: Fitness 40.00 (Correct: 32/32, Gates: 4)
+
+[Run 10 Result]
+
+--- CIRCUIT FORMULA DERIVATION ---
+Internal Gates:
+  Gate 5: (I1 XOR I3)
+  Gate 6: (I2 XOR I4)
+  Gate 7: (I3 OR I4)
+  Gate 8: ((I1 XOR I3) XOR (I2 XOR I4))
+  Gate 9: ((I1 XOR I3) OR (I1 XOR I3))
+  Gate 10: ((I1 XOR I3) OR (I1 XOR I3))
+  Gate 11: (NOT (I1 XOR I3))
+  Gate 12: ((I2 XOR I4) OR (I3 OR I4))
+  Gate 13: (NOT (I2 XOR I4))
+  Gate 14: (NOT ((I1 XOR I3) XOR (I2 XOR I4)))
+  Gate 15: ((I2 XOR I4) OR (I3 OR I4))
+  Gate 16: (((I1 XOR I3) OR (I1 XOR I3)) XOR (NOT ((I1 XOR I3) XOR (I2 XOR I4))))
+
+--- FINAL OUTPUT FORMULA ---
+  Output 1: (NOT ((I1 XOR I3) XOR (I2 XOR I4)))
+  Output 2: ((I1 XOR I3) XOR (I2 XOR I4))
+  -> Run 10 Formula: ['(NOT ((I1 XOR I3) XOR (I2 XOR I4)))', '((I1 XOR I3) XOR (I2 XOR I4))']
+
+==================================================
+ FINAL EVALUATION METRICS
+==================================================
+1. Success Rate: 8/10 (80.0%)
+2. Gate Efficiency (Successful Runs Only):
+   - Best (Fewest): 4
+   - Average:       4.12
+   - Std Dev:       0.35
+3. Time Efficiency:
+   - Average: 321.87s
+
+Detailed iteration history saved to: results\pso_convergence_20251129_125700.csv

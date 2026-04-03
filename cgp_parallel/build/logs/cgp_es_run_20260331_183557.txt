@@ -1,0 +1,267 @@
+Log file         : logs/cgp_es_run_20260331_183557.txt
+Loaded Benchmark : ../plu_files/benchmarks/add6.plu
+Inputs           : 13 | Outputs: 7
+
+--- Starting CGP Logic Synthesis via Parallel (1+λ) ES ---
+Algorithm        : Parallel Streams CGP-ES  (PSO-PSO structure, ES engine)
+Function set     : Reduced  {BUFa, NOTa, AND, OR} (4 gates)
+max_nodes        : 5000
+levels_back      : 5000
+num_streams (K)  : 6
+lambda (λ)       : 8
+multi_phase_gens : 2000
+single_phase_gens: 500
+mutation_rate    : 0.01
+stagnation_thresh: 15 cycles
+offspring/cycle  : 120000
+hardware threads : 12
+
+Initialising 6 stream(s), lambda=8 (total offspring/gen: 48)...
+  Stream 1 ready.
+  Stream 2 ready.
+  Stream 3 ready.
+  Stream 4 ready.
+  Stream 5 ready.
+  Stream 6 ready.
+[Cycle 1] Single phase | gbest: 17844
+[Cycle 1] Finished | Total gens: 2500 | Global Best Error: 16640
+[Cycle 2] Single phase | gbest: 14256
+[Cycle 2] Finished | Total gens: 5000 | Global Best Error: 13376
+[Cycle 3] Single phase | gbest: 12606
+[Cycle 3] Finished | Total gens: 7500 | Global Best Error: 11936
+[Cycle 4] Single phase | gbest: 11456
+[Cycle 4] Finished | Total gens: 10000 | Global Best Error: 10848
+[Cycle 5] Single phase | gbest: 10308
+[Cycle 5] Finished | Total gens: 12500 | Global Best Error: 9924
+[Cycle 6] Single phase | gbest: 9504
+[Cycle 6] Finished | Total gens: 15000 | Global Best Error: 9484
+[Cycle 7] Single phase | gbest: 9216
+[Cycle 7] Finished | Total gens: 17500 | Global Best Error: 9130
+[Cycle 8] Single phase | gbest: 8898
+[Cycle 8] Finished | Total gens: 20000 | Global Best Error: 8884
+[Cycle 9] Single phase | gbest: 8692
+[Cycle 9] Finished | Total gens: 22500 | Global Best Error: 8676
+[Cycle 10] Single phase | gbest: 8470
+[Cycle 10] Finished | Total gens: 25000 | Global Best Error: 8390
+[Cycle 11] Single phase | gbest: 8356
+[Cycle 11] Finished | Total gens: 27500 | Global Best Error: 8340
+[Cycle 12] Single phase | gbest: 8340
+[Cycle 12] Finished | Total gens: 30000 | Global Best Error: 8340
+[Cycle 13] Single phase | gbest: 8340
+[Cycle 13] Finished | Total gens: 32500 | Global Best Error: 8340
+[Cycle 14] Single phase | gbest: 8256
+[Cycle 14] Finished | Total gens: 35000 | Global Best Error: 8256
+[Cycle 15] Single phase | gbest: 7780
+[Cycle 15] Finished | Total gens: 37500 | Global Best Error: 7716
+[Cycle 16] Single phase | gbest: 7668
+[Cycle 16] Finished | Total gens: 40000 | Global Best Error: 7668
+[Cycle 17] Single phase | gbest: 7396
+[Cycle 17] Finished | Total gens: 42500 | Global Best Error: 7396
+[Cycle 18] Single phase | gbest: 7396
+[Cycle 18] Finished | Total gens: 45000 | Global Best Error: 7382
+[Cycle 19] Single phase | gbest: 7246
+[Cycle 19] Finished | Total gens: 47500 | Global Best Error: 7238
+[Cycle 20] Single phase | gbest: 7108
+[Cycle 20] Finished | Total gens: 50000 | Global Best Error: 7100
+[Cycle 21] Single phase | gbest: 7090
+[Cycle 21] Finished | Total gens: 52500 | Global Best Error: 6850
+[Cycle 22] Single phase | gbest: 6796
+[Cycle 22] Finished | Total gens: 55000 | Global Best Error: 6764
+[Cycle 23] Single phase | gbest: 6748
+[Cycle 23] Finished | Total gens: 57500 | Global Best Error: 6678
+[Cycle 24] Single phase | gbest: 6566
+[Cycle 24] Finished | Total gens: 60000 | Global Best Error: 6566
+[Cycle 25] Single phase | gbest: 6552
+[Cycle 25] Finished | Total gens: 62500 | Global Best Error: 6552
+[Cycle 26] Single phase | gbest: 6552
+[Cycle 26] Finished | Total gens: 65000 | Global Best Error: 6552
+[Cycle 27] Single phase | gbest: 6524
+[Cycle 27] Finished | Total gens: 67500 | Global Best Error: 6524
+[Cycle 28] Single phase | gbest: 5900
+[Cycle 28] Finished | Total gens: 70000 | Global Best Error: 5900
+[Cycle 29] Single phase | gbest: 5722
+[Cycle 29] Finished | Total gens: 72500 | Global Best Error: 5722
+[Cycle 30] Single phase | gbest: 5722
+[Cycle 30] Finished | Total gens: 75000 | Global Best Error: 5722
+[Cycle 31] Single phase | gbest: 5720
+[Cycle 31] Finished | Total gens: 77500 | Global Best Error: 5720
+[Cycle 32] Single phase | gbest: 5620
+[Cycle 32] Finished | Total gens: 80000 | Global Best Error: 5620
+[Cycle 33] Single phase | gbest: 5416
+[Cycle 33] Finished | Total gens: 82500 | Global Best Error: 5416
+[Cycle 34] Single phase | gbest: 5344
+[Cycle 34] Finished | Total gens: 85000 | Global Best Error: 5344
+[Cycle 35] Single phase | gbest: 5156
+[Cycle 35] Finished | Total gens: 87500 | Global Best Error: 4928
+[Cycle 36] Single phase | gbest: 4720
+[Cycle 36] Finished | Total gens: 90000 | Global Best Error: 4720
+[Cycle 37] Single phase | gbest: 4656
+[Cycle 37] Finished | Total gens: 92500 | Global Best Error: 4602
+[Cycle 38] Single phase | gbest: 4320
+[Cycle 38] Finished | Total gens: 95000 | Global Best Error: 4304
+[Cycle 39] Single phase | gbest: 4240
+[Cycle 39] Finished | Total gens: 97500 | Global Best Error: 4240
+[Cycle 40] Single phase | gbest: 4240
+[Cycle 40] Finished | Total gens: 100000 | Global Best Error: 4240
+[Cycle 41] Single phase | gbest: 4240
+[Cycle 41] Finished | Total gens: 102500 | Global Best Error: 4240
+[Cycle 42] Single phase | gbest: 4240
+[Cycle 42] Finished | Total gens: 105000 | Global Best Error: 4240
+[Cycle 43] Single phase | gbest: 4240
+[Cycle 43] Finished | Total gens: 107500 | Global Best Error: 4240
+[Cycle 44] Single phase | gbest: 4216
+[Cycle 44] Finished | Total gens: 110000 | Global Best Error: 4216
+[Cycle 45] Single phase | gbest: 4128
+[Cycle 45] Finished | Total gens: 112500 | Global Best Error: 4072
+[Cycle 46] Single phase | gbest: 4040
+[Cycle 46] Finished | Total gens: 115000 | Global Best Error: 4040
+[Cycle 47] Single phase | gbest: 4040
+[Cycle 47] Finished | Total gens: 117500 | Global Best Error: 4040
+[Cycle 48] Single phase | gbest: 4040
+[Cycle 48] Finished | Total gens: 120000 | Global Best Error: 4040
+[Cycle 49] Single phase | gbest: 3976
+[Cycle 49] Finished | Total gens: 122500 | Global Best Error: 3976
+[Cycle 50] Single phase | gbest: 3976
+[Cycle 50] Finished | Total gens: 125000 | Global Best Error: 3976
+[Cycle 51] Single phase | gbest: 3976
+[Cycle 51] Finished | Total gens: 127500 | Global Best Error: 3976
+[Cycle 52] Single phase | gbest: 3976
+[Cycle 52] Finished | Total gens: 130000 | Global Best Error: 3976
+[Cycle 53] Single phase | gbest: 3936
+[Cycle 53] Finished | Total gens: 132500 | Global Best Error: 3936
+[Cycle 54] Single phase | gbest: 3776
+[Cycle 54] Finished | Total gens: 135000 | Global Best Error: 3776
+[Cycle 55] Single phase | gbest: 3776
+[Cycle 55] Finished | Total gens: 137500 | Global Best Error: 3776
+[Cycle 56] Single phase | gbest: 3720
+[Cycle 56] Finished | Total gens: 140000 | Global Best Error: 3720
+[Cycle 57] Single phase | gbest: 3488
+[Cycle 57] Finished | Total gens: 142500 | Global Best Error: 3488
+[Cycle 58] Single phase | gbest: 2768
+[Cycle 58] Finished | Total gens: 145000 | Global Best Error: 2768
+[Cycle 59] Single phase | gbest: 2720
+[Cycle 59] Finished | Total gens: 147500 | Global Best Error: 2590
+[Cycle 60] Single phase | gbest: 2454
+[Cycle 60] Finished | Total gens: 150000 | Global Best Error: 2364
+[Cycle 61] Single phase | gbest: 2096
+[Cycle 61] Finished | Total gens: 152500 | Global Best Error: 2096
+[Cycle 62] Single phase | gbest: 2096
+[Cycle 62] Finished | Total gens: 155000 | Global Best Error: 2096
+[Cycle 63] Single phase | gbest: 2096
+[Cycle 63] Finished | Total gens: 157500 | Global Best Error: 2096
+[Cycle 64] Single phase | gbest: 2096
+[Cycle 64] Finished | Total gens: 160000 | Global Best Error: 2096
+[Cycle 65] Single phase | gbest: 2096
+[Cycle 65] Finished | Total gens: 162500 | Global Best Error: 2064
+[Cycle 66] Single phase | gbest: 2064
+[Cycle 66] Finished | Total gens: 165000 | Global Best Error: 2064
+[Cycle 67] Single phase | gbest: 1900
+[Cycle 67] Finished | Total gens: 167500 | Global Best Error: 1792
+[Cycle 68] Single phase | gbest: 1792
+[Cycle 68] Finished | Total gens: 170000 | Global Best Error: 1792
+[Cycle 69] Single phase | gbest: 1792
+[Cycle 69] Finished | Total gens: 172500 | Global Best Error: 1792
+[Cycle 70] Single phase | gbest: 1792
+[Cycle 70] Finished | Total gens: 175000 | Global Best Error: 1792
+[Cycle 71] Single phase | gbest: 1792
+[Cycle 71] Finished | Total gens: 177500 | Global Best Error: 1792
+[Cycle 72] Single phase | gbest: 1536
+[Cycle 72] Finished | Total gens: 180000 | Global Best Error: 1536
+[Cycle 73] Single phase | gbest: 1536
+[Cycle 73] Finished | Total gens: 182500 | Global Best Error: 1536
+[Cycle 74] Single phase | gbest: 1536
+[Cycle 74] Finished | Total gens: 185000 | Global Best Error: 1536
+[Cycle 75] Single phase | gbest: 1536
+[Cycle 75] Finished | Total gens: 187500 | Global Best Error: 1536
+[Cycle 76] Single phase | gbest: 1280
+[Cycle 76] Finished | Total gens: 190000 | Global Best Error: 1280
+[Cycle 77] Single phase | gbest: 1280
+[Cycle 77] Finished | Total gens: 192500 | Global Best Error: 1280
+[Cycle 78] Single phase | gbest: 1280
+[Cycle 78] Finished | Total gens: 195000 | Global Best Error: 1280
+[Cycle 79] Single phase | gbest: 1280
+[Cycle 79] Finished | Total gens: 197500 | Global Best Error: 1280
+[Cycle 80] Single phase | gbest: 1280
+[Cycle 80] Finished | Total gens: 200000 | Global Best Error: 1280
+[Cycle 81] Single phase | gbest: 1280
+[Cycle 81] Finished | Total gens: 202500 | Global Best Error: 1280
+[Cycle 82] Single phase | gbest: 1280
+[Cycle 82] Finished | Total gens: 205000 | Global Best Error: 1280
+[Cycle 83] Single phase | gbest: 1280
+[Cycle 83] Finished | Total gens: 207500 | Global Best Error: 1280
+[Cycle 84] Single phase | gbest: 1280
+[Cycle 84] Finished | Total gens: 210000 | Global Best Error: 1280
+[Cycle 85] Single phase | gbest: 1280
+[Cycle 85] Finished | Total gens: 212500 | Global Best Error: 1280
+[Cycle 86] Single phase | gbest: 1280
+[Cycle 86] Finished | Total gens: 215000 | Global Best Error: 1280
+[Cycle 87] Single phase | gbest: 1280
+[Cycle 87] Finished | Total gens: 217500 | Global Best Error: 1280
+[Cycle 88] Single phase | gbest: 1280
+[Cycle 88] Finished | Total gens: 220000 | Global Best Error: 1280
+[Cycle 89] Single phase | gbest: 1280
+[Cycle 89] Finished | Total gens: 222500 | Global Best Error: 1280
+[Cycle 90] Single phase | gbest: 1280
+[Cycle 90] Finished | Total gens: 225000 | Global Best Error: 1280
+[Cycle 91] Single phase | gbest: 1280
+[Cycle 91] Finished | Total gens: 227500 | Global Best Error: 1280
+  [Restart] Re-initialising stream 1 (sbest=1280)
+[Cycle 92] Single phase | gbest: 1280
+[Cycle 92] Finished | Total gens: 230000 | Global Best Error: 1280
+[Cycle 93] Single phase | gbest: 1280
+[Cycle 93] Finished | Total gens: 232500 | Global Best Error: 1280
+[Cycle 94] Single phase | gbest: 1280
+[Cycle 94] Finished | Total gens: 235000 | Global Best Error: 1280
+[Cycle 95] Single phase | gbest: 1280
+[Cycle 95] Finished | Total gens: 237500 | Global Best Error: 1280
+[Cycle 96] Single phase | gbest: 1280
+[Cycle 96] Finished | Total gens: 240000 | Global Best Error: 1280
+[Cycle 97] Single phase | gbest: 1280
+[Cycle 97] Finished | Total gens: 242500 | Global Best Error: 1280
+[Cycle 98] Single phase | gbest: 1280
+[Cycle 98] Finished | Total gens: 245000 | Global Best Error: 1280
+[Cycle 99] Single phase | gbest: 1280
+[Cycle 99] Finished | Total gens: 247500 | Global Best Error: 1280
+[Cycle 100] Single phase | gbest: 1280
+[Cycle 100] Finished | Total gens: 250000 | Global Best Error: 1280
+[Cycle 101] Single phase | gbest: 1280
+[Cycle 101] Finished | Total gens: 252500 | Global Best Error: 1280
+[Cycle 102] Single phase | gbest: 1280
+[Cycle 102] Finished | Total gens: 255000 | Global Best Error: 1280
+[Cycle 103] Single phase | gbest: 1280
+[Cycle 103] Finished | Total gens: 257500 | Global Best Error: 1280
+[Cycle 104] Single phase | gbest: 1280
+[Cycle 104] Finished | Total gens: 260000 | Global Best Error: 1280
+[Cycle 105] Single phase | gbest: 1280
+[Cycle 105] Finished | Total gens: 262500 | Global Best Error: 1280
+[Cycle 106] Single phase | gbest: 1280
+[Cycle 106] Finished | Total gens: 265000 | Global Best Error: 1280
+  [Restart] Re-initialising stream 1 (sbest=1280)
+[Cycle 107] Single phase | gbest: 1280
+[Cycle 107] Finished | Total gens: 267500 | Global Best Error: 1280
+[Cycle 108] Single phase | gbest: 1280
+[Cycle 108] Finished | Total gens: 270000 | Global Best Error: 1280
+[Cycle 109] Single phase | gbest: 1024
+[Cycle 109] Finished | Total gens: 272500 | Global Best Error: 1024
+[Cycle 110] Single phase | gbest: 1024
+[Cycle 110] Finished | Total gens: 275000 | Global Best Error: 1024
+[Cycle 111] Single phase | gbest: 1024
+[Cycle 111] Finished | Total gens: 277500 | Global Best Error: 1024
+[Cycle 112] Single phase | gbest: 1024
+[Cycle 112] Finished | Total gens: 280000 | Global Best Error: 1024
+[Cycle 113] Single phase | gbest: 1024
+[Cycle 113] Finished | Total gens: 282500 | Global Best Error: 1024
+
+=========================================
+Optimisation Complete!
+Best Circuit Hamming Distance: 0
+
+--- Final Circuit Formulas ---
+Output[0] = ((In[6] & In[0]) | ((((((In[9] & In[3]) | (((In[9] & In[7]) | (In[9] | In[3])) & ((In[10] & ((In[11] & (In[12] | In[5])) | (In[5] & In[12]))) | (In[4] & (In[10] | ((In[11] & (In[12] | In[5])) | (In[5] & In[12]))))))) | ((In[2] & In[8]) | ((In[2] & In[8]) & In[5]))) & ((In[7] & (In[8] | In[2])) | ((In[8] | In[2]) & ~~In[1]))) | (In[1] & In[7])) & (~(In[6] & In[0]) & (In[6] | In[0]))))
+Output[1] = (((((((In[9] & In[3]) | (((In[9] & In[7]) | (In[9] | In[3])) & ((In[10] & ((In[11] & (In[12] | In[5])) | (In[5] & In[12]))) | (In[4] & (In[10] | ((In[11] & (In[12] | In[5])) | (In[5] & In[12]))))))) | ((In[2] & In[8]) | ((In[2] & In[8]) & In[5]))) & ((In[7] & (In[8] | In[2])) | ((In[8] | In[2]) & ~~In[1]))) | (In[1] & In[7])) | (~(In[6] & In[0]) & (In[6] | In[0]))) & ~((((((In[9] & In[3]) | (((In[9] & In[7]) | (In[9] | In[3])) & ((In[10] & ((In[11] & (In[12] | In[5])) | (In[5] & In[12]))) | (In[4] & (In[10] | ((In[11] & (In[12] | In[5])) | (In[5] & In[12]))))))) | ((In[2] & In[8]) | ((In[2] & In[8]) & In[5]))) & ((In[7] & (In[8] | In[2])) | ((In[8] | In[2]) & ~~In[1]))) | (In[1] & In[7])) & (~(In[6] & In[0]) & (In[6] | In[0]))))
+Output[2] = ~(((~(In[1] | (((In[9] & In[7]) & (In[9] | In[3])) | In[7])) & (~(In[2] | In[8]) | ~(((In[9] & In[3]) | (((In[9] & In[7]) | (In[9] | In[3])) & ((In[10] & ((In[11] & (In[12] | In[5])) | (In[5] & In[12]))) | (In[4] & (In[10] | ((In[11] & (In[12] | In[5])) | (In[5] & In[12]))))))) | ((In[2] & In[8]) | ((In[2] & In[8]) & In[5]))))) | (((((In[9] & In[3]) | (((In[9] & In[7]) | (In[9] | In[3])) & ((In[10] & ((In[11] & (In[12] | In[5])) | (In[5] & In[12]))) | (In[4] & (In[10] | ((In[11] & (In[12] | In[5])) | (In[5] & In[12]))))))) | ((In[2] & In[8]) | ((In[2] & In[8]) & In[5]))) & ((In[7] & (In[8] | In[2])) | ((In[8] | In[2]) & ~~In[1]))) | (In[1] & In[7]))) & ((~(In[1] & In[7]) | ~(In[8] | In[2])) | ~(((In[9] & In[3]) | (((In[9] & In[7]) | (In[9] | In[3])) & ((In[10] & ((In[11] & (In[12] | In[5])) | (In[5] & In[12]))) | (In[4] & (In[10] | ((In[11] & (In[12] | In[5])) | (In[5] & In[12]))))))) | ((In[2] & In[8]) | ((In[2] & In[8]) & In[5])))))
+Output[3] = ~((((In[9] & In[3]) | (((In[9] & In[7]) | (In[9] | In[3])) & ((In[10] & ((In[11] & (In[12] | In[5])) | (In[5] & In[12]))) | (In[4] & (In[10] | ((In[11] & (In[12] | In[5])) | (In[5] & In[12]))))))) | ((In[2] & In[8]) | ~(In[8] | In[2]))) & (~((In[2] & In[8]) | ~(In[8] | In[2])) | ~((In[9] & In[3]) | (((In[9] & In[7]) | (In[9] | In[3])) & ((In[10] & ((In[11] & (In[12] | In[5])) | (In[5] & In[12]))) | (In[4] & (In[10] | ((In[11] & (In[12] | In[5])) | (In[5] & In[12])))))))))
+Output[4] = ~(~(~~((((In[9] & In[7]) | (In[9] | In[3])) & ((In[10] & ((In[11] & (In[12] | In[5])) | (In[5] & In[12]))) | (In[4] & (In[10] | ((In[11] & (In[12] | In[5])) | (In[5] & In[12])))))) & (In[9] & In[3])) & (In[9] | In[3])) & (((In[9] & In[3]) | (((In[9] & In[7]) | (In[9] | In[3])) & ((In[10] & ((In[11] & (In[12] | In[5])) | (In[5] & In[12]))) | (In[4] & (In[10] | ((In[11] & (In[12] | In[5])) | (In[5] & In[12]))))))) | ~((In[9] | In[3]) | ((In[10] & ((In[11] & (In[12] | In[5])) | (In[5] & In[12]))) | (In[4] & (In[10] | ((In[11] & (In[12] | In[5])) | (In[5] & In[12]))))))))
+Output[5] = (~(~(In[10] | ((In[11] & (In[12] | In[5])) | (In[5] & In[12]))) | ((In[10] & ((In[11] & (In[12] | In[5])) | (In[5] & In[12]))) | (In[4] & (In[10] | ((In[11] & (In[12] | In[5])) | (In[5] & In[12])))))) | (((In[10] & ((In[11] & (In[12] | In[5])) | (In[5] & In[12]))) | ~((In[10] & ((In[11] & (In[12] | In[5])) | (In[5] & In[12]))) | (In[4] & (In[10] | ((In[11] & (In[12] | In[5])) | (In[5] & In[12])))))) & In[4]))
+Output[6] = (~(~(In[5] & In[12]) & ((In[11] & (In[12] | In[5])) | (In[5] & In[12]))) & (~~In[11] | ~(~(In[12] | In[5]) | (In[5] & In[12]))))
+------------------------------

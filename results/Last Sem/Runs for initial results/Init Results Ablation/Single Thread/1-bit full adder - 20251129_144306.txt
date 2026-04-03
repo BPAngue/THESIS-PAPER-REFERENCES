@@ -1,0 +1,364 @@
+System: Single-Threaded Standard PSO (Ablation Study)
+Total Runs: 10
+Population: 500
+Max Iterations: 100
+
+>>> STARTING RUN 1 (Standard PSO) <<<
+  [Run 1] Iter 1: New Best Fitness 13.00 (Correct: 13/16)
+  [Run 1] Iter 10: Current: 13.00 (Stagnation: 9)
+  [Run 1] Iter 20: Current: 13.00 (Stagnation: 19)
+  [Run 1] Iter 30: Current: 13.00 (Stagnation: 29)
+  [Run 1] Iter 40: Current: 13.00 (Stagnation: 39)
+  [Run 1] Iter 50: Current: 13.00 (Stagnation: 49)
+  [Run 1] Iter 59: New Best Fitness 14.00 (Correct: 14/16)
+  [Run 1] Iter 60: New Best Fitness 15.00 (Correct: 15/16)
+  [Run 1] Iter 60: Current: 15.00 (Stagnation: 0)
+  [Run 1] Iter 70: Current: 15.00 (Stagnation: 10)
+  [Run 1] Iter 80: Current: 15.00 (Stagnation: 20)
+  [Run 1] Iter 90: Current: 15.00 (Stagnation: 30)
+  [Run 1] Iter 100: Current: 15.00 (Stagnation: 40)
+
+[Run 1 Result]
+
+--- CIRCUIT FORMULA DERIVATION ---
+Internal Gates:
+  Gate 4: (I2 OR I1)
+  Gate 5: (I1 OR I2)
+  Gate 6: (I2 XOR I1)
+  Gate 7: (I3 AND I3)
+  Gate 8: ((I2 XOR I1) OR (I2 XOR I1))
+  Gate 9: (I2 OR ((I2 XOR I1) OR (I2 XOR I1)))
+  Gate 10: ((I2 OR I1) AND I3)
+  Gate 11: (NOT I2)
+  Gate 12: (I3 OR (I2 XOR I1))
+  Gate 13: (I3 XOR (I2 XOR I1))
+  Gate 14: (((I2 XOR I1) OR (I2 XOR I1)) OR ((I2 OR I1) AND I3))
+  Gate 15: ((I1 OR I2) OR (I1 OR I2))
+
+--- FINAL OUTPUT FORMULA ---
+  Output 1: (I3 XOR (I2 XOR I1))
+  Output 2: ((I2 OR I1) AND I3)
+
+>>> STARTING RUN 2 (Standard PSO) <<<
+  [Run 2] Iter 1: New Best Fitness 14.00 (Correct: 14/16)
+  [Run 2] Iter 3: New Best Fitness 15.00 (Correct: 15/16)
+  [Run 2] Iter 10: Current: 15.00 (Stagnation: 7)
+  [Run 2] Iter 20: Current: 15.00 (Stagnation: 17)
+  [Run 2] Iter 30: Current: 15.00 (Stagnation: 27)
+  [Run 2] Iter 40: Current: 15.00 (Stagnation: 37)
+  [Run 2] Iter 50: Current: 15.00 (Stagnation: 47)
+  [Run 2] Iter 60: Current: 15.00 (Stagnation: 57)
+  [Run 2] Iter 70: Current: 15.00 (Stagnation: 67)
+  [Run 2] Iter 80: Current: 15.00 (Stagnation: 77)
+  [Run 2] Iter 90: Current: 15.00 (Stagnation: 87)
+  [Run 2] Iter 100: Current: 15.00 (Stagnation: 97)
+
+[Run 2 Result]
+
+--- CIRCUIT FORMULA DERIVATION ---
+Internal Gates:
+  Gate 4: (I3 OR I2)
+  Gate 5: ((I3 OR I2) AND I1)
+  Gate 6: (I3 XOR I2)
+  Gate 7: (((I3 OR I2) AND I1) OR ((I3 OR I2) AND I1))
+  Gate 8: (I1 XOR (I3 XOR I2))
+  Gate 9: (((I3 OR I2) AND I1) OR (((I3 OR I2) AND I1) OR ((I3 OR I2) AND I1)))
+  Gate 10: ((I3 OR I2) OR I2)
+  Gate 11: (NOT (I3 XOR I2))
+  Gate 12: ((I3 OR I2) OR (I3 OR I2))
+  Gate 13: (NOT (I3 OR I2))
+  Gate 14: (NOT (I3 OR I2))
+  Gate 15: (NOT (((I3 OR I2) AND I1) OR ((I3 OR I2) AND I1)))
+
+--- FINAL OUTPUT FORMULA ---
+  Output 1: (I1 XOR (I3 XOR I2))
+  Output 2: (((I3 OR I2) AND I1) OR (((I3 OR I2) AND I1) OR ((I3 OR I2) AND I1)))
+
+>>> STARTING RUN 3 (Standard PSO) <<<
+  [Run 3] Iter 1: New Best Fitness 12.00 (Correct: 12/16)
+  [Run 3] Iter 4: New Best Fitness 13.00 (Correct: 13/16)
+  [Run 3] Iter 7: New Best Fitness 14.00 (Correct: 14/16)
+  [Run 3] Iter 10: Current: 14.00 (Stagnation: 3)
+  [Run 3] Iter 11: New Best Fitness 15.00 (Correct: 15/16)
+  [Run 3] Iter 20: Current: 15.00 (Stagnation: 9)
+  [Run 3] Iter 30: Current: 15.00 (Stagnation: 19)
+  [Run 3] Iter 40: Current: 15.00 (Stagnation: 29)
+  [Run 3] Iter 50: Current: 15.00 (Stagnation: 39)
+  [Run 3] Iter 60: Current: 15.00 (Stagnation: 49)
+  [Run 3] Iter 70: Current: 15.00 (Stagnation: 59)
+  [Run 3] Iter 80: Current: 15.00 (Stagnation: 69)
+  [Run 3] Iter 90: Current: 15.00 (Stagnation: 79)
+  [Run 3] Iter 100: Current: 15.00 (Stagnation: 89)
+
+[Run 3 Result]
+
+--- CIRCUIT FORMULA DERIVATION ---
+Internal Gates:
+  Gate 4: (I1 XOR I2)
+  Gate 5: (I1 AND I3)
+  Gate 6: ((I1 AND I3) OR I2)
+  Gate 7: (I3 XOR I3)
+  Gate 8: ((I1 XOR I2) XOR I3)
+  Gate 9: (NOT (I1 AND I3))
+  Gate 10: ((I1 AND I3) XOR ((I1 AND I3) OR I2))
+  Gate 11: (NOT (I1 AND I3))
+  Gate 12: (I3 AND ((I1 AND I3) XOR ((I1 AND I3) OR I2)))
+  Gate 13: ((I1 AND I3) OR (I3 XOR I3))
+  Gate 14: (NOT ((I1 AND I3) OR I2))
+  Gate 15: (NOT (I1 AND I3))
+
+--- FINAL OUTPUT FORMULA ---
+  Output 1: ((I1 XOR I2) XOR I3)
+  Output 2: ((I1 AND I3) OR I2)
+
+>>> STARTING RUN 4 (Standard PSO) <<<
+  [Run 4] Iter 1: New Best Fitness 12.00 (Correct: 12/16)
+  [Run 4] Iter 2: New Best Fitness 14.00 (Correct: 14/16)
+  [Run 4] Iter 10: Current: 14.00 (Stagnation: 8)
+  [Run 4] Iter 20: Current: 14.00 (Stagnation: 18)
+  [Run 4] Iter 30: Current: 14.00 (Stagnation: 28)
+  [Run 4] Iter 40: Current: 14.00 (Stagnation: 38)
+  [Run 4] Iter 50: Current: 14.00 (Stagnation: 48)
+  [Run 4] Iter 60: Current: 14.00 (Stagnation: 58)
+  [Run 4] Iter 70: Current: 14.00 (Stagnation: 68)
+  [Run 4] Iter 80: Current: 14.00 (Stagnation: 78)
+  [Run 4] Iter 90: Current: 14.00 (Stagnation: 88)
+  [Run 4] Iter 100: Current: 14.00 (Stagnation: 98)
+
+[Run 4 Result]
+
+--- CIRCUIT FORMULA DERIVATION ---
+Internal Gates:
+  Gate 4: (NOT I3)
+  Gate 5: (NOT I2)
+  Gate 6: (NOT I2)
+  Gate 7: (I3 OR I3)
+  Gate 8: ((NOT I3) XOR (NOT I2))
+  Gate 9: ((NOT I2) AND (NOT I2))
+  Gate 10: (NOT (NOT I2))
+  Gate 11: (NOT (NOT I2))
+  Gate 12: (NOT (I3 OR I3))
+  Gate 13: (((NOT I3) XOR (NOT I2)) XOR I1)
+  Gate 14: (((NOT I2) AND (NOT I2)) OR (NOT I2))
+  Gate 15: (((NOT I2) AND (NOT I2)) OR (NOT (I3 OR I3)))
+
+--- FINAL OUTPUT FORMULA ---
+  Output 1: (((NOT I3) XOR (NOT I2)) XOR I1)
+  Output 2: (NOT (NOT I2))
+
+>>> STARTING RUN 5 (Standard PSO) <<<
+  [Run 5] Iter 1: New Best Fitness 14.00 (Correct: 14/16)
+  [Run 5] Iter 10: Current: 14.00 (Stagnation: 9)
+  [Run 5] Iter 20: Current: 14.00 (Stagnation: 19)
+  [Run 5] Iter 30: Current: 14.00 (Stagnation: 29)
+  [Run 5] Iter 40: Current: 14.00 (Stagnation: 39)
+  [Run 5] Iter 50: Current: 14.00 (Stagnation: 49)
+  [Run 5] Iter 60: Current: 14.00 (Stagnation: 59)
+  [Run 5] Iter 70: Current: 14.00 (Stagnation: 69)
+  [Run 5] Iter 80: Current: 14.00 (Stagnation: 79)
+  [Run 5] Iter 90: Current: 14.00 (Stagnation: 89)
+  [Run 5] Iter 100: Current: 14.00 (Stagnation: 99)
+
+[Run 5 Result]
+
+--- CIRCUIT FORMULA DERIVATION ---
+Internal Gates:
+  Gate 4: (I2 XOR I1)
+  Gate 5: (I3 XOR I3)
+  Gate 6: (NOT I3)
+  Gate 7: (NOT I3)
+  Gate 8: ((I3 XOR I3) OR I3)
+  Gate 9: ((I2 XOR I1) XOR I3)
+  Gate 10: (I2 AND I2)
+  Gate 11: ((I2 XOR I1) XOR I3)
+  Gate 12: (NOT I1)
+  Gate 13: (NOT ((I2 XOR I1) XOR I3))
+  Gate 14: (((I3 XOR I3) OR I3) AND I3)
+  Gate 15: ((I2 XOR I1) OR (NOT I3))
+
+--- FINAL OUTPUT FORMULA ---
+  Output 1: ((I2 XOR I1) XOR I3)
+  Output 2: (I2 AND I2)
+
+>>> STARTING RUN 6 (Standard PSO) <<<
+  [Run 6] Iter 1: New Best Fitness 14.00 (Correct: 14/16)
+  [Run 6] Iter 10: Current: 14.00 (Stagnation: 9)
+  [Run 6] Iter 11: New Best Fitness 15.00 (Correct: 15/16)
+  [Run 6] Iter 20: Current: 15.00 (Stagnation: 9)
+  [Run 6] Iter 30: Current: 15.00 (Stagnation: 19)
+  [Run 6] Iter 40: Current: 15.00 (Stagnation: 29)
+  [Run 6] Iter 50: Current: 15.00 (Stagnation: 39)
+  [Run 6] Iter 60: Current: 15.00 (Stagnation: 49)
+  [Run 6] Iter 70: Current: 15.00 (Stagnation: 59)
+  [Run 6] Iter 80: Current: 15.00 (Stagnation: 69)
+  [Run 6] Iter 90: Current: 15.00 (Stagnation: 79)
+  [Run 6] Iter 100: Current: 15.00 (Stagnation: 89)
+
+[Run 6 Result]
+
+--- CIRCUIT FORMULA DERIVATION ---
+Internal Gates:
+  Gate 4: (I1 XOR I2)
+  Gate 5: (I2 OR (I1 XOR I2))
+  Gate 6: (I3 XOR (I1 XOR I2))
+  Gate 7: (NOT (I2 OR (I1 XOR I2)))
+  Gate 8: ((I2 OR (I1 XOR I2)) AND I3)
+  Gate 9: (NOT I2)
+  Gate 10: (NOT (NOT (I2 OR (I1 XOR I2))))
+  Gate 11: (((I2 OR (I1 XOR I2)) AND I3) XOR (I3 XOR (I1 XOR I2)))
+  Gate 12: (I2 OR (I1 XOR I2))
+  Gate 13: (NOT I1)
+  Gate 14: (I2 OR I1)
+  Gate 15: (NOT (NOT (NOT (I2 OR (I1 XOR I2)))))
+
+--- FINAL OUTPUT FORMULA ---
+  Output 1: (I3 XOR (I1 XOR I2))
+  Output 2: ((I2 OR (I1 XOR I2)) AND I3)
+
+>>> STARTING RUN 7 (Standard PSO) <<<
+  [Run 7] Iter 1: New Best Fitness 14.00 (Correct: 14/16)
+  [Run 7] Iter 10: Current: 14.00 (Stagnation: 9)
+  [Run 7] Iter 19: New Best Fitness 15.00 (Correct: 15/16)
+  [Run 7] Iter 20: Current: 15.00 (Stagnation: 1)
+  [Run 7] Iter 30: Current: 15.00 (Stagnation: 11)
+  [Run 7] Iter 40: Current: 15.00 (Stagnation: 21)
+  [Run 7] Iter 50: Current: 15.00 (Stagnation: 31)
+  [Run 7] Iter 60: Current: 15.00 (Stagnation: 41)
+  [Run 7] Iter 70: Current: 15.00 (Stagnation: 51)
+  [Run 7] Iter 80: Current: 15.00 (Stagnation: 61)
+  [Run 7] Iter 90: Current: 15.00 (Stagnation: 71)
+  [Run 7] Iter 100: Current: 15.00 (Stagnation: 81)
+
+[Run 7 Result]
+
+--- CIRCUIT FORMULA DERIVATION ---
+Internal Gates:
+  Gate 4: (I2 XOR I3)
+  Gate 5: (I1 XOR I3)
+  Gate 6: (I2 AND (I1 XOR I3))
+  Gate 7: (I2 XOR (I1 XOR I3))
+  Gate 8: (I3 OR (I2 AND (I1 XOR I3)))
+  Gate 9: ((I2 XOR I3) XOR (I1 XOR I3))
+  Gate 10: (I1 XOR I3)
+  Gate 11: (((I2 XOR I3) XOR (I1 XOR I3)) OR (I1 XOR I3))
+  Gate 12: ((I3 OR (I2 AND (I1 XOR I3))) AND (I2 AND (I1 XOR I3)))
+  Gate 13: (I3 AND (I2 XOR (I1 XOR I3)))
+  Gate 14: (NOT (I2 XOR I3))
+  Gate 15: (NOT I3)
+
+--- FINAL OUTPUT FORMULA ---
+  Output 1: (I2 XOR (I1 XOR I3))
+  Output 2: (I3 OR (I2 AND (I1 XOR I3)))
+
+>>> STARTING RUN 8 (Standard PSO) <<<
+  [Run 8] Iter 1: New Best Fitness 14.00 (Correct: 14/16)
+  [Run 8] Iter 10: Current: 14.00 (Stagnation: 9)
+  [Run 8] Iter 20: Current: 14.00 (Stagnation: 19)
+  [Run 8] Iter 30: Current: 14.00 (Stagnation: 29)
+  [Run 8] Iter 40: Current: 14.00 (Stagnation: 39)
+  [Run 8] Iter 50: Current: 14.00 (Stagnation: 49)
+  [Run 8] Iter 60: Current: 14.00 (Stagnation: 59)
+  [Run 8] Iter 70: Current: 14.00 (Stagnation: 69)
+  [Run 8] Iter 80: Current: 14.00 (Stagnation: 79)
+  [Run 8] Iter 90: Current: 14.00 (Stagnation: 89)
+  [Run 8] Iter 100: Current: 14.00 (Stagnation: 99)
+
+[Run 8 Result]
+
+--- CIRCUIT FORMULA DERIVATION ---
+Internal Gates:
+  Gate 4: (I3 XOR I1)
+  Gate 5: (I1 OR I3)
+  Gate 6: (NOT I3)
+  Gate 7: ((NOT I3) XOR I1)
+  Gate 8: (I2 XOR (I3 XOR I1))
+  Gate 9: (NOT (I2 XOR (I3 XOR I1)))
+  Gate 10: (NOT (NOT (I2 XOR (I3 XOR I1))))
+  Gate 11: (NOT (NOT I3))
+  Gate 12: (NOT (NOT (NOT (I2 XOR (I3 XOR I1)))))
+  Gate 13: (NOT (I2 XOR (I3 XOR I1)))
+  Gate 14: (I3 OR (I3 XOR I1))
+  Gate 15: (NOT (NOT I3))
+
+--- FINAL OUTPUT FORMULA ---
+  Output 1: (I2 XOR (I3 XOR I1))
+  Output 2: I1
+
+>>> STARTING RUN 9 (Standard PSO) <<<
+  [Run 9] Iter 1: New Best Fitness 14.00 (Correct: 14/16)
+  [Run 9] Iter 10: Current: 14.00 (Stagnation: 9)
+  [Run 9] Iter 20: Current: 14.00 (Stagnation: 19)
+  [Run 9] Iter 30: Current: 14.00 (Stagnation: 29)
+  [Run 9] Iter 40: Current: 14.00 (Stagnation: 39)
+  [Run 9] Iter 50: Current: 14.00 (Stagnation: 49)
+  [Run 9] Iter 60: Current: 14.00 (Stagnation: 59)
+  [Run 9] Iter 70: Current: 14.00 (Stagnation: 69)
+  [Run 9] Iter 80: Current: 14.00 (Stagnation: 79)
+  [Run 9] Iter 90: Current: 14.00 (Stagnation: 89)
+  [Run 9] Iter 100: Current: 14.00 (Stagnation: 99)
+
+[Run 9 Result]
+
+--- CIRCUIT FORMULA DERIVATION ---
+Internal Gates:
+  Gate 4: (I1 XOR I3)
+  Gate 5: (I2 OR I2)
+  Gate 6: (I1 XOR I1)
+  Gate 7: (NOT I1)
+  Gate 8: ((I1 XOR I3) XOR (I1 XOR I3))
+  Gate 9: (I1 XOR (I1 XOR I3))
+  Gate 10: ((I2 OR I2) XOR (I1 XOR I3))
+  Gate 11: (NOT I1)
+  Gate 12: (I3 AND (I2 OR I2))
+  Gate 13: ((I1 XOR (I1 XOR I3)) AND (I1 XOR I3))
+  Gate 14: (((I1 XOR (I1 XOR I3)) AND (I1 XOR I3)) AND (I3 AND (I2 OR I2)))
+  Gate 15: (((I1 XOR I3) XOR (I1 XOR I3)) XOR I3)
+
+--- FINAL OUTPUT FORMULA ---
+  Output 1: ((I2 OR I2) XOR (I1 XOR I3))
+  Output 2: I1
+
+>>> STARTING RUN 10 (Standard PSO) <<<
+  [Run 10] Iter 1: New Best Fitness 12.00 (Correct: 12/16)
+  [Run 10] Iter 8: New Best Fitness 14.00 (Correct: 14/16)
+  [Run 10] Iter 10: Current: 14.00 (Stagnation: 2)
+  [Run 10] Iter 20: Current: 14.00 (Stagnation: 12)
+  [Run 10] Iter 30: Current: 14.00 (Stagnation: 22)
+  [Run 10] Iter 40: Current: 14.00 (Stagnation: 32)
+  [Run 10] Iter 50: Current: 14.00 (Stagnation: 42)
+  [Run 10] Iter 60: Current: 14.00 (Stagnation: 52)
+  [Run 10] Iter 70: Current: 14.00 (Stagnation: 62)
+  [Run 10] Iter 80: Current: 14.00 (Stagnation: 72)
+  [Run 10] Iter 90: Current: 14.00 (Stagnation: 82)
+  [Run 10] Iter 100: Current: 14.00 (Stagnation: 92)
+
+[Run 10 Result]
+
+--- CIRCUIT FORMULA DERIVATION ---
+Internal Gates:
+  Gate 4: (I1 OR I1)
+  Gate 5: (NOT I3)
+  Gate 6: ((I1 OR I1) AND (I1 OR I1))
+  Gate 7: ((I1 OR I1) XOR I2)
+  Gate 8: (NOT (NOT I3))
+  Gate 9: (I1 OR (NOT I3))
+  Gate 10: (NOT ((I1 OR I1) XOR I2))
+  Gate 11: ((NOT I3) OR (NOT I3))
+  Gate 12: (((I1 OR I1) XOR I2) AND (NOT (NOT I3)))
+  Gate 13: ((NOT (NOT I3)) XOR ((I1 OR I1) XOR I2))
+  Gate 14: (((I1 OR I1) XOR I2) OR (NOT I3))
+  Gate 15: (((I1 OR I1) XOR I2) AND (I1 OR (NOT I3)))
+
+--- FINAL OUTPUT FORMULA ---
+  Output 1: ((NOT (NOT I3)) XOR ((I1 OR I1) XOR I2))
+  Output 2: ((I1 OR I1) AND (I1 OR I1))
+
+==================================================
+ FINAL ABLATION METRICS (SINGLE THREAD)
+==================================================
+1. Success Rate: 0/10 (0.0%)
+2. Gate Efficiency: N/A
+3. Time Efficiency:
+   - Average: 30.96s
+
+Detailed iteration history saved to: results\pso_singlethread_convergence_20251129_144306.csv

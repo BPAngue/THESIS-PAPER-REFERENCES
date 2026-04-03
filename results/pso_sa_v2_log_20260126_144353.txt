@@ -1,0 +1,2741 @@
+[LOGGING ENABLED] Output is being saved to results\pso_sa_v2_log_20260126_144353.txt
+
+[SA-Enhanced V2 Multi-Threaded PSO] System is running...
+SA Config V2: Initial Temp=500.0, Cooling=0.98, Min Temp=0.001, Iters/Temp=100, Max Genes=3
+Pipeline Config: 5 Threads, 1 Iter/Round, 150 Max Rounds
+
+======================================================================
+ROUND 1 / 150
+======================================================================
+Running 5 PSO threads...
+✓ NEW CHAMPION: 14.00 (Correct: 14/16)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 2 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 1/10 (Restart: 1/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 3 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 2/10 (Restart: 2/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 4 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 3/10 (Restart: 3/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 5 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 4/10 (Restart: 4/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 6 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 5/10 (Restart: 5/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 7 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 6/10 (Restart: 6/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 8 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 7/10 (Restart: 7/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 9 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 8/10 (Restart: 8/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 10 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 9/10 (Restart: 9/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 11 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 10/10 (Restart: 10/40)
+
+======================================================================
+🔥 SA INTERVENTION #1 (Stagnation: 10)
+======================================================================
+⚠️  NON-FUNCTIONAL: 14/16 correct
+
+[SA V2] Refining champion...
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=99.00%, Best=14.00
+[SA V2] Iter 1000: Temp=241.99, Accept Rate=100.00%, Best=14.00
+[SA V2] Completed 1000 iterations, 0 improvements
+[SA V2] 14.0000 -> 14.0000 (Δ=+0.0000)
+✗ Champion not improved
+
+[SA V2] Diversifying all 5 solver populations...
+
+--- Solver 1/5 ---
+
+[SA V2] Diversifying worst 3 particles...
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=12.00
+[SA V2] Completed 500 iterations, 2 improvements
+[SA V2] 2.0000 -> 12.0000 (Δ=+10.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=12.00
+[SA V2] Completed 500 iterations, 5 improvements
+[SA V2] 3.0000 -> 12.0000 (Δ=+9.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=10.00
+[SA V2] Completed 500 iterations, 1 improvements
+[SA V2] 4.0000 -> 10.0000 (Δ=+6.0000)
+
+--- Solver 2/5 ---
+
+[SA V2] Diversifying worst 3 particles...
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=12.00
+[SA V2] Completed 500 iterations, 4 improvements
+[SA V2] 4.0000 -> 12.0000 (Δ=+8.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=12.00
+[SA V2] Completed 500 iterations, 2 improvements
+[SA V2] 5.0000 -> 12.0000 (Δ=+7.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=12.00
+[SA V2] Completed 500 iterations, 5 improvements
+[SA V2] 5.0000 -> 12.0000 (Δ=+7.0000)
+
+--- Solver 3/5 ---
+
+[SA V2] Diversifying worst 3 particles...
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=12.00
+[SA V2] Completed 500 iterations, 3 improvements
+[SA V2] 4.0000 -> 12.0000 (Δ=+8.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=14.00
+[SA V2] Completed 500 iterations, 4 improvements
+[SA V2] 4.0000 -> 14.0000 (Δ=+10.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=12.00
+[SA V2] Completed 500 iterations, 5 improvements
+[SA V2] 5.0000 -> 12.0000 (Δ=+7.0000)
+
+--- Solver 4/5 ---
+
+[SA V2] Diversifying worst 3 particles...
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=12.00
+[SA V2] Completed 500 iterations, 3 improvements
+[SA V2] 4.0000 -> 12.0000 (Δ=+8.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=12.00
+[SA V2] Completed 500 iterations, 4 improvements
+[SA V2] 4.0000 -> 12.0000 (Δ=+8.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=11.00
+[SA V2] Completed 500 iterations, 4 improvements
+[SA V2] 5.0000 -> 11.0000 (Δ=+6.0000)
+
+--- Solver 5/5 ---
+
+[SA V2] Diversifying worst 3 particles...
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=14.00
+[SA V2] Completed 500 iterations, 5 improvements
+[SA V2] 4.0000 -> 14.0000 (Δ=+10.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=12.00
+[SA V2] Completed 500 iterations, 3 improvements
+[SA V2] 4.0000 -> 12.0000 (Δ=+8.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=12.00
+[SA V2] Completed 500 iterations, 4 improvements
+[SA V2] 4.0000 -> 12.0000 (Δ=+8.0000)
+
+======================================================================
+SA INTERVENTION #1 COMPLETE
+======================================================================
+
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 12 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 11/10 (Restart: 11/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 13 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 12/10 (Restart: 12/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 14 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 13/10 (Restart: 13/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 15 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 14/10 (Restart: 14/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 16 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 15/10 (Restart: 15/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 17 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 16/10 (Restart: 16/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 18 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 17/10 (Restart: 17/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 19 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 18/10 (Restart: 18/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 20 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 19/10 (Restart: 19/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 21 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 20/10 (Restart: 20/40)
+
+======================================================================
+🔥 SA INTERVENTION #2 (Stagnation: 20)
+======================================================================
+⚠️  NON-FUNCTIONAL: 14/16 correct
+
+[SA V2] Refining champion...
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=14.00
+[SA V2] Iter 1000: Temp=241.99, Accept Rate=100.00%, Best=14.00
+[SA V2] Completed 1000 iterations, 0 improvements
+[SA V2] 14.0000 -> 14.0000 (Δ=+0.0000)
+✗ Champion not improved
+
+[SA V2] Diversifying all 5 solver populations...
+
+--- Solver 1/5 ---
+
+[SA V2] Diversifying worst 3 particles...
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=12.00
+[SA V2] Completed 500 iterations, 3 improvements
+[SA V2] 4.0000 -> 12.0000 (Δ=+8.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=14.00
+[SA V2] Completed 500 iterations, 4 improvements
+[SA V2] 4.0000 -> 14.0000 (Δ=+10.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=12.00
+[SA V2] Completed 500 iterations, 3 improvements
+[SA V2] 4.0000 -> 12.0000 (Δ=+8.0000)
+
+--- Solver 2/5 ---
+
+[SA V2] Diversifying worst 3 particles...
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=11.00
+[SA V2] Completed 500 iterations, 4 improvements
+[SA V2] 4.0000 -> 11.0000 (Δ=+7.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=10.00
+[SA V2] Completed 500 iterations, 2 improvements
+[SA V2] 4.0000 -> 10.0000 (Δ=+6.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=11.00
+[SA V2] Completed 500 iterations, 4 improvements
+[SA V2] 4.0000 -> 11.0000 (Δ=+7.0000)
+
+--- Solver 3/5 ---
+
+[SA V2] Diversifying worst 3 particles...
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=10.00
+[SA V2] Completed 500 iterations, 3 improvements
+[SA V2] 4.0000 -> 10.0000 (Δ=+6.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=12.00
+[SA V2] Completed 500 iterations, 4 improvements
+[SA V2] 4.0000 -> 12.0000 (Δ=+8.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=14.00
+[SA V2] Completed 500 iterations, 6 improvements
+[SA V2] 4.0000 -> 14.0000 (Δ=+10.0000)
+
+--- Solver 4/5 ---
+
+[SA V2] Diversifying worst 3 particles...
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=12.00
+[SA V2] Completed 500 iterations, 5 improvements
+[SA V2] 5.0000 -> 12.0000 (Δ=+7.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=12.00
+[SA V2] Completed 500 iterations, 3 improvements
+[SA V2] 5.0000 -> 12.0000 (Δ=+7.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=12.00
+[SA V2] Completed 500 iterations, 4 improvements
+[SA V2] 5.0000 -> 12.0000 (Δ=+7.0000)
+
+--- Solver 5/5 ---
+
+[SA V2] Diversifying worst 3 particles...
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=12.00
+[SA V2] Completed 500 iterations, 4 improvements
+[SA V2] 4.0000 -> 12.0000 (Δ=+8.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=12.00
+[SA V2] Completed 500 iterations, 3 improvements
+[SA V2] 4.0000 -> 12.0000 (Δ=+8.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=12.00
+[SA V2] Completed 500 iterations, 3 improvements
+[SA V2] 5.0000 -> 12.0000 (Δ=+7.0000)
+
+======================================================================
+SA INTERVENTION #2 COMPLETE
+======================================================================
+
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 22 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 21/10 (Restart: 21/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 23 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 22/10 (Restart: 22/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 24 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 23/10 (Restart: 23/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 25 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 24/10 (Restart: 24/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 26 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 25/10 (Restart: 25/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 27 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 26/10 (Restart: 26/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 28 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 27/10 (Restart: 27/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 29 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 28/10 (Restart: 28/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 30 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 29/10 (Restart: 29/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 31 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 30/10 (Restart: 30/40)
+
+======================================================================
+🔥 SA INTERVENTION #3 (Stagnation: 30)
+======================================================================
+⚠️  NON-FUNCTIONAL: 14/16 correct
+
+[SA V2] Refining champion...
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=14.00
+[SA V2] Iter 1000: Temp=241.99, Accept Rate=100.00%, Best=14.00
+[SA V2] Completed 1000 iterations, 0 improvements
+[SA V2] 14.0000 -> 14.0000 (Δ=+0.0000)
+✗ Champion not improved
+
+[SA V2] Diversifying all 5 solver populations...
+
+--- Solver 1/5 ---
+
+[SA V2] Diversifying worst 3 particles...
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=12.00
+[SA V2] Completed 500 iterations, 4 improvements
+[SA V2] 4.0000 -> 12.0000 (Δ=+8.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=12.00
+[SA V2] Completed 500 iterations, 1 improvements
+[SA V2] 4.0000 -> 12.0000 (Δ=+8.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=12.00
+[SA V2] Completed 500 iterations, 3 improvements
+[SA V2] 4.0000 -> 12.0000 (Δ=+8.0000)
+
+--- Solver 2/5 ---
+
+[SA V2] Diversifying worst 3 particles...
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=11.00
+[SA V2] Completed 500 iterations, 3 improvements
+[SA V2] 4.0000 -> 11.0000 (Δ=+7.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=11.00
+[SA V2] Completed 500 iterations, 3 improvements
+[SA V2] 5.0000 -> 11.0000 (Δ=+6.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=12.00
+[SA V2] Completed 500 iterations, 5 improvements
+[SA V2] 5.0000 -> 12.0000 (Δ=+7.0000)
+
+--- Solver 3/5 ---
+
+[SA V2] Diversifying worst 3 particles...
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=12.00
+[SA V2] Completed 500 iterations, 4 improvements
+[SA V2] 2.0000 -> 12.0000 (Δ=+10.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=12.00
+[SA V2] Completed 500 iterations, 3 improvements
+[SA V2] 4.0000 -> 12.0000 (Δ=+8.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=10.00
+[SA V2] Completed 500 iterations, 3 improvements
+[SA V2] 4.0000 -> 10.0000 (Δ=+6.0000)
+
+--- Solver 4/5 ---
+
+[SA V2] Diversifying worst 3 particles...
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=12.00
+[SA V2] Completed 500 iterations, 3 improvements
+[SA V2] 4.0000 -> 12.0000 (Δ=+8.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=11.00
+[SA V2] Completed 500 iterations, 3 improvements
+[SA V2] 5.0000 -> 11.0000 (Δ=+6.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=12.00
+[SA V2] Completed 500 iterations, 7 improvements
+[SA V2] 5.0000 -> 12.0000 (Δ=+7.0000)
+
+--- Solver 5/5 ---
+
+[SA V2] Diversifying worst 3 particles...
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=11.00
+[SA V2] Completed 500 iterations, 3 improvements
+[SA V2] 4.0000 -> 11.0000 (Δ=+7.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=12.00
+[SA V2] Completed 500 iterations, 2 improvements
+[SA V2] 5.0000 -> 12.0000 (Δ=+7.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=12.00
+[SA V2] Completed 500 iterations, 3 improvements
+[SA V2] 5.0000 -> 12.0000 (Δ=+7.0000)
+
+======================================================================
+SA INTERVENTION #3 COMPLETE
+======================================================================
+
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 32 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 31/10 (Restart: 31/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 33 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 32/10 (Restart: 32/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 34 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 33/10 (Restart: 33/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 35 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 34/10 (Restart: 34/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 36 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 35/10 (Restart: 35/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 37 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 36/10 (Restart: 36/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 38 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 37/10 (Restart: 37/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 39 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 38/10 (Restart: 38/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 40 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 39/10 (Restart: 39/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 41 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 40/10 (Restart: 40/40)
+
+======================================================================
+🔥 SA INTERVENTION #4 (Stagnation: 40)
+======================================================================
+⚠️  NON-FUNCTIONAL: 14/16 correct
+
+[SA V2] Refining champion...
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=14.00
+[SA V2] Iter 1000: Temp=241.99, Accept Rate=100.00%, Best=14.00
+[SA V2] Completed 1000 iterations, 0 improvements
+[SA V2] 14.0000 -> 14.0000 (Δ=+0.0000)
+✗ Champion not improved
+
+[SA V2] Diversifying all 5 solver populations...
+
+--- Solver 1/5 ---
+
+[SA V2] Diversifying worst 3 particles...
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=99.00%, Best=12.00
+[SA V2] Completed 500 iterations, 5 improvements
+[SA V2] 2.0000 -> 12.0000 (Δ=+10.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=11.00
+[SA V2] Completed 500 iterations, 2 improvements
+[SA V2] 4.0000 -> 11.0000 (Δ=+7.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=12.00
+[SA V2] Completed 500 iterations, 4 improvements
+[SA V2] 4.0000 -> 12.0000 (Δ=+8.0000)
+
+--- Solver 2/5 ---
+
+[SA V2] Diversifying worst 3 particles...
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=12.00
+[SA V2] Completed 500 iterations, 5 improvements
+[SA V2] 4.0000 -> 12.0000 (Δ=+8.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=12.00
+[SA V2] Completed 500 iterations, 1 improvements
+[SA V2] 4.0000 -> 12.0000 (Δ=+8.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=12.00
+[SA V2] Completed 500 iterations, 5 improvements
+[SA V2] 4.0000 -> 12.0000 (Δ=+8.0000)
+
+--- Solver 3/5 ---
+
+[SA V2] Diversifying worst 3 particles...
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=14.00
+[SA V2] Completed 500 iterations, 3 improvements
+[SA V2] 2.0000 -> 14.0000 (Δ=+12.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=12.00
+[SA V2] Completed 500 iterations, 4 improvements
+[SA V2] 4.0000 -> 12.0000 (Δ=+8.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=99.00%, Best=13.00
+[SA V2] Completed 500 iterations, 3 improvements
+[SA V2] 4.0000 -> 13.0000 (Δ=+9.0000)
+
+--- Solver 4/5 ---
+
+[SA V2] Diversifying worst 3 particles...
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=11.00
+[SA V2] Completed 500 iterations, 4 improvements
+[SA V2] 4.0000 -> 11.0000 (Δ=+7.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=99.00%, Best=11.00
+[SA V2] Completed 500 iterations, 3 improvements
+[SA V2] 5.0000 -> 11.0000 (Δ=+6.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=12.00
+[SA V2] Completed 500 iterations, 4 improvements
+[SA V2] 6.0000 -> 12.0000 (Δ=+6.0000)
+
+--- Solver 5/5 ---
+
+[SA V2] Diversifying worst 3 particles...
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=12.00
+[SA V2] Completed 500 iterations, 4 improvements
+[SA V2] 5.0000 -> 12.0000 (Δ=+7.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=11.00
+[SA V2] Completed 500 iterations, 3 improvements
+[SA V2] 5.0000 -> 11.0000 (Δ=+6.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=99.00%, Best=12.00
+[SA V2] Completed 500 iterations, 5 improvements
+[SA V2] 5.0000 -> 12.0000 (Δ=+7.0000)
+
+======================================================================
+SA INTERVENTION #4 COMPLETE
+======================================================================
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+🔄 HARD RESTART #1 - Reinitializing worst solver
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Restarting Solver 0 (fitness: 14.00)
+✓ Solver 0 reinitialized with fresh population
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 42 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 41/10 (Restart: 41/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 43 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 42/10 (Restart: 42/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 44 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 43/10 (Restart: 43/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 45 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 44/10 (Restart: 44/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 46 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 45/10 (Restart: 45/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 47 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 46/10 (Restart: 46/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 48 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 47/10 (Restart: 47/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 49 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 48/10 (Restart: 48/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 50 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 49/10 (Restart: 49/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 51 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 50/10 (Restart: 50/40)
+
+======================================================================
+🔥 SA INTERVENTION #5 (Stagnation: 50)
+======================================================================
+⚠️  NON-FUNCTIONAL: 14/16 correct
+
+[SA V2] Refining champion...
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=14.00
+[SA V2] Iter 1000: Temp=241.99, Accept Rate=100.00%, Best=14.00
+[SA V2] Completed 1000 iterations, 0 improvements
+[SA V2] 14.0000 -> 14.0000 (Δ=+0.0000)
+✗ Champion not improved
+
+[SA V2] Diversifying all 5 solver populations...
+
+--- Solver 1/5 ---
+
+[SA V2] Diversifying worst 3 particles...
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=12.00
+[SA V2] Completed 500 iterations, 4 improvements
+[SA V2] 4.0000 -> 12.0000 (Δ=+8.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=12.00
+[SA V2] Completed 500 iterations, 6 improvements
+[SA V2] 4.0000 -> 12.0000 (Δ=+8.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=11.00
+[SA V2] Completed 500 iterations, 2 improvements
+[SA V2] 5.0000 -> 11.0000 (Δ=+6.0000)
+
+--- Solver 2/5 ---
+
+[SA V2] Diversifying worst 3 particles...
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=14.00
+[SA V2] Completed 500 iterations, 2 improvements
+[SA V2] 2.0000 -> 14.0000 (Δ=+12.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=14.00
+[SA V2] Completed 500 iterations, 4 improvements
+[SA V2] 4.0000 -> 14.0000 (Δ=+10.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=14.00
+[SA V2] Completed 500 iterations, 4 improvements
+[SA V2] 4.0000 -> 14.0000 (Δ=+10.0000)
+
+--- Solver 3/5 ---
+
+[SA V2] Diversifying worst 3 particles...
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=12.00
+[SA V2] Completed 500 iterations, 3 improvements
+[SA V2] 2.0000 -> 12.0000 (Δ=+10.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=12.00
+[SA V2] Completed 500 iterations, 5 improvements
+[SA V2] 4.0000 -> 12.0000 (Δ=+8.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=11.00
+[SA V2] Completed 500 iterations, 2 improvements
+[SA V2] 4.0000 -> 11.0000 (Δ=+7.0000)
+
+--- Solver 4/5 ---
+
+[SA V2] Diversifying worst 3 particles...
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=12.00
+[SA V2] Completed 500 iterations, 3 improvements
+[SA V2] 4.0000 -> 12.0000 (Δ=+8.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=11.00
+[SA V2] Completed 500 iterations, 5 improvements
+[SA V2] 4.0000 -> 11.0000 (Δ=+7.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=12.00
+[SA V2] Completed 500 iterations, 4 improvements
+[SA V2] 4.0000 -> 12.0000 (Δ=+8.0000)
+
+--- Solver 5/5 ---
+
+[SA V2] Diversifying worst 3 particles...
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=11.00
+[SA V2] Completed 500 iterations, 3 improvements
+[SA V2] 4.0000 -> 11.0000 (Δ=+7.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=14.00
+[SA V2] Completed 500 iterations, 3 improvements
+[SA V2] 5.0000 -> 14.0000 (Δ=+9.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=12.00
+[SA V2] Completed 500 iterations, 5 improvements
+[SA V2] 5.0000 -> 12.0000 (Δ=+7.0000)
+
+======================================================================
+SA INTERVENTION #5 COMPLETE
+======================================================================
+
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 52 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 51/10 (Restart: 51/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 53 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 52/10 (Restart: 52/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 54 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 53/10 (Restart: 53/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 55 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 54/10 (Restart: 54/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 56 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 55/10 (Restart: 55/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 57 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 56/10 (Restart: 56/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 58 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 57/10 (Restart: 57/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 59 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 58/10 (Restart: 58/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 60 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 59/10 (Restart: 59/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 61 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 60/10 (Restart: 60/40)
+
+======================================================================
+🔥 SA INTERVENTION #6 (Stagnation: 60)
+======================================================================
+⚠️  NON-FUNCTIONAL: 14/16 correct
+
+[SA V2] Refining champion...
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=14.00
+[SA V2] Iter 1000: Temp=241.99, Accept Rate=100.00%, Best=14.00
+[SA V2] Completed 1000 iterations, 0 improvements
+[SA V2] 14.0000 -> 14.0000 (Δ=+0.0000)
+✗ Champion not improved
+
+[SA V2] Diversifying all 5 solver populations...
+
+--- Solver 1/5 ---
+
+[SA V2] Diversifying worst 3 particles...
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=10.00
+[SA V2] Completed 500 iterations, 1 improvements
+[SA V2] 6.0000 -> 10.0000 (Δ=+4.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=12.00
+[SA V2] Completed 500 iterations, 4 improvements
+[SA V2] 6.0000 -> 12.0000 (Δ=+6.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=12.00
+[SA V2] Completed 500 iterations, 2 improvements
+[SA V2] 6.0000 -> 12.0000 (Δ=+6.0000)
+
+--- Solver 2/5 ---
+
+[SA V2] Diversifying worst 3 particles...
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=11.00
+[SA V2] Completed 500 iterations, 4 improvements
+[SA V2] 4.0000 -> 11.0000 (Δ=+7.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=14.00
+[SA V2] Completed 500 iterations, 6 improvements
+[SA V2] 4.0000 -> 14.0000 (Δ=+10.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=12.00
+[SA V2] Completed 500 iterations, 4 improvements
+[SA V2] 5.0000 -> 12.0000 (Δ=+7.0000)
+
+--- Solver 3/5 ---
+
+[SA V2] Diversifying worst 3 particles...
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=12.00
+[SA V2] Completed 500 iterations, 4 improvements
+[SA V2] 4.0000 -> 12.0000 (Δ=+8.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=99.00%, Best=11.00
+[SA V2] Completed 500 iterations, 3 improvements
+[SA V2] 4.0000 -> 11.0000 (Δ=+7.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=12.00
+[SA V2] Completed 500 iterations, 3 improvements
+[SA V2] 4.0000 -> 12.0000 (Δ=+8.0000)
+
+--- Solver 4/5 ---
+
+[SA V2] Diversifying worst 3 particles...
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=12.00
+[SA V2] Completed 500 iterations, 6 improvements
+[SA V2] 2.0000 -> 12.0000 (Δ=+10.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=14.00
+[SA V2] Completed 500 iterations, 5 improvements
+[SA V2] 4.0000 -> 14.0000 (Δ=+10.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=12.00
+[SA V2] Completed 500 iterations, 4 improvements
+[SA V2] 4.0000 -> 12.0000 (Δ=+8.0000)
+
+--- Solver 5/5 ---
+
+[SA V2] Diversifying worst 3 particles...
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=11.00
+[SA V2] Completed 500 iterations, 4 improvements
+[SA V2] 2.0000 -> 11.0000 (Δ=+9.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=12.00
+[SA V2] Completed 500 iterations, 2 improvements
+[SA V2] 4.0000 -> 12.0000 (Δ=+8.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=13.00
+[SA V2] Completed 500 iterations, 5 improvements
+[SA V2] 5.0000 -> 13.0000 (Δ=+8.0000)
+
+======================================================================
+SA INTERVENTION #6 COMPLETE
+======================================================================
+
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 62 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 61/10 (Restart: 61/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 63 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 62/10 (Restart: 62/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 64 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 63/10 (Restart: 63/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 65 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 64/10 (Restart: 64/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 66 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 65/10 (Restart: 65/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 67 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 66/10 (Restart: 66/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 68 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 67/10 (Restart: 67/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 69 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 68/10 (Restart: 68/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 70 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 69/10 (Restart: 69/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 71 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 70/10 (Restart: 70/40)
+
+======================================================================
+🔥 SA INTERVENTION #7 (Stagnation: 70)
+======================================================================
+⚠️  NON-FUNCTIONAL: 14/16 correct
+
+[SA V2] Refining champion...
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=99.00%, Best=14.00
+[SA V2] Iter 1000: Temp=241.99, Accept Rate=100.00%, Best=14.00
+[SA V2] Completed 1000 iterations, 0 improvements
+[SA V2] 14.0000 -> 14.0000 (Δ=+0.0000)
+✗ Champion not improved
+
+[SA V2] Diversifying all 5 solver populations...
+
+--- Solver 1/5 ---
+
+[SA V2] Diversifying worst 3 particles...
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=12.00
+[SA V2] Completed 500 iterations, 4 improvements
+[SA V2] 5.0000 -> 12.0000 (Δ=+7.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=12.00
+[SA V2] Completed 500 iterations, 3 improvements
+[SA V2] 5.0000 -> 12.0000 (Δ=+7.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=12.00
+[SA V2] Completed 500 iterations, 4 improvements
+[SA V2] 5.0000 -> 12.0000 (Δ=+7.0000)
+
+--- Solver 2/5 ---
+
+[SA V2] Diversifying worst 3 particles...
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=99.00%, Best=12.00
+[SA V2] Completed 500 iterations, 3 improvements
+[SA V2] 4.0000 -> 12.0000 (Δ=+8.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=12.00
+[SA V2] Completed 500 iterations, 4 improvements
+[SA V2] 4.0000 -> 12.0000 (Δ=+8.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=12.00
+[SA V2] Completed 500 iterations, 3 improvements
+[SA V2] 5.0000 -> 12.0000 (Δ=+7.0000)
+
+--- Solver 3/5 ---
+
+[SA V2] Diversifying worst 3 particles...
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=11.00
+[SA V2] Completed 500 iterations, 4 improvements
+[SA V2] 2.0000 -> 11.0000 (Δ=+9.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=12.00
+[SA V2] Completed 500 iterations, 4 improvements
+[SA V2] 2.0000 -> 12.0000 (Δ=+10.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=12.00
+[SA V2] Completed 500 iterations, 4 improvements
+[SA V2] 2.0000 -> 12.0000 (Δ=+10.0000)
+
+--- Solver 4/5 ---
+
+[SA V2] Diversifying worst 3 particles...
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=14.00
+[SA V2] Completed 500 iterations, 5 improvements
+[SA V2] 4.0000 -> 14.0000 (Δ=+10.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=12.00
+[SA V2] Completed 500 iterations, 5 improvements
+[SA V2] 4.0000 -> 12.0000 (Δ=+8.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=99.00%, Best=12.00
+[SA V2] Completed 500 iterations, 3 improvements
+[SA V2] 4.0000 -> 12.0000 (Δ=+8.0000)
+
+--- Solver 5/5 ---
+
+[SA V2] Diversifying worst 3 particles...
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=12.00
+[SA V2] Completed 500 iterations, 1 improvements
+[SA V2] 4.0000 -> 12.0000 (Δ=+8.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=12.00
+[SA V2] Completed 500 iterations, 2 improvements
+[SA V2] 4.0000 -> 12.0000 (Δ=+8.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=11.00
+[SA V2] Completed 500 iterations, 3 improvements
+[SA V2] 5.0000 -> 11.0000 (Δ=+6.0000)
+
+======================================================================
+SA INTERVENTION #7 COMPLETE
+======================================================================
+
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 72 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 71/10 (Restart: 71/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 73 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 72/10 (Restart: 72/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 74 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 73/10 (Restart: 73/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 75 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 74/10 (Restart: 74/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 76 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 75/10 (Restart: 75/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 77 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 76/10 (Restart: 76/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 78 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 77/10 (Restart: 77/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 79 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 78/10 (Restart: 78/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 80 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 79/10 (Restart: 79/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 81 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 80/10 (Restart: 80/40)
+
+======================================================================
+🔥 SA INTERVENTION #8 (Stagnation: 80)
+======================================================================
+⚠️  NON-FUNCTIONAL: 14/16 correct
+
+[SA V2] Refining champion...
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=14.00
+[SA V2] Iter 1000: Temp=241.99, Accept Rate=99.00%, Best=14.00
+[SA V2] Completed 1000 iterations, 0 improvements
+[SA V2] 14.0000 -> 14.0000 (Δ=+0.0000)
+✗ Champion not improved
+
+[SA V2] Diversifying all 5 solver populations...
+
+--- Solver 1/5 ---
+
+[SA V2] Diversifying worst 3 particles...
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=11.00
+[SA V2] Completed 500 iterations, 4 improvements
+[SA V2] 4.0000 -> 11.0000 (Δ=+7.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=12.00
+[SA V2] Completed 500 iterations, 4 improvements
+[SA V2] 4.0000 -> 12.0000 (Δ=+8.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=12.00
+[SA V2] Completed 500 iterations, 3 improvements
+[SA V2] 5.0000 -> 12.0000 (Δ=+7.0000)
+
+--- Solver 2/5 ---
+
+[SA V2] Diversifying worst 3 particles...
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=14.00
+[SA V2] Completed 500 iterations, 4 improvements
+[SA V2] 2.0000 -> 14.0000 (Δ=+12.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=12.00
+[SA V2] Completed 500 iterations, 4 improvements
+[SA V2] 4.0000 -> 12.0000 (Δ=+8.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=98.00%, Best=12.00
+[SA V2] Completed 500 iterations, 4 improvements
+[SA V2] 4.0000 -> 12.0000 (Δ=+8.0000)
+
+--- Solver 3/5 ---
+
+[SA V2] Diversifying worst 3 particles...
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=12.00
+[SA V2] Completed 500 iterations, 6 improvements
+[SA V2] 2.0000 -> 12.0000 (Δ=+10.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=12.00
+[SA V2] Completed 500 iterations, 1 improvements
+[SA V2] 4.0000 -> 12.0000 (Δ=+8.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=12.00
+[SA V2] Completed 500 iterations, 3 improvements
+[SA V2] 4.0000 -> 12.0000 (Δ=+8.0000)
+
+--- Solver 4/5 ---
+
+[SA V2] Diversifying worst 3 particles...
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=14.00
+[SA V2] Completed 500 iterations, 4 improvements
+[SA V2] 4.0000 -> 14.0000 (Δ=+10.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=11.00
+[SA V2] Completed 500 iterations, 3 improvements
+[SA V2] 4.0000 -> 11.0000 (Δ=+7.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=12.00
+[SA V2] Completed 500 iterations, 5 improvements
+[SA V2] 4.0000 -> 12.0000 (Δ=+8.0000)
+
+--- Solver 5/5 ---
+
+[SA V2] Diversifying worst 3 particles...
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=12.00
+[SA V2] Completed 500 iterations, 3 improvements
+[SA V2] 3.0000 -> 12.0000 (Δ=+9.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=12.00
+[SA V2] Completed 500 iterations, 5 improvements
+[SA V2] 4.0000 -> 12.0000 (Δ=+8.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=12.00
+[SA V2] Completed 500 iterations, 3 improvements
+[SA V2] 5.0000 -> 12.0000 (Δ=+7.0000)
+
+======================================================================
+SA INTERVENTION #8 COMPLETE
+======================================================================
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+🔄 HARD RESTART #2 - Reinitializing worst solver
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Restarting Solver 0 (fitness: 14.00)
+✓ Solver 0 reinitialized with fresh population
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 82 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 81/10 (Restart: 81/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 83 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 82/10 (Restart: 82/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 84 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 83/10 (Restart: 83/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 85 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 84/10 (Restart: 84/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 86 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 85/10 (Restart: 85/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 87 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 86/10 (Restart: 86/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 88 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 87/10 (Restart: 87/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 89 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 88/10 (Restart: 88/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 90 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 89/10 (Restart: 89/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 91 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 90/10 (Restart: 90/40)
+
+======================================================================
+🔥 SA INTERVENTION #9 (Stagnation: 90)
+======================================================================
+⚠️  NON-FUNCTIONAL: 14/16 correct
+
+[SA V2] Refining champion...
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=14.00
+[SA V2] Iter 1000: Temp=241.99, Accept Rate=100.00%, Best=14.00
+[SA V2] Completed 1000 iterations, 0 improvements
+[SA V2] 14.0000 -> 14.0000 (Δ=+0.0000)
+✗ Champion not improved
+
+[SA V2] Diversifying all 5 solver populations...
+
+--- Solver 1/5 ---
+
+[SA V2] Diversifying worst 3 particles...
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=12.00
+[SA V2] Completed 500 iterations, 4 improvements
+[SA V2] 5.0000 -> 12.0000 (Δ=+7.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=10.00
+[SA V2] Completed 500 iterations, 1 improvements
+[SA V2] 6.0000 -> 10.0000 (Δ=+4.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=12.00
+[SA V2] Completed 500 iterations, 2 improvements
+[SA V2] 6.0000 -> 12.0000 (Δ=+6.0000)
+
+--- Solver 2/5 ---
+
+[SA V2] Diversifying worst 3 particles...
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=14.00
+[SA V2] Completed 500 iterations, 3 improvements
+[SA V2] 4.0000 -> 14.0000 (Δ=+10.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=11.00
+[SA V2] Completed 500 iterations, 4 improvements
+[SA V2] 4.0000 -> 11.0000 (Δ=+7.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=10.00
+[SA V2] Completed 500 iterations, 3 improvements
+[SA V2] 4.0000 -> 10.0000 (Δ=+6.0000)
+
+--- Solver 3/5 ---
+
+[SA V2] Diversifying worst 3 particles...
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=12.00
+[SA V2] Completed 500 iterations, 3 improvements
+[SA V2] 4.0000 -> 12.0000 (Δ=+8.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=12.00
+[SA V2] Completed 500 iterations, 4 improvements
+[SA V2] 4.0000 -> 12.0000 (Δ=+8.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=12.00
+[SA V2] Completed 500 iterations, 3 improvements
+[SA V2] 4.0000 -> 12.0000 (Δ=+8.0000)
+
+--- Solver 4/5 ---
+
+[SA V2] Diversifying worst 3 particles...
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=12.00
+[SA V2] Completed 500 iterations, 4 improvements
+[SA V2] 2.0000 -> 12.0000 (Δ=+10.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=12.00
+[SA V2] Completed 500 iterations, 4 improvements
+[SA V2] 4.0000 -> 12.0000 (Δ=+8.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=12.00
+[SA V2] Completed 500 iterations, 4 improvements
+[SA V2] 4.0000 -> 12.0000 (Δ=+8.0000)
+
+--- Solver 5/5 ---
+
+[SA V2] Diversifying worst 3 particles...
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=99.00%, Best=12.00
+[SA V2] Completed 500 iterations, 5 improvements
+[SA V2] 2.0000 -> 12.0000 (Δ=+10.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=12.00
+[SA V2] Completed 500 iterations, 3 improvements
+[SA V2] 5.0000 -> 12.0000 (Δ=+7.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=12.00
+[SA V2] Completed 500 iterations, 4 improvements
+[SA V2] 5.0000 -> 12.0000 (Δ=+7.0000)
+
+======================================================================
+SA INTERVENTION #9 COMPLETE
+======================================================================
+
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 92 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 91/10 (Restart: 91/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 93 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 92/10 (Restart: 92/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 94 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 93/10 (Restart: 93/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 95 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 94/10 (Restart: 94/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 96 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 95/10 (Restart: 95/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 97 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 96/10 (Restart: 96/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 98 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 97/10 (Restart: 97/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 99 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 98/10 (Restart: 98/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 100 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 99/10 (Restart: 99/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 101 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 100/10 (Restart: 100/40)
+
+======================================================================
+🔥 SA INTERVENTION #10 (Stagnation: 100)
+======================================================================
+⚠️  NON-FUNCTIONAL: 14/16 correct
+
+[SA V2] Refining champion...
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=99.00%, Best=14.00
+[SA V2] Iter 1000: Temp=241.99, Accept Rate=100.00%, Best=14.00
+[SA V2] Completed 1000 iterations, 0 improvements
+[SA V2] 14.0000 -> 14.0000 (Δ=+0.0000)
+✗ Champion not improved
+
+[SA V2] Diversifying all 5 solver populations...
+
+--- Solver 1/5 ---
+
+[SA V2] Diversifying worst 3 particles...
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=12.00
+[SA V2] Completed 500 iterations, 4 improvements
+[SA V2] 4.0000 -> 12.0000 (Δ=+8.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=99.00%, Best=12.00
+[SA V2] Completed 500 iterations, 4 improvements
+[SA V2] 4.0000 -> 12.0000 (Δ=+8.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=14.00
+[SA V2] Completed 500 iterations, 4 improvements
+[SA V2] 5.0000 -> 14.0000 (Δ=+9.0000)
+
+--- Solver 2/5 ---
+
+[SA V2] Diversifying worst 3 particles...
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=12.00
+[SA V2] Completed 500 iterations, 4 improvements
+[SA V2] 4.0000 -> 12.0000 (Δ=+8.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=11.00
+[SA V2] Completed 500 iterations, 3 improvements
+[SA V2] 4.0000 -> 11.0000 (Δ=+7.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=12.00
+[SA V2] Completed 500 iterations, 3 improvements
+[SA V2] 4.0000 -> 12.0000 (Δ=+8.0000)
+
+--- Solver 3/5 ---
+
+[SA V2] Diversifying worst 3 particles...
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=11.00
+[SA V2] Completed 500 iterations, 4 improvements
+[SA V2] 2.0000 -> 11.0000 (Δ=+9.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=14.00
+[SA V2] Completed 500 iterations, 3 improvements
+[SA V2] 4.0000 -> 14.0000 (Δ=+10.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=12.00
+[SA V2] Completed 500 iterations, 2 improvements
+[SA V2] 4.0000 -> 12.0000 (Δ=+8.0000)
+
+--- Solver 4/5 ---
+
+[SA V2] Diversifying worst 3 particles...
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=12.00
+[SA V2] Completed 500 iterations, 4 improvements
+[SA V2] 3.0000 -> 12.0000 (Δ=+9.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=11.00
+[SA V2] Completed 500 iterations, 4 improvements
+[SA V2] 3.0000 -> 11.0000 (Δ=+8.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=14.00
+[SA V2] Completed 500 iterations, 2 improvements
+[SA V2] 4.0000 -> 14.0000 (Δ=+10.0000)
+
+--- Solver 5/5 ---
+
+[SA V2] Diversifying worst 3 particles...
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=11.00
+[SA V2] Completed 500 iterations, 3 improvements
+[SA V2] 4.0000 -> 11.0000 (Δ=+7.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=12.00
+[SA V2] Completed 500 iterations, 2 improvements
+[SA V2] 4.0000 -> 12.0000 (Δ=+8.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=11.00
+[SA V2] Completed 500 iterations, 4 improvements
+[SA V2] 4.0000 -> 11.0000 (Δ=+7.0000)
+
+======================================================================
+SA INTERVENTION #10 COMPLETE
+======================================================================
+
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 102 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 101/10 (Restart: 101/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 103 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 102/10 (Restart: 102/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 104 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 103/10 (Restart: 103/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 105 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 104/10 (Restart: 104/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 106 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 105/10 (Restart: 105/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 107 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 106/10 (Restart: 106/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 108 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 107/10 (Restart: 107/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 109 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 108/10 (Restart: 108/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 110 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 109/10 (Restart: 109/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 111 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 110/10 (Restart: 110/40)
+
+======================================================================
+🔥 SA INTERVENTION #11 (Stagnation: 110)
+======================================================================
+⚠️  NON-FUNCTIONAL: 14/16 correct
+
+[SA V2] Refining champion...
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=14.00
+[SA V2] Iter 1000: Temp=241.99, Accept Rate=100.00%, Best=14.00
+[SA V2] Completed 1000 iterations, 0 improvements
+[SA V2] 14.0000 -> 14.0000 (Δ=+0.0000)
+✗ Champion not improved
+
+[SA V2] Diversifying all 5 solver populations...
+
+--- Solver 1/5 ---
+
+[SA V2] Diversifying worst 3 particles...
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=12.00
+[SA V2] Completed 500 iterations, 3 improvements
+[SA V2] 5.0000 -> 12.0000 (Δ=+7.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=12.00
+[SA V2] Completed 500 iterations, 4 improvements
+[SA V2] 5.0000 -> 12.0000 (Δ=+7.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=14.00
+[SA V2] Completed 500 iterations, 3 improvements
+[SA V2] 6.0000 -> 14.0000 (Δ=+8.0000)
+
+--- Solver 2/5 ---
+
+[SA V2] Diversifying worst 3 particles...
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=12.00
+[SA V2] Completed 500 iterations, 6 improvements
+[SA V2] 4.0000 -> 12.0000 (Δ=+8.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=12.00
+[SA V2] Completed 500 iterations, 5 improvements
+[SA V2] 4.0000 -> 12.0000 (Δ=+8.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=12.00
+[SA V2] Completed 500 iterations, 4 improvements
+[SA V2] 4.0000 -> 12.0000 (Δ=+8.0000)
+
+--- Solver 3/5 ---
+
+[SA V2] Diversifying worst 3 particles...
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=99.00%, Best=11.00
+[SA V2] Completed 500 iterations, 5 improvements
+[SA V2] 4.0000 -> 11.0000 (Δ=+7.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=12.00
+[SA V2] Completed 500 iterations, 1 improvements
+[SA V2] 4.0000 -> 12.0000 (Δ=+8.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=14.00
+[SA V2] Completed 500 iterations, 3 improvements
+[SA V2] 4.0000 -> 14.0000 (Δ=+10.0000)
+
+--- Solver 4/5 ---
+
+[SA V2] Diversifying worst 3 particles...
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=14.00
+[SA V2] Completed 500 iterations, 5 improvements
+[SA V2] 4.0000 -> 14.0000 (Δ=+10.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=12.00
+[SA V2] Completed 500 iterations, 3 improvements
+[SA V2] 4.0000 -> 12.0000 (Δ=+8.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=11.00
+[SA V2] Completed 500 iterations, 4 improvements
+[SA V2] 5.0000 -> 11.0000 (Δ=+6.0000)
+
+--- Solver 5/5 ---
+
+[SA V2] Diversifying worst 3 particles...
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=12.00
+[SA V2] Completed 500 iterations, 2 improvements
+[SA V2] 3.0000 -> 12.0000 (Δ=+9.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=11.00
+[SA V2] Completed 500 iterations, 4 improvements
+[SA V2] 3.0000 -> 11.0000 (Δ=+8.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=99.00%, Best=12.00
+[SA V2] Completed 500 iterations, 4 improvements
+[SA V2] 4.0000 -> 12.0000 (Δ=+8.0000)
+
+======================================================================
+SA INTERVENTION #11 COMPLETE
+======================================================================
+
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 112 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 111/10 (Restart: 111/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 113 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 112/10 (Restart: 112/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 114 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 113/10 (Restart: 113/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 115 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 114/10 (Restart: 114/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 116 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 115/10 (Restart: 115/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 117 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 116/10 (Restart: 116/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 118 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 117/10 (Restart: 117/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 119 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 118/10 (Restart: 118/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 120 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 119/10 (Restart: 119/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 121 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 120/10 (Restart: 120/40)
+
+======================================================================
+🔥 SA INTERVENTION #12 (Stagnation: 120)
+======================================================================
+⚠️  NON-FUNCTIONAL: 14/16 correct
+
+[SA V2] Refining champion...
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=14.00
+[SA V2] Iter 1000: Temp=241.99, Accept Rate=99.00%, Best=14.00
+[SA V2] Completed 1000 iterations, 0 improvements
+[SA V2] 14.0000 -> 14.0000 (Δ=+0.0000)
+✗ Champion not improved
+
+[SA V2] Diversifying all 5 solver populations...
+
+--- Solver 1/5 ---
+
+[SA V2] Diversifying worst 3 particles...
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=14.00
+[SA V2] Completed 500 iterations, 4 improvements
+[SA V2] 5.0000 -> 14.0000 (Δ=+9.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=12.00
+[SA V2] Completed 500 iterations, 6 improvements
+[SA V2] 5.0000 -> 12.0000 (Δ=+7.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=14.00
+[SA V2] Completed 500 iterations, 4 improvements
+[SA V2] 5.0000 -> 14.0000 (Δ=+9.0000)
+
+--- Solver 2/5 ---
+
+[SA V2] Diversifying worst 3 particles...
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=99.00%, Best=14.00
+[SA V2] Completed 500 iterations, 4 improvements
+[SA V2] 4.0000 -> 14.0000 (Δ=+10.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=12.00
+[SA V2] Completed 500 iterations, 4 improvements
+[SA V2] 5.0000 -> 12.0000 (Δ=+7.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=14.00
+[SA V2] Completed 500 iterations, 7 improvements
+[SA V2] 5.0000 -> 14.0000 (Δ=+9.0000)
+
+--- Solver 3/5 ---
+
+[SA V2] Diversifying worst 3 particles...
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=14.00
+[SA V2] Completed 500 iterations, 4 improvements
+[SA V2] 2.0000 -> 14.0000 (Δ=+12.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=12.00
+[SA V2] Completed 500 iterations, 4 improvements
+[SA V2] 4.0000 -> 12.0000 (Δ=+8.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=12.00
+[SA V2] Completed 500 iterations, 3 improvements
+[SA V2] 4.0000 -> 12.0000 (Δ=+8.0000)
+
+--- Solver 4/5 ---
+
+[SA V2] Diversifying worst 3 particles...
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=12.00
+[SA V2] Completed 500 iterations, 6 improvements
+[SA V2] 2.0000 -> 12.0000 (Δ=+10.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=99.00%, Best=12.00
+[SA V2] Completed 500 iterations, 5 improvements
+[SA V2] 3.0000 -> 12.0000 (Δ=+9.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=11.00
+[SA V2] Completed 500 iterations, 4 improvements
+[SA V2] 4.0000 -> 11.0000 (Δ=+7.0000)
+
+--- Solver 5/5 ---
+
+[SA V2] Diversifying worst 3 particles...
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=12.00
+[SA V2] Completed 500 iterations, 4 improvements
+[SA V2] 2.0000 -> 12.0000 (Δ=+10.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=12.00
+[SA V2] Completed 500 iterations, 3 improvements
+[SA V2] 3.0000 -> 12.0000 (Δ=+9.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=12.00
+[SA V2] Completed 500 iterations, 5 improvements
+[SA V2] 3.0000 -> 12.0000 (Δ=+9.0000)
+
+======================================================================
+SA INTERVENTION #12 COMPLETE
+======================================================================
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+🔄 HARD RESTART #3 - Reinitializing worst solver
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Restarting Solver 0 (fitness: 14.00)
+✓ Solver 0 reinitialized with fresh population
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 122 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 121/10 (Restart: 121/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 123 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 122/10 (Restart: 122/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 124 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 123/10 (Restart: 123/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 125 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 124/10 (Restart: 124/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 126 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 125/10 (Restart: 125/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 127 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 126/10 (Restart: 126/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 128 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 127/10 (Restart: 127/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 129 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 128/10 (Restart: 128/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 130 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 129/10 (Restart: 129/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 131 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 130/10 (Restart: 130/40)
+
+======================================================================
+🔥 SA INTERVENTION #13 (Stagnation: 130)
+======================================================================
+⚠️  NON-FUNCTIONAL: 14/16 correct
+
+[SA V2] Refining champion...
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=14.00
+[SA V2] Iter 1000: Temp=241.99, Accept Rate=100.00%, Best=14.00
+[SA V2] Completed 1000 iterations, 0 improvements
+[SA V2] 14.0000 -> 14.0000 (Δ=+0.0000)
+✗ Champion not improved
+
+[SA V2] Diversifying all 5 solver populations...
+
+--- Solver 1/5 ---
+
+[SA V2] Diversifying worst 3 particles...
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=11.00
+[SA V2] Completed 500 iterations, 3 improvements
+[SA V2] 5.0000 -> 11.0000 (Δ=+6.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=12.00
+[SA V2] Completed 500 iterations, 3 improvements
+[SA V2] 5.0000 -> 12.0000 (Δ=+7.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=12.00
+[SA V2] Completed 500 iterations, 3 improvements
+[SA V2] 6.0000 -> 12.0000 (Δ=+6.0000)
+
+--- Solver 2/5 ---
+
+[SA V2] Diversifying worst 3 particles...
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=11.00
+[SA V2] Completed 500 iterations, 3 improvements
+[SA V2] 4.0000 -> 11.0000 (Δ=+7.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=12.00
+[SA V2] Completed 500 iterations, 4 improvements
+[SA V2] 4.0000 -> 12.0000 (Δ=+8.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=14.00
+[SA V2] Completed 500 iterations, 3 improvements
+[SA V2] 4.0000 -> 14.0000 (Δ=+10.0000)
+
+--- Solver 3/5 ---
+
+[SA V2] Diversifying worst 3 particles...
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=12.00
+[SA V2] Completed 500 iterations, 1 improvements
+[SA V2] 4.0000 -> 12.0000 (Δ=+8.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=11.00
+[SA V2] Completed 500 iterations, 3 improvements
+[SA V2] 4.0000 -> 11.0000 (Δ=+7.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=14.00
+[SA V2] Completed 500 iterations, 2 improvements
+[SA V2] 4.0000 -> 14.0000 (Δ=+10.0000)
+
+--- Solver 4/5 ---
+
+[SA V2] Diversifying worst 3 particles...
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=14.00
+[SA V2] Completed 500 iterations, 4 improvements
+[SA V2] 4.0000 -> 14.0000 (Δ=+10.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=12.00
+[SA V2] Completed 500 iterations, 4 improvements
+[SA V2] 5.0000 -> 12.0000 (Δ=+7.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=11.00
+[SA V2] Completed 500 iterations, 4 improvements
+[SA V2] 5.0000 -> 11.0000 (Δ=+6.0000)
+
+--- Solver 5/5 ---
+
+[SA V2] Diversifying worst 3 particles...
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=12.00
+[SA V2] Completed 500 iterations, 3 improvements
+[SA V2] 4.0000 -> 12.0000 (Δ=+8.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=12.00
+[SA V2] Completed 500 iterations, 3 improvements
+[SA V2] 4.0000 -> 12.0000 (Δ=+8.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=12.00
+[SA V2] Completed 500 iterations, 3 improvements
+[SA V2] 5.0000 -> 12.0000 (Δ=+7.0000)
+
+======================================================================
+SA INTERVENTION #13 COMPLETE
+======================================================================
+
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 132 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 131/10 (Restart: 131/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 133 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 132/10 (Restart: 132/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 134 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 133/10 (Restart: 133/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 135 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 134/10 (Restart: 134/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 136 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 135/10 (Restart: 135/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 137 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 136/10 (Restart: 136/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 138 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 137/10 (Restart: 137/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 139 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 138/10 (Restart: 138/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 140 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 139/10 (Restart: 139/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 141 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 140/10 (Restart: 140/40)
+
+======================================================================
+🔥 SA INTERVENTION #14 (Stagnation: 140)
+======================================================================
+⚠️  NON-FUNCTIONAL: 14/16 correct
+
+[SA V2] Refining champion...
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=14.00
+[SA V2] Iter 1000: Temp=241.99, Accept Rate=100.00%, Best=14.00
+[SA V2] Completed 1000 iterations, 0 improvements
+[SA V2] 14.0000 -> 14.0000 (Δ=+0.0000)
+✗ Champion not improved
+
+[SA V2] Diversifying all 5 solver populations...
+
+--- Solver 1/5 ---
+
+[SA V2] Diversifying worst 3 particles...
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=12.00
+[SA V2] Completed 500 iterations, 3 improvements
+[SA V2] 4.0000 -> 12.0000 (Δ=+8.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=14.00
+[SA V2] Completed 500 iterations, 4 improvements
+[SA V2] 5.0000 -> 14.0000 (Δ=+9.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=12.00
+[SA V2] Completed 500 iterations, 4 improvements
+[SA V2] 5.0000 -> 12.0000 (Δ=+7.0000)
+
+--- Solver 2/5 ---
+
+[SA V2] Diversifying worst 3 particles...
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=11.00
+[SA V2] Completed 500 iterations, 3 improvements
+[SA V2] 4.0000 -> 11.0000 (Δ=+7.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=12.00
+[SA V2] Completed 500 iterations, 4 improvements
+[SA V2] 4.0000 -> 12.0000 (Δ=+8.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=12.00
+[SA V2] Completed 500 iterations, 3 improvements
+[SA V2] 4.0000 -> 12.0000 (Δ=+8.0000)
+
+--- Solver 3/5 ---
+
+[SA V2] Diversifying worst 3 particles...
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=14.00
+[SA V2] Completed 500 iterations, 5 improvements
+[SA V2] 4.0000 -> 14.0000 (Δ=+10.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=12.00
+[SA V2] Completed 500 iterations, 4 improvements
+[SA V2] 4.0000 -> 12.0000 (Δ=+8.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=14.00
+[SA V2] Completed 500 iterations, 6 improvements
+[SA V2] 4.0000 -> 14.0000 (Δ=+10.0000)
+
+--- Solver 4/5 ---
+
+[SA V2] Diversifying worst 3 particles...
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=12.00
+[SA V2] Completed 500 iterations, 6 improvements
+[SA V2] 4.0000 -> 12.0000 (Δ=+8.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=14.00
+[SA V2] Completed 500 iterations, 3 improvements
+[SA V2] 5.0000 -> 14.0000 (Δ=+9.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=11.00
+[SA V2] Completed 500 iterations, 3 improvements
+[SA V2] 5.0000 -> 11.0000 (Δ=+6.0000)
+
+--- Solver 5/5 ---
+
+[SA V2] Diversifying worst 3 particles...
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=12.00
+[SA V2] Completed 500 iterations, 4 improvements
+[SA V2] 4.0000 -> 12.0000 (Δ=+8.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=14.00
+[SA V2] Completed 500 iterations, 3 improvements
+[SA V2] 4.0000 -> 14.0000 (Δ=+10.0000)
+
+[SA V2] Starting Adaptive Simulated Annealing...
+[SA V2] Iter 500: Temp=347.84, Accept Rate=100.00%, Best=12.00
+[SA V2] Completed 500 iterations, 5 improvements
+[SA V2] 5.0000 -> 12.0000 (Δ=+7.0000)
+
+======================================================================
+SA INTERVENTION #14 COMPLETE
+======================================================================
+
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 142 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 141/10 (Restart: 141/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 143 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 142/10 (Restart: 142/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 144 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 143/10 (Restart: 143/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 145 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 144/10 (Restart: 144/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 146 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 145/10 (Restart: 145/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 147 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 146/10 (Restart: 146/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 148 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 147/10 (Restart: 147/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 149 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 148/10 (Restart: 148/40)
+🔄 Ring topology communication...
+
+======================================================================
+ROUND 150 / 150
+======================================================================
+Running 5 PSO threads...
+✗ No improvement. Stagnation: 149/10 (Restart: 149/40)
+🔄 Ring topology communication...
+
+======================================================================
+FINAL RESULTS
+======================================================================
+
+--- CIRCUIT FORMULA DERIVATION ---
+Internal Gates:
+  Gate 4: (I3 XNOR I1)
+  Gate 5: (I2 XOR I2)
+  Gate 6: (I2 AND I2)
+  Gate 7: (NOT (I3 XNOR I1))
+  Gate 8: (I2 XNOR (I3 XNOR I1))
+
+--- FINAL OUTPUT FORMULA ---
+  Output 1: (I2 XNOR (I3 XNOR I1))
+  Output 2: (I2 AND I2)
+
+Circuit Matrix:
+[[3 7 1]
+ [2 4 2]
+ [2 2 2]
+ [4 0 5]
+ [2 7 4]]
+
+Output Array:
+[8 6]
+
+--- STATISTICS ---
+Final Fitness: 14.0000
+Correct Outputs: 14/16
+Active Gates: 3
+Unused Gates: 0
+
+SA Interventions: 14
+Hard Restarts: 3
+
+[SA-Enhanced V2] Complete!
+[TIMER] 352.67 seconds

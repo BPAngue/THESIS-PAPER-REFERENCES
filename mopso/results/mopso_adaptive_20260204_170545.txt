@@ -1,0 +1,1660 @@
+[LOGGING ENABLED] Output is being saved to results\mopso_adaptive_20260204_170545.txt
+
+[Adaptive Multi-Objective PSO] System starting...
+
+Configuration:
+  Threads: 5
+  Population per thread: 200
+  PSO params: w=0.7290, c1=1.4945, c2=1.4945
+  Iterations per round: 1
+  Max rounds: 500
+  Stagnation limit: 20
+  Global archive size: 200
+  Local archive size: 100
+
+Initializing solvers...
+
+
+======================================================================
+Round 1/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 2/10
+  Archive size: 134
+  ✓ New best correctness!
+
+  Sharing archives (ring topology)...
+
+======================================================================
+Round 2/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 2/10
+  Archive size: 200
+  Stagnation: 1/20
+
+======================================================================
+Round 3/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 2/10
+  Archive size: 200
+  Stagnation: 2/20
+
+  Sharing archives (ring topology)...
+
+======================================================================
+Round 4/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 2/10
+  Archive size: 200
+  Stagnation: 3/20
+
+======================================================================
+Round 5/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 2/10
+  Archive size: 200
+  Stagnation: 4/20
+
+  Sharing archives (ring topology)...
+
+======================================================================
+Round 6/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 2/10
+  Archive size: 200
+  Stagnation: 5/20
+
+======================================================================
+Round 7/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 2/10
+  Archive size: 200
+  Stagnation: 6/20
+
+  Sharing archives (ring topology)...
+
+======================================================================
+Round 8/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 2/10
+  Archive size: 200
+  Stagnation: 7/20
+
+======================================================================
+Round 9/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 2/10
+  Archive size: 200
+  Stagnation: 8/20
+
+  Sharing archives (ring topology)...
+
+======================================================================
+Round 10/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 2/10
+  Archive size: 200
+  Stagnation: 9/20
+
+======================================================================
+Round 11/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 2/10
+  Archive size: 200
+  Stagnation: 10/20
+
+  Sharing archives (ring topology)...
+
+======================================================================
+Round 12/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 2/10
+  Archive size: 200
+  Stagnation: 11/20
+
+======================================================================
+Round 13/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 2/10
+  Archive size: 200
+  Stagnation: 12/20
+
+  Sharing archives (ring topology)...
+
+======================================================================
+Round 14/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 2/10
+  Archive size: 200
+  Stagnation: 13/20
+
+======================================================================
+Round 15/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 1/10
+  Archive size: 103
+  Stagnation: 14/20
+
+  Sharing archives (ring topology)...
+
+======================================================================
+Round 16/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 1/10
+  Archive size: 200
+  Stagnation: 15/20
+
+======================================================================
+Round 17/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 1/10
+  Archive size: 200
+  Stagnation: 16/20
+
+  Sharing archives (ring topology)...
+
+======================================================================
+Round 18/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 1/10
+  Archive size: 200
+  Stagnation: 17/20
+
+======================================================================
+Round 19/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 1/10
+  Archive size: 200
+  Stagnation: 18/20
+
+  Sharing archives (ring topology)...
+
+======================================================================
+Round 20/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 1/10
+  Archive size: 200
+  Stagnation: 19/20
+
+======================================================================
+Round 21/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 1/10
+  Archive size: 200
+  Stagnation: 20/20
+
+  ⚡ DIVERSITY INJECTION TRIGGERED ⚡
+  Strategy: Guided (exploitation)
+    Thread 0: Diversity injected
+    Thread 1: Diversity injected
+    Thread 2: Diversity injected
+    Thread 3: Diversity injected
+    Thread 4: Diversity injected
+
+  Sharing archives (ring topology)...
+
+======================================================================
+Round 22/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 1/10
+  Archive size: 200
+  Stagnation: 1/20
+
+======================================================================
+Round 23/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 1/10
+  Archive size: 200
+  Stagnation: 2/20
+
+  Sharing archives (ring topology)...
+
+======================================================================
+Round 24/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 1/10
+  Archive size: 200
+  Stagnation: 3/20
+
+======================================================================
+Round 25/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 1/10
+  Archive size: 200
+  Stagnation: 4/20
+
+  Sharing archives (ring topology)...
+
+======================================================================
+Round 26/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 1/10
+  Archive size: 200
+  Stagnation: 5/20
+
+======================================================================
+Round 27/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 1/10
+  Archive size: 200
+  Stagnation: 6/20
+
+  Sharing archives (ring topology)...
+
+======================================================================
+Round 28/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 1/10
+  Archive size: 200
+  Stagnation: 7/20
+
+======================================================================
+Round 29/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 1/10
+  Archive size: 200
+  Stagnation: 8/20
+
+  Sharing archives (ring topology)...
+
+======================================================================
+Round 30/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 1/10
+  Archive size: 200
+  Stagnation: 9/20
+
+======================================================================
+Round 31/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 1/10
+  Archive size: 200
+  Stagnation: 10/20
+
+  Sharing archives (ring topology)...
+
+======================================================================
+Round 32/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 1/10
+  Archive size: 200
+  Stagnation: 11/20
+
+======================================================================
+Round 33/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 1/10
+  Archive size: 200
+  Stagnation: 12/20
+
+  Sharing archives (ring topology)...
+
+======================================================================
+Round 34/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 1/10
+  Archive size: 200
+  Stagnation: 13/20
+
+======================================================================
+Round 35/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 1/10
+  Archive size: 200
+  Stagnation: 14/20
+
+  Sharing archives (ring topology)...
+
+======================================================================
+Round 36/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 1/10
+  Archive size: 200
+  Stagnation: 15/20
+
+======================================================================
+Round 37/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 1/10
+  Archive size: 200
+  Stagnation: 16/20
+
+  Sharing archives (ring topology)...
+
+======================================================================
+Round 38/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 1/10
+  Archive size: 200
+  Stagnation: 17/20
+
+======================================================================
+Round 39/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 1/10
+  Archive size: 200
+  Stagnation: 18/20
+
+  Sharing archives (ring topology)...
+
+======================================================================
+Round 40/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 1/10
+  Archive size: 200
+  Stagnation: 19/20
+
+======================================================================
+Round 41/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 1/10
+  Archive size: 200
+  Stagnation: 20/20
+
+  ⚡ DIVERSITY INJECTION TRIGGERED ⚡
+  Strategy: Guided (exploitation)
+    Thread 0: Diversity injected
+    Thread 1: Diversity injected
+    Thread 2: Diversity injected
+    Thread 3: Diversity injected
+    Thread 4: Diversity injected
+
+  Sharing archives (ring topology)...
+
+======================================================================
+Round 42/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 1/10
+  Archive size: 200
+  Stagnation: 1/20
+
+======================================================================
+Round 43/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 1/10
+  Archive size: 200
+  Stagnation: 2/20
+
+  Sharing archives (ring topology)...
+
+======================================================================
+Round 44/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 1/10
+  Archive size: 200
+  Stagnation: 3/20
+
+======================================================================
+Round 45/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 1/10
+  Archive size: 200
+  Stagnation: 4/20
+
+  Sharing archives (ring topology)...
+
+======================================================================
+Round 46/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 1/10
+  Archive size: 200
+  Stagnation: 5/20
+
+======================================================================
+Round 47/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 1/10
+  Archive size: 200
+  Stagnation: 6/20
+
+  Sharing archives (ring topology)...
+
+======================================================================
+Round 48/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 1/10
+  Archive size: 200
+  Stagnation: 7/20
+
+======================================================================
+Round 49/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 1/10
+  Archive size: 200
+  Stagnation: 8/20
+
+  Sharing archives (ring topology)...
+
+======================================================================
+Round 50/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 1/10
+  Archive size: 200
+  Stagnation: 9/20
+
+======================================================================
+Round 51/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 1/10
+  Archive size: 200
+  Stagnation: 10/20
+
+  Sharing archives (ring topology)...
+
+======================================================================
+Round 52/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 1/10
+  Archive size: 200
+  Stagnation: 11/20
+
+======================================================================
+Round 53/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 1/10
+  Archive size: 200
+  Stagnation: 12/20
+
+  Sharing archives (ring topology)...
+
+======================================================================
+Round 54/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 1/10
+  Archive size: 200
+  Stagnation: 13/20
+
+======================================================================
+Round 55/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 1/10
+  Archive size: 200
+  Stagnation: 14/20
+
+  Sharing archives (ring topology)...
+
+======================================================================
+Round 56/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 1/10
+  Archive size: 200
+  Stagnation: 15/20
+
+======================================================================
+Round 57/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 1/10
+  Archive size: 200
+  Stagnation: 16/20
+
+  Sharing archives (ring topology)...
+
+======================================================================
+Round 58/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 1/10
+  Archive size: 200
+  Stagnation: 17/20
+
+======================================================================
+Round 59/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 1/10
+  Archive size: 200
+  Stagnation: 18/20
+
+  Sharing archives (ring topology)...
+
+======================================================================
+Round 60/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 1/10
+  Archive size: 200
+  Stagnation: 19/20
+
+======================================================================
+Round 61/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 1/10
+  Archive size: 200
+  Stagnation: 20/20
+
+  ⚡ DIVERSITY INJECTION TRIGGERED ⚡
+  Strategy: Guided (exploitation)
+    Thread 0: Diversity injected
+    Thread 1: Diversity injected
+    Thread 2: Diversity injected
+    Thread 3: Diversity injected
+    Thread 4: Diversity injected
+
+  Sharing archives (ring topology)...
+
+======================================================================
+Round 62/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 1/10
+  Archive size: 200
+  Stagnation: 1/20
+
+======================================================================
+Round 63/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 1/10
+  Archive size: 200
+  Stagnation: 2/20
+
+  Sharing archives (ring topology)...
+
+======================================================================
+Round 64/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 1/10
+  Archive size: 200
+  Stagnation: 3/20
+
+======================================================================
+Round 65/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 1/10
+  Archive size: 200
+  Stagnation: 4/20
+
+  Sharing archives (ring topology)...
+
+======================================================================
+Round 66/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 1/10
+  Archive size: 200
+  Stagnation: 5/20
+
+======================================================================
+Round 67/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 1/10
+  Archive size: 200
+  Stagnation: 6/20
+
+  Sharing archives (ring topology)...
+
+======================================================================
+Round 68/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 1/10
+  Archive size: 200
+  Stagnation: 7/20
+
+======================================================================
+Round 69/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 1/10
+  Archive size: 200
+  Stagnation: 8/20
+
+  Sharing archives (ring topology)...
+
+======================================================================
+Round 70/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 1/10
+  Archive size: 200
+  Stagnation: 9/20
+
+======================================================================
+Round 71/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 1/10
+  Archive size: 200
+  Stagnation: 10/20
+
+  Sharing archives (ring topology)...
+
+======================================================================
+Round 72/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 1/10
+  Archive size: 200
+  Stagnation: 11/20
+
+======================================================================
+Round 73/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 1/10
+  Archive size: 200
+  Stagnation: 12/20
+
+  Sharing archives (ring topology)...
+
+======================================================================
+Round 74/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 1/10
+  Archive size: 200
+  Stagnation: 13/20
+
+======================================================================
+Round 75/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 1/10
+  Archive size: 200
+  Stagnation: 14/20
+
+  Sharing archives (ring topology)...
+
+======================================================================
+Round 76/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 1/10
+  Archive size: 200
+  Stagnation: 15/20
+
+======================================================================
+Round 77/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 1/10
+  Archive size: 200
+  Stagnation: 16/20
+
+  Sharing archives (ring topology)...
+
+======================================================================
+Round 78/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 1/10
+  Archive size: 200
+  Stagnation: 17/20
+
+======================================================================
+Round 79/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 1/10
+  Archive size: 200
+  Stagnation: 18/20
+
+  Sharing archives (ring topology)...
+
+======================================================================
+Round 80/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 1/10
+  Archive size: 200
+  Stagnation: 19/20
+
+======================================================================
+Round 81/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 1/10
+  Archive size: 200
+  Stagnation: 20/20
+
+  ⚡ DIVERSITY INJECTION TRIGGERED ⚡
+  Strategy: Guided (exploitation)
+    Thread 0: Diversity injected
+    Thread 1: Diversity injected
+    Thread 2: Diversity injected
+    Thread 3: Diversity injected
+    Thread 4: Diversity injected
+
+  Sharing archives (ring topology)...
+
+======================================================================
+Round 82/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 1/10
+  Archive size: 200
+  Stagnation: 1/20
+
+======================================================================
+Round 83/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 1/10
+  Archive size: 200
+  Stagnation: 2/20
+
+  Sharing archives (ring topology)...
+
+======================================================================
+Round 84/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 1/10
+  Archive size: 200
+  Stagnation: 3/20
+
+======================================================================
+Round 85/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 1/10
+  Archive size: 200
+  Stagnation: 4/20
+
+  Sharing archives (ring topology)...
+
+======================================================================
+Round 86/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 1/10
+  Archive size: 200
+  Stagnation: 5/20
+
+======================================================================
+Round 87/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 1/10
+  Archive size: 200
+  Stagnation: 6/20
+
+  Sharing archives (ring topology)...
+
+======================================================================
+Round 88/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 1/10
+  Archive size: 200
+  Stagnation: 7/20
+
+======================================================================
+Round 89/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 1/10
+  Archive size: 200
+  Stagnation: 8/20
+
+  Sharing archives (ring topology)...
+
+======================================================================
+Round 90/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 1/10
+  Archive size: 200
+  Stagnation: 9/20
+
+======================================================================
+Round 91/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 1/10
+  Archive size: 200
+  Stagnation: 10/20
+
+  Sharing archives (ring topology)...
+
+======================================================================
+Round 92/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 1/10
+  Archive size: 200
+  Stagnation: 11/20
+
+======================================================================
+Round 93/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 1/10
+  Archive size: 200
+  Stagnation: 12/20
+
+  Sharing archives (ring topology)...
+
+======================================================================
+Round 94/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 1/10
+  Archive size: 200
+  Stagnation: 13/20
+
+======================================================================
+Round 95/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 1/10
+  Archive size: 200
+  Stagnation: 14/20
+
+  Sharing archives (ring topology)...
+
+======================================================================
+Round 96/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 1/10
+  Archive size: 200
+  Stagnation: 15/20
+
+======================================================================
+Round 97/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 1/10
+  Archive size: 200
+  Stagnation: 16/20
+
+  Sharing archives (ring topology)...
+
+======================================================================
+Round 98/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 1/10
+  Archive size: 200
+  Stagnation: 17/20
+
+======================================================================
+Round 99/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 1/10
+  Archive size: 200
+  Stagnation: 18/20
+
+  Sharing archives (ring topology)...
+
+======================================================================
+Round 100/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 1/10
+  Archive size: 200
+  Stagnation: 19/20
+
+======================================================================
+Round 101/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 1/10
+  Archive size: 200
+  Stagnation: 20/20
+
+  ⚡ DIVERSITY INJECTION TRIGGERED ⚡
+  Strategy: Guided (exploitation)
+    Thread 0: Diversity injected
+    Thread 1: Diversity injected
+    Thread 2: Diversity injected
+    Thread 3: Diversity injected
+    Thread 4: Diversity injected
+
+  Sharing archives (ring topology)...
+
+======================================================================
+Round 102/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 1/10
+  Archive size: 200
+  Stagnation: 1/20
+
+======================================================================
+Round 103/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 1/10
+  Archive size: 200
+  Stagnation: 2/20
+
+  Sharing archives (ring topology)...
+
+======================================================================
+Round 104/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 1/10
+  Archive size: 200
+  Stagnation: 3/20
+
+======================================================================
+Round 105/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 1/10
+  Archive size: 200
+  Stagnation: 4/20
+
+  Sharing archives (ring topology)...
+
+======================================================================
+Round 106/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 1/10
+  Archive size: 200
+  Stagnation: 5/20
+
+======================================================================
+Round 107/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 1/10
+  Archive size: 200
+  Stagnation: 6/20
+
+  Sharing archives (ring topology)...
+
+======================================================================
+Round 108/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 1/10
+  Archive size: 200
+  Stagnation: 7/20
+
+======================================================================
+Round 109/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 1/10
+  Archive size: 200
+  Stagnation: 8/20
+
+  Sharing archives (ring topology)...
+
+======================================================================
+Round 110/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 1/10
+  Archive size: 200
+  Stagnation: 9/20
+
+======================================================================
+Round 111/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 1/10
+  Archive size: 200
+  Stagnation: 10/20
+
+  Sharing archives (ring topology)...
+
+======================================================================
+Round 112/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 1/10
+  Archive size: 200
+  Stagnation: 11/20
+
+======================================================================
+Round 113/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 1/10
+  Archive size: 200
+  Stagnation: 12/20
+
+  Sharing archives (ring topology)...
+
+======================================================================
+Round 114/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 1/10
+  Archive size: 200
+  Stagnation: 13/20
+
+======================================================================
+Round 115/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 1/10
+  Archive size: 200
+  Stagnation: 14/20
+
+  Sharing archives (ring topology)...
+
+======================================================================
+Round 116/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 1/10
+  Archive size: 200
+  Stagnation: 15/20
+
+======================================================================
+Round 117/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 1/10
+  Archive size: 200
+  Stagnation: 16/20
+
+  Sharing archives (ring topology)...
+
+======================================================================
+Round 118/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 1/10
+  Archive size: 200
+  Stagnation: 17/20
+
+======================================================================
+Round 119/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 1/10
+  Archive size: 200
+  Stagnation: 18/20
+
+  Sharing archives (ring topology)...
+
+======================================================================
+Round 120/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 1/10
+  Archive size: 200
+  Stagnation: 19/20
+
+======================================================================
+Round 121/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 1/10
+  Archive size: 200
+  Stagnation: 20/20
+
+  ⚡ DIVERSITY INJECTION TRIGGERED ⚡
+  Strategy: Guided (exploitation)
+    Thread 0: Diversity injected
+    Thread 1: Diversity injected
+    Thread 2: Diversity injected
+    Thread 3: Diversity injected
+    Thread 4: Diversity injected
+
+  Sharing archives (ring topology)...
+
+======================================================================
+Round 122/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 1/10
+  Archive size: 200
+  Stagnation: 1/20
+
+======================================================================
+Round 123/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 1/10
+  Archive size: 200
+  Stagnation: 2/20
+
+  Sharing archives (ring topology)...
+
+======================================================================
+Round 124/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 1/10
+  Archive size: 200
+  Stagnation: 3/20
+
+======================================================================
+Round 125/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 1/10
+  Archive size: 200
+  Stagnation: 4/20
+
+  Sharing archives (ring topology)...
+
+======================================================================
+Round 126/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 1/10
+  Archive size: 200
+  Stagnation: 5/20
+
+======================================================================
+Round 127/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 1/10
+  Archive size: 200
+  Stagnation: 6/20
+
+  Sharing archives (ring topology)...
+
+======================================================================
+Round 128/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 1/10
+  Archive size: 200
+  Stagnation: 7/20
+
+======================================================================
+Round 129/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 1/10
+  Archive size: 200
+  Stagnation: 8/20
+
+  Sharing archives (ring topology)...
+
+======================================================================
+Round 130/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 1/10
+  Archive size: 200
+  Stagnation: 9/20
+
+======================================================================
+Round 131/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 1/10
+  Archive size: 200
+  Stagnation: 10/20
+
+  Sharing archives (ring topology)...
+
+======================================================================
+Round 132/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 1/10
+  Archive size: 200
+  Stagnation: 11/20
+
+======================================================================
+Round 133/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 1/10
+  Archive size: 200
+  Stagnation: 12/20
+
+  Sharing archives (ring topology)...
+
+======================================================================
+Round 134/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 1/10
+  Archive size: 200
+  Stagnation: 13/20
+
+======================================================================
+Round 135/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 1/10
+  Archive size: 200
+  Stagnation: 14/20
+
+  Sharing archives (ring topology)...
+
+======================================================================
+Round 136/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 1/10
+  Archive size: 200
+  Stagnation: 15/20
+
+======================================================================
+Round 137/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 1/10
+  Archive size: 200
+  Stagnation: 16/20
+
+  Sharing archives (ring topology)...
+
+======================================================================
+Round 138/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 1/10
+  Archive size: 200
+  Stagnation: 17/20
+
+======================================================================
+Round 139/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 1/10
+  Archive size: 200
+  Stagnation: 18/20
+
+  Sharing archives (ring topology)...
+
+======================================================================
+Round 140/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 1/10
+  Archive size: 200
+  Stagnation: 19/20
+
+======================================================================
+Round 141/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 1/10
+  Archive size: 200
+  Stagnation: 20/20
+
+  ⚡ DIVERSITY INJECTION TRIGGERED ⚡
+  Strategy: Guided (exploitation)
+    Thread 0: Diversity injected
+    Thread 1: Diversity injected
+    Thread 2: Diversity injected
+    Thread 3: Diversity injected
+    Thread 4: Diversity injected
+
+  Sharing archives (ring topology)...
+
+======================================================================
+Round 142/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 1/10
+  Archive size: 200
+  Stagnation: 1/20
+
+======================================================================
+Round 143/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 1/10
+  Archive size: 200
+  Stagnation: 2/20
+
+  Sharing archives (ring topology)...
+
+======================================================================
+Round 144/500
+======================================================================
+
+Current Best:
+  Correctness: 14/16 (87.5%)
+  Active gates: 1/10
+  Archive size: 200
+  Stagnation: 3/20
+
+======================================================================
+Round 145/500
+======================================================================

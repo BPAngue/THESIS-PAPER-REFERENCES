@@ -1,0 +1,659 @@
+[LOGGING ENABLED] Output is being saved to results\fixed_enhanced_cs_pso_log_20260204_203002.txt
+
+[FIXED Enhanced Multi-Threaded CS-PSO] System is running...
+Using FIXED Enhanced Chaotic Particle Swarm Optimization
+🔧 BUG FIX: Adaptive chaos now works correctly!
+Improvements: Properly accumulating stagnation, adaptive chaos, mutation
+
+Pipeline Config: 5 Threads, 5 Iter/Round, 200 Max Rounds
+Stagnation Limit: 50 rounds
+
+FIXED Enhanced CS-PSO Parameters:
+  Population per thread: 100
+  Inertia weight (w): 0.5838
+  Cognitive coefficient (c1): 0.6130
+  Social coefficient (c2): 1.1968
+  Velocity range: [-4.6000, 4.6000]
+
+🔧 KEY FIXES:
+  ✓ Global stagnation accumulates properly
+  ✓ Chaos intensity starts at 0.5 (was 0.3)
+  ✓ Mutation threshold lowered to 3 (was 5)
+  ✓ Adaptive chaos triggers at: 5, 10, 20+ rounds
+
+✨ ENHANCEMENTS:
+  ✓ Adaptive chaos intensity (0.4-1.0)
+  ✓ Mutation for stuck particles
+  ✓ Diversity monitoring
+  ✓ More iterations per round
+
+Initializing FIXED Enhanced CS-PSO solvers...
+All solvers initialized with corrected adaptive chaos control.
+
+
+--- Round 1 / 200 ---
+Running 5 FIXED CS-PSO threads (5 iter each)... Done (8.32s)
+⬆ Champion improved! Fitness: 14.00 (+inf)
+  Correct: 14/16, Gates: 4
+  Metrics: Diversity=32.33, Chaos=0.450, GlobStag=2.4
+
+--- Round 2 / 200 ---
+Running 5 FIXED CS-PSO threads (5 iter each)... Done (8.19s)
+→ No improvement (Stagnation: 1/50)
+  Metrics: Diversity=42.18, Chaos=0.430, GlobStag=5.6
+
+--- Round 3 / 200 ---
+Running 5 FIXED CS-PSO threads (5 iter each)... Done (8.01s)
+→ No improvement (Stagnation: 2/50)
+  Metrics: Diversity=43.74, Chaos=0.508, GlobStag=10.6
+  ⚡ Moderate chaos exploration
+
+--- Round 4 / 200 ---
+Running 5 FIXED CS-PSO threads (5 iter each)... Done (8.28s)
+→ No improvement (Stagnation: 3/50)
+  Metrics: Diversity=43.75, Chaos=0.646, GlobStag=15.6
+  ⚡ Moderate chaos exploration
+
+--- Round 5 / 200 ---
+Running 5 FIXED CS-PSO threads (5 iter each)... Done (8.25s)
+→ No improvement (Stagnation: 4/50)
+  Metrics: Diversity=43.67, Chaos=0.812, GlobStag=20.6
+  🔥 HIGH CHAOS MODE ACTIVE! (Breaking out of local optimum)
+
+--- Round 6 / 200 ---
+Running 5 FIXED CS-PSO threads (5 iter each)... Done (8.31s)
+→ No improvement (Stagnation: 5/50)
+  Metrics: Diversity=41.73, Chaos=0.960, GlobStag=25.6
+  🔥 HIGH CHAOS MODE ACTIVE! (Breaking out of local optimum)
+
+--- Round 7 / 200 ---
+Running 5 FIXED CS-PSO threads (5 iter each)... Done (8.39s)
+→ No improvement (Stagnation: 6/50)
+  Metrics: Diversity=42.38, Chaos=1.000, GlobStag=30.6
+  🔥 HIGH CHAOS MODE ACTIVE! (Breaking out of local optimum)
+
+--- Round 8 / 200 ---
+Running 5 FIXED CS-PSO threads (5 iter each)... Done (8.30s)
+→ No improvement (Stagnation: 7/50)
+  Metrics: Diversity=42.41, Chaos=1.000, GlobStag=35.6
+  🔥 HIGH CHAOS MODE ACTIVE! (Breaking out of local optimum)
+
+--- Round 9 / 200 ---
+Running 5 FIXED CS-PSO threads (5 iter each)... Done (8.11s)
+→ No improvement (Stagnation: 8/50)
+  Metrics: Diversity=42.75, Chaos=1.000, GlobStag=40.6
+  🔥 HIGH CHAOS MODE ACTIVE! (Breaking out of local optimum)
+
+--- Round 10 / 200 ---
+Running 5 FIXED CS-PSO threads (5 iter each)... Done (7.82s)
+→ No improvement (Stagnation: 9/50)
+  Metrics: Diversity=42.74, Chaos=1.000, GlobStag=45.6
+  🔥 HIGH CHAOS MODE ACTIVE! (Breaking out of local optimum)
+  📊 Best so far: 14.00 (14/16 correct)
+  📈 Chaos levels: ['1.00', '1.00', '1.00', '1.00', '1.00']
+
+--- Round 11 / 200 ---
+Running 5 FIXED CS-PSO threads (5 iter each)... Done (8.44s)
+→ No improvement (Stagnation: 10/50)
+  Metrics: Diversity=41.76, Chaos=1.000, GlobStag=50.6
+  🔥 HIGH CHAOS MODE ACTIVE! (Breaking out of local optimum)
+
+--- Round 12 / 200 ---
+Running 5 FIXED CS-PSO threads (5 iter each)... Done (8.00s)
+→ No improvement (Stagnation: 11/50)
+  Metrics: Diversity=42.35, Chaos=1.000, GlobStag=55.6
+  🔥 HIGH CHAOS MODE ACTIVE! (Breaking out of local optimum)
+
+--- Round 13 / 200 ---
+Running 5 FIXED CS-PSO threads (5 iter each)... Done (8.27s)
+→ No improvement (Stagnation: 12/50)
+  Metrics: Diversity=42.94, Chaos=1.000, GlobStag=60.6
+  🔥 HIGH CHAOS MODE ACTIVE! (Breaking out of local optimum)
+
+--- Round 14 / 200 ---
+Running 5 FIXED CS-PSO threads (5 iter each)... Done (8.21s)
+→ No improvement (Stagnation: 13/50)
+  Metrics: Diversity=42.59, Chaos=1.000, GlobStag=65.6
+  🔥 HIGH CHAOS MODE ACTIVE! (Breaking out of local optimum)
+
+--- Round 15 / 200 ---
+Running 5 FIXED CS-PSO threads (5 iter each)... Done (8.47s)
+→ No improvement (Stagnation: 14/50)
+  Metrics: Diversity=42.37, Chaos=1.000, GlobStag=70.6
+  🔥 HIGH CHAOS MODE ACTIVE! (Breaking out of local optimum)
+
+--- Round 16 / 200 ---
+Running 5 FIXED CS-PSO threads (5 iter each)... Done (9.03s)
+→ No improvement (Stagnation: 15/50)
+  Metrics: Diversity=41.78, Chaos=1.000, GlobStag=75.6
+  🔥 HIGH CHAOS MODE ACTIVE! (Breaking out of local optimum)
+
+--- Round 17 / 200 ---
+Running 5 FIXED CS-PSO threads (5 iter each)... Done (8.51s)
+→ No improvement (Stagnation: 16/50)
+  Metrics: Diversity=42.37, Chaos=1.000, GlobStag=80.6
+  🔥 HIGH CHAOS MODE ACTIVE! (Breaking out of local optimum)
+
+--- Round 18 / 200 ---
+Running 5 FIXED CS-PSO threads (5 iter each)... Done (8.41s)
+→ No improvement (Stagnation: 17/50)
+  Metrics: Diversity=42.27, Chaos=1.000, GlobStag=85.6
+  🔥 HIGH CHAOS MODE ACTIVE! (Breaking out of local optimum)
+
+--- Round 19 / 200 ---
+Running 5 FIXED CS-PSO threads (5 iter each)... Done (8.30s)
+→ No improvement (Stagnation: 18/50)
+  Metrics: Diversity=42.89, Chaos=1.000, GlobStag=90.6
+  🔥 HIGH CHAOS MODE ACTIVE! (Breaking out of local optimum)
+
+--- Round 20 / 200 ---
+Running 5 FIXED CS-PSO threads (5 iter each)... Done (8.95s)
+→ No improvement (Stagnation: 19/50)
+  Metrics: Diversity=42.21, Chaos=1.000, GlobStag=95.6
+  🔥 HIGH CHAOS MODE ACTIVE! (Breaking out of local optimum)
+  📊 Best so far: 14.00 (14/16 correct)
+  📈 Chaos levels: ['1.00', '1.00', '1.00', '1.00', '1.00']
+
+--- Round 21 / 200 ---
+Running 5 FIXED CS-PSO threads (5 iter each)... Done (8.22s)
+→ No improvement (Stagnation: 20/50)
+  Metrics: Diversity=42.19, Chaos=1.000, GlobStag=100.6
+  🔥 HIGH CHAOS MODE ACTIVE! (Breaking out of local optimum)
+
+--- Round 22 / 200 ---
+Running 5 FIXED CS-PSO threads (5 iter each)... Done (8.12s)
+→ No improvement (Stagnation: 21/50)
+  Metrics: Diversity=42.67, Chaos=1.000, GlobStag=105.6
+  🔥 HIGH CHAOS MODE ACTIVE! (Breaking out of local optimum)
+
+--- Round 23 / 200 ---
+Running 5 FIXED CS-PSO threads (5 iter each)... Done (8.47s)
+→ No improvement (Stagnation: 22/50)
+  Metrics: Diversity=42.66, Chaos=1.000, GlobStag=110.6
+  🔥 HIGH CHAOS MODE ACTIVE! (Breaking out of local optimum)
+
+--- Round 24 / 200 ---
+Running 5 FIXED CS-PSO threads (5 iter each)... Done (7.80s)
+→ No improvement (Stagnation: 23/50)
+  Metrics: Diversity=42.52, Chaos=1.000, GlobStag=115.6
+  🔥 HIGH CHAOS MODE ACTIVE! (Breaking out of local optimum)
+
+--- Round 25 / 200 ---
+Running 5 FIXED CS-PSO threads (5 iter each)... Done (8.29s)
+→ No improvement (Stagnation: 24/50)
+  Metrics: Diversity=42.47, Chaos=1.000, GlobStag=120.6
+  🔥 HIGH CHAOS MODE ACTIVE! (Breaking out of local optimum)
+
+--- Round 26 / 200 ---
+Running 5 FIXED CS-PSO threads (5 iter each)... Done (8.25s)
+→ No improvement (Stagnation: 25/50)
+  Metrics: Diversity=42.32, Chaos=1.000, GlobStag=125.6
+  🔥 HIGH CHAOS MODE ACTIVE! (Breaking out of local optimum)
+
+--- Round 27 / 200 ---
+Running 5 FIXED CS-PSO threads (5 iter each)... Done (8.07s)
+→ No improvement (Stagnation: 26/50)
+  Metrics: Diversity=42.40, Chaos=1.000, GlobStag=130.6
+  🔥 HIGH CHAOS MODE ACTIVE! (Breaking out of local optimum)
+
+--- Round 28 / 200 ---
+Running 5 FIXED CS-PSO threads (5 iter each)... Done (8.16s)
+→ No improvement (Stagnation: 27/50)
+  Metrics: Diversity=42.97, Chaos=1.000, GlobStag=135.6
+  🔥 HIGH CHAOS MODE ACTIVE! (Breaking out of local optimum)
+
+--- Round 29 / 200 ---
+Running 5 FIXED CS-PSO threads (5 iter each)... Done (8.14s)
+→ No improvement (Stagnation: 28/50)
+  Metrics: Diversity=42.61, Chaos=1.000, GlobStag=140.6
+  🔥 HIGH CHAOS MODE ACTIVE! (Breaking out of local optimum)
+
+--- Round 30 / 200 ---
+Running 5 FIXED CS-PSO threads (5 iter each)... Done (8.12s)
+→ No improvement (Stagnation: 29/50)
+  Metrics: Diversity=42.97, Chaos=1.000, GlobStag=145.6
+  🔥 HIGH CHAOS MODE ACTIVE! (Breaking out of local optimum)
+  📊 Best so far: 14.00 (14/16 correct)
+  📈 Chaos levels: ['1.00', '1.00', '1.00', '1.00', '1.00']
+
+--- Round 31 / 200 ---
+Running 5 FIXED CS-PSO threads (5 iter each)... Done (8.27s)
+→ No improvement (Stagnation: 30/50)
+  Metrics: Diversity=42.49, Chaos=1.000, GlobStag=150.6
+  🔥 HIGH CHAOS MODE ACTIVE! (Breaking out of local optimum)
+
+--- Round 32 / 200 ---
+Running 5 FIXED CS-PSO threads (5 iter each)... Done (8.52s)
+→ No improvement (Stagnation: 31/50)
+  Metrics: Diversity=42.47, Chaos=1.000, GlobStag=155.6
+  🔥 HIGH CHAOS MODE ACTIVE! (Breaking out of local optimum)
+
+--- Round 33 / 200 ---
+Running 5 FIXED CS-PSO threads (5 iter each)... Done (8.72s)
+→ No improvement (Stagnation: 32/50)
+  Metrics: Diversity=43.01, Chaos=1.000, GlobStag=160.6
+  🔥 HIGH CHAOS MODE ACTIVE! (Breaking out of local optimum)
+
+--- Round 34 / 200 ---
+Running 5 FIXED CS-PSO threads (5 iter each)... Done (8.37s)
+→ No improvement (Stagnation: 33/50)
+  Metrics: Diversity=42.53, Chaos=1.000, GlobStag=165.6
+  🔥 HIGH CHAOS MODE ACTIVE! (Breaking out of local optimum)
+
+--- Round 35 / 200 ---
+Running 5 FIXED CS-PSO threads (5 iter each)... Done (8.70s)
+→ No improvement (Stagnation: 34/50)
+  Metrics: Diversity=42.80, Chaos=1.000, GlobStag=170.6
+  🔥 HIGH CHAOS MODE ACTIVE! (Breaking out of local optimum)
+
+--- Round 36 / 200 ---
+Running 5 FIXED CS-PSO threads (5 iter each)... Done (8.11s)
+→ No improvement (Stagnation: 35/50)
+  Metrics: Diversity=42.42, Chaos=1.000, GlobStag=175.6
+  🔥 HIGH CHAOS MODE ACTIVE! (Breaking out of local optimum)
+
+--- Round 37 / 200 ---
+Running 5 FIXED CS-PSO threads (5 iter each)... Done (8.48s)
+→ No improvement (Stagnation: 36/50)
+  Metrics: Diversity=42.80, Chaos=1.000, GlobStag=180.6
+  🔥 HIGH CHAOS MODE ACTIVE! (Breaking out of local optimum)
+
+--- Round 38 / 200 ---
+Running 5 FIXED CS-PSO threads (5 iter each)... Done (8.02s)
+⬆ Champion improved! Fitness: 15.00 (+1.00)
+  Correct: 15/16, Gates: 9
+  Metrics: Diversity=43.38, Chaos=0.998, GlobStag=148.8
+  🔥 HIGH CHAOS MODE ACTIVE! (Breaking out of local optimum)
+
+--- Round 39 / 200 ---
+Running 5 FIXED CS-PSO threads (5 iter each)... Done (8.10s)
+→ No improvement (Stagnation: 1/50)
+  Metrics: Diversity=44.43, Chaos=0.978, GlobStag=117.0
+  🔥 HIGH CHAOS MODE ACTIVE! (Breaking out of local optimum)
+
+--- Round 40 / 200 ---
+Running 5 FIXED CS-PSO threads (5 iter each)... Done (7.88s)
+→ No improvement (Stagnation: 2/50)
+  Metrics: Diversity=46.16, Chaos=0.906, GlobStag=80.4
+  🔥 HIGH CHAOS MODE ACTIVE! (Breaking out of local optimum)
+  📊 Best so far: 15.00 (15/16 correct)
+  📈 Chaos levels: ['1.00', '1.00', '0.89', '0.69', '0.95']
+
+--- Round 41 / 200 ---
+Running 5 FIXED CS-PSO threads (5 iter each)... Done (7.95s)
+→ No improvement (Stagnation: 3/50)
+  Metrics: Diversity=46.13, Chaos=0.866, GlobStag=42.6
+  🔥 HIGH CHAOS MODE ACTIVE! (Breaking out of local optimum)
+
+--- Round 42 / 200 ---
+Running 5 FIXED CS-PSO threads (5 iter each)... Done (7.65s)
+→ No improvement (Stagnation: 4/50)
+  Metrics: Diversity=46.96, Chaos=0.790, GlobStag=4.4
+  🔥 HIGH CHAOS MODE ACTIVE! (Breaking out of local optimum)
+
+--- Round 43 / 200 ---
+Running 5 FIXED CS-PSO threads (5 iter each)... Done (7.38s)
+→ No improvement (Stagnation: 5/50)
+  Metrics: Diversity=47.36, Chaos=0.706, GlobStag=4.4
+  🔥 HIGH CHAOS MODE ACTIVE! (Breaking out of local optimum)
+
+--- Round 44 / 200 ---
+Running 5 FIXED CS-PSO threads (5 iter each)... Done (7.62s)
+→ No improvement (Stagnation: 6/50)
+  Metrics: Diversity=47.25, Chaos=0.702, GlobStag=5.0
+  🔥 HIGH CHAOS MODE ACTIVE! (Breaking out of local optimum)
+
+--- Round 45 / 200 ---
+Running 5 FIXED CS-PSO threads (5 iter each)... Done (7.85s)
+→ No improvement (Stagnation: 7/50)
+  Metrics: Diversity=48.58, Chaos=0.684, GlobStag=5.6
+  ⚡ Moderate chaos exploration
+
+--- Round 46 / 200 ---
+Running 5 FIXED CS-PSO threads (5 iter each)... Done (7.76s)
+→ No improvement (Stagnation: 8/50)
+  Metrics: Diversity=47.32, Chaos=0.646, GlobStag=4.4
+  ⚡ Moderate chaos exploration
+
+--- Round 47 / 200 ---
+Running 5 FIXED CS-PSO threads (5 iter each)... Done (7.70s)
+→ No improvement (Stagnation: 9/50)
+  Metrics: Diversity=47.57, Chaos=0.654, GlobStag=6.2
+  ⚡ Moderate chaos exploration
+
+--- Round 48 / 200 ---
+Running 5 FIXED CS-PSO threads (5 iter each)... Done (7.64s)
+→ No improvement (Stagnation: 10/50)
+  Metrics: Diversity=46.09, Chaos=0.646, GlobStag=6.6
+  ⚡ Moderate chaos exploration
+
+--- Round 49 / 200 ---
+Running 5 FIXED CS-PSO threads (5 iter each)... Done (7.60s)
+→ No improvement (Stagnation: 11/50)
+  Metrics: Diversity=45.94, Chaos=0.664, GlobStag=9.6
+  ⚡ Moderate chaos exploration
+
+--- Round 50 / 200 ---
+Running 5 FIXED CS-PSO threads (5 iter each)... Done (7.85s)
+→ No improvement (Stagnation: 12/50)
+  Metrics: Diversity=45.91, Chaos=0.696, GlobStag=12.2
+  ⚡ Moderate chaos exploration
+  📊 Best so far: 15.00 (15/16 correct)
+  📈 Chaos levels: ['1.00', '0.90', '0.45', '0.48', '0.65']
+
+--- Round 51 / 200 ---
+Running 5 FIXED CS-PSO threads (5 iter each)... Done (7.73s)
+→ No improvement (Stagnation: 13/50)
+  Metrics: Diversity=46.94, Chaos=0.702, GlobStag=8.4
+  🔥 HIGH CHAOS MODE ACTIVE! (Breaking out of local optimum)
+
+--- Round 52 / 200 ---
+Running 5 FIXED CS-PSO threads (5 iter each)... Done (7.83s)
+→ No improvement (Stagnation: 14/50)
+  Metrics: Diversity=47.25, Chaos=0.624, GlobStag=4.2
+  ⚡ Moderate chaos exploration
+
+--- Round 53 / 200 ---
+Running 5 FIXED CS-PSO threads (5 iter each)... Done (7.96s)
+→ No improvement (Stagnation: 15/50)
+  Metrics: Diversity=47.68, Chaos=0.586, GlobStag=4.2
+  ⚡ Moderate chaos exploration
+
+--- Round 54 / 200 ---
+Running 5 FIXED CS-PSO threads (5 iter each)... Done (7.87s)
+→ No improvement (Stagnation: 16/50)
+  Metrics: Diversity=47.93, Chaos=0.558, GlobStag=2.4
+  ⚡ Moderate chaos exploration
+
+--- Round 55 / 200 ---
+Running 5 FIXED CS-PSO threads (5 iter each)... Done (7.89s)
+→ No improvement (Stagnation: 17/50)
+  Metrics: Diversity=48.98, Chaos=0.540, GlobStag=4.2
+  ⚡ Moderate chaos exploration
+
+--- Round 56 / 200 ---
+Running 5 FIXED CS-PSO threads (5 iter each)... Done (7.86s)
+→ No improvement (Stagnation: 18/50)
+  Metrics: Diversity=46.40, Chaos=0.524, GlobStag=2.8
+  ⚡ Moderate chaos exploration
+
+--- Round 57 / 200 ---
+Running 5 FIXED CS-PSO threads (5 iter each)... Done (7.48s)
+→ No improvement (Stagnation: 19/50)
+  Metrics: Diversity=45.66, Chaos=0.498, GlobStag=3.8
+
+--- Round 58 / 200 ---
+Running 5 FIXED CS-PSO threads (5 iter each)... Done (7.33s)
+→ No improvement (Stagnation: 20/50)
+  Metrics: Diversity=47.52, Chaos=0.492, GlobStag=4.0
+
+--- Round 59 / 200 ---
+Running 5 FIXED CS-PSO threads (5 iter each)... Done (7.37s)
+→ No improvement (Stagnation: 21/50)
+  Metrics: Diversity=46.09, Chaos=0.502, GlobStag=4.4
+  ⚡ Moderate chaos exploration
+
+--- Round 60 / 200 ---
+Running 5 FIXED CS-PSO threads (5 iter each)... Done (7.43s)
+→ No improvement (Stagnation: 22/50)
+  Metrics: Diversity=47.67, Chaos=0.504, GlobStag=4.2
+  ⚡ Moderate chaos exploration
+  📊 Best so far: 15.00 (15/16 correct)
+  📈 Chaos levels: ['0.54', '0.59', '0.50', '0.48', '0.41']
+
+--- Round 61 / 200 ---
+Running 5 FIXED CS-PSO threads (5 iter each)... Done (8.10s)
+→ No improvement (Stagnation: 23/50)
+  Metrics: Diversity=47.47, Chaos=0.484, GlobStag=4.0
+
+--- Round 62 / 200 ---
+Running 5 FIXED CS-PSO threads (5 iter each)... Done (8.17s)
+→ No improvement (Stagnation: 24/50)
+  Metrics: Diversity=47.74, Chaos=0.464, GlobStag=4.0
+
+--- Round 63 / 200 ---
+Running 5 FIXED CS-PSO threads (5 iter each)... Done (8.37s)
+→ No improvement (Stagnation: 25/50)
+  Metrics: Diversity=47.53, Chaos=0.470, GlobStag=4.2
+
+--- Round 64 / 200 ---
+Running 5 FIXED CS-PSO threads (5 iter each)... Done (8.21s)
+→ No improvement (Stagnation: 26/50)
+  Metrics: Diversity=45.17, Chaos=0.470, GlobStag=4.8
+
+--- Round 65 / 200 ---
+Running 5 FIXED CS-PSO threads (5 iter each)... Done (8.14s)
+→ No improvement (Stagnation: 27/50)
+  Metrics: Diversity=47.64, Chaos=0.486, GlobStag=4.2
+
+--- Round 66 / 200 ---
+Running 5 FIXED CS-PSO threads (5 iter each)... Done (7.79s)
+→ No improvement (Stagnation: 28/50)
+  Metrics: Diversity=46.20, Chaos=0.488, GlobStag=4.6
+
+--- Round 67 / 200 ---
+Running 5 FIXED CS-PSO threads (5 iter each)... Done (7.43s)
+→ No improvement (Stagnation: 29/50)
+  Metrics: Diversity=46.03, Chaos=0.500, GlobStag=7.8
+
+--- Round 68 / 200 ---
+Running 5 FIXED CS-PSO threads (5 iter each)... Done (7.53s)
+→ No improvement (Stagnation: 30/50)
+  Metrics: Diversity=45.61, Chaos=0.496, GlobStag=5.0
+
+--- Round 69 / 200 ---
+Running 5 FIXED CS-PSO threads (5 iter each)... Done (7.69s)
+→ No improvement (Stagnation: 31/50)
+  Metrics: Diversity=44.78, Chaos=0.526, GlobStag=6.0
+  ⚡ Moderate chaos exploration
+
+--- Round 70 / 200 ---
+Running 5 FIXED CS-PSO threads (5 iter each)... Done (7.81s)
+→ No improvement (Stagnation: 32/50)
+  Metrics: Diversity=45.65, Chaos=0.564, GlobStag=7.0
+  ⚡ Moderate chaos exploration
+  📊 Best so far: 15.00 (15/16 correct)
+  📈 Chaos levels: ['0.58', '0.53', '0.64', '0.48', '0.59']
+
+--- Round 71 / 200 ---
+Running 5 FIXED CS-PSO threads (5 iter each)... Done (7.62s)
+→ No improvement (Stagnation: 33/50)
+  Metrics: Diversity=45.63, Chaos=0.616, GlobStag=10.4
+  ⚡ Moderate chaos exploration
+
+--- Round 72 / 200 ---
+Running 5 FIXED CS-PSO threads (5 iter each)... Done (7.80s)
+→ No improvement (Stagnation: 34/50)
+  Metrics: Diversity=45.53, Chaos=0.676, GlobStag=10.8
+  ⚡ Moderate chaos exploration
+
+--- Round 73 / 200 ---
+Running 5 FIXED CS-PSO threads (5 iter each)... Done (7.16s)
+→ No improvement (Stagnation: 35/50)
+  Metrics: Diversity=45.24, Chaos=0.726, GlobStag=10.0
+  🔥 HIGH CHAOS MODE ACTIVE! (Breaking out of local optimum)
+
+--- Round 74 / 200 ---
+Running 5 FIXED CS-PSO threads (5 iter each)... Done (7.84s)
+→ No improvement (Stagnation: 36/50)
+  Metrics: Diversity=44.86, Chaos=0.786, GlobStag=10.2
+  🔥 HIGH CHAOS MODE ACTIVE! (Breaking out of local optimum)
+
+--- Round 75 / 200 ---
+Running 5 FIXED CS-PSO threads (5 iter each)... Done (7.55s)
+→ No improvement (Stagnation: 37/50)
+  Metrics: Diversity=45.09, Chaos=0.834, GlobStag=10.6
+  🔥 HIGH CHAOS MODE ACTIVE! (Breaking out of local optimum)
+
+--- Round 76 / 200 ---
+Running 5 FIXED CS-PSO threads (5 iter each)... Done (7.50s)
+→ No improvement (Stagnation: 38/50)
+  Metrics: Diversity=44.52, Chaos=0.814, GlobStag=10.0
+  🔥 HIGH CHAOS MODE ACTIVE! (Breaking out of local optimum)
+
+--- Round 77 / 200 ---
+Running 5 FIXED CS-PSO threads (5 iter each)... Done (7.58s)
+→ No improvement (Stagnation: 39/50)
+  Metrics: Diversity=45.51, Chaos=0.826, GlobStag=10.4
+  🔥 HIGH CHAOS MODE ACTIVE! (Breaking out of local optimum)
+
+--- Round 78 / 200 ---
+Running 5 FIXED CS-PSO threads (5 iter each)... Done (7.85s)
+→ No improvement (Stagnation: 40/50)
+  Metrics: Diversity=44.63, Chaos=0.854, GlobStag=10.2
+  🔥 HIGH CHAOS MODE ACTIVE! (Breaking out of local optimum)
+
+--- Round 79 / 200 ---
+Running 5 FIXED CS-PSO threads (5 iter each)... Done (8.34s)
+→ No improvement (Stagnation: 41/50)
+  Metrics: Diversity=43.92, Chaos=0.830, GlobStag=10.0
+  🔥 HIGH CHAOS MODE ACTIVE! (Breaking out of local optimum)
+
+--- Round 80 / 200 ---
+Running 5 FIXED CS-PSO threads (5 iter each)... Done (7.79s)
+→ No improvement (Stagnation: 42/50)
+  Metrics: Diversity=44.95, Chaos=0.830, GlobStag=10.0
+  🔥 HIGH CHAOS MODE ACTIVE! (Breaking out of local optimum)
+  📊 Best so far: 15.00 (15/16 correct)
+  📈 Chaos levels: ['0.92', '0.90', '0.82', '0.70', '0.81']
+
+--- Round 81 / 200 ---
+Running 5 FIXED CS-PSO threads (5 iter each)... Done (8.31s)
+→ No improvement (Stagnation: 43/50)
+  Metrics: Diversity=44.97, Chaos=0.858, GlobStag=15.0
+  🔥 HIGH CHAOS MODE ACTIVE! (Breaking out of local optimum)
+
+--- Round 82 / 200 ---
+Running 5 FIXED CS-PSO threads (5 iter each)... Done (8.01s)
+→ No improvement (Stagnation: 44/50)
+  Metrics: Diversity=44.87, Chaos=0.846, GlobStag=10.8
+  🔥 HIGH CHAOS MODE ACTIVE! (Breaking out of local optimum)
+
+--- Round 83 / 200 ---
+Running 5 FIXED CS-PSO threads (5 iter each)... Done (8.41s)
+→ No improvement (Stagnation: 45/50)
+  Metrics: Diversity=44.86, Chaos=0.818, GlobStag=10.2
+  🔥 HIGH CHAOS MODE ACTIVE! (Breaking out of local optimum)
+
+--- Round 84 / 200 ---
+Running 5 FIXED CS-PSO threads (5 iter each)... Done (8.14s)
+→ No improvement (Stagnation: 46/50)
+  Metrics: Diversity=44.51, Chaos=0.818, GlobStag=10.6
+  🔥 HIGH CHAOS MODE ACTIVE! (Breaking out of local optimum)
+
+--- Round 85 / 200 ---
+Running 5 FIXED CS-PSO threads (5 iter each)... Done (7.26s)
+→ No improvement (Stagnation: 47/50)
+  Metrics: Diversity=45.19, Chaos=0.842, GlobStag=10.4
+  🔥 HIGH CHAOS MODE ACTIVE! (Breaking out of local optimum)
+
+--- Round 86 / 200 ---
+Running 5 FIXED CS-PSO threads (5 iter each)... Done (7.38s)
+→ No improvement (Stagnation: 48/50)
+  Metrics: Diversity=45.05, Chaos=0.842, GlobStag=10.0
+  🔥 HIGH CHAOS MODE ACTIVE! (Breaking out of local optimum)
+
+--- Round 87 / 200 ---
+Running 5 FIXED CS-PSO threads (5 iter each)... Done (7.66s)
+→ No improvement (Stagnation: 49/50)
+  Metrics: Diversity=45.25, Chaos=0.818, GlobStag=10.0
+  🔥 HIGH CHAOS MODE ACTIVE! (Breaking out of local optimum)
+
+--- Round 88 / 200 ---
+Running 5 FIXED CS-PSO threads (5 iter each)... Done (7.97s)
+→ No improvement (Stagnation: 50/50)
+  Metrics: Diversity=45.17, Chaos=0.830, GlobStag=10.6
+  🔥 HIGH CHAOS MODE ACTIVE! (Breaking out of local optimum)
+
+⚠ Stopping: Champion stagnated for 50 rounds
+
+================================================================================
+PIPELINE FINISHED
+================================================================================
+
+Total rounds completed: 88/200
+Stop reason: Stagnation limit reached (50 rounds)
+
+================================================================================
+FINAL CHAMPION PARTICLE (FIXED Enhanced CS-PSO)
+================================================================================
+
+--- CIRCUIT FORMULA DERIVATION ---
+Internal Gates:
+  Gate 4: (I1 XOR I3)
+  Gate 5: ((I1 XOR I3) OR I1)
+  Gate 6: (I3 XOR I1)
+  Gate 7: (I2 XOR (I3 XOR I1))
+  Gate 8: ((I2 XOR (I3 XOR I1)) XOR (I3 XOR I1))
+  Gate 9: (((I2 XOR (I3 XOR I1)) XOR (I3 XOR I1)) XOR ((I2 XOR (I3 XOR I1)) XOR (I3 XOR I1)))
+  Gate 10: (NOT (I2 XOR (I3 XOR I1)))
+  Gate 11: (NOT (I3 XOR I1))
+  Gate 12: ((((I2 XOR (I3 XOR I1)) XOR (I3 XOR I1)) XOR ((I2 XOR (I3 XOR I1)) XOR (I3 XOR I1))) XOR (NOT (I2 XOR (I3 XOR I1))))
+  Gate 13: ((((I2 XOR (I3 XOR I1)) XOR (I3 XOR I1)) XOR ((I2 XOR (I3 XOR I1)) XOR (I3 XOR I1))) XOR (NOT (I2 XOR (I3 XOR I1))))
+  Gate 14: (NOT (I3 XOR I1))
+  Gate 15: (((I1 XOR I3) OR I1) AND ((((I2 XOR (I3 XOR I1)) XOR (I3 XOR I1)) XOR ((I2 XOR (I3 XOR I1)) XOR (I3 XOR I1))) XOR (NOT (I2 XOR (I3 XOR I1)))))
+  Gate 16: (((((I2 XOR (I3 XOR I1)) XOR (I3 XOR I1)) XOR ((I2 XOR (I3 XOR I1)) XOR (I3 XOR I1))) XOR (NOT (I2 XOR (I3 XOR I1)))) AND (((I2 XOR (I3 XOR I1)) XOR (I3 XOR I1)) XOR ((I2 XOR (I3 XOR I1)) XOR (I3 XOR I1))))
+  Gate 17: ((NOT (I2 XOR (I3 XOR I1))) OR (NOT (I3 XOR I1)))
+  Gate 18: (NOT ((((I2 XOR (I3 XOR I1)) XOR (I3 XOR I1)) XOR ((I2 XOR (I3 XOR I1)) XOR (I3 XOR I1))) XOR (NOT (I2 XOR (I3 XOR I1)))))
+  Gate 19: ((NOT (I3 XOR I1)) XOR ((((I2 XOR (I3 XOR I1)) XOR (I3 XOR I1)) XOR ((I2 XOR (I3 XOR I1)) XOR (I3 XOR I1))) XOR (NOT (I2 XOR (I3 XOR I1)))))
+  Gate 20: ((((I1 XOR I3) OR I1) AND ((((I2 XOR (I3 XOR I1)) XOR (I3 XOR I1)) XOR ((I2 XOR (I3 XOR I1)) XOR (I3 XOR I1))) XOR (NOT (I2 XOR (I3 XOR I1))))) OR (I3 XOR I1))
+  Gate 21: ((((I1 XOR I3) OR I1) AND ((((I2 XOR (I3 XOR I1)) XOR (I3 XOR I1)) XOR ((I2 XOR (I3 XOR I1)) XOR (I3 XOR I1))) XOR (NOT (I2 XOR (I3 XOR I1))))) XOR (I1 XOR I3))
+  Gate 22: (NOT (((I1 XOR I3) OR I1) AND ((((I2 XOR (I3 XOR I1)) XOR (I3 XOR I1)) XOR ((I2 XOR (I3 XOR I1)) XOR (I3 XOR I1))) XOR (NOT (I2 XOR (I3 XOR I1))))))
+  Gate 23: (NOT (NOT (I3 XOR I1)))
+
+--- FINAL OUTPUT FORMULA ---
+  Output 1: (I2 XOR (I3 XOR I1))
+  Output 2: (((I1 XOR I3) OR I1) AND ((((I2 XOR (I3 XOR I1)) XOR (I3 XOR I1)) XOR ((I2 XOR (I3 XOR I1)) XOR (I3 XOR I1))) XOR (NOT (I2 XOR (I3 XOR I1)))))
+
+Circuit Matrix ([In1, Gate, In2]):
+[[ 1  4  3]
+ [ 4  3  1]
+ [ 3  4  1]
+ [ 2  4  6]
+ [ 7  4  6]
+ [ 8  4  8]
+ [ 7  0  9]
+ [ 7  1  6]
+ [ 9  4 10]
+ [ 9  4 10]
+ [ 6  0 10]
+ [ 5  2 13]
+ [12  2  9]
+ [10  3 14]
+ [16  1 12]
+ [11  4 13]
+ [15  3  6]
+ [15  4  4]
+ [15  0  9]
+ [16  1 14]]
+
+Output Array (Pointers):
+[ 7 15]
+
+================================================================================
+FINAL STATS
+================================================================================
+Cost (Fitness): 15.0000
+Correct outputs: 15/16
+Active Gates Used: 9
+Unused Gates (Simplicity): 0
+
+Accuracy: 93.75%
+Missing: 1 output(s)
+
+================================================================================
+CONVERGENCE ANALYSIS
+================================================================================
+Initial fitness: 14.00
+Final fitness: 15.00
+Total improvement: 1.00
+✗ No perfect solution found
+  Best achieved: 15.00/16
+
+================================================================================
+[FIXED Enhanced Multi-Threaded CS-PSO] System finished!
+================================================================================
+
+[TIMER] Total elapsed: 706.91s
+[TIMER] Time per round: 8.03s
+[TIMER] Effective iterations: 2200

@@ -1,0 +1,43 @@
+System: Multi-Run PSO without Ring (10 Runs)
+Number of threads: 5
+Number of population per thread: 500
+Number of iterations: 100
+Phi1 and Phi2: 2.05
+
+>>> STARTING RUN 1 <<<
+  [Run 1] Iter 1: Fitness 80.00 (Correct: 80/128, Gates: 3)
+  [Run 1] Iter 6: Fitness 82.00 (Correct: 82/128, Gates: 4)
+  [Run 1] Iter 10: Fitness 82.00 (Correct: 82/128, Gates: 4)
+  [Run 1] Iter 20: Fitness 82.00 (Correct: 82/128, Gates: 4)
+  [Run 1] Iter 30: Fitness 82.00 (Correct: 82/128, Gates: 4)
+  [Run 1] Iter 40: Fitness 82.00 (Correct: 82/128, Gates: 4)
+  [Run 1] Iter 50: Fitness 82.00 (Correct: 82/128, Gates: 4)
+  [Run 1] Iter 60: Fitness 82.00 (Correct: 82/128, Gates: 4)
+  [Run 1] Iter 70: Fitness 82.00 (Correct: 82/128, Gates: 4)
+  [Run 1] Iter 80: Fitness 82.00 (Correct: 82/128, Gates: 4)
+  [Run 1] Iter 90: Fitness 82.00 (Correct: 82/128, Gates: 4)
+  [Run 1] Iter 100: Fitness 82.00 (Correct: 82/128, Gates: 4)
+
+[Run 1 Result]
+
+--- CIRCUIT FORMULA DERIVATION ---
+Internal Gates:
+  Gate 6: (I3 OR I5)
+  Gate 7: ((I3 OR I5) OR I2)
+  Gate 8: (I3 AND I1)
+  Gate 9: ((I3 AND I1) AND I5)
+  Gate 10: (NOT ((I3 OR I5) OR I2))
+
+--- FINAL OUTPUT FORMULA ---
+  Output 1: ((I3 AND I1) AND I5)
+  Output 2: ((I3 OR I5) OR I2)
+  Output 3: I3
+  Output 4: I4
+  -> Run 1 Formula: ['((I3 AND I1) AND I5)', '((I3 OR I5) OR I2)', 'I3', 'I4']
+
+>>> STARTING RUN 2 <<<
+  [Run 2] Iter 1: Fitness 82.00 (Correct: 82/128, Gates: 3)
+  [Run 2] Iter 10: Fitness 82.00 (Correct: 82/128, Gates: 3)
+  [Run 2] Iter 20: Fitness 82.00 (Correct: 82/128, Gates: 3)
+  [Run 2] Iter 30: Fitness 82.00 (Correct: 82/128, Gates: 3)
+  [Run 2] Iter 40: Fitness 82.00 (Correct: 82/128, Gates: 3)
