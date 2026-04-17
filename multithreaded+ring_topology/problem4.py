@@ -115,17 +115,17 @@ class TruthTable:
 # ])
 
 # # example 5 in reis (1-bit full adder with Cin) --> working
-num_inputs = 3
-num_outputs = 2
-inputs = np.array([
-    [0, 0, 0], [0, 0, 1], [0, 1, 0], [0, 1, 1], 
-    [1, 0, 0], [1, 0, 1], [1, 1, 0], [1, 1, 1],
-])
+# num_inputs = 3
+# num_outputs = 2
+# inputs = np.array([
+#     [0, 0, 0], [0, 0, 1], [0, 1, 0], [0, 1, 1], 
+#     [1, 0, 0], [1, 0, 1], [1, 1, 0], [1, 1, 1],
+# ])
 
-outputs = np.array([
-    [0, 0], [1, 0], [1, 0], [0, 1], 
-    [1, 0], [0, 1], [0, 1], [1, 1],
-])
+# outputs = np.array([
+#     [0, 0], [1, 0], [1, 0], [0, 1], 
+#     [1, 0], [0, 1], [0, 1], [1, 1],
+# ])
 
 # outputs = np.array([
 #     [0], [1], [1], [0],
@@ -226,6 +226,9 @@ outputs = np.array([
 #     [1,0,0,0],
 #     [1,0,1,1],
 # ])
+
+# 4-bit full adder
+
 
 truth_table = TruthTable(num_inputs, num_outputs, inputs, outputs)
 
