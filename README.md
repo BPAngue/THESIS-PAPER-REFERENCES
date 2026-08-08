@@ -1,49 +1,91 @@
-# Contributing Guidelines
+# Paper References and Code Prototypes
 
-Thank you for contributing to this project!  
-To maintain a clean and organized workflow, please follow the guidelines below when pushing new code or submitting pull requests.
+This repository contains the **reference papers and code prototypes** supporting a thesis on **combinational circuit design using metaheuristic optimization techniques**.
 
----
+The repository is intended to serve as a centralized collection of the literature used to establish the theoretical foundation of the study, together with the prototype implementations developed as part of the thesis methodology.
 
-## Branch Naming Convention
+## Repository Structure
 
-When contributing, **always create a new branch** using the following format: PSO-V<version_num>/<changes_done>
+```text
+.
+├── Paper_References/
+└── codes/
+```
 
-### Example
-- PSO-V1.2/added-voting-mechanism
-- PSO-V1.3/fixed-threading-issue
-- PSO-V1.4/updated-ui-components
+### `Paper_References/`
 
+Contains the primary reference papers and related literature reviewed for the thesis.
 
-### Notes
-- Replace `<version_num>` with the current project version (e.g., `1.2`, `2.0`).
-- Replace `<changes_done>` with a short, descriptive summary of the modification.
-- Use lowercase letters and hyphens (`-`) instead of spaces.
-- Always pull the latest changes from the `main` branch before creating a new one.
+The references currently focus on three major metaheuristic approaches:
 
----
+* **Particle Swarm Optimization (PSO)**
+* **Simulated Annealing (SA)**
+* **Cartesian Genetic Programming (CGP)**
 
-## Commit Message Convention
+CGP is the **primary metaheuristic approach currently being utilized in the study**. The CGP references provide the main theoretical and methodological foundation for the proposed approach.
 
-Use **clear and descriptive commit messages** that explain what your change does.  
-Follow this structure: 
-- `<type>`: `<short summary>`
+The PSO and Simulated Annealing references are included as supporting literature for understanding alternative metaheuristic approaches to optimization and their potential application to combinational circuit design.
 
+### `codes/`
 
-### Common Types
+Contains the **code prototypes developed for the thesis methodology**.
 
-| Type | Description |
-|------|--------------|
-| feat | Added a new feature |
-| fix | Fixed a bug or issue |
-| docs | Updated or added documentation |
-| refactor | Refactored code without changing functionality |
-| style | Code style changes (formatting, naming, etc.) |
-| test | Added or updated tests |
-| chore | Minor maintenance tasks |
+These codes are experimental implementations used to explore, test, and validate the proposed methodology. They are developed specifically for the thesis and are not necessarily implementations obtained directly from the referenced papers.
 
-### Example
-- feat: added fitness-based voting system for PSO
-- fix: resolved thread synchronization issue
-- docs: updated README with installation steps
+The prototypes may include implementations for:
 
+* Combinational circuit representation
+* Circuit evaluation and simulation
+* Benchmark file processing
+* Fitness evaluation
+* Cartesian Genetic Programming
+* Metaheuristic optimization procedures
+* Mutation and selection mechanisms
+* Experimental evaluation of generated circuits
+
+As the thesis progresses, the code prototypes may be modified, extended, or reorganized based on experimental findings.
+
+## Research Focus
+
+The thesis investigates the use of **metaheuristic optimization techniques for combinational circuit design**.
+
+The general goal is to automatically generate combinational circuits that satisfy a given functional specification while potentially optimizing circuit-related objectives such as:
+
+* Functional correctness
+* Circuit complexity
+* Number of gates or active nodes
+* Transistor count
+* Propagation delay
+* Computational efficiency
+
+## Metaheuristic Approaches
+
+| Method                        | Abbreviation | Role in the Study                                     |
+| ----------------------------- | ------------ | ----------------------------------------------------- |
+| Particle Swarm Optimization   | PSO          | Primary reference approach                            |
+| Simulated Annealing           | SA           | Primary reference approach                            |
+| Cartesian Genetic Programming | CGP          | **Primary approach currently utilized in the thesis** |
+
+The repository's CGP literature serves as the main foundation for the current methodology. PSO and Simulated Annealing are maintained as reference approaches for comparison, background study, and potential future experimentation.
+
+## Purpose
+
+This repository is maintained to:
+
+1. Organize the **primary research papers** supporting the thesis.
+2. Maintain related literature on metaheuristic approaches to circuit optimization.
+3. Develop and test **prototype implementations** of the proposed methodology.
+4. Provide a record of the computational work conducted during the research.
+5. Support experimentation and future refinement of the proposed combinational circuit design approach.
+
+## Development Status
+
+The repository is **actively under development** as part of the thesis research.
+
+The contents of `codes/` should be considered **research prototypes** and may change substantially as the methodology is refined and experimental results are obtained.
+
+Additional reference papers, algorithms, benchmarks, and experimental implementations will be added as the research progresses.
+
+## Keywords
+
+`Combinational Circuit Design` · `Metaheuristic Optimization` · `Cartesian Genetic Programming` · `CGP` · `Particle Swarm Optimization` · `PSO` · `Simulated Annealing` · `Digital Circuit Optimization` · `Evolutionary Computation`
